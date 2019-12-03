@@ -263,7 +263,6 @@ export class HomeComponent implements OnInit {
         this.showDepartAirportId = -1;
         this.route.params.subscribe( params => console.log(params) );
           this.route.params.subscribe(params => {
-            console.log(params);
            
           });
 

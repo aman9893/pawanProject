@@ -111,6 +111,7 @@ export class LoginComponent implements OnInit {
     LoginUser_Input = { LoginUser_Input: this.loginForm.value };
     this.authservice.loginUser(LoginUser_Input).subscribe(data => {
       if (data) {
+
         this.loginData = data;
         sessionStorage.setItem("login_details", JSON.stringify(data));
         sessionStorage.setItem("isLoggedIn", data.LoginUser.login);
@@ -135,6 +136,7 @@ export class LoginComponent implements OnInit {
   signInWithGoogle(): void {
     this.auth.signIn(GoogleLoginProvider.PROVIDER_ID).then(x => {
       if (x) {
+        console.log(x)
         this.socialLogin = {
           "SocialSignIn_Input": {
             "email": x.email,
@@ -146,8 +148,11 @@ export class LoginComponent implements OnInit {
         };
 
         this.authservice.SocialLogin(this.socialLogin).subscribe(data => {
+          console.log(data)
           if (data) {
             this.loginData = data;
+            console.log(data)
+            console.log(this.loginData)
             sessionStorage.setItem("login_details", JSON.stringify(data));
             sessionStorage.setItem("isLoggedIn", data.LoginUser.login);
             sessionStorage.setItem("Token", data.LoginUser.Token);
@@ -155,7 +160,6 @@ export class LoginComponent implements OnInit {
             if (data.LoginUser.login != "false") {
               this.getsessionMapping();
              this.getloginItineraryUser(data.LoginUser.UserId);
-    
             } else {
               alert("Google!!");
             }
@@ -171,7 +175,9 @@ export class LoginComponent implements OnInit {
 
   signInWithFB(): void {
     this.auth.signIn(FacebookLoginProvider.PROVIDER_ID).then(x => {
+      console.log(x)
       if (x) {
+        console.log(x)
         this.socialLogin = {
           "SocialSignIn_Input": {
             "email": x['facebook'].email,
@@ -181,6 +187,7 @@ export class LoginComponent implements OnInit {
             "SocialLoginToken": x.authToken
           }
         };
+        console.log(this.socialLogin)
         this.authservice.SocialLogin(this.socialLogin).subscribe(data => {
           if (data) {
             this.loginData = data;

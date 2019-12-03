@@ -20,8 +20,10 @@ export class NavComponent implements OnInit {
    
     let user_Data = JSON.parse(sessionStorage.getItem('login_details'));
     let user_Account = JSON.parse(sessionStorage.getItem('userAccount'));
+    console.log(user_Data)
+    console.log(user_Account)
       if(user_Data){
-        this.user_details = user_Data.LoginUser;
+        this.user_details = user_Data.SocialLogin;
         $("#loginModal").modal('hide');
       }else if(user_Account){
         this.user_details = user_Account;
