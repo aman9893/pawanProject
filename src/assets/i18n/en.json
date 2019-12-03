@@ -1,0 +1,43 @@
+{
+    "HOME": {
+      "SELECT": "Change language",
+      "TITLE1": "Round-the-world",
+      "TITLE2": "Round the world with",
+      "TITLE3": "Explore the world. Book your adventure.",
+      "MAP": "Map",
+      "PASSENGERS": "Passengers",
+      "TRAVEL_CLASS": "Travel class",
+      "AIRLINE_PREFERENCE": "Airline preference",
+      "ADD_FLIGHT": " Add Flight",
+      "CLEAR_ALL": "Clear all",
+      "FINISH_ITINERARY":"Finish Itinerary",
+      "SEARCH": "Choose Flights",
+      "INSPIRED_ITINERARIES": "Need some inspiration?",
+      "INSPIRED_ITINERARIES_INFO": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "IMAGE_INFO": "Name",
+      "VIEW_ALL": "View All",
+      "INSPIRED_ITINERARIES_2": "Travel around the world with"
+    },
+    "LOGIN": {
+      "TITLE": "Bonjour Angular avec ngx-translate !",
+      "SELECT": "Changer la langue",
+      "SIGN_IN": "Sign-In",
+      "LOGINV": "Login"
+    },
+    "SIGNUP":{
+      "FN":"First Name:",
+      "SU_SURNAME":"Surname:",
+      "SU_EMAIL":"Email address:",
+      "SU_PWD":"Password:",
+      "SU_CNF_PWD":"Confirm Password:",
+      "SU_RADIO_CAPTION":"Which option best describes you?",
+      "SU_RADIO_BUSINESS_TRAVELLER":"Business Traveller",
+      "SU_RADIO_PLEASURE_TRAVELLER":"Pleasure Traveller",
+      "SU_RADIO_TRAVEL_AGENT":"Travel Traveller",
+      "SU_CANCEL":"Cancel",
+      "SU_CREATE_ACCOUNT":"Create account"
+    },
+    "PASSENGER_INFO":{
+      "TITLE":"passenger-info works!"
+    }
+  }

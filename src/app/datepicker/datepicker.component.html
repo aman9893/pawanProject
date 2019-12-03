@@ -1,0 +1,15 @@
+<div class="container">
+    <div (clickOutside)="onClickedOutside($event)" (blur)="onClickedOutside($event)">
+        <div class="input-group date" [ngClass]="{'disabled-icon': disabledDatePicker == false }">
+          <input (change)="changedDate()" type="text" [ngModel]="value" class="form-control" id="{{id}}" (focus)="openCloseDatepicker()" disabled="{{disabledInput}}" />
+          <span id="openCloseDatePicker" class="input-group-addon" (click)="openCloseDatepicker()">
+                  <span class="glyphicon-calendar glyphicon"></span>
+              </span>
+        </div>
+      
+        <div class="dp-popup" *ngIf="showDatepicker">
+          <datepicker [startingDay]="1" [startingDay]="dt" [minDate]="min"  [(ngModel)]="dt"  (selectionDone)="onSelectionDone($event)"></datepicker>
+        </div>
+      </div>
+</div>
+

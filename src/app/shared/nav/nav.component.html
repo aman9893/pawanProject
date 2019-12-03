@@ -1,0 +1,71 @@
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="#"><img class="rtw_main_logo"
+                src="https://oneworldpassui.s3.amazonaws.com/images/oneworldLogo1.jpeg" routerLink="/" alt="Logo"><span
+                class="logo_header"><b>one</b>world</span></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto mt-3">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plan & book</a>
+                </li>
+                <li class="nav-item" *ngIf="!user_details.Email">
+                    <a class="nav-link" (click)="signIn_signUp()">Login/Register</a>
+                </li>
+                <li *ngIf="user_details.Email" class="nav-item dropdown logged_user">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user-circle-o mr-2" aria-hidden="true"
+                            style="font-size:1.5em;"></i><b>{{user_details.Email}}</b></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item">
+                            My Itineraries
+                        </a>
+                        <!-- <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" (click)="resetPassword()">Reset Password</a> -->
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" (click)="logout()">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+      
+
+
+<div class="container">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"  aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="max-width: 576px;">
+        <div class="modal-content">
+            <div class="modal-header" style="border: none;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body" style="padding: 1rem 1rem 0 1rem;">
+            <div>
+                <app-login></app-login>
+            </div>
+            </div>
+            <div class="modal-footer d-none">
+            <button type="button" class="btn btn-action" data-dismiss="modal">Skip</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

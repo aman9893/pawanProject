@@ -1,0 +1,117 @@
+<div>
+  <ng-container *ngIf="showDatepicker">
+    <div class="calendar-wrapper">
+      <div class="dtp-body">
+        <div class="year-month-row">
+          <span class="year-month-text">{{ getMonthYearTitle(currYear, currMonth) }}</span>
+          <i [ngClass]="disablePrev ? 'fas fa-angle-left prev-month none': 'fas fa-angle-left prev-month'" (click)="onClickPrevMonth()"></i>
+        </div>
+        <div class="weeks">
+          <span class="short-week">Sun</span>
+          <span class="short-week">Mon</span>
+          <span class="short-week">Tue</span>
+          <span class="short-week">Wed</span>
+          <span class="short-week">Thu</span>
+          <span class="short-week">Fri</span>
+          <span class="short-week">Sat</span>
+        </div>
+        <div class="days">
+          <span *ngFor="let blank of getBlankDays(currYear, currMonth)"></span>
+          <span 
+            *ngFor="let _day of getMonthDays(currYear, currMonth)" 
+            [ngClass]="checkEnableDay(currYear, currMonth, _day + 1)"
+            (click)="onClickDay(currYear, currMonth, _day + 1)">
+            {{_day + 1}}
+          </span>
+        </div>
+      </div>
+      <div class="dtp-body">
+        <div class="year-month-row">
+          <span class="year-month-text">{{ getMonthYearTitle(nextYear, nextMonth) }}</span>
+          <i [ngClass]="disableNext ? 'fas fa-angle-right next-month none': 'fas fa-angle-right next-month'" (click)="onClickNextMonth()"></i>
+        </div>
+        <div class="weeks">
+          <span class="short-week">Sun</span>
+          <span class="short-week">Mon</span>
+          <span class="short-week">Tue</span>
+          <span class="short-week">Wed</span>
+          <span class="short-week">Thu</span>
+          <span class="short-week">Fri</span>
+          <span class="short-week">Sat</span>
+        </div>
+        <div class="days">
+          <span *ngFor="let blank of getBlankDays(nextYear, nextMonth)"></span>
+          <span 
+            *ngFor="let _day of getMonthDays(nextYear, nextMonth)" 
+            [ngClass]="checkEnableDay(nextYear, nextMonth, _day + 1)"
+            (click)="onClickDay(nextYear, nextMonth, _day + 1)">
+            {{ _day + 1 }}
+          </span>
+        </div>
+      </div>
+      <ngx-spinner
+        bdOpacity = 0.9
+        bdColor = "#fffffff"
+        size = "default"
+        color = "#120d80"
+        type = "ball-spin-clockwise"
+        [fullScreen] = "false">
+      </ngx-spinner>
+    </div>
+  </ng-container>
+</div>
+<ng-template let-modal #datepickerModal1>
+  <!-- <div class="modal-content"> -->
+    <div class="modal-header">
+        <h4 class="modal-title dtp-title">Select Date</h4>
+        <button type="button" class="close modal_close" (click)="modal.close(departureDate)" autofocus>&times;</button>
+      </div>
+    <div class="modal-body">
+      <div class="mobile-calendar-wrapper">
+        <ngx-spinner
+          bdOpacity = 0.9
+          bdColor = "#fffffff"
+          size = "default"
+          color = "#120d80"
+          type = "ball-spin-clockwise"
+          [fullScreen] = "false">
+        </ngx-spinner>
+        <div class="dtp-body" *ngFor="let item of getTotalMonths()">  
+          <div class="year-month-row">
+            <span class="year-month-text">{{ getMonthYearTitle(item['yyyy'], item['mm']) }}</span>
+          </div>
+          <div class="weeks">
+              <span class="short-week">Su</span>
+              <span class="short-week">Mo</span>
+              <span class="short-week">Tu</span>
+              <span class="short-week">We</span>
+              <span class="short-week">Th</span>
+              <span class="short-week">Fr</span>
+              <span class="short-week">Sa</span>
+          </div>
+
+          <div class="days">
+              <span *ngFor="let blank of getBlankDays(item['yyyy'], item['mm'])"></span>
+              <span 
+                *ngFor="let _day of getMonthDays(item['yyyy'], item['mm'])" 
+                [ngClass]="checkEnableDay(item['yyyy'], item['mm'], _day + 1)"
+                (click)="onClickDay(item['yyyy'], item['mm'], _day + 1)">
+                {{_day + 1}}
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" [disabled]="selYear==0||selMonth==0||selDay==0" (click)="onClickDone()">Done</button>
+    </div>
+  <!-- </div> -->
+</ng-template>
+<!-- <ngx-spinner
+  bdOpacity = 0.9
+  bdColor = "#fffffff"
+  size = "default"
+  color = "#120d80"
+  type = "ball-spin-clockwise"
+  [fullScreen] = "false">
+</ngx-spinner> -->

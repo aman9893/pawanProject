@@ -1,0 +1,658 @@
+<app-nav></app-nav>
+<app-progress-mask-component [showProgress]="showMask"></app-progress-mask-component>
+<!-- itinerary  details start here -->
+<div class="itinerary_details_page">
+    <div class="container">
+        <div class="d-flex  justify-content-center">
+            <div>
+                <h4>Your Itinerary Details</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="itineraryDetails">
+    <div class="container">
+        <div class="itinerary_details">
+            <div>
+                <h4 class="jumbo_header">Passenger Information</h4>
+            </div>
+            <div *ngFor="let passengerList of passengersList, let i = index">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td >{{passengerList.firstName}}</td>
+                            <td class="passenger_fields">{{passengerList.DOB.day + '/' + passengerList.DOB.month + '/' +passengerList.DOB.year }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h4 class="jumbo_header">Contact Information</h4>
+            </div>
+            <div>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="contact_field"><strong>Email:</strong></td>
+                            <td>{{contactInfo.email}}</td>
+                        </tr>
+                        <tr>
+                            <td class="contact_field"><strong>Phone number:</strong></td>
+                            <td>{{contactInfo.phone}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- flight details here -->
+            <div>
+                <h4 class="jumbo_header">Flight Selection</h4>
+            </div>
+            <div class="">
+                <!--  ========Start of Desktop view======   -->
+                <div class="flight-result-main d-none d-md-block">
+            
+                    <div class="flight-result" *ngFor="let singleFlight of flightResponse; let flightIndex = index"
+                        (click)="selectFlightSegment(flightIndex)">
+                        <!-- heading here -->
+                        <div class="row">
+                            <div class="col-lg-12 flight-name">
+                                <span class="route-heading"> <span class="departure-heading">{{ getAirportName(singleFlight.dpt.cityCode) }}</span>
+                                        <!-- <i class="fas fa-plane"></i> -->to
+                                    <span class="arrival-heading">{{ getAirportName(singleFlight.arv.cityCode) }}</span></span>
+                            </div>
+                        </div>
+                        <!-- end here -->
+            
+                        <div class="card">
+            
+                            <div class="card-header">
+                                <div class="row col-lg-12">
+            
+                                    <div class="col-lg-6 col-md-6">
+                                            <div [ngClass]="{
+                                                'airline-AA':getairlineLogo(singleFlight.legs.leg) === 'AA',
+                                                'airline-BA':getairlineLogo(singleFlight.legs.leg) === 'BA',
+                                                'airline-CX':getairlineLogo(singleFlight.legs.leg) === 'CX',
+                                                'airline-AY':getairlineLogo(singleFlight.legs.leg) === 'AY',
+                                                'airline-IB':getairlineLogo(singleFlight.legs.leg) === 'IB',
+                                                'airline-JL':getairlineLogo(singleFlight.legs.leg) === 'JL',
+                                                'airline-MH':getairlineLogo(singleFlight.legs.leg) === 'MH',
+                                                'airline-RJ':getairlineLogo(singleFlight.legs.leg) === 'RJ',
+                                                'airline-S7':getairlineLogo(singleFlight.legs.leg) === 'S7',
+                                                'airline-UL':getairlineLogo(singleFlight.legs.leg) === 'UL',
+                                                'airline-QF':getairlineLogo(singleFlight.legs.leg) === 'QF',
+                                                'airline-QR':getairlineLogo(singleFlight.legs.leg) === 'QR',
+                                                'airline-XL':getairlineLogo(singleFlight.legs.leg) === 'XL',
+                                                'airline-OW':getairlineLogo(singleFlight.legs.leg) === 'OW'
+                                                }">
+                                            </div>
+                                    </div>
+            
+                                    <div class="col-lg-6 col-md-6">
+                                        <p class="pull-right text-flight-type">
+                                            <b>{{ singleFlight.classAndAvailability.class[0].userClassType }}</b></p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="card-body">
+            
+                                <!-- Details here -->
+                                <div class="flight-card-summary row col-lg-12">
+            
+                                    <div class="col-lg-2 col-md-2 flight-departure-date text-center">
+                                        <p class="flight_date">
+                                            {{ formatDepartureDate(singleFlight.flightDates.scheduledDate[0]) }}
+                                        </p>
+                                        <p class="flight_date_label">Departure</p>
+                                    </div>
+            
+                                    <div class="col-lg-2 col-md-2 flight-departure-airport text-center">
+                                        <p class="flight_date">
+                                            {{  getAirportName(singleFlight.dpt.cityCode) }}</p>
+                                        <p class="flight_date_label">
+                                            {{ getTimeInHours(singleFlight.dptTimeLocal) }} {{ singleFlight.dpt.terminal }}</p>
+                                    </div>
+            
+                                    <div class="col-lg-3 col-md-3 text-center">
+                                        <div class="row flight-duration ">
+                                            <div class="flight-duration-info">
+                                                <p class="flight_date">
+                                                    {{ singleFlight.elapsedTime | minuteSeconds}}</p>
+                                                <p class="flight_date_label"> <span class="direction-angle">
+                                                        <i class="far fa-circle"></i>- - - - -&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </span> Stops: {{ singleFlight.numLegs }} <span class="direction-angle">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;- - - - -<i class="fas fa-angle-right"></i></span>
+                                                </p>
+                                                <span>{{singleFlight.carFlight}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-lg-2 col-md-2 flight-arrival-airport text-center">
+                                        <p class="flight_date">
+                                            {{ getAirportName(singleFlight.arv.cityCode) }}</p>
+                                        <p class="flight_date_label">
+                                            {{ singleFlight.arvTimeLocal }} {{ singleFlight.arv.terminal }}</p>
+                                    </div>
+            
+                                    <div class="col-lg-2 col-md-2 flight-arrival-date text-center">
+                                        <p class="flight_date">{{ formatDepartureDate(singleFlight.flightArriveDate) }}
+                                        </p>
+                                        <p class="flight_date_label">Arrival</p>
+                                    </div>
+            
+                                    <div class="col-lg-1 col-md-1 flight-detail-trigger mt-3">
+                                        <a (click)="clickShowDetail()">
+                                            <mdb-icon fas icon="chevron-down" size="2x"
+                                                [ngClass]="showDetail && selectedFlightIndex == flightIndex ? 't-blue float-right rotate down': 't-blue float-right rotate'">
+                                            </mdb-icon>
+                                        </a>
+                                    </div>
+            
+                                </div>
+                                <!-- legs details here -->
+                                <div class="flight-card-detail" *ngIf="showDetail && selectedFlightIndex == flightIndex">
+                                    <div class="flight-legs" *ngFor="let legFlight of singleFlight.legs.leg; let legIndex = index">
+                                        <div class="flight-leg">
+                                            <div class="flight-leg__solid-border"></div>
+                                            <div class="row">
+                                                <span
+                                                    class="col-lg-2 text-flight-detail text-bold">{{ formatDepartureDate(legFlight.legDepartureDate)}}</span>
+                                                <span class="col-lg-6 text-flight-detail text-bold">
+                                                    {{getAirportName(legFlight.dpt.cityCode) }}</span>
+                                                <!-- '( Airport: ' + (legFlight.dpt.aptCode) + ')' -->
+                                                <span class="col-lg-4 text-flight-detail">
+                                                    {{getTimeInHours(legFlight.dptTime)}}
+                                                </span>
+                                            </div>
+                                            <div class="flight-leg__duration row">
+                                                <span class="col-lg-9 text-flight-detail text-bold">
+                                                    {{legFlight.carCode}} {{legFlight.flightNumber}}<br>
+                                                </span>
+                                            </div>
+            
+                                            <div class="row">
+                                                <span class="col-lg-2 text-flight-detail text-bold">
+                                                    {{ formatDepartureDate(legFlight.legArriveDate)}}</span>
+                                                <span class="col-lg-6 text-flight-detail text-bold">
+                                                    {{getAirportName(legFlight.arv.cityCode) }}</span>
+                                                <!-- + '( Airport: ' + legFlight.arv.aptCode + ')' -->
+                                                <span class="col-lg-4 text-flight-detail">
+                                                    {{getTimeInHours(legFlight.arvTime)}}
+                                                </span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                                <!-- legs details end here -->
+                            </div>
+            
+                        </div>
+            
+                        <div>
+            
+                        </div>
+            
+                    </div>
+            
+                </div>
+                <!--  ========end of Desktop view======   -->
+            
+                <!--    ======Start of Mobile view======    -->
+                <div class="flight-result-main mb_flights_section d-block d-md-none">
+            
+            
+                    <div class="flight-result" *ngFor="let singleFlight of flightResponse; let flightIndex = index"
+                        (click)="selectFlightSegment(flightIndex)">
+                        <!-- heading here -->
+                        <div class="row">
+                            <div class="col-12 flight-name">
+                                <span class="route-heading"> <span
+                                        class="departure-heading">{{ getAirportName(singleFlight.dpt.cityCode) }}</span><i
+                                        class="fas fa-plane"></i>
+                                    <span class="arrival-heading">{{ getAirportName(singleFlight.arv.cityCode) }}</span></span>
+                            </div>
+                        </div>
+                        <!-- end here -->
+            
+                        <div class="card">
+            
+                            <div class="card-header">
+                                <div class="row">
+                            
+                                    <div class="col-3">
+                                        <p class="text-flight-type">
+                                            <b>Flight {{flightIndex + 1}}</b></p>
+                                    </div>
+                            
+                                    <div class="col-6 p-0 airline_logos">
+                                            <div [ngClass]="{
+                                                'airline-AA':getairlineLogo(singleFlight.legs.leg) === 'AA',
+                                                'airline-BA':getairlineLogo(singleFlight.legs.leg) === 'BA',
+                                                'airline-CX':getairlineLogo(singleFlight.legs.leg) === 'CX',
+                                                'airline-AY':getairlineLogo(singleFlight.legs.leg) === 'AY',
+                                                'airline-IB':getairlineLogo(singleFlight.legs.leg) === 'IB',
+                                                'airline-JL':getairlineLogo(singleFlight.legs.leg) === 'JL',
+                                                'airline-MH':getairlineLogo(singleFlight.legs.leg) === 'MH',
+                                                'airline-RJ':getairlineLogo(singleFlight.legs.leg) === 'RJ',
+                                                'airline-S7':getairlineLogo(singleFlight.legs.leg) === 'S7',
+                                                'airline-UL':getairlineLogo(singleFlight.legs.leg) === 'UL',
+                                                'airline-QF':getairlineLogo(singleFlight.legs.leg) === 'QF',
+                                                'airline-QR':getairlineLogo(singleFlight.legs.leg) === 'QR',
+                                                'airline-XL':getairlineLogo(singleFlight.legs.leg) === 'XL',
+                                                'airline-OW':getairlineLogo(singleFlight.legs.leg) === 'OW'
+                                                }">
+                                            </div>
+                                    </div>
+                            
+                                    <div class="col-3 p-0">
+                                        <p class="text-flight-type pull-right mr-3">
+                                            <b>{{ singleFlight.classAndAvailability.class[0].userClassType }}</b></p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="card-body">
+            
+                                <!-- Details here -->
+                                <div class="flight-card-summary row">
+            
+                                    <div class="col-4 flight-departure-date p-0">
+                                        <p class="flight_date">
+                                            {{ formatDepartureDate(singleFlight.flightDates.scheduledDate[0]) }}
+                                        </p>
+                                        <p class="flight_date_label">Departure</p>
+                                    </div>
+            
+                                    <div class="col-4 text-center p-0">
+                                        <div class="row flight-duration ">
+                                            <div class="flight-duration-info">
+                                                <p class="flight_date">
+                                                    {{ singleFlight.elapsedTime | minuteSeconds}}</p>
+                                                <p class="flight_date_label"> <span class="direction-angle">
+                                                        <i class="far fa-circle"></i>- - -
+                                                    </span> Stops: {{ singleFlight.numLegs }} <span class="direction-angle">
+                                                        - - -<i class="fas fa-angle-right"></i></span></p>
+                                                <span>{{singleFlight.carFlight}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-4 flight-arrival-date p-0">
+                                        <p class="flight_date">{{ formatDepartureDate(singleFlight.flightArriveDate) }}
+                                        </p>
+                                        <p class="flight_date_label">Arrival</p>
+                                    </div>
+            
+                                </div>
+            
+                                <div class="second_section">
+                                    <div class="flight-card-summary row">
+            
+                                        <div class="col-4 flight-departure-airport p-0">
+                                            <p class="flight_date">
+                                                {{singleFlight.dpt.cityCode}}</p>
+                                            <p class="flight_date_label">
+                                                {{ singleFlight.dptTimeLocal }} {{ singleFlight.dpt.terminal }}</p>
+                                        </div>
+            
+                                        <div class="col-4 text-center p-0">
+                                            <div class="mr-2 mt-2">
+                                                <a (click)="clickShowDetail()">
+                                                    <mdb-icon fas icon="chevron-down" size="2x"
+                                                        [ngClass]="showDetail && selectedFlightIndex == flightIndex ? 't-blue rotate down': 't-blue rotate'">
+                                                    </mdb-icon>
+                                                </a>
+                                            </div>
+                                        </div>
+            
+                                        <div class="col-4 flight-arrival-airport p-0">
+                                            <p class="flight_date">
+                                                {{singleFlight.arv.cityCode}}</p>
+                                            <p class="flight_date_label">
+                                                {{ singleFlight.arvTimeLocal }} {{ singleFlight.arv.terminal }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+            
+            
+                                <!-- legs details here -->
+                                <div class="flight-card-detail" *ngIf="showDetail && selectedFlightIndex == flightIndex">
+                                    <div class="flight-legs" *ngFor="let legFlight of singleFlight.legs.leg; let legIndex = index">
+                                        <div class="flight-leg">
+                                            <div class="flight-leg__solid-border"></div>
+                                            <div class="row">
+                                                <span class="col-12 text-flight-detail text-bold">{{ formatDepartureDate(legFlight.legDepartureDate)}}</span>
+                                                <span class="col-12 text-flight-detail text-bold">
+                                                    {{getAirportName(legFlight.dpt.cityCode) }}</span>
+                                                <!-- '( Airport: ' + (legFlight.dpt.aptCode) + ')' -->
+                                                <span class="col-12 text-flight-detail">
+                                                    {{getTimeInHours(legFlight.dptTime)}}
+                                                </span>
+                                            </div>
+                                            <div class="flight-leg__duration row">
+                                                <span class="col-12 text-flight-detail text-bold">
+                                                    {{legFlight.carCode}} {{legFlight.flightNumber}}<br>
+                                                </span>
+                                            </div>
+            
+                                            <div class="row">
+                                                <span class="col-12 text-flight-detail text-bold">
+                                                    {{ formatDepartureDate(legFlight.legArriveDate)}}</span>
+                                                <span class="col-12 text-flight-detail text-bold">
+                                                    {{getAirportName(legFlight.arv.cityCode) }}</span>
+                                                <!-- + '( Airport: ' + legFlight.arv.aptCode + ')' -->
+                                                <span class="col-12 text-flight-detail">
+                                                    {{getTimeInHours(legFlight.arvTime)}}
+                                                </span>
+                                            </div>
+                                        </div>
+            
+                                    </div>
+                                </div>
+                                <!-- legs details end here -->
+                            </div>
+            
+                        </div>
+            
+                        <div>
+            
+                        </div>
+            
+                    </div>
+                </div>
+            
+                <!--    ======End of Mobile view======    -->
+            
+            </div>
+            <!-- flight details end here -->
+            <div >
+                <form name="paymentInfoSection" [formGroup]="paymentInfoForm" (ngSubmit)="submit_payment_details()">
+                    <div *ngIf="showPaymentFields">
+                    <div>
+                        <h2 class="jumbo_header">Payment information</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <select class="form-control" formControlName="cardType" name="cardType" id="cardType" placeholder="Card type" autocomplete="off"
+                                [ngClass]="{'is-invalid' :  submitted && paymentDetails.cardType.errors}" (click)="selectedCardType()" >
+                                    <option value="">Please select</option>
+                                    <option value="CA" >MasterCard</option>
+                                    <option value="AX">American Express</option>
+                                    <option value="VI">Visa</option>
+                                    <option value="DC">Diners Club</option>
+                                </select>
+                                <div *ngIf="submitted && paymentDetails.cardType.errors" class="invalid-feedback">
+                                    <div *ngIf="paymentDetails.cardType.errors.required">Card type is required</div>
+                                </div>
+                                <label class="label">Card type *</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <input type="text" class="form-control" formControlName="cardNumber" name="cardNumber" id="cardNumber" placeholder="cardNumber" autocomplete="off"
+                                [ngClass]="{'is-invalid' :  submitted && paymentDetails.cardNumber.errors}" >
+                                <label class="label">Card number *</label>
+                                <div *ngIf="submitted && paymentDetails.cardNumber.errors" class="invalid-feedback">
+                                    <div *ngIf="paymentDetails.cardNumber.errors.required">Please enter card number</div>
+                                    <div *ngIf="paymentDetails.cardNumber.errors.pattern">Card number should be only in number</div>
+                                   <!--  <div *ngIf="paymentDetails.cardNumber.errors.minlength">Card number must be minimum of 10 digit number</div> -->
+                                    <div *ngIf="paymentDetails.cardNumber.errors.maxlength || paymentDetails.cardNumber.errors.minlength">Card number must be of {{maxCardNumber}} digit number</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                       
+                        <div class="col-sm-3">
+                            <div class="form-label-group">
+                                <select class="form-control" formControlName="expirationMonth" name="expirationMonth" id="expirationMonth" placeholder="Card type" autocomplete="off"
+                                [ngClass]="{'is-invalid' :  submitted && paymentDetails.expirationMonth.errors}" >
+                                    <option value="">Please select</option>
+                                    <option value="{{month}}" *ngFor="let month of month_list" >{{month}}</option>
+                                </select>
+                                <label class="label">Expiration month of card*</label>
+                                <div *ngIf="submitted && paymentDetails.expirationMonth.errors" class="invalid-feedback">
+                                    <div *ngIf="paymentDetails.expirationMonth.errors.required">Please select expiration year of card</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-label-group">
+                                <select class="form-control" formControlName="expirationYear" name="expirationYear" id="expirationYear" placeholder="Card type" autocomplete="off"
+                                [ngClass]="{'is-invalid' :  submitted && paymentDetails.expirationYear.errors}" >
+                                    <option value="">Please select</option>
+                                    <option value="{{year}}" *ngFor="let year of year_list" >{{year}}</option>
+                                </select>
+                                <label class="label">Expiration year of card *</label>
+                                <div *ngIf="submitted && paymentDetails.expirationMonth.errors" class="invalid-feedback">
+                                    <div *ngIf="paymentDetails.expirationMonth.errors.required">Please select expiration month of card</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <input type="text" class="form-control" formControlName="cvvNumber" name="cvvNumber" id="cvvNumber" placeholder="Pin number" autocomplete="off"
+                                [ngClass]="{'is-invalid' :  submitted && paymentDetails.cvvNumber.errors}" >
+                                <label class="label">Pin Number *</label>
+                                <div *ngIf="submitted && paymentDetails.cvvNumber.errors" class="invalid-feedback">
+                                    <div *ngIf="paymentDetails.cvvNumber.errors.required">Please enter card CVV number</div>
+                                    <div *ngIf="paymentDetails.cvvNumber.errors.pattern">CVV number should be only in number</div>
+                                    <div *ngIf="paymentDetails.cvvNumber.errors.maxlength || paymentDetails.cvvNumber.errors.minlength">CVV number must be of {{cvvNumberLength}} digits</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <input type="text" class="form-control" formControlName="cardholderName" name="cardholderName" id="cardholderName" placeholder="cardholder Name" autocomplete="off"
+                                [ngClass]="{'is-invalid' :  submitted && paymentDetails.cardholderName.errors}" >
+                                <label class="label">Name of card holder *</label>
+                                <div *ngIf="submitted && paymentDetails.cardholderName.errors" class="invalid-feedback">
+                                    <div *ngIf="paymentDetails.cardholderName.errors.required">Please enter card holder name</div>
+                                    <div *ngIf="paymentDetails.cardholderName.errors.minlength">Card holder Name must be minimum of 2 characters</div>
+                                    <div *ngIf="paymentDetails.cardholderName.errors.maxlength">Card holder Name must be maximum of 30 characters</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="jumbo_header">Credit card billing address (for verification purposes)</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6" >
+                            <div class="form-label-group">
+                                <input type="text" class="form-control" formControlName="address1" name="address1" id="address1" placeholder="address1" autocomplete="off"
+                                [ngClass]="{'is-invalid' :  submitted && paymentDetails.address1.errors}" >
+                                <label class="label">Address Line 1 *</label>
+                                <div *ngIf="submitted && paymentDetails.address1.errors" class="invalid-feedback">
+                                    <div *ngIf="paymentDetails.address1.errors.required">Please provide valid address line 1</div>
+                                    <div *ngIf="paymentDetails.address1.errors.minlength">Address line 1 must be minimum of 3 characters</div>
+                                    <div *ngIf="paymentDetails.address1.errors.maxlength">Address line 1 must be maximum of 50 characters</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <input type="text" class="form-control" formControlName="address2" name="address2" id="address2" placeholder="address2" autocomplete="off"
+                                [ngClass]="{'is-invalid' :  submitted && paymentDetails.address2.errors}">
+                                <label class="label">Address Line 2</label>
+                                <div *ngIf="submitted && paymentDetails.address2.errors" class="invalid-feedback">
+                                    <div *ngIf="paymentDetails.address2.errors.minlength">Address line 2 must be minimum of 3 characters</div>
+                                    <div *ngIf="paymentDetails.address2.errors.maxlength">Address line 2 must be maximum of 50 characters</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <input type="text" class="form-control" formControlName="pincode" name="pincode" id="pincode" placeholder="pincode" autocomplete="off"
+                                [ngClass]="{'is-invalid' :  submitted && paymentDetails.pincode.errors}" >
+                                <label class="label">Postal code *</label>
+                                <div *ngIf="submitted && paymentDetails.pincode.errors" class="invalid-feedback">
+                                    <div *ngIf="paymentDetails.pincode.errors.required">Please enter postal code</div>
+                                    <div *ngIf="paymentDetails.pincode.errors.minlength">Postal code must be minimum of 3 digit number</div>
+                                    <div *ngIf="paymentDetails.pincode.errors.maxlength">Postal code must be maximum of 4 digit number</div>
+                                    <div *ngIf="paymentDetails.pincode.errors.pattern">Postal code should be in alphanumeric</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <input type="text" class="form-control" formControlName="city" name="city" id="city" placeholder="city" autocomplete="off"
+                                [ngClass]="{'is-invalid' :  submitted && paymentDetails.city.errors}" >
+                                <label class="label">City *</label>
+                                <div *ngIf="submitted && paymentDetails.city.errors" class="invalid-feedback">
+                                    <div *ngIf="paymentDetails.city.errors.required">Please enter city</div>
+                                    <div *ngIf="paymentDetails.city.errors.required">City must be minimum of 3 characters</div>
+                                    <div *ngIf="paymentDetails.city.errors.required">City must be maximum of 30 characters</div>
+                                    <div *ngIf="paymentDetails.city.errors.pattern">Only alphabets are allowed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <input type="text" class="form-control" formControlName="state" name="state" id="state" placeholder="state" autocomplete="off"
+                                [ngClass]="{'is-invalid' :  submitted && paymentDetails.state.errors}" >
+                                <label class="label">State/province *</label>
+                                <div *ngIf="submitted && paymentDetails.state.errors" class="invalid-feedback">
+                                    <div *ngIf="paymentDetails.state.errors.required">Please enter state</div>
+                                    <div *ngIf="paymentDetails.city.errors.required">State/province must be minimum of 3 characters</div>
+                                    <div *ngIf="paymentDetails.city.errors.required">State/province must be maximum of 30 characters</div>
+                                    <div *ngIf="paymentDetails.city.errors.pattern">Only alphabets are allowed</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <select class="form-control" formControlName="country" name="country" id="country" placeholder="country" autocomplete="off"
+                                [ngClass]="{'is-invalid' :  submitted && paymentDetails.country.errors}" >
+                                <option value="">Please select</option>
+                                <option [value]="country_code.cntryCode" *ngFor="let country_code of countries_details">{{country_code.cntryName}}</option>
+                                </select>
+                                <div *ngIf="submitted && paymentDetails.country.errors" class="invalid-feedback">
+                                    <div *ngIf="paymentDetails.country.errors.required">Please select Country</div>
+                                </div>
+                                <label class="label">Country *</label>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-label-group">
+                                <div class="goods-line">
+                                    <p style="font-size: 20px; color:#120d80;font-weight: 500;">Dangerous Goods</p>
+                                    <hr/>
+                                </div>
+                                <div class="terms-conditions-content">
+                                    <div>
+                                        <p>
+                                            Some everyday products, like aerosol spray starch, can be dangerous when transported on the aircraft in
+                                            carry-on and/or checked
+                                            baggage. Changes in temperature or pressure can cause some items to leak, generate toxic fumes or start
+                                            a
+                                            fire. Carriage of prohibited items may result in fines or in certain cases imprisonment. Please ensure
+                                            there
+                                            are no forbidden hazardous materials in your baggage like.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <ul class="pl-5">
+                                            <li>Some lithium batteries (e.g., spares in checked baggage, batteries over a certain size) </li>
+                                            <li>Explosives / Fireworks</li>
+                                            <li>Strike anywhere matches / Lighter fluid</li>
+                                            <li>Compressed gases / Aerosols</li>
+                                            <li>Oxygen bottles / Liquid oxygen</li>
+                                            <li>Flammable liquids</li>
+                                            <li>Pesticides / Poison</li>
+                                            <li>Corrosive</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            There are special exceptions for small quantities (up to 70 ounces total) of medicinal and toilet
+                                            articles carried in your
+                                            luggage, spare lithium batteries for most consumer electronic devices in carry-on baggage, and certain
+                                            smoking
+                                            materials carried on your person. Baggage may contain items that are required to be carried with you
+                                            onboard
+                                            the aircraft. For example, spare lithium batteries for portable electronic devices and cigarette
+                                            lighters
+                                            must be removed from checked or gate-checked baggage and carried onboard the aircraft. Traveling with
+                                            medical
+                                            oxygen, liquid oxygen, mobility aids and other assistive devices may require airline pre-approval or be
+                                            restricted
+                                            from carriage entirely. Passengers requiring these items should contact the airline operator for
+                                            information
+                                            on use of such devices.
+                                            <br>
+                                            <br> For further information check our information pages or contact our customer service desk.
+                                            <br>
+                                            <br> You may also visit the
+                                            <a href="https://www.tsa.gov/travel" target="_blank">Transportation Security Administration (TSA)
+                                                website</a>&nbsp; for a list of items that can and cannot be transported on passenger aircraft.
+                                            <br>
+                                        </p>
+                                    </div>
+                                    <div class="row" style="background:#f1f1f1;padding: 1em 1em;">
+                                        <div>
+                                            <h3 class="acknow">Acknowledge</h3>
+                                            <p>
+                                                In order to proceed further, please note the following items and tick the boxes to confirm your
+                                                agreement:
+                                            </p>
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <span class="astric-color">*&nbsp;</span>
+                                                            <input type="checkbox" formControlName="tc1" name="tc1" id="tc1"  [ngClass]="{'is-invalid' :  submitted && paymentDetails.tc1.errors}"> 
+                                                                I have read and accept <a href="https://www.oneworld.com/world-travel" target="_blank">the oneworld Explorer Product Information,</a><a href="https://www.oneworld.com/general/terms-and-conditions" target="_blank">Terms and Conditions of Carriage</a>,
+                                                                <div *ngIf="submitted && paymentDetails.tc1.errors" class="invalid-feedback">
+                                                                    <div *ngIf="paymentDetails.tc1.errors.required">Please accept condition</div>
+                                                                </div>
+                                                                <!-- <div *ngIf="paymentDetails.tc2.required" class="invalid-feedback">
+                                                                    Please accept condition
+                                                                </div> -->
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <span class="astric-color">*&nbsp;</span>
+                                                            <input type="checkbox" formControlName="tc2" name="tc2" id="tc2" (click)="TC()" [ngClass]="{'is-invalid' :  submitted && paymentDetails.tc2.errors}"> Yes, I have read and accept the hazardous materials conditions.
+                                                            <div *ngIf="submitted && paymentDetails.tc2.errors" class="invalid-feedback">
+                                                                <div *ngIf="paymentDetails.tc2.errors.required">Please accept condition</div>
+                                                            </div>
+                                                            <!-- <div *ngIf="submitted && paymentDetails.tc2.required" class="invalid-feedback">
+                                                                Please accept condition
+                                                            </div> -->
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="pull-right">
+                        <button type="submit" class="btn btn-teritiary">Book Itinerary</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+
+    

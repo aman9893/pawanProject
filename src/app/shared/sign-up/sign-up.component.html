@@ -1,0 +1,122 @@
+<!-- sign up page -->
+<div class="signup_page">
+  <div class="container">
+    <div class="header">
+      <label>
+        Create account
+      </label>
+    </div>
+    <div class="form-wrap mt-4">
+      <div class="signUp">
+        <div>
+          <form class="signup-form mt-3" name="SignUpForm" [formGroup]="registerForm" (ngSubmit)="signupUser()">
+            <div>
+              <div class="form-label-group">
+                <input type="text" class="form-control" formControlName="firstname" name="firstname" id="firstname" [ngClass]="{'is-invalid': submitted && sign_up_form.firstname.errors}"
+                  placeholder="First Name" autocomplete="off"/>
+                <label class="label">First Name</label>
+                <div *ngIf="submitted && sign_up_form.firstname.errors" class="invalid-feedback">
+                  <div *ngIf="sign_up_form.firstname.errors.required">{{"AUTHENTICATION_ERROR_1" | translate}}</div>
+                  <!-- <div *ngIf="sign_up_form.firstname.errors.pattern">Only letters and spaces are allowed</div> -->
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+              <div class="form-label-group">
+                <input type="text" id="password-field" class="form-control" formControlName="lastname" name="lastname" id="lastname" [ngClass]="{'is-invalid': submitted && sign_up_form.lastname.errors}"
+                   placeholder="confirm password" autocomplete="off"/>
+                  <label class="label">Surname</label>
+                <div *ngIf="submitted && sign_up_form.lastname.errors" class="invalid-feedback">
+                  <div *ngIf="sign_up_form.lastname.errors.required">{{"AUTHENTICATION_ERROR_1" | translate}}</div>
+                  <!-- <div *ngIf="sign_up_form.lastname.errors.pattern">Only letters and spaces are allowed</div> -->
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+              <div class="form-label-group">
+                <input type="text" id="password-field" class="form-control" formControlName="email" name="email" id="email" [ngClass]="{'is-invalid': submitted && sign_up_form.email.errors}"
+                  placeholder="confirm password" autocomplete="off"/>
+                <label class="label">Email address</label>
+                <div *ngIf="submitted && sign_up_form.email.errors" class="invalid-feedback">
+                  <div *ngIf="sign_up_form.email.errors.required">{{"AUTHENTICATION_ERROR_1" | translate}}</div>
+                  <div *ngIf="sign_up_form.email.errors.email">{{"AUTHENTICATION_ERROR_6" | translate}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+              <div class="form-label-group">
+                <input type="password" id="password-field" class="form-control" formControlName="password" name="password" id="password" [ngClass]="{ 'is-invalid': submitted && sign_up_form.password.errors}"
+                  placeholder="confirm password" autocomplete="off"/>
+                <label class="label">Password</label>
+                <div *ngIf="submitted && sign_up_form.password.errors" class="invalid-feedback">
+                  <div *ngIf="sign_up_form.password.errors.required">{{"AUTHENTICATION_ERROR_1" | translate}}</div>
+                  <div *ngIf="sign_up_form.password.errors.pattern">{{"AUTHENTICATION_ERROR_1" | translate}}</div>
+                  <div *ngIf="sign_up_form.password.errors.minlength">{{"AUTHENTICATION_ERROR_2" | translate}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+              <div class="form-label-group">
+                <input type="password" id="password-field" class="form-control" formControlName="passwordsalt" name="passwordsalt"  id="passwordsalt" [ngClass]="{ 'is-invalid': submitted && sign_up_form.passwordsalt.errors}"
+                  placeholder="confirm password" autocomplete="off"/>
+                <label class="label">Confirm password</label>
+                <div *ngIf="submitted && sign_up_form.passwordsalt.errors" class="invalid-feedback">
+                  <div *ngIf="sign_up_form.passwordsalt.errors.required">{{"AUTHENTICATION_ERROR_1" | translate}}</div>
+                  <div *ngIf="sign_up_form.passwordsalt.errors.mustMatch">{{"AUTHENTICATION_ERROR_2" | translate}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+              <div class="form-label-group">
+                <div class="radio_option_caption">
+                  <label >Which option best describes you? *</label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" class="option-input radio form-control" name="usertype" formControlName="usertype" value="1" [ngClass]="{'is-invalid': submitted && sign_up_form.usertype.errors}"
+                      autocomplete="off"/>
+                      Business Traveller
+                  </label>
+                  <label>
+                    <input type="radio" class="option-input radio form-control" name="usertype" formControlName="usertype" value="2" [ngClass]="{'is-invalid': submitted && sign_up_form.usertype.errors}"
+                      autocomplete="off"/>
+                      Pleasure Traveller
+                  </label>
+                  <label>
+                    <input type="radio" class="option-input radio form-control" name="usertype" formControlName="usertype" value="3" [ngClass]="{'is-invalid': submitted && sign_up_form.usertype.errors}"
+                      autocomplete="off"/>
+                      Travel Agent
+                    <div *ngIf="submitted && sign_up_form.usertype.invalid" class="invalid-feedback">
+                      <div *ngIf="sign_up_form.usertype.errors.required" style="float:left;">{{"AUTHENTICATION_ERROR_1" | translate}}</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div style="position: relative;top: 1.5em;">
+                <button type="submit" class="btn btn-teritiary pull-right">Create account</button>
+                  <span class="login_link pull-left" (click)="changeLayout()">Already have an account? <a class="link ml-2">Login</a></span>
+                  <!-- <button type="submit" class="btn btn-teritiary ml-2 pull-left" (click)="changeLayout()">login</button> -->
+              <!-- <button type="submit" class="btn btn-teritiary ml-1" (click)="changeLayout()">cancel</button> -->
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- <div class="clearfix"></div>
+      <div class="horizontal_line">
+        <span class="or_separator">OR</span>
+        <hr/>
+      </div> -->
+      <!-- <div class="text-center login_button">
+        <label>Already have an account?</label>
+        <button type="submit" class="btn btn-teritiary ml-2" (click)="changeLayout()">Login</button>
+      </div> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,238 @@
+@import "../../less/globalvar.less";
+@border: #ccc !important;
+@radio_button_background_color:#cae698;
+.signup_page{
+    position: relative;
+    top: -2em;
+    padding: 0em 0 6.5em 0;
+  .container{
+    .straight_line{
+      margin-top: 0.4em !important;
+    }
+    hr{
+      border:1px solid #ccc;
+    }
+    .horizontal_line{
+      position: relative;
+      top:1em;
+    }
+    .login_button{
+      top: 1.7em;
+      position: relative;
+    }
+    .or_separator{
+      bottom: -10px !important;
+      position: absolute  !important;
+      background: #fff  !important;
+      right: 45.5%  !important;
+      padding: 0 1em  !important;
+    }
+    .header
+    {
+      width: 100% !important;
+      margin: auto;
+      border-bottom: 2px solid @blue-text-color;
+        label {
+        font-size: 22px;
+        color: @blue-text-color;
+        font-weight: 600;
+        margin-top: 0.4em;
+      }
+    }
+    .signUp {
+      width: 100% !important;
+      margin: auto;
+      background: @white;
+      border-radius: 2px;
+      .form-label-group {
+        position: relative;
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: left;
+        .radio_option_caption{
+   
+          margin-top:-0.4em !important;
+          &~{
+            color: #120d80;
+            font-size:20px;
+          }
+        }
+        >label {
+          position: absolute;
+          top: 12px;
+          left: 24px;
+          display: block;
+          width: 100%;
+          margin-bottom: 0;
+          line-height: 1.5;
+          color: #495057;
+          border: 1px solid @transparent_color;
+          border-radius: 3.25rem;
+          transition: all 0.1s ease-in-out;
+        }
+        input {
+          &::-webkit-input-placeholder {
+            color: @transparent_color;
+          }
+          &:-ms-input-placeholder {
+            color: @transparent_color;
+          }
+          &::-ms-input-placeholder {
+            color: @transparent_color;
+          }
+          &::-moz-placeholder {
+            color: @transparent_color;
+          }
+          &::placeholder {
+            color: @transparent_color;
+          }
+          &:not(:placeholder-shown) {
+            padding-top: 2em;
+            padding-bottom: 1em;
+            &~label {
+              padding-bottom: 0.25rem;
+              top:6px;
+              font-size: 12px;
+              color: #777;
+            }
+          }
+        }
+          .form-control {
+            height: calc(2.5rem + 8px);
+            border-radius: 3.25rem;
+            padding-left:  1.5rem !important;
+          }
+          .form-control.is-invalid {
+            padding-right: 0em !important;
+          }
+          .was-validated {
+            .form-control {
+              &:invalid {
+                padding-right: 0em !important;
+              }
+            }
+          }
+        .label {
+          position: absolute;
+          pointer-events: none;
+          transition: 0.2s ease all;
+        }
+      }
+      .radio {
+        &>label{
+          padding-right: 0.5em !important;
+          color:#868e96 !important;
+          font-size: 1rem !important;
+          display: inline;
+            
+          .option-input { 
+            padding-left:0rem !important;
+            padding-top: 0em !important;
+            padding-bottom: 0em !important;
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
+            -ms-appearance: none !important;
+            -o-appearance: none !important;
+            appearance: none !important;
+            position: relative !important;
+            top: 2px !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            left: 0 !important;
+            height: 22px !important;
+            width: 22px !important;
+            transition: all 0.15s ease-out 0s !important;
+            background: #cbd1d8;
+            border: none !important;
+            color:  @white !important;
+            cursor: pointer !important;
+            display: inline-block !important;
+            /* margin-right: 0.5rem !important; */
+            outline: none !important;
+            position: relative !important;
+            z-index: 1000 !important;
+          }
+        }
+        .option-input {
+          &:hover {
+            background: #9faab7 !important;
+          }
+          &:checked {
+            background: @radio_button_background_color!important;
+            &::before {
+              height: 24px !important;
+              width: 24px !important;
+              position: absolute !important;
+              content: "✔" !important;
+              display: inline-block !important;
+              font-size: 16px !important;
+              text-align: center !important;
+              line-height: 24px !important;
+            }
+            &::after {
+              -webkit-animation: click-wave 0.65s;
+              -moz-animation: click-wave 0.65s !important;
+              animation: click-wave 0.65s !important;
+           /*    background: @radio_button_background_color !important; */
+              /* content: "" !important; */
+              background: #CAE698 !important;
+              display: block !important;
+              position: relative !important;
+              z-index: 100 !important;
+            }
+          }
+        }
+        .option-input.radio {
+          border-radius: 50% !important;
+          &::after {
+            border-radius: 50% !important;
+          }
+        }
+      } 
+    }
+    .login_link .link{
+      color: #120d80 !important;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    /* .btn-teritiary {
+      background: @blue-text-color;
+      color: @white;
+      height: auto;
+      padding: 0.7rem 1.2rem !important;
+    } */
+    @media @medium-below{
+      .horizontal_line_text{
+        left: 3.5em !important;
+      }
+      .header
+      {
+        width: 100% !important;
+      }
+      .signUp {
+        width: 100% !important;
+      }
+      .radio label {
+        padding-right: 2em !important;
+        
+      }
+    }
+    @media @below-extra-small {
+      .horizontal_line_text{
+        left: 1.1em !important;
+      }
+      .header
+      {
+        width: 100% !important;
+      }
+      .horizontal_line_text{
+        
+        left:1em !important;
+        }
+      .signUp {
+        width: 100% !important;
+      }
+    }
+  }
+}
+

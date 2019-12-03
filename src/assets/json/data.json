@@ -1,0 +1,3009 @@
+[{"StaCode": "AAL","Name": "Aalborg Airport", "CityCode": "AAL", "CityName": "Aalborg"},
+    {"StaCode": "AAQ","Name": "Vityazevo Airport", "CityCode": "AAQ", "CityName": "Anapa"},
+    {"StaCode": "AAR","Name": "Aarhus Airport", "CityCode": "AAR", "CityName": "Aarhus"},
+    {"StaCode": "ABA","Name": "Abakan Airport", "CityCode": "ABA", "CityName": "Abakan"},
+    {"StaCode": "ABE","Name": "Lehigh Valley International Airport", "CityCode": "ABE", "CityName": "Allentown"},
+    {"StaCode": "ABI","Name": "Abilene Regional Airport", "CityCode": "ABI", "CityName": "Abilene"},
+    {"StaCode": "ABQ","Name": "International Sunport Airport", "CityCode": "ABQ", "CityName": "Albuquerque"},
+    {"StaCode": "ABV","Name": "Nnamdi Azikiwe Intl Airport", "CityCode": "ABV", "CityName": "Abuja"},
+    {"StaCode": "ABX","Name": "Albury Airport", "CityCode": "ABX", "CityName": "Albury"},
+    {"StaCode": "ABZ","Name": "Dyce Airport", "CityCode": "ABZ", "CityName": "Aberdeen"},
+    {"StaCode": "ACC","Name": "Kotoka International Airport", "CityCode": "ACC", "CityName": "Accra"},
+    {"StaCode": "ACE","Name": "Lanzarote Airport", "CityCode": "ACE", "CityName": "Lanzarote"},
+    {"StaCode": "ACK","Name": "Nantucket Memorial Airport", "CityCode": "ACK", "CityName": "Nantucket"},
+    {"StaCode": "ACT","Name": "Waco Regional Airport", "CityCode": "ACT", "CityName": "Waco"},
+    {"StaCode": "ADA","Name": "Sakirpasa Airport", "CityCode": "ADA", "CityName": "Adana"},
+    {"StaCode": "ADD","Name": "Bole International Airport", "CityCode": "ADD", "CityName": "Addis Ababa"},
+    {"StaCode": "ADL","Name": "Adelaide International Airport", "CityCode": "ADL", "CityName": "Adelaide"},
+    {"StaCode": "ADZ","Name": "Gustavo R. Pinilla Int Airport", "CityCode": "ADZ", "CityName": "San Andres Island"},
+    {"StaCode": "AEP","Name": "Jorge Newbery Airport", "CityCode": "BUE", "CityName": "Buenos Aires"},
+    {"StaCode": "AER","Name": "Sochi International", "CityCode": "AER", "CityName": "Sochi"},
+    {"StaCode": "AEX","Name": "Alexandria International Airport", "CityCode": "AEX", "CityName": "Alexandria"},
+    {"StaCode": "AGP","Name": "Malaga Airport", "CityCode": "AGP", "CityName": "Malaga"},
+    {"StaCode": "AGS","Name": "Augusta Regional (Bush Field) Airport", "CityCode": "AGS", "CityName": "Augusta"},
+    {"StaCode": "AGU","Name": "Jesus Teran Peredo International Airport", "CityCode": "AGU", "CityName": "Aguascalientes"},
+    {"StaCode": "AJU","Name": "Santa Maria Airport", "CityCode": "AJU", "CityName": "Aracaju"},
+    {"StaCode": "AKJ","Name": "Asahikawa Airport", "CityCode": "AKJ", "CityName": "Asahikawa"},
+    {"StaCode": "AKL","Name": "Auckland International Airport", "CityCode": "AKL", "CityName": "Auckland"},
+    {"StaCode": "ALA","Name": "Almaty International Airport", "CityCode": "ALA", "CityName": "Almaty"},
+    {"StaCode": "ALB","Name": "Albany International Airport", "CityCode": "ALB", "CityName": "Albany"},
+    {"StaCode": "ALC","Name": "Alicante Airport", "CityCode": "ALC", "CityName": "Alicante"},
+    {"StaCode": "ALG","Name": "Houari Boumediene Airport", "CityCode": "ALG", "CityName": "Algiers"},
+    {"StaCode": "ALO","Name": "Waterloo Regional Airport", "CityCode": "ALO", "CityName": "Waterloo"},
+    {"StaCode": "AMA","Name": "Rick Husband International Airport", "CityCode": "AMA", "CityName": "Amarillo"},
+    {"StaCode": "AMD","Name": "S. VallabhBhai Patel Airport", "CityCode": "AMD", "CityName": "Ahmedabad"},
+    {"StaCode": "AMM","Name": "Queen Alia International Airport", "CityCode": "AMM", "CityName": "Amman"},
+    {"StaCode": "AMS","Name": "Schiphol Airport", "CityCode": "AMS", "CityName": "Amsterdam"},
+    {"StaCode": "ANC","Name": "Ted Stevens International Airport", "CityCode": "ANC", "CityName": "Anchorage"},
+    {"StaCode": "ANF","Name": "Cerro Moreno Airport", "CityCode": "ANF", "CityName": "Antofagasta"},
+    {"StaCode": "ANU","Name": "V.C. Bird International Airport", "CityCode": "ANU", "CityName": "Antigua"},
+    {"StaCode": "AOJ","Name": "Aomori Airport", "CityCode": "AOJ", "CityName": "Aomori"},
+    {"StaCode": "AOR","Name": "Sultan Abdul Halim Airport", "CityCode": "AOR", "CityName": "Alor Setar"},
+    {"StaCode": "AQJ","Name": "King Hussein International Airport", "CityCode": "AQJ", "CityName": "Aqaba"},
+    {"StaCode": "AQP","Name": "Rodriguez Ballon Intl Airport", "CityCode": "AQP", "CityName": "Arequipa"},
+    {"StaCode": "ARI","Name": "Chacalluta Airport", "CityCode": "ARI", "CityName": "Arica"},
+    {"StaCode": "ARM","Name": "Armidale Airport", "CityCode": "ARM", "CityName": "Armidale"},
+    {"StaCode": "ARN","Name": "Arlanda Airport", "CityCode": "STO", "CityName": "Stockholm"},
+    {"StaCode": "ART","Name": "Watertown International Airport", "CityCode": "ART", "CityName": "Watertown"},
+    {"StaCode": "ASB","Name": "Ashgabat International Airport", "CityCode": "ASB", "CityName": "Ashgabat"},
+    {"StaCode": "ASE","Name": "Pitkin County Airport", "CityCode": "ASE", "CityName": "Aspen"},
+    {"StaCode": "ASF","Name": "Astrakhan Airport", "CityCode": "ASF", "CityName": "Astrakhan"},
+    {"StaCode": "ASJ","Name": "Amami Airport", "CityCode": "ASJ", "CityName": "Amami"},
+    {"StaCode": "ASP","Name": "Alice Springs Airport", "CityCode": "ASP", "CityName": "Alice Springs"},
+    {"StaCode": "ASU","Name": "Silvio Pettirossi Intl Airport", "CityCode": "ASU", "CityName": "Asuncion"},
+    {"StaCode": "ATH","Name": "Eleftherios Venizelos Airport", "CityCode": "ATH", "CityName": "Athens"},
+    {"StaCode": "ATL","Name": "Hartsfield-Jackson International Airport", "CityCode": "ATL", "CityName": "Atlanta"},
+    {"StaCode": "ATQ","Name": "Sri Guru Ram Dass Jee Airport", "CityCode": "ATQ", "CityName": "Amritsar"},
+    {"StaCode": "ATW","Name": "Outagamie County Regional Airport", "CityCode": "ATW", "CityName": "Appleton"},
+    {"StaCode": "AUA","Name": "Reina Beatrix Airport", "CityCode": "AUA", "CityName": "Aruba"},
+    {"StaCode": "AUH","Name": "Abu Dhabi International Airport", "CityCode": "AUH", "CityName": "Abu Dhabi"},
+    {"StaCode": "AUS","Name": "Austin-Bergstrom International Airport", "CityCode": "AUS", "CityName": "Austin"},
+    {"StaCode": "AVL","Name": "Asheville Regional Airport", "CityCode": "AVL", "CityName": "Asheville/Hendersonville"},
+    {"StaCode": "AVP","Name": "Wilkes-Barre International Airport", "CityCode": "AVP", "CityName": "Wilkes-Barre/Scranton"},
+    {"StaCode": "AXT","Name": "Akita Airport", "CityCode": "AXT", "CityName": "Akita"},
+    {"StaCode": "AYP","Name": "Alfredo M. Duarte Airport", "CityCode": "AYP", "CityName": "Ayacucho"},
+    {"StaCode": "AYQ","Name": "Connellan Airport", "CityCode": "AYQ", "CityName": "Ayers Rock"},
+    {"StaCode": "AYT","Name": "Antalya Airport", "CityCode": "AYT", "CityName": "Antalya"},
+    {"StaCode": "AZO","Name": "Battle Creek International Airport", "CityCode": "AZO", "CityName": "Kalamazoo/Battle Creek"},
+    {"StaCode": "BAH","Name": "Bahrain International Airport", "CityCode": "BAH", "CityName": "Bahrain"},
+    {"StaCode": "BAQ","Name": "Ernesto Cortissoz Intl Airport", "CityCode": "BAQ", "CityName": "Barranquilla"},
+    {"StaCode": "BAX","Name": "Barnaul Airport", "CityCode": "BAX", "CityName": "Barnaul"},
+    {"StaCode": "BBA","Name": "Balmaceda Airport", "CityCode": "BBA", "CityName": "Balmaceda"},
+    {"StaCode": "BBN","Name": "Bario Airport", "CityCode": "BBN", "CityName": "Bario"},
+    {"StaCode": "BCI","Name": "Barcaldine Airport", "CityCode": "BCI", "CityName": "Barcaldine"},
+    {"StaCode": "BCN","Name": "Barcelona Airport", "CityCode": "BCN", "CityName": "Barcelona"},
+    {"StaCode": "BDA","Name": "L.F. Wade International Airport", "CityCode": "BDA", "CityName": "Bermuda"},
+    {"StaCode": "BDB","Name": "Bundaberg Airport", "CityCode": "BDB", "CityName": "Bundaberg"},
+    {"StaCode": "BDL","Name": "Bradley International Airport", "CityCode": "HFD", "CityName": "Hartford"},
+    {"StaCode": "BDS","Name": "Casale Airport", "CityCode": "BDS", "CityName": "Brindisi"},
+    {"StaCode": "BEG","Name": "Nikola Tesla Airport", "CityCode": "BEG", "CityName": "Belgrade"},
+    {"StaCode": "BEL","Name": "Val de Cans Airport", "CityCode": "BEL", "CityName": "Belem"},
+    {"StaCode": "BEY","Name": "Rafic Hariri International", "CityCode": "BEY", "CityName": "Beirut"},
+    {"StaCode": "BFL","Name": "Meadows Field", "CityCode": "BFL", "CityName": "Bakersfield"},
+    {"StaCode": "BGA","Name": "Palonegro Intl Airport", "CityCode": "BGA", "CityName": "Bucaramanga"},
+    {"StaCode": "BGI","Name": "Grantley Adams International Airport", "CityCode": "BGI", "CityName": "Bridgetown"},
+    {"StaCode": "BGO","Name": "Flesland Airport", "CityCode": "BGO", "CityName": "Bergen"},
+    {"StaCode": "BGR","Name": "Bangor International Airport", "CityCode": "BGR", "CityName": "Bangor"},
+    {"StaCode": "BGW","Name": "Baghdad International Airport", "CityCode": "BGW", "CityName": "Baghdad"},
+    {"StaCode": "BHD","Name": "George Best City Airport", "CityCode": "BFS", "CityName": "Belfast"},
+    {"StaCode": "BHM","Name": "Shuttlesworth International Airport", "CityCode": "BHM", "CityName": "Birmingham"},
+    {"StaCode": "BHX","Name": "Birmingham Airport", "CityCode": "BHX", "CityName": "Birmingham"},
+    {"StaCode": "BIL","Name": "Logan International Airport", "CityCode": "BIL", "CityName": "Billings"},
+    {"StaCode": "BIO","Name": "Bilbao Airport", "CityCode": "BIO", "CityName": "Bilbao"},
+    {"StaCode": "BIQ","Name": "Pays Basque Airport", "CityCode": "BIQ", "CityName": "Biarritz"},
+    {"StaCode": "BIS","Name": "Bismarck Municipal Airport", "CityCode": "BIS", "CityName": "Bismarck"},
+    {"StaCode": "BJV","Name": "Milas Airport", "CityCode": "BJV", "CityName": "Bodrum"},
+    {"StaCode": "BJX","Name": "Del Bajio Airport", "CityCode": "BJX", "CityName": "Leon/Guanajuato"},
+    {"StaCode": "BJZ","Name": "Badajoz Airport", "CityCode": "BJZ", "CityName": "Badajoz"},
+    {"StaCode": "BKI","Name": "Kota Kinabalu International Airport", "CityCode": "BKI", "CityName": "Kota Kinabalu"},
+    {"StaCode": "BKK","Name": "Suvarnabhumi International", "CityCode": "BKK", "CityName": "Bangkok"},
+    {"StaCode": "BKM","Name": "Bakelalan Airport", "CityCode": "BKM", "CityName": "Bakelalan"},
+    {"StaCode": "BKQ","Name": "Blackall Airport", "CityCode": "BKQ", "CityName": "Blackall"},
+    {"StaCode": "BLL","Name": "Billund Airport", "CityCode": "BLL", "CityName": "Billund"},
+    {"StaCode": "BLQ","Name": "Guglielmo Marconi Airport", "CityCode": "BLQ", "CityName": "Bologna"},
+    {"StaCode": "BLR","Name": "Kempegowda Intl Airport", "CityCode": "BLR", "CityName": "Bengaluru"},
+    {"StaCode": "BMA","Name": "Bromma Airport", "CityCode": "STO", "CityName": "Stockholm"},
+    {"StaCode": "BME","Name": "Broome International Airport", "CityCode": "BME", "CityName": "Broome"},
+    {"StaCode": "BMI","Name": "Central Illinois Regional Airport", "CityCode": "BMI", "CityName": "Bloomington-Normal"},
+    {"StaCode": "BNA","Name": "Nashville International Airport", "CityCode": "BNA", "CityName": "Nashville"},
+    {"StaCode": "BNE","Name": "Brisbane International Airport", "CityCode": "BNE", "CityName": "Brisbane"},
+    {"StaCode": "BOD","Name": "Bordeaux Airport", "CityCode": "BOD", "CityName": "Bordeaux"},
+    {"StaCode": "BOG","Name": "El Dorado Intl Airport", "CityCode": "BOG", "CityName": "Bogota"},
+    {"StaCode": "BOI","Name": "Boise Air Terminal (Gowen Field)", "CityCode": "BOI", "CityName": "Boise"},
+    {"StaCode": "BOJ","Name": "Burgas Airport", "CityCode": "BOJ", "CityName": "Burgas"},
+    {"StaCode": "BOM","Name": "Mumbai Airport", "CityCode": "BOM", "CityName": "Mumbai"},
+    {"StaCode": "BON","Name": "Flamingo International Airport", "CityCode": "BON", "CityName": "Bonaire"},
+    {"StaCode": "BOS","Name": "Edward L. Logan International Airport", "CityCode": "BOS", "CityName": "Boston"},
+    {"StaCode": "BPS","Name": "Porto Seguro Airport", "CityCode": "BPS", "CityName": "Porto Seguro"},
+    {"StaCode": "BPT","Name": "Jack Brooks Regional Airport", "CityCode": "BPT", "CityName": "Beaumont/Port Arthur"},
+    {"StaCode": "BQS","Name": "Ignatyevo Airport", "CityCode": "BQS", "CityName": "Blagoveschensk"},
+    {"StaCode": "BRC","Name": "San Carlos Bariloche Airport", "CityCode": "BRC", "CityName": "San Carlos Bariloche"},
+    {"StaCode": "BRI","Name": "Palese Airport", "CityCode": "BRI", "CityName": "Bari"},
+    {"StaCode": "BRO","Name": "South Padre Island International Airport", "CityCode": "BRO", "CityName": "Brownsville"},
+    {"StaCode": "BRS","Name": "Bristol Airport", "CityCode": "BRS", "CityName": "Bristol"},
+    {"StaCode": "BRU","Name": "Brussels Airport", "CityCode": "BRU", "CityName": "Brussels"},
+    {"StaCode": "BSB","Name": "J. Kubitscheck Intl Airport", "CityCode": "BSB", "CityName": "Brasilia"},
+    {"StaCode": "BSL","Name": "EuroAirport Swiss", "CityCode": "EAP", "CityName": "Basel/Mulhouse"},
+    {"StaCode": "BSR","Name": "Basrah International Airport", "CityCode": "BSR", "CityName": "Basrah"},
+    {"StaCode": "BTC","Name": "Batticaloa Airport", "CityCode": "BTC", "CityName": "Batticaloa"},
+    {"StaCode": "BTK","Name": "Bratsk Airport", "CityCode": "BTK", "CityName": "Bratsk"},
+    {"StaCode": "BTR","Name": "Metropolitan - Ryan Airport", "CityCode": "BTR", "CityName": "Baton Rouge"},
+    {"StaCode": "BTU","Name": "Bintulu Airport", "CityCode": "BTU", "CityName": "Bintulu"},
+    {"StaCode": "BTV","Name": "Burlington International Airport", "CityCode": "BTV", "CityName": "Burlington"},
+    {"StaCode": "BUD","Name": "Liszt Ferenc International Airport", "CityCode": "BUD", "CityName": "Budapest"},
+    {"StaCode": "BUF","Name": "Buffalo Niagara International Airport", "CityCode": "BUF", "CityName": "Buffalo"},
+    {"StaCode": "BUR","Name": "Bob Hope Airport", "CityCode": "BUR", "CityName": "Burbank"},
+    {"StaCode": "BUS","Name": "Batumi Airport", "CityCode": "BUS", "CityName": "Batumi"},
+    {"StaCode": "BVB","Name": "A.B. Cantanhede Intl Airport", "CityCode": "BVB", "CityName": "Boa Vista"},
+    {"StaCode": "BWI","Name": "Baltimore/Washington Intl Airport", "CityCode": "BWI", "CityName": "Baltimore"},
+    {"StaCode": "BWN","Name": "Brunei International Airport", "CityCode": "BWN", "CityName": "Bandar Seri Begawan"},
+    {"StaCode": "BZE","Name": "Philip S.W. Goldson International Airport", "CityCode": "BZE", "CityName": "Belize City"},
+    {"StaCode": "BZK","Name": "Bryansk Airport", "CityCode": "BZK", "CityName": "Bryansk"},
+    {"StaCode": "BZN","Name": "Yellowstone International Airport", "CityCode": "BZN", "CityName": "Bozeman"},
+    {"StaCode": "CAE","Name": "Columbia Metropolitan Airport", "CityCode": "CAE", "CityName": "Columbia"},
+    {"StaCode": "CAG","Name": "Elmas Airport", "CityCode": "CAG", "CityName": "Cagliari"},
+    {"StaCode": "CAI","Name": "Cairo International Airport", "CityCode": "CAI", "CityName": "Cairo"},
+    {"StaCode": "CAK","Name": "Akron/Canton Regional Airport", "CityCode": "CAK", "CityName": "Akron/Canton"},
+    {"StaCode": "CAN","Name": "Baiyun International Airport", "CityCode": "CAN", "CityName": "Guangzhou"},
+    {"StaCode": "CAP","Name": "Hugo Chavez Intl Airport", "CityCode": "CAP", "CityName": "Cap-Haitien"},
+    {"StaCode": "CBG","Name": "Cambridge Airport", "CityCode": "CBG", "CityName": "Cambridge"},
+    {"StaCode": "CBR","Name": "Canberra Airport", "CityCode": "CBR", "CityName": "Canberra"},
+    {"StaCode": "CCJ","Name": "Kozhikode International Airport", "CityCode": "CCJ", "CityName": "Kozhikode"},
+    {"StaCode": "CCP","Name": "Carriel Sur Airport", "CityCode": "CCP", "CityName": "Concepcion"},
+    {"StaCode": "CCS","Name": "Simon Bolivar International Airport", "CityCode": "CCS", "CityName": "Caracas"},
+    {"StaCode": "CCU","Name": "Subhas Chandra Bose Airport", "CityCode": "CCU", "CityName": "Kolkata"},
+    {"StaCode": "CDG","Name": "Charles De Gaulle Airport", "CityCode": "PAR", "CityName": "Paris"},
+    {"StaCode": "CEB","Name": "Mactan International Airport", "CityCode": "CEB", "CityName": "Cebu"},
+    {"StaCode": "CEK","Name": "Balandino Airport", "CityCode": "CEK", "CityName": "Chelyabinsk"},
+    {"StaCode": "CFS","Name": "Coffs Harbour Airport", "CityCode": "CFS", "CityName": "Coffs Harbour"},
+    {"StaCode": "CFU","Name": "Ioannis Kapodistrias Airport", "CityCode": "CFU", "CityName": "Kerkyra"},
+    {"StaCode": "CGB","Name": "Marechal Rondon Intl Airport", "CityCode": "CGB", "CityName": "Cuiaba"},
+    {"StaCode": "CGH","Name": "Congonhas Airport", "CityCode": "SAO", "CityName": "Sao Paulo"},
+    {"StaCode": "CGK","Name": "Soekarno-Hatta International Airport", "CityCode": "JKT", "CityName": "Jakarta"},
+    {"StaCode": "CGO","Name": "Xinzheng Intl Airport", "CityCode": "CGO", "CityName": "Zhengzhou"},
+    {"StaCode": "CGR","Name": "Campo Grande International Airport", "CityCode": "CGR", "CityName": "Campo Grande"},
+    {"StaCode": "CHA","Name": "Chattanooga Metropolitan Airport", "CityCode": "CHA", "CityName": "Chattanooga"},
+    {"StaCode": "CHC","Name": "Christchurch International Airport", "CityCode": "CHC", "CityName": "Christchurch"},
+    {"StaCode": "CHO","Name": "Albemarle Airport", "CityCode": "CHO", "CityName": "Charlottesville"},
+    {"StaCode": "CHQ","Name": "Ioannis Daskalogiannis Airport", "CityCode": "CHQ", "CityName": "Chania"},
+    {"StaCode": "CHS","Name": "Charleston International/AFB", "CityCode": "CHS", "CityName": "Charleston"},
+    {"StaCode": "CID","Name": "The Eastern Iowa Airport", "CityCode": "CID", "CityName": "Cedar Rapids"},
+    {"StaCode": "CIT","Name": "Shymkent International Airport", "CityCode": "CIT", "CityName": "Shymkent"},
+    {"StaCode": "CIX","Name": "J.A. Quinones Gonzalez Airport", "CityCode": "CIX", "CityName": "Chiclayo"},
+    {"StaCode": "CJA","Name": "Armando R. Iglesias Airport", "CityCode": "CJA", "CityName": "Cajamarca"},
+    {"StaCode": "CJB","Name": "Coimbatore International Airport", "CityCode": "CJB", "CityName": "Coimbatore"},
+    {"StaCode": "CJC","Name": "El Loa Airport", "CityCode": "CJC", "CityName": "Calama"},
+    {"StaCode": "CJU","Name": "Jeju International Airport", "CityCode": "CJU", "CityName": "Jeju"},
+    {"StaCode": "CKG","Name": "Jiangbei International Airport", "CityCode": "CKG", "CityName": "Chongqing"},
+    {"StaCode": "CLE","Name": "Hopkins International Airport", "CityCode": "CLE", "CityName": "Cleveland"},
+    {"StaCode": "CLL","Name": "Easterwood Field", "CityCode": "CLL", "CityName": "College Station"},
+    {"StaCode": "CLO","Name": "Alfonso B. Aragon Intl Airport", "CityCode": "CLO", "CityName": "Cali"},
+    {"StaCode": "CLT","Name": "Douglas International Airport", "CityCode": "CLT", "CityName": "Charlotte"},
+    {"StaCode": "CMB","Name": "Bandaranaike International Airport", "CityCode": "CMB", "CityName": "Colombo"},
+    {"StaCode": "CMF","Name": "Chambery Airport", "CityCode": "CMF", "CityName": "Chambery"},
+    {"StaCode": "CMH","Name": "Port Columbus International Airport", "CityCode": "CMH", "CityName": "Columbus"},
+    {"StaCode": "CMI","Name": "University of Illinois Airport", "CityCode": "CMI", "CityName": "Champaign/Urbana"},
+    {"StaCode": "CMN","Name": "Mohammed V Airport", "CityCode": "CAS", "CityName": "Casablanca"},
+    {"StaCode": "CMW","Name": "Ignacio Agramonte Intl Airport", "CityCode": "CMW", "CityName": "Camaguey"},
+    {"StaCode": "CNF","Name": "Tancredo Neves International Airport", "CityCode": "BHZ", "CityName": "Belo Horizonte"},
+    {"StaCode": "CNJ","Name": "Cloncurry Airport", "CityCode": "CNJ", "CityName": "Cloncurry"},
+    {"StaCode": "CNS","Name": "Cairns International Airport", "CityCode": "CNS", "CityName": "Cairns"},
+    {"StaCode": "CNX","Name": "Chiang Mai International Airport", "CityCode": "CNX", "CityName": "Chiang Mai"},
+    {"StaCode": "COK","Name": "Cochin International Airport", "CityCode": "COK", "CityName": "Kochi"},
+    {"StaCode": "COR","Name": "Pajas Blancas Airport", "CityCode": "COR", "CityName": "Cordoba"},
+    {"StaCode": "COS","Name": "Colorado Springs Municipal Airport", "CityCode": "COS", "CityName": "Colorado Springs"},
+    {"StaCode": "COU","Name": "Columbia Regional Airport", "CityCode": "COU", "CityName": "Columbia"},
+    {"StaCode": "CPH","Name": "Kastrup Airport", "CityCode": "CPH", "CityName": "Copenhagen"},
+    {"StaCode": "CPO","Name": "Desierto de Atacama Airport", "CityCode": "CPO", "CityName": "Copiapo"},
+    {"StaCode": "CPT","Name": "Cape Town International Airport", "CityCode": "CPT", "CityName": "Cape Town"},
+    {"StaCode": "CRD","Name": "General E. Mosconi Airport", "CityCode": "CRD", "CityName": "Comodoro Rivadavia"},
+    {"StaCode": "CRK","Name": "Clark International Airport", "CityCode": "CRK", "CityName": "Angeles/Mabalacat"},
+    {"StaCode": "CRP","Name": "Corpus Christi International Airport", "CityCode": "CRP", "CityName": "Corpus Christi"},
+    {"StaCode": "CRW","Name": "Yeager Airport", "CityCode": "CRW", "CityName": "Charleston"},
+    {"StaCode": "CSX","Name": "Huanghua International Airport", "CityCode": "CSX", "CityName": "Changsha"},
+    {"StaCode": "CTA","Name": "Fontanarossa Airport", "CityCode": "CTA", "CityName": "Catania"},
+    {"StaCode": "CTG","Name": "Rafael Nunez Intl Airport", "CityCode": "CTG", "CityName": "Cartagena"},
+    {"StaCode": "CTL","Name": "Charleville Airport", "CityCode": "CTL", "CityName": "Charleville"},
+    {"StaCode": "CTS","Name": "New Chitose Airport", "CityCode": "SPK", "CityName": "Sapporo"},
+    {"StaCode": "CTU","Name": "Shuangliu International", "CityCode": "CTU", "CityName": "Chengdu"},
+    {"StaCode": "CUC","Name": "Camilo Daza Airport", "CityCode": "CUC", "CityName": "Cucuta"},
+    {"StaCode": "CUE","Name": "Mariscal Lamar Intl Airport", "CityCode": "CUE", "CityName": "Cuenca"},
+    {"StaCode": "CUN","Name": "Cancun International Airport", "CityCode": "CUN", "CityName": "Cancun"},
+    {"StaCode": "CUR","Name": "Hato Intl Airport", "CityCode": "CUR", "CityName": "Curacao"},
+    {"StaCode": "CUU","Name": "R. Fierro Villalobos Airport", "CityCode": "CUU", "CityName": "Chihuahua"},
+    {"StaCode": "CUZ","Name": "A. Velasco Astete Intl Airport", "CityCode": "CUZ", "CityName": "Cusco"},
+    {"StaCode": "CVG","Name": "Northern Kentucky International Airport", "CityCode": "CVG", "CityName": "Cincinnati"},
+    {"StaCode": "CWA","Name": "Central Wisconsin Airport", "CityCode": "AUW", "CityName": "Wausau"},
+    {"StaCode": "CWB","Name": "Afonso Pena Intl Airport", "CityCode": "CWB", "CityName": "Curitiba"},
+    {"StaCode": "CWL","Name": "Cardiff Airport", "CityCode": "CWL", "CityName": "Cardiff"},
+    {"StaCode": "CZM","Name": "Cozumel  Intl Airport", "CityCode": "CZM", "CityName": "Cozumel"},
+    {"StaCode": "DAB","Name": "Daytona Beach International Airport", "CityCode": "DAB", "CityName": "Daytona Beach"},
+    {"StaCode": "DAC","Name": "Hazrat Shahjalal International", "CityCode": "DAC", "CityName": "Dhaka"},
+    {"StaCode": "DAD","Name": "Da Nang International Airport", "CityCode": "DAD", "CityName": "Da Nang"},
+    {"StaCode": "DAR","Name": "Julius Nyerere International Airport", "CityCode": "DAR", "CityName": "Dar Es Salaam"},
+    {"StaCode": "DAY","Name": "James M. Cox International Airport", "CityCode": "DAY", "CityName": "Dayton"},
+    {"StaCode": "DBO","Name": "Dubbo City Airport", "CityCode": "DBO", "CityName": "Dubbo"},
+    {"StaCode": "DBQ","Name": "Dubuque Regional Airport", "CityCode": "DBQ", "CityName": "Dubuque"},
+    {"StaCode": "DBV","Name": "Dubrovnik Airport", "CityCode": "DBV", "CityName": "Dubrovnik"},
+    {"StaCode": "DCA","Name": "Ronald Reagan National Airport", "CityCode": "WAS", "CityName": "Washington"},
+    {"StaCode": "DEL","Name": "Indira Gandhi International Airport", "CityCode": "DEL", "CityName": "Delhi"},
+    {"StaCode": "DEN","Name": "Denver International Airport", "CityCode": "DEN", "CityName": "Denver"},
+    {"StaCode": "DFW","Name": "Dallas/Ft. Worth International Airport", "CityCode": "DFW", "CityName": "Dallas"},
+    {"StaCode": "DIW","Name": "Mawella Lagoon SPB", "CityCode": "DIW", "CityName": "Dikwella"},
+    {"StaCode": "DLC","Name": "Zhoushuizi Intl Airport", "CityCode": "DLC", "CityName": "Dalian"},
+    {"StaCode": "DLM","Name": "Dalaman Airport", "CityCode": "DLM", "CityName": "Dalaman"},
+    {"StaCode": "DMB","Name": "Taraz Airport", "CityCode": "DMB", "CityName": "Taraz"},
+    {"StaCode": "DME","Name": "Domodedovo Airport", "CityCode": "MOW", "CityName": "Moscow"},
+    {"StaCode": "DMM","Name": "King Fahd International Airport", "CityCode": "DMM", "CityName": "Dammam"},
+    {"StaCode": "DOH","Name": "Hamad International Airport", "CityCode": "DOH", "CityName": "Doha"},
+    {"StaCode": "DPO","Name": "Devonport Airport", "CityCode": "DPO", "CityName": "Devonport"},
+    {"StaCode": "DPS","Name": "Ngurah Rai Airport", "CityCode": "DPS", "CityName": "Denpasar-Bali"},
+    {"StaCode": "DRO","Name": "La Plata County Airport", "CityCode": "DRO", "CityName": "Durango"},
+    {"StaCode": "DRT","Name": "Del Rio International Airport", "CityCode": "DRT", "CityName": "Del Rio"},
+    {"StaCode": "DRW","Name": "Darwin International Airport", "CityCode": "DRW", "CityName": "Darwin"},
+    {"StaCode": "DSM","Name": "Des Moines International Airport", "CityCode": "DSM", "CityName": "Des Moines"},
+    {"StaCode": "DSS","Name": "Blaise Diagne International Airport", "CityCode": "DSS", "CityName": "Thies"},
+    {"StaCode": "DTW","Name": "Metropolitan Wayne County Airport", "CityCode": "DTT", "CityName": "Detroit"},
+    {"StaCode": "DUB","Name": "Dublin International Airport", "CityCode": "DUB", "CityName": "Dublin"},
+    {"StaCode": "DUR","Name": "King Shaka International Airport", "CityCode": "DUR", "CityName": "Durban"},
+    {"StaCode": "DUS","Name": "Duesseldorf International", "CityCode": "DUS", "CityName": "Duesseldorf"},
+    {"StaCode": "DVO","Name": "Francisco Bangoy Intl Airport", "CityCode": "DVO", "CityName": "Davao"},
+    {"StaCode": "DWO","Name": "Diyawanna Oya Airport", "CityCode": "DWO", "CityName": "Kotte"},
+    {"StaCode": "DXB","Name": "Dubai International Airport", "CityCode": "DXB", "CityName": "Dubai"},
+    {"StaCode": "DYU","Name": "Dushanbe International Airport", "CityCode": "DYU", "CityName": "Dushanbe"},
+    {"StaCode": "EAS","Name": "San Sebastian Airport", "CityCode": "EAS", "CityName": "San Sebastian"},
+    {"StaCode": "EBB","Name": "Entebbe International Airport", "CityCode": "EBB", "CityName": "Entebbe"},
+    {"StaCode": "EBL","Name": "Erbil International Airport", "CityCode": "EBL", "CityName": "Erbil"},
+    {"StaCode": "ECP","Name": "NW Florida Beaches International Airport", "CityCode": "ECP", "CityName": "Panama City"},
+    {"StaCode": "EDI","Name": "Edinburgh Airport", "CityCode": "EDI", "CityName": "Edinburgh"},
+    {"StaCode": "EFL","Name": "Kefallinia Airport", "CityCode": "EFL", "CityName": "Kefallinia"},
+    {"StaCode": "EGC","Name": "Roumanieres Airport", "CityCode": "EGC", "CityName": "Bergerac"},
+    {"StaCode": "EGE","Name": "Eagle County Regional Airport", "CityCode": "EGE", "CityName": "Vail/Eagle"},
+    {"StaCode": "EGO","Name": "Belgorod Airport", "CityCode": "EGO", "CityName": "Belgorod"},
+    {"StaCode": "ELH","Name": "North Eleuthera Airport", "CityCode": "ELH", "CityName": "North Eleuthera"},
+    {"StaCode": "ELP","Name": "El Paso International Airport", "CityCode": "ELP", "CityName": "El Paso"},
+    {"StaCode": "EMD","Name": "Emerald Airport", "CityCode": "EMD", "CityName": "Emerald"},
+    {"StaCode": "ERI","Name": "Erie International Airport", "CityCode": "ERI", "CityName": "Erie"},
+    {"StaCode": "ESB","Name": "Esenboga Airport", "CityCode": "ANK", "CityName": "Ankara"},
+    {"StaCode": "EUG","Name": "Mahlon Sweet Field", "CityCode": "EUG", "CityName": "Eugene"},
+    {"StaCode": "EVN","Name": "Zvartnots International Airport", "CityCode": "EVN", "CityName": "Yerevan"},
+    {"StaCode": "EVV","Name": "Evansville Regional Airport", "CityCode": "EVV", "CityName": "Evansville"},
+    {"StaCode": "EWN","Name": "Coastal Carolina Regional Airport", "CityCode": "EWN", "CityName": "New Bern"},
+    {"StaCode": "EWR","Name": "Newark Liberty International Airport", "CityCode": "NYC", "CityName": "New York"},
+    {"StaCode": "EYK","Name": "Beloyarsky Airport", "CityCode": "EYK", "CityName": "Beloyarsky"},
+    {"StaCode": "EYP","Name": "El Alcaravan Airport", "CityCode": "EYP", "CityName": "Yopal"},
+    {"StaCode": "EYW","Name": "Key West International Airport", "CityCode": "EYW", "CityName": "Key West"},
+    {"StaCode": "EZE","Name": "Ministro Pistarini Airport", "CityCode": "BUE", "CityName": "Buenos Aires"},
+    {"StaCode": "FAO","Name": "Faro Airport", "CityCode": "FAO", "CityName": "Faro"},
+    {"StaCode": "FAR","Name": "Hector International Airport", "CityCode": "FAR", "CityName": "Fargo"},
+    {"StaCode": "FAT","Name": "Fresno Yosemite International", "CityCode": "FAT", "CityName": "Fresno"},
+    {"StaCode": "FAY","Name": "Regional (Grannis Field) Airport", "CityCode": "FAY", "CityName": "Fayetteville"},
+    {"StaCode": "FCO","Name": "Fiumicino Airport", "CityCode": "ROM", "CityName": "Rome"},
+    {"StaCode": "FDF","Name": "Martinique A. Cesaire Airport", "CityCode": "FDF", "CityName": "Fort-de-France"},
+    {"StaCode": "FDH","Name": "Friedrichshafen Airport", "CityCode": "FDH", "CityName": "Friedrichshafen"},
+    {"StaCode": "FEG","Name": "Fergana International Airport", "CityCode": "FEG", "CityName": "Fergana"},
+    {"StaCode": "FLG","Name": "Flagstaff Pulliam  Airport", "CityCode": "GCN", "CityName": "Grand Canyon"},
+    {"StaCode": "FLL","Name": "Ft. Lauderdale International Airport", "CityCode": "FLL", "CityName": "Fort Lauderdale"},
+    {"StaCode": "FLN","Name": "Hercilio Luz Intl Airport", "CityCode": "FLN", "CityName": "Florianopolis"},
+    {"StaCode": "FLO","Name": "Florence Regional Airport", "CityCode": "FLO", "CityName": "Florence"},
+    {"StaCode": "FLR","Name": "Peretola Airport", "CityCode": "FLR", "CityName": "Florence"},
+    {"StaCode": "FNC","Name": "Madeira Airport", "CityCode": "FNC", "CityName": "Madeira"},
+    {"StaCode": "FNT","Name": "Bishop International Airport", "CityCode": "FNT", "CityName": "Flint"},
+    {"StaCode": "FOC","Name": "Changle International Airport", "CityCode": "FOC", "CityName": "Fuzhou"},
+    {"StaCode": "FOR","Name": "Pinto Martins Intl Airport", "CityCode": "FOR", "CityName": "Fortaleza"},
+    {"StaCode": "FPO","Name": "Grand Bahama International Airport", "CityCode": "FPO", "CityName": "Freeport"},
+    {"StaCode": "FRA","Name": "Frankfurt International Airport", "CityCode": "FRA", "CityName": "Frankfurt"},
+    {"StaCode": "FRU","Name": "Manas International Airport", "CityCode": "FRU", "CityName": "Bishkek"},
+    {"StaCode": "FSC","Name": "Sud Corse Airport", "CityCode": "FSC", "CityName": "Figari"},
+    {"StaCode": "FSD","Name": "Joe Foss Field", "CityCode": "FSD", "CityName": "Sioux Falls"},
+    {"StaCode": "FSM","Name": "Fort Smith Regional Airport", "CityCode": "FSM", "CityName": "Fort Smith"},
+    {"StaCode": "FTE","Name": "Comandante A. Tola Airport", "CityCode": "FTE", "CityName": "El Calafate"},
+    {"StaCode": "FUE","Name": "Fuerteventura Airport", "CityCode": "FUE", "CityName": "Fuerteventura"},
+    {"StaCode": "FUK","Name": "Fukuoka Airport", "CityCode": "FUK", "CityName": "Fukuoka"},
+    {"StaCode": "FWA","Name": "Fort Wayne International Airport", "CityCode": "FWA", "CityName": "Fort Wayne"},
+    {"StaCode": "GAJ","Name": "Junmachi Airport", "CityCode": "GAJ", "CityName": "Yamagata"},
+    {"StaCode": "GAN","Name": "Gan/Seenu Airport", "CityCode": "GAN", "CityName": "Gan Island"},
+    {"StaCode": "GCK","Name": "Garden City Regional Airport", "CityCode": "GCK", "CityName": "Garden City"},
+    {"StaCode": "GCM","Name": "Owen Roberts International Airport", "CityCode": "GCM", "CityName": "Grand Cayman"},
+    {"StaCode": "GDL","Name": "Miguel Hidalgo Intl Airport", "CityCode": "GDL", "CityName": "Guadalajara"},
+    {"StaCode": "GDN","Name": "Lech Walesa Airport", "CityCode": "GDN", "CityName": "Gdansk"},
+    {"StaCode": "GDX","Name": "Sokol Airport", "CityCode": "GDX", "CityName": "Magadan"},
+    {"StaCode": "GEG","Name": "Spokane International Airport", "CityCode": "GEG", "CityName": "Spokane"},
+    {"StaCode": "GEO","Name": "Cheddi Jagan International Airport", "CityCode": "GEO", "CityName": "Georgetown"},
+    {"StaCode": "GET","Name": "Geraldton Airport", "CityCode": "GET", "CityName": "Geraldton"},
+    {"StaCode": "GGG","Name": "East Texas Regional Airport", "CityCode": "GGG", "CityName": "Longview"},
+    {"StaCode": "GGT","Name": "Exuma International Airport", "CityCode": "GGT", "CityName": "George Town"},
+    {"StaCode": "GIB","Name": "North Front Airport", "CityCode": "GIB", "CityName": "Gibraltar"},
+    {"StaCode": "GIG","Name": "Galeao- A.C. Jobim Intl Airport", "CityCode": "RIO", "CityName": "Rio de Janeiro"},
+    {"StaCode": "GIU","Name": "Sigiriya Slaf Base", "CityCode": "GIU", "CityName": "Sigiriya"},
+    {"StaCode": "GJT","Name": "Grand Junction Regional Airport", "CityCode": "GJT", "CityName": "Grand Junction"},
+    {"StaCode": "GLA","Name": "Glasgow International Airport", "CityCode": "GLA", "CityName": "Glasgow"},
+    {"StaCode": "GLT","Name": "Gladstone Airport", "CityCode": "GLT", "CityName": "Gladstone"},
+    {"StaCode": "GME","Name": "Gomel Airport", "CityCode": "GME", "CityName": "Gomel"},
+    {"StaCode": "GMP","Name": "Gimpo International Airport", "CityCode": "SEL", "CityName": "Seoul"},
+    {"StaCode": "GNB","Name": "Grenoble-Saint Geoirs Airport", "CityCode": "LYS", "CityName": "Lyon"},
+    {"StaCode": "GND","Name": "Maurice Bishop International Airport", "CityCode": "GND", "CityName": "Grenada"},
+    {"StaCode": "GNV","Name": "Gainesville Regional Airport", "CityCode": "GNV", "CityName": "Gainesville"},
+    {"StaCode": "GOA","Name": "Cristoforo Colombo Airport", "CityCode": "GOA", "CityName": "Genoa"},
+    {"StaCode": "GOI","Name": "Dabolim Airport", "CityCode": "GOI", "CityName": "Goa"},
+    {"StaCode": "GOJ","Name": "Strigino Airport", "CityCode": "GOJ", "CityName": "Nizhny Novgorod"},
+    {"StaCode": "GOT","Name": "Landvetter Airport", "CityCode": "GOT", "CityName": "Gothenburg"},
+    {"StaCode": "GPS","Name": "Seymour Airport", "CityCode": "GPS", "CityName": "Baltra Island"},
+    {"StaCode": "GPT","Name": "Gulfport/Biloxi International Airport", "CityCode": "GPT", "CityName": "Gulfport/Biloxi"},
+    {"StaCode": "GRB","Name": "Austin-Straubel International Airport", "CityCode": "GRB", "CityName": "Green Bay"},
+    {"StaCode": "GRI","Name": "Central Nebraska Regional Airport", "CityCode": "GRI", "CityName": "Grand Island"},
+    {"StaCode": "GRK","Name": "Regional / R. Gray AAF", "CityCode": "ILE", "CityName": "Killeen/Fort Hood"},
+    {"StaCode": "GRR","Name": "Gerald R. Ford Intl Airport", "CityCode": "GRR", "CityName": "Grand Rapids"},
+    {"StaCode": "GRU","Name": "Guarulhos International Airport", "CityCode": "SAO", "CityName": "Sao Paulo"},
+    {"StaCode": "GRX","Name": "Federico Garcia Lorca Airport", "CityCode": "GRX", "CityName": "Granada"},
+    {"StaCode": "GSO","Name": "Piedmont Triad International Airport", "CityCode": "GSO", "CityName": "Greensboro/High Point"},
+    {"StaCode": "GSP","Name": "Greenville-Spartanburg International Airport", "CityCode": "GSP", "CityName": "Greenville/Spartanburg"},
+    {"StaCode": "GUA","Name": "La Aurora Intl Airport", "CityCode": "GUA", "CityName": "Guatemala City"},
+    {"StaCode": "GUC","Name": "Gunnis-Crested Butte Airport", "CityCode": "GUC", "CityName": "Gunnison"},
+    {"StaCode": "GUM","Name": "A.B. Won Pat International Airport", "CityCode": "GUM", "CityName": "Guam"},
+    {"StaCode": "GVA","Name": "Geneva International Airport", "CityCode": "GVA", "CityName": "Geneva"},
+    {"StaCode": "GYD","Name": "Heydar Aliyev International Airport", "CityCode": "BAK", "CityName": "Baku"},
+    {"StaCode": "GYE","Name": "Jose Joaquin de Olmedo Airport", "CityCode": "GYE", "CityName": "Guayaquil"},
+    {"StaCode": "GYN","Name": "Santa Genoveva Airport", "CityCode": "GYN", "CityName": "Goiania"},
+    {"StaCode": "GZP","Name": "Gazipasa Airport", "CityCode": "GZP", "CityName": "Gazipasa"},
+    {"StaCode": "HAJ","Name": "Hannover Airport", "CityCode": "HAJ", "CityName": "Hannover"},
+    {"StaCode": "HAK","Name": "Meilan International Airport", "CityCode": "HAK", "CityName": "Haikou"},
+    {"StaCode": "HAM","Name": "Hamburg Airport", "CityCode": "HAM", "CityName": "Hamburg"},
+    {"StaCode": "HAN","Name": "Noi Bai International Airport", "CityCode": "HAN", "CityName": "Hanoi"},
+    {"StaCode": "HAV","Name": "Jose Marti International Airport", "CityCode": "HAV", "CityName": "Havana"},
+    {"StaCode": "HBA","Name": "Hobart International Airport", "CityCode": "HBA", "CityName": "Hobart"},
+    {"StaCode": "HDN","Name": "Yampa Valley Airport", "CityCode": "HDN", "CityName": "Hayden"},
+    {"StaCode": "HEL","Name": "Helsinki-Vantaa Airport", "CityCode": "HEL", "CityName": "Helsinki"},
+    {"StaCode": "HER","Name": "Nikos Kazantzakis Airport", "CityCode": "HER", "CityName": "Irakleion"},
+    {"StaCode": "HGH","Name": "Xiaoshan Intl Airport", "CityCode": "HGH", "CityName": "Hangzhou"},
+    {"StaCode": "HHH","Name": "Hilton Head Airport", "CityCode": "HHH", "CityName": "Hilton Head Island"},
+    {"StaCode": "HID","Name": "Horn Island Airport", "CityCode": "HID", "CityName": "Horn Island"},
+    {"StaCode": "HIJ","Name": "Hiroshima Airport", "CityCode": "HIJ", "CityName": "Hiroshima"},
+    {"StaCode": "HKD","Name": "Hakodate Airport", "CityCode": "HKD", "CityName": "Hakodate"},
+    {"StaCode": "HKG","Name": "Hong Kong International Airport", "CityCode": "HKG", "CityName": "Hong Kong"},
+    {"StaCode": "HKT","Name": "Phuket International Airport", "CityCode": "HKT", "CityName": "Phuket"},
+    {"StaCode": "HMO","Name": "L. Pesqueira Garcia Airport", "CityCode": "HMO", "CityName": "Hermosillo"},
+    {"StaCode": "HNA","Name": "Hanamaki Airport", "CityCode": "HNA", "CityName": "Hanamaki"},
+    {"StaCode": "HND","Name": "Tokyo International (Haneda) Airport", "CityCode": "TYO", "CityName": "Tokyo"},
+    {"StaCode": "HNL","Name": "Honolulu International Airport", "CityCode": "HNL", "CityName": "Honolulu"},
+    {"StaCode": "HOG","Name": "Frank Pais  Intl Airport", "CityCode": "HOG", "CityName": "Holguin"},
+    {"StaCode": "HOU","Name": "William P. Hobby Airport", "CityCode": "HOU", "CityName": "Houston"},
+    {"StaCode": "HPN","Name": "Westchester County Airport", "CityCode": "HPN", "CityName": "White Plains"},
+    {"StaCode": "HRE","Name": "Harare International Airport", "CityCode": "HRE", "CityName": "Harare"},
+    {"StaCode": "HRI","Name": "Mattala Rajapaksa Intl Airport", "CityCode": "HRI", "CityName": "Hambantota"},
+    {"StaCode": "HSV","Name": "Huntsville Intl Airport - Carl T. Jones Field", "CityCode": "HSV", "CityName": "Huntsville"},
+    {"StaCode": "HTA","Name": "Kadala Airport", "CityCode": "HTA", "CityName": "Chita"},
+    {"StaCode": "HTI","Name": "Great Barrier Reef Airport", "CityCode": "HTI", "CityName": "Hamilton Island"},
+    {"StaCode": "HTS","Name": "Tri-State Airport", "CityCode": "HTS", "CityName": "Huntington/Ashland KY"},
+    {"StaCode": "HTY","Name": "Hatay Airport", "CityCode": "HTY", "CityName": "Hatay"},
+    {"StaCode": "HVB","Name": "Hervey Bay Airport", "CityCode": "HVB", "CityName": "Hervey Bay"},
+    {"StaCode": "HVN","Name": "Tweed Airport", "CityCode": "HVN", "CityName": "New Haven"},
+    {"StaCode": "HYD","Name": "Rajiv Gandhi International Airport", "CityCode": "HYD", "CityName": "Hyderabad"},
+    {"StaCode": "IAD","Name": "Dulles International Airport", "CityCode": "WAS", "CityName": "Washington"},
+    {"StaCode": "IAH","Name": "George Bush Intercontinental Airport", "CityCode": "HOU", "CityName": "Houston"},
+    {"StaCode": "IAR","Name": "Tunoshna Airport", "CityCode": "IAR", "CityName": "Yaroslavl"},
+    {"StaCode": "IBZ","Name": "Ibiza Airport", "CityCode": "IBZ", "CityName": "Ibiza"},
+    {"StaCode": "ICN","Name": "Incheon International Airport", "CityCode": "SEL", "CityName": "Seoul"},
+    {"StaCode": "ICT","Name": "Dwight D. Eisenhower Airport", "CityCode": "ICT", "CityName": "Wichita"},
+    {"StaCode": "IGR","Name": "Cataratas del Iguazu Airport", "CityCode": "IGR", "CityName": "Iguazu"},
+    {"StaCode": "IGU","Name": "Cataratas International Airport", "CityCode": "IGU", "CityName": "Foz do Iguacu"},
+    {"StaCode": "IKA","Name": "Imam Khomeini International Airport", "CityCode": "THR", "CityName": "Tehran"},
+    {"StaCode": "IKT","Name": "Irkutsk Airport", "CityCode": "IKT", "CityName": "Irkutsk"},
+    {"StaCode": "IKU","Name": "Issyk-Kul Airport", "CityCode": "IKU", "CityName": "Tamchy"},
+    {"StaCode": "ILD","Name": "Alguaire Airport", "CityCode": "ILD", "CityName": "Lleida"},
+    {"StaCode": "ILM","Name": "Wilmington International Airport", "CityCode": "ILM", "CityName": "Wilmington"},
+    {"StaCode": "IMP","Name": "Renato Moreira Airport", "CityCode": "IMP", "CityName": "Imperatriz"},
+    {"StaCode": "IND","Name": "Indianapolis International Airport", "CityCode": "IND", "CityName": "Indianapolis"},
+    {"StaCode": "INN","Name": "Innsbruck Airport", "CityCode": "INN", "CityName": "Innsbruck"},
+    {"StaCode": "INV","Name": "Inverness Airport", "CityCode": "INV", "CityName": "Inverness"},
+    {"StaCode": "IOM","Name": "Ronaldsway Airport", "CityCode": "IOM", "CityName": "Isle Of Man"},
+    {"StaCode": "IOS","Name": "Jorge Amado Airport", "CityCode": "IOS", "CityName": "Ilheus"},
+    {"StaCode": "IPC","Name": "Mataveri International Airport", "CityCode": "IPC", "CityName": "Easter Island"},
+    {"StaCode": "IPT","Name": "Williamsport Regional Airport", "CityCode": "IPT", "CityName": "Williamsport"},
+    {"StaCode": "IQQ","Name": "Diego Aracena Airport", "CityCode": "IQQ", "CityName": "Iquique"},
+    {"StaCode": "IQT","Name": "F. Secada Vignetta Airport", "CityCode": "IQT", "CityName": "Iquitos"},
+    {"StaCode": "ISA","Name": "Mount Isa Airport", "CityCode": "ISA", "CityName": "Mount Isa"},
+    {"StaCode": "ISB","Name": "Benazir Bhutto Intl Airport", "CityCode": "ISB", "CityName": "Islamabad"},
+    {"StaCode": "ISG","Name": "New Ishigaki Airport", "CityCode": "ISG", "CityName": "Ishigaki"},
+    {"StaCode": "ISP","Name": "Long Island MacArthur Airport", "CityCode": "ISP", "CityName": "Islip"},
+    {"StaCode": "IST","Name": "Ataturk Airport", "CityCode": "IST", "CityName": "Istanbul"},
+    {"StaCode": "ISU","Name": "Sulaymaniyah International Airport", "CityCode": "ISU", "CityName": "Sulaymaniyah"},
+    {"StaCode": "ITH","Name": "Tompkins Regional Airport", "CityCode": "ITH", "CityName": "Ithaca"},
+    {"StaCode": "ITM","Name": "Osaka International (Itami) Airport", "CityCode": "OSA", "CityName": "Osaka"},
+    {"StaCode": "IVL","Name": "Ivalo Airport", "CityCode": "IVL", "CityName": "Ivalo"},
+    {"StaCode": "IXM","Name": "Madurai Airport", "CityCode": "IXM", "CityName": "Madurai"},
+    {"StaCode": "IZO","Name": "Izumo Airport", "CityCode": "IZO", "CityName": "Izumo"},
+    {"StaCode": "JAC","Name": "Jackson Hole Airport", "CityCode": "JAC", "CityName": "Jackson"},
+    {"StaCode": "JAE","Name": "Aeropuerto de Shumba", "CityCode": "JAE", "CityName": "Jaen"},
+    {"StaCode": "JAN","Name": "Medgar W. Evers International Airport", "CityCode": "JAN", "CityName": "Jackson"},
+    {"StaCode": "JAU","Name": "Jauja Airport", "CityCode": "JAU", "CityName": "Jauja"},
+    {"StaCode": "JAX","Name": "Jacksonville International Airport", "CityCode": "JAX", "CityName": "Jacksonville"},
+    {"StaCode": "JED","Name": "King Abdulaziz International Airport", "CityCode": "JED", "CityName": "Jeddah"},
+    {"StaCode": "JER","Name": "Jersey Airport", "CityCode": "JER", "CityName": "Jersey"},
+    {"StaCode": "JFK","Name": "John F. Kennedy International Airport", "CityCode": "NYC", "CityName": "New York"},
+    {"StaCode": "JHB","Name": "Senai International Airport", "CityCode": "JHB", "CityName": "Johor Bahru"},
+    {"StaCode": "JIB","Name": "Ambouli Airport", "CityCode": "JIB", "CityName": "Djibouti"},
+    {"StaCode": "JJG","Name": "Humberto Bortoluzzi Airport", "CityCode": "JJG", "CityName": "Jaguaruna"},
+    {"StaCode": "JLN","Name": "Joplin Regional Airport", "CityCode": "JLN", "CityName": "Joplin"},
+    {"StaCode": "JMK","Name": "Mykonos Airport", "CityCode": "JMK", "CityName": "Mykonos"},
+    {"StaCode": "JNB","Name": "O.R. Tambo International Airport", "CityCode": "JNB", "CityName": "Johannesburg"},
+    {"StaCode": "JOE","Name": "Joensuu Airport", "CityCode": "JOE", "CityName": "Joensuu"},
+    {"StaCode": "JOG","Name": "Adisutjipto Airport", "CityCode": "JOG", "CityName": "Yogyakarta"},
+    {"StaCode": "JOI","Name": "Lauro Carneiro Loyola Airport", "CityCode": "JOI", "CityName": "Joinville"},
+    {"StaCode": "JOK","Name": "Yoshkar-Ola Airport", "CityCode": "JOK", "CityName": "Yoshkar-Ola"},
+    {"StaCode": "JPA","Name": "Castro Pinto Intl Airport", "CityCode": "JPA", "CityName": "Joao Pessoa"},
+    {"StaCode": "JRO","Name": "Kilimanjaro International Airport", "CityCode": "JRO", "CityName": "Kilimanjaro"},
+    {"StaCode": "JSI","Name": "Alex. Papadiamantis Airport", "CityCode": "JSI", "CityName": "Skiathos"},
+    {"StaCode": "JTC","Name": "Moussa Nakhl Tobias Airport", "CityCode": "JTC", "CityName": "Bauru"},
+    {"StaCode": "JTR","Name": "Santorini Airport", "CityCode": "JTR", "CityName": "Thira"},
+    {"StaCode": "JUL","Name": "Inco Mnco Capac Intl Airport", "CityCode": "JUL", "CityName": "Juliaca"},
+    {"StaCode": "JYV","Name": "Jyvaskyla Airport", "CityCode": "JYV", "CityName": "Jyvaskyla"},
+    {"StaCode": "KAJ","Name": "Kajaani Airport", "CityCode": "KAJ", "CityName": "Kajaani"},
+    {"StaCode": "KAO","Name": "Kuusamo Airport", "CityCode": "KAO", "CityName": "Kuusamo"},
+    {"StaCode": "KBP","Name": "Boryspil International  Airport", "CityCode": "IEV", "CityName": "Kiev"},
+    {"StaCode": "KBR","Name": "Sultan Ismail Petra Airport", "CityCode": "KBR", "CityName": "Kota Bharu"},
+    {"StaCode": "KBV","Name": "Krabi Airport", "CityCode": "KBV", "CityName": "Krabi"},
+    {"StaCode": "KCH","Name": "Kuching International Airport", "CityCode": "KCH", "CityName": "Kuching"},
+    {"StaCode": "KCT","Name": "Koggala Airport", "CityCode": "KCT", "CityName": "Koggala"},
+    {"StaCode": "KCZ","Name": "Kochi Airport", "CityCode": "KCZ", "CityName": "Kochi"},
+    {"StaCode": "KDZ","Name": "Polgolla Reservoir SPB", "CityCode": "KDW", "CityName": "Kandy"},
+    {"StaCode": "KEF","Name": "Keflavik International Airport", "CityCode": "REK", "CityName": "Reykjavik"},
+    {"StaCode": "KEJ","Name": "Kemerovo Airport", "CityCode": "KEJ", "CityName": "Kemerovo"},
+    {"StaCode": "KEM","Name": "Kemi/Tornio Airport", "CityCode": "KEM", "CityName": "Kemi/Tornio"},
+    {"StaCode": "KGC","Name": "Kingscote Airport", "CityCode": "KGC", "CityName": "Kingscote"},
+    {"StaCode": "KGD","Name": "Khrabrovo Airport", "CityCode": "KGD", "CityName": "Kaliningrad"},
+    {"StaCode": "KGF","Name": "Sary - Arka Airport", "CityCode": "KGF", "CityName": "Karaganda"},
+    {"StaCode": "KGI","Name": "Kalgoorlie-Boulder Airport", "CityCode": "KGI", "CityName": "Kalgoorlie-Boulder"},
+    {"StaCode": "KGL","Name": "Kigali International Airport", "CityCode": "KGL", "CityName": "Kigali"},
+    {"StaCode": "KGP","Name": "Kogalym Airport", "CityCode": "KGP", "CityName": "Kogalym"},
+    {"StaCode": "KGS","Name": "Ippokratis Airport", "CityCode": "KGS", "CityName": "Kos"},
+    {"StaCode": "KHH","Name": "Kaohsiung International Airport", "CityCode": "KHH", "CityName": "Kaohsiung"},
+    {"StaCode": "KHI","Name": "Jinnah International Airport", "CityCode": "KHI", "CityName": "Karachi"},
+    {"StaCode": "KHV","Name": "Novy Airport", "CityCode": "KHV", "CityName": "Khabarovsk"},
+    {"StaCode": "KIJ","Name": "Niigata Airport", "CityCode": "KIJ", "CityName": "Niigata"},
+    {"StaCode": "KIN","Name": "Norman Manley Intl Airport", "CityCode": "KIN", "CityName": "Kingston"},
+    {"StaCode": "KIV","Name": "Chisinau Airport", "CityCode": "KIV", "CityName": "Chisinau"},
+    {"StaCode": "KIX","Name": "Kansai International Airport", "CityCode": "OSA", "CityName": "Osaka"},
+    {"StaCode": "KJA","Name": "Yemelyanovo Airport", "CityCode": "KJA", "CityName": "Krasnoyarsk"},
+    {"StaCode": "KKJ","Name": "Kitakyushu Airport", "CityCode": "KKJ", "CityName": "Kitakyushu"},
+    {"StaCode": "KLF","Name": "Grabtsevo Airport", "CityCode": "KLF", "CityName": "Kaluga"},
+    {"StaCode": "KLX","Name": "Kalamata Airport", "CityCode": "KLX", "CityName": "Kalamata"},
+    {"StaCode": "KMG","Name": "Changshui International Airport", "CityCode": "KMG", "CityName": "Kunming"},
+    {"StaCode": "KMI","Name": "Miyazaki Airport", "CityCode": "KMI", "CityName": "Miyazaki"},
+    {"StaCode": "KMJ","Name": "Kumamoto Airport", "CityCode": "KMJ", "CityName": "Kumamoto"},
+    {"StaCode": "KMQ","Name": "Komatsu Airport", "CityCode": "KMQ", "CityName": "Komatsu"},
+    {"StaCode": "KNO","Name": "Kuala Namu Airport", "CityCode": "MES", "CityName": "Medan"},
+    {"StaCode": "KOA","Name": "Keahole Airport", "CityCode": "KOA", "CityName": "Kona"},
+    {"StaCode": "KOJ","Name": "Kagoshima Airport", "CityCode": "KOJ", "CityName": "Kagoshima"},
+    {"StaCode": "KOK","Name": "Kruunupyy Airport", "CityCode": "KOK", "CityName": "Kokkola/Pietarsaari"},
+    {"StaCode": "KOV","Name": "Kokshetau Airport", "CityCode": "KOV", "CityName": "Kokshetau"},
+    {"StaCode": "KRK","Name": "J. Paul II Balice International Airport", "CityCode": "KRK", "CityName": "Krakow"},
+    {"StaCode": "KRR","Name": "Pashkovsky Airport", "CityCode": "KRR", "CityName": "Krasnodar"},
+    {"StaCode": "KRT","Name": "Khartoum International", "CityCode": "KRT", "CityName": "Khartoum"},
+    {"StaCode": "KTA","Name": "Karratha Airport", "CityCode": "KTA", "CityName": "Karratha"},
+    {"StaCode": "KTD","Name": "Kitadaito Airport", "CityCode": "KTD", "CityName": "Kitadaito"},
+    {"StaCode": "KTM","Name": "Tribhuvan International Airport", "CityCode": "KTM", "CityName": "Kathmandu"},
+    {"StaCode": "KTT","Name": "Kittila Airport", "CityCode": "KTT", "CityName": "Kittila"},
+    {"StaCode": "KUA","Name": "Sultan Haji Ahmad Shah Airport", "CityCode": "KUA", "CityName": "Kuantan"},
+    {"StaCode": "KUD","Name": "Kudat Airport", "CityCode": "KUD", "CityName": "Kudat"},
+    {"StaCode": "KUF","Name": "Kurumoch International PSC Airport", "CityCode": "KUF", "CityName": "Samara"},
+    {"StaCode": "KUH","Name": "Kushiro Airport", "CityCode": "KUH", "CityName": "Kushiro"},
+    {"StaCode": "KUL","Name": "Kuala Lumpur International Airport", "CityCode": "KUL", "CityName": "Kuala Lumpur"},
+    {"StaCode": "KUO","Name": "Kuopio Airport", "CityCode": "KUO", "CityName": "Kuopio"},
+    {"StaCode": "KWI","Name": "Kuwait International Airport", "CityCode": "KWI", "CityName": "Kuwait"},
+    {"StaCode": "KWL","Name": "Liangjiang International Airport", "CityCode": "KWL", "CityName": "Guilin"},
+    {"StaCode": "KZN","Name": "Kazan International Airport", "CityCode": "KZN", "CityName": "Kazan"},
+    {"StaCode": "LAN","Name": "Lansing Capital Region International Airport", "CityCode": "LAN", "CityName": "Lansing"},
+    {"StaCode": "LAS","Name": "McCarran International Airport", "CityCode": "LAS", "CityName": "Las Vegas"},
+    {"StaCode": "LAW","Name": "Lawton/Fort Sill Regional Airport", "CityCode": "LAW", "CityName": "Lawton/Fort Sill"},
+    {"StaCode": "LAX","Name": "Los Angeles International Airport", "CityCode": "LAX", "CityName": "Los Angeles"},
+    {"StaCode": "LBA","Name": "Leeds/Bradford Airport", "CityCode": "LBA", "CityName": "Leeds/Bradford"},
+    {"StaCode": "LBB","Name": "Preston Smith International Airport", "CityCode": "LBB", "CityName": "Lubbock"},
+    {"StaCode": "LBD","Name": "Khujand International Airport", "CityCode": "LBD", "CityName": "Khujand"},
+    {"StaCode": "LBP","Name": "Long Banga Airport", "CityCode": "LBP", "CityName": "Long Banga"},
+    {"StaCode": "LBU","Name": "Labuan Airport", "CityCode": "LBU", "CityName": "Labuan"},
+    {"StaCode": "LCA","Name": "Larnaca Airport", "CityCode": "LCA", "CityName": "Larnaca"},
+    {"StaCode": "LCG","Name": "A Coruna Airport", "CityCode": "LCG", "CityName": "A Coruna"},
+    {"StaCode": "LCH","Name": "Lake Charles Regional Airport", "CityCode": "LCH", "CityName": "Lake Charles"},
+    {"StaCode": "LCY","Name": "London City Airport", "CityCode": "LON", "CityName": "London"},
+    {"StaCode": "LDB","Name": "Jose Richa Airport", "CityCode": "LDB", "CityName": "Londrina"},
+    {"StaCode": "LDH","Name": "Lord Howe Island Airport", "CityCode": "LDH", "CityName": "Lord Howe Island"},
+    {"StaCode": "LDU","Name": "Lahad Datu Airport", "CityCode": "LDU", "CityName": "Lahad Datu"},
+    {"StaCode": "LEA","Name": "Learmonth Airport", "CityCode": "LEA", "CityName": "Learmonth"},
+    {"StaCode": "LED","Name": "Pulkovo Airport", "CityCode": "LED", "CityName": "St Petersburg"},
+    {"StaCode": "LEI","Name": "Almeria Airport", "CityCode": "LEI", "CityName": "Almeria"},
+    {"StaCode": "LEN","Name": "Leon Airport", "CityCode": "LEN", "CityName": "Leon"},
+    {"StaCode": "LET","Name": "Alfredo V. Cobb Intl Airport", "CityCode": "LET", "CityName": "Leticia"},
+    {"StaCode": "LEX","Name": "Blue Grass Airport", "CityCode": "LEX", "CityName": "Lexington"},
+    {"StaCode": "LFT","Name": "Lafayette Regional Airport", "CityCode": "LFT", "CityName": "Lafayette"},
+    {"StaCode": "LGA","Name": "LaGuardia Airport", "CityCode": "NYC", "CityName": "New York"},
+    {"StaCode": "LGB","Name": "Daugherty Field", "CityCode": "LGB", "CityName": "Long Beach"},
+    {"StaCode": "LGK","Name": "Langkawi International Airport", "CityCode": "LGK", "CityName": "Langkawi"},
+    {"StaCode": "LGL","Name": "Long Lellang Airport", "CityCode": "LGL", "CityName": "Long Lellang"},
+    {"StaCode": "LGW","Name": "Gatwick Airport", "CityCode": "LON", "CityName": "London"},
+    {"StaCode": "LHE","Name": "Allama Iqbal International Airport", "CityCode": "LHE", "CityName": "Lahore"},
+    {"StaCode": "LHR","Name": "Heathrow Airport", "CityCode": "LON", "CityName": "London"},
+    {"StaCode": "LIG","Name": "Bellegarde Airport", "CityCode": "LIG", "CityName": "Limoges"},
+    {"StaCode": "LIH","Name": "Lihue Airport", "CityCode": "LIH", "CityName": "Lihue"},
+    {"StaCode": "LIM","Name": "Jorge Chavez Intl Airport", "CityCode": "LIM", "CityName": "Lima"},
+    {"StaCode": "LIN","Name": "Linate Airport", "CityCode": "MIL", "CityName": "Milan"},
+    {"StaCode": "LIR","Name": "D. Oduber Quiros Intl Airport", "CityCode": "LIR", "CityName": "Liberia"},
+    {"StaCode": "LIS","Name": "Lisboa Airport", "CityCode": "LIS", "CityName": "Lisbon"},
+    {"StaCode": "LIT","Name": "B. and H. Clinton National Airport", "CityCode": "LIT", "CityName": "Little Rock"},
+    {"StaCode": "LJU","Name": "Joze Pucnik Airport", "CityCode": "LJU", "CityName": "Ljubljana"},
+    {"StaCode": "LKH","Name": "Long Akah Airport", "CityCode": "LKH", "CityName": "Long Akah"},
+    {"StaCode": "LMN","Name": "Limbang Airport", "CityCode": "LMN", "CityName": "Limbang"},
+    {"StaCode": "LOS","Name": "Murtala Muhammed Intl Airport", "CityCode": "LOS", "CityName": "Lagos"},
+    {"StaCode": "LPA","Name": "Gran Canaria Airport", "CityCode": "LPA", "CityName": "Gran Canaria"},
+    {"StaCode": "LPB","Name": "El Alto Intl Airport", "CityCode": "LPB", "CityName": "La Paz"},
+    {"StaCode": "LPK","Name": "Lipetsk Airport", "CityCode": "LPK", "CityName": "Lipetsk"},
+    {"StaCode": "LRD","Name": "Laredo International Airport", "CityCode": "LRD", "CityName": "Laredo"},
+    {"StaCode": "LRE","Name": "Longreach Airport", "CityCode": "LRE", "CityName": "Longreach"},
+    {"StaCode": "LSC","Name": "La Florida Airport", "CityCode": "LSC", "CityName": "La Serena"},
+    {"StaCode": "LSE","Name": "La Crosse Regional Airport", "CityCode": "LSE", "CityName": "La Crosse"},
+    {"StaCode": "LST","Name": "Launceston Airport", "CityCode": "LST", "CityName": "Launceston"},
+    {"StaCode": "LTN","Name": "Luton Airport", "CityCode": "LON", "CityName": "London"},
+    {"StaCode": "LUX","Name": "Luxembourg Airport", "CityCode": "LUX", "CityName": "Luxembourg"},
+    {"StaCode": "LVI","Name": "Livingstone Airport", "CityCode": "LVI", "CityName": "Livingstone"},
+    {"StaCode": "LWY","Name": "Lawas Airport", "CityCode": "LWY", "CityName": "Lawas"},
+    {"StaCode": "LYH","Name": "Lynchburg Regional Airport-Preston-Glenn Field", "CityCode": "LYH", "CityName": "Lynchburg"},
+    {"StaCode": "LYP","Name": "Faisalabad International Airport", "CityCode": "LYP", "CityName": "Faisalabad"},
+    {"StaCode": "LYS","Name": "St-Exupery Airport", "CityCode": "LYS", "CityName": "Lyon"},
+    {"StaCode": "MAA","Name": "Chennai International Airport", "CityCode": "MAA", "CityName": "Chennai"},
+    {"StaCode": "MAB","Name": "Joao Correa da Rocha Airport", "CityCode": "MAB", "CityName": "Maraba"},
+    {"StaCode": "MAD","Name": "Adolfo Suarez-Barajas Airport", "CityCode": "MAD", "CityName": "Madrid"},
+    {"StaCode": "MAF","Name": "Midland International Airport", "CityCode": "MAF", "CityName": "Midland"},
+    {"StaCode": "MAH","Name": "Mahon Airport", "CityCode": "MAH", "CityName": "Menorca"},
+    {"StaCode": "MAN","Name": "Manchester Airport", "CityCode": "MAN", "CityName": "Manchester"},
+    {"StaCode": "MAO","Name": "Eduardo Gomes International Airport", "CityCode": "MAO", "CityName": "Manaus"},
+    {"StaCode": "MAR","Name": "La Chinita Intl Airport", "CityCode": "MAR", "CityName": "Maracaibo"},
+    {"StaCode": "MBJ","Name": "Sangster International Airport", "CityCode": "MBJ", "CityName": "Montego Bay"},
+    {"StaCode": "MCI","Name": "Kansas City International Airport", "CityCode": "MKC", "CityName": "Kansas City"},
+    {"StaCode": "MCO","Name": "Orlando International Airport", "CityCode": "ORL", "CityName": "Orlando"},
+    {"StaCode": "MCP","Name": "Alberto Alcolumbre Intl Airport", "CityCode": "MCP", "CityName": "Macapa"},
+    {"StaCode": "MCT","Name": "Muscat International Airport", "CityCode": "MCT", "CityName": "Muscat"},
+    {"StaCode": "MCY","Name": "Maroochydore Airport", "CityCode": "MCY", "CityName": "Sunshine Coast"},
+    {"StaCode": "MCZ","Name": "Zumbi dos Palmares Intl Airport", "CityCode": "MCZ", "CityName": "Maceio"},
+    {"StaCode": "MDE","Name": "Jose Maria Cordova Intl Airport", "CityCode": "MDE", "CityName": "Medellin"},
+    {"StaCode": "MDT","Name": "Harrisburg International Airport", "CityCode": "HAR", "CityName": "Harrisburg"},
+    {"StaCode": "MDZ","Name": "El Plumerillo Airport", "CityCode": "MDZ", "CityName": "Mendoza"},
+    {"StaCode": "MED","Name": "Mohammad Bin Abdulaziz Airport", "CityCode": "MED", "CityName": "Madinah"},
+    {"StaCode": "MEI","Name": "Meridian Regional Key Field) Airport", "CityCode": "MEI", "CityName": "Meridian"},
+    {"StaCode": "MEL","Name": "Melbourne Airport", "CityCode": "MEL", "CityName": "Melbourne"},
+    {"StaCode": "MEM","Name": "Memphis International Airport", "CityCode": "MEM", "CityName": "Memphis"},
+    {"StaCode": "MEX","Name": "Benito Juarez Intl Airport", "CityCode": "MEX", "CityName": "Mexico City"},
+    {"StaCode": "MFE","Name": "Miller International Airport", "CityCode": "MFE", "CityName": "McAllen/Mission"},
+    {"StaCode": "MFR","Name": "Rogue Valley International Airport", "CityCode": "MFR", "CityName": "Medford"},
+    {"StaCode": "MGA","Name": "Augusto C. Sandino Intl Airport", "CityCode": "MGA", "CityName": "Managua"},
+    {"StaCode": "MGM","Name": "Montgomery Regional Airport-Dannelly Field", "CityCode": "MGM", "CityName": "Montgomery"},
+    {"StaCode": "MHC","Name": "Mocopulli Airport", "CityCode": "WCA", "CityName": "Castro"},
+    {"StaCode": "MHD","Name": "Shahid Hashemi Nejad Airport", "CityCode": "MHD", "CityName": "Mashhad"},
+    {"StaCode": "MHH","Name": "Marsh Harbour Airport", "CityCode": "MHH", "CityName": "Marsh Harbour"},
+    {"StaCode": "MHK","Name": "Manhattan Regional Airport", "CityCode": "MHK", "CityName": "Manhattan"},
+    {"StaCode": "MHQ","Name": "Mariehamn Airport", "CityCode": "MHQ", "CityName": "Mariehamn"},
+    {"StaCode": "MHT","Name": "Manchester-Boston Regional Airport", "CityCode": "MHT", "CityName": "Manchester"},
+    {"StaCode": "MIA","Name": "Miami International Airport", "CityCode": "MIA", "CityName": "Miami"},
+    {"StaCode": "MID","Name": "M. Crescencio Rejon Airport", "CityCode": "MID", "CityName": "Merida"},
+    {"StaCode": "MJV","Name": "San Javier Airport", "CityCode": "MJV", "CityName": "Murcia"},
+    {"StaCode": "MJZ","Name": "Mirny Airport", "CityCode": "MJZ", "CityName": "Mirny"},
+    {"StaCode": "MKE","Name": "General Mitchell International Airport", "CityCode": "MKE", "CityName": "Milwaukee"},
+    {"StaCode": "MKM","Name": "Mukah Airport", "CityCode": "MKM", "CityName": "Mukah"},
+    {"StaCode": "MKY","Name": "Mackay Airport", "CityCode": "MKY", "CityName": "Mackay"},
+    {"StaCode": "MLA","Name": "Luqa Airport", "CityCode": "MLA", "CityName": "Malta"},
+    {"StaCode": "MLB","Name": "Melbourne International Airport", "CityCode": "MLB", "CityName": "Melbourne"},
+    {"StaCode": "MLE","Name": "Velana International Airport", "CityCode": "MLE", "CityName": "Male"},
+    {"StaCode": "MLI","Name": "Quad City International Airport", "CityCode": "MLI", "CityName": "Moline"},
+    {"StaCode": "MLM","Name": "F.J. Mujica Intl Airport", "CityCode": "MLM", "CityName": "Morelia"},
+    {"StaCode": "MLN","Name": "Melilla Airport", "CityCode": "MLN", "CityName": "Melilla"},
+    {"StaCode": "MLU","Name": "Monroe Regional Airport", "CityCode": "MLU", "CityName": "Monroe"},
+    {"StaCode": "MMB","Name": "Memanbetsu Airport", "CityCode": "MMB", "CityName": "Memanbetsu"},
+    {"StaCode": "MMD","Name": "Maridor Airport", "CityCode": "MMD", "CityName": "Minamidaito"},
+    {"StaCode": "MMJ","Name": "Matsumoto Airport", "CityCode": "MMJ", "CityName": "Matsumoto"},
+    {"StaCode": "MMK","Name": "Murmansk Airport", "CityCode": "MMK", "CityName": "Murmansk"},
+    {"StaCode": "MMY","Name": "Hirara Airport", "CityCode": "MMY", "CityName": "Miyako"},
+    {"StaCode": "MNL","Name": "Ninoy Aquino International Airport", "CityCode": "MNL", "CityName": "Manila"},
+    {"StaCode": "MOB","Name": "Mobile Regional Airport", "CityCode": "MOB", "CityName": "Mobile"},
+    {"StaCode": "MOV","Name": "Moranbah Airport", "CityCode": "MOV", "CityName": "Moranbah"},
+    {"StaCode": "MPM","Name": "Maputo International Airport", "CityCode": "MPM", "CityName": "Maputo"},
+    {"StaCode": "MPN","Name": "Mount Pleasant RAF Station", "CityCode": "MPN", "CityName": "Mount Pleasant"},
+    {"StaCode": "MQL","Name": "Mildura Airport", "CityCode": "MQL", "CityName": "Mildura"},
+    {"StaCode": "MQT","Name": "Sawyer International Airport", "CityCode": "MQT", "CityName": "Marquette"},
+    {"StaCode": "MRS","Name": "Marseille Airport", "CityCode": "MRS", "CityName": "Marseille"},
+    {"StaCode": "MRU","Name": "Sir S. Ramgoolam Intl Airport", "CityCode": "MRU", "CityName": "Mauritius"},
+    {"StaCode": "MRV","Name": "Mineralnye Vody Airport", "CityCode": "MRV", "CityName": "Mineralnye Vody"},
+    {"StaCode": "MRY","Name": "Monterey Regional Airport", "CityCode": "MRY", "CityName": "Monterey/Carmel"},
+    {"StaCode": "MRZ","Name": "Moree Airport", "CityCode": "MRZ", "CityName": "Moree"},
+    {"StaCode": "MSJ","Name": "Misawa Airport", "CityCode": "MSJ", "CityName": "Misawa"},
+    {"StaCode": "MSN","Name": "Dane County Regional Airport", "CityCode": "MSN", "CityName": "Madison"},
+    {"StaCode": "MSO","Name": "Missoula International Airport", "CityCode": "MSO", "CityName": "Missoula"},
+    {"StaCode": "MSP","Name": "St Paul International Airport", "CityCode": "MSP", "CityName": "Minneapolis/Saint Paul"},
+    {"StaCode": "MSQ","Name": "Minsk International", "CityCode": "MSQ", "CityName": "Minsk"},
+    {"StaCode": "MSY","Name": "Louis Armstrong International Airport", "CityCode": "MSY", "CityName": "New Orleans"},
+    {"StaCode": "MTJ","Name": "Montrose Regional Airport", "CityCode": "MTJ", "CityName": "Montrose"},
+    {"StaCode": "MTR","Name": "Los Garzones Airport", "CityCode": "MTR", "CityName": "Monteria"},
+    {"StaCode": "MTY","Name": "Mariano Escobedo Intl Airport", "CityCode": "MTY", "CityName": "Monterrey"},
+    {"StaCode": "MUC","Name": "Munich International", "CityCode": "MUC", "CityName": "Munich"},
+    {"StaCode": "MUR","Name": "Marudi Airport", "CityCode": "MUR", "CityName": "Marudi"},
+    {"StaCode": "MUX","Name": "Multan International Airport", "CityCode": "MUX", "CityName": "Multan"},
+    {"StaCode": "MVD","Name": "Carrasco Airport", "CityCode": "MVD", "CityName": "Montevideo"},
+    {"StaCode": "MVY","Name": "Martha's Vineyard Airport", "CityCode": "MVY", "CityName": "Martha's Vineyard"},
+    {"StaCode": "MXP","Name": "Malpensa Airport", "CityCode": "MIL", "CityName": "Milan"},
+    {"StaCode": "MYJ","Name": "Matsuyama Airport", "CityCode": "MYJ", "CityName": "Matsuyama"},
+    {"StaCode": "MYR","Name": "Myrtle Beach International Airport", "CityCode": "MYR", "CityName": "Myrtle Beach"},
+    {"StaCode": "MYY","Name": "Miri Airport", "CityCode": "MYY", "CityName": "Miri"},
+    {"StaCode": "MZT","Name": "Rafael Buelna Intl Airport", "CityCode": "MZT", "CityName": "Mazatlan"},
+    {"StaCode": "MZV","Name": "Mulu Airport", "CityCode": "MZV", "CityName": "Mulu"},
+    {"StaCode": "NAG","Name": "Dr. Ambedkar International Airport", "CityCode": "NAG", "CityName": "Nagpur"},
+    {"StaCode": "NAP","Name": "Capodichino Airport", "CityCode": "NAP", "CityName": "Naples"},
+    {"StaCode": "NAS","Name": "Lynden Pindling Intl Airport", "CityCode": "NAS", "CityName": "Nassau"},
+    {"StaCode": "NAT","Name": "Sao Goncalo do Amarante Intl Airport", "CityCode": "NAT", "CityName": "Natal"},
+    {"StaCode": "NBC","Name": "Begishevo Airport", "CityCode": "NBC", "CityName": "Nizhnekamsk"},
+    {"StaCode": "NBO","Name": "Jomo Kenyatta International Airport", "CityCode": "NBO", "CityName": "Nairobi"},
+    {"StaCode": "NCE","Name": "Cote D'Azur Airport", "CityCode": "NCE", "CityName": "Nice"},
+    {"StaCode": "NCL","Name": "Newcastle International Airport", "CityCode": "NCL", "CityName": "Newcastle"},
+    {"StaCode": "NER","Name": "Chulman Airport", "CityCode": "NER", "CityName": "Neryungri"},
+    {"StaCode": "NGB","Name": "Lishe International Airport", "CityCode": "NGB", "CityName": "Ningbo"},
+    {"StaCode": "NGO","Name": "Chubu Centrair International Airport", "CityCode": "NGO", "CityName": "Nagoya"},
+    {"StaCode": "NGS","Name": "Nagasaki Airport", "CityCode": "NGS", "CityName": "Nagasaki"},
+    {"StaCode": "NJC","Name": "Nizhnevartovsk Airport", "CityCode": "NJC", "CityName": "Nizhnevartovsk"},
+    {"StaCode": "NJF","Name": "Al-Ashraf International Airport", "CityCode": "NJF", "CityName": "Al Najaf"},
+    {"StaCode": "NKG","Name": "Lukou International Airport", "CityCode": "NKG", "CityName": "Nanjing"},
+    {"StaCode": "NNG","Name": "Wuxu International Airport", "CityCode": "NNG", "CityName": "Nanning"},
+    {"StaCode": "NOJ","Name": "Noyabrsk Airport", "CityCode": "NOJ", "CityName": "Noyabrsk"},
+    {"StaCode": "NOU","Name": "La Tontouta Airport", "CityCode": "NOU", "CityName": "Noumea"},
+    {"StaCode": "NOZ","Name": "Spichenkovo Airport", "CityCode": "NOZ", "CityName": "Novokuznetsk"},
+    {"StaCode": "NQN","Name": "Presidente Peron Airport", "CityCode": "NQN", "CityName": "Neuquen"},
+    {"StaCode": "NRT","Name": "Narita International", "CityCode": "TYO", "CityName": "Tokyo"},
+    {"StaCode": "NSK","Name": "Alykel Airport", "CityCode": "NSK", "CityName": "Norilsk"},
+    {"StaCode": "NTE","Name": "Nantes Atlantique Airport", "CityCode": "NTE", "CityName": "Nantes"},
+    {"StaCode": "NTL","Name": "Williamtown Airport", "CityCode": "NTL", "CityName": "Newcastle"},
+    {"StaCode": "NUE","Name": "Nuremberg Airport", "CityCode": "NUE", "CityName": "Nuremberg"},
+    {"StaCode": "NUF","Name": "Castlereigh Reservoir SPB", "CityCode": "NUF", "CityName": "Hatton"},
+    {"StaCode": "NUX","Name": "Novyj Urengoj Airport", "CityCode": "NUX", "CityName": "Novyj Urengoj"},
+    {"StaCode": "NVT","Name": "Victor Konder Intl Airport", "CityCode": "NVT", "CityName": "Navegantes"},
+    {"StaCode": "NYM","Name": "Nadym Airport", "CityCode": "NYM", "CityName": "Nadym"},
+    {"StaCode": "OAJ","Name": "Albert J Ellis Airport", "CityCode": "OAJ", "CityName": "Jacksonville"},
+    {"StaCode": "OAK","Name": "Oakland International Airport", "CityCode": "OAK", "CityName": "Oakland"},
+    {"StaCode": "OAX","Name": "Xoxocotlan Intl Airport", "CityCode": "OAX", "CityName": "Oaxaca"},
+    {"StaCode": "OBO","Name": "Obihiro Airport", "CityCode": "OBO", "CityName": "Obihiro"},
+    {"StaCode": "ODN","Name": "Long Seridan Airport", "CityCode": "ODN", "CityName": "Long Seridan"},
+    {"StaCode": "OGG","Name": "Kahului Airport", "CityCode": "OGG", "CityName": "Kahului"},
+    {"StaCode": "OGN","Name": "Yonaguni Airport", "CityCode": "OGN", "CityName": "Yonaguni"},
+    {"StaCode": "OGZ","Name": "Beslan Airport", "CityCode": "OGZ", "CityName": "Vladikavkaz"},
+    {"StaCode": "OHH","Name": "Novostroyka Airport", "CityCode": "OHH", "CityName": "Okha"},
+    {"StaCode": "OHS","Name": "Sohar Airport", "CityCode": "OHS", "CityName": "Sohar"},
+    {"StaCode": "OIR","Name": "Okushiri Airport", "CityCode": "OIR", "CityName": "Okushiri"},
+    {"StaCode": "OIT","Name": "Oita Airport", "CityCode": "OIT", "CityName": "Oita"},
+    {"StaCode": "OKA","Name": "Naha Airport", "CityCode": "OKA", "CityName": "Okinawa"},
+    {"StaCode": "OKC","Name": "Will Rogers Airport", "CityCode": "OKC", "CityName": "Oklahoma City"},
+    {"StaCode": "OKD","Name": "Okadama Airport", "CityCode": "SPK", "CityName": "Sapporo"},
+    {"StaCode": "OKI","Name": "Oki Airport", "CityCode": "OKI", "CityName": "Oki"},
+    {"StaCode": "OKJ","Name": "Okayama Airport", "CityCode": "OKJ", "CityName": "Okayama"},
+    {"StaCode": "OLB","Name": "Costa Smeralda Airport", "CityCode": "OLB", "CityName": "Olbia"},
+    {"StaCode": "OMA","Name": "Eppley Airfield", "CityCode": "OMA", "CityName": "Omaha"},
+    {"StaCode": "OMS","Name": "Tsentralny Airport", "CityCode": "OMS", "CityName": "Omsk"},
+    {"StaCode": "ONT","Name": "Ontario International Airport", "CityCode": "ONT", "CityName": "Ontario"},
+    {"StaCode": "OOL","Name": "Coolangatta Airport", "CityCode": "OOL", "CityName": "Gold Coast"},
+    {"StaCode": "OPO","Name": "Porto Airport", "CityCode": "OPO", "CityName": "Porto"},
+    {"StaCode": "ORD","Name": "O'Hare International Airport", "CityCode": "CHI", "CityName": "Chicago"},
+    {"StaCode": "ORF","Name": "Norfolk International Airport", "CityCode": "ORF", "CityName": "Norfolk"},
+    {"StaCode": "ORH","Name": "Worcester Regional Airport", "CityCode": "ORH", "CityName": "Worcester"},
+    {"StaCode": "ORN","Name": "Ahmed Ben Bella Airport", "CityCode": "ORN", "CityName": "Oran"},
+    {"StaCode": "ORY","Name": "Orly Field", "CityCode": "PAR", "CityName": "Paris"},
+    {"StaCode": "OSL","Name": "Oslo Airport", "CityCode": "OSL", "CityName": "Oslo"},
+    {"StaCode": "OSS","Name": "Osh Airport", "CityCode": "OSS", "CityName": "Osh"},
+    {"StaCode": "OTP","Name": "Otopeni International Airport", "CityCode": "BUH", "CityName": "Bucharest"},
+    {"StaCode": "OUL","Name": "Oulu Airport", "CityCode": "OUL", "CityName": "Oulu"},
+    {"StaCode": "OVB","Name": "Tolmachevo Airport", "CityCode": "OVB", "CityName": "Novosibirsk"},
+    {"StaCode": "OVD","Name": "Asturias Airport", "CityCode": "OVD", "CityName": "Asturias"},
+    {"StaCode": "PAP","Name": "Toussaint Louverture Airport", "CityCode": "PAP", "CityName": "Port-au-Prince"},
+    {"StaCode": "PBC","Name": "Hermanos Serdan Intl Airport", "CityCode": "PBC", "CityName": "Puebla"},
+    {"StaCode": "PBI","Name": "Palm Beach International Airport", "CityCode": "PBI", "CityName": "West Palm Beach"},
+    {"StaCode": "PBO","Name": "Paraburdoo Airport", "CityCode": "PBO", "CityName": "Paraburdoo"},
+    {"StaCode": "PCL","Name": "D. Abenzur Rengifo Intl Airport", "CityCode": "PCL", "CityName": "Pucallpa"},
+    {"StaCode": "PDP","Name": "Punta Del Este Airport", "CityCode": "PDP", "CityName": "Punta Del Este"},
+    {"StaCode": "PDV","Name": "Krumovo Airport", "CityCode": "PDV", "CityName": "Plovdiv"},
+    {"StaCode": "PDX","Name": "Portland International Airport", "CityCode": "PDX", "CityName": "Portland"},
+    {"StaCode": "PEE","Name": "Bolshoye Savino Airport", "CityCode": "PEE", "CityName": "Perm"},
+    {"StaCode": "PEI","Name": "Matecana Intl Airport", "CityCode": "PEI", "CityName": "Pereira"},
+    {"StaCode": "PEK","Name": "Beijing Capital International Airport", "CityCode": "BJS", "CityName": "Beijing"},
+    {"StaCode": "PEM","Name": "Padre Aldamiz Intl Airport", "CityCode": "PEM", "CityName": "Puerto Maldonado"},
+    {"StaCode": "PEN","Name": "Penang International Airport", "CityCode": "PEN", "CityName": "Penang"},
+    {"StaCode": "PER","Name": "Perth International Airport", "CityCode": "PER", "CityName": "Perth"},
+    {"StaCode": "PES","Name": "Besovets Airport", "CityCode": "PES", "CityName": "Petrozavodsk"},
+    {"StaCode": "PEW","Name": "Bacha Khan International Airport", "CityCode": "PEW", "CityName": "Peshawar"},
+    {"StaCode": "PEZ","Name": "Ternovka Airport", "CityCode": "PEZ", "CityName": "Penza"},
+    {"StaCode": "PFO","Name": "Paphos International Airport", "CityCode": "PFO", "CityName": "Paphos"},
+    {"StaCode": "PGV","Name": "Pitt-Greenville Airport", "CityCode": "PGV", "CityName": "Greenville"},
+    {"StaCode": "PHE","Name": "Port Hedland International  Airport", "CityCode": "PHE", "CityName": "Port Hedland"},
+    {"StaCode": "PHF","Name": "Newport News/Williamsburg Airport", "CityCode": "PHF", "CityName": "Newport News/Williamsburg"},
+    {"StaCode": "PHL","Name": "Philadelphia International Airport", "CityCode": "PHL", "CityName": "Philadelphia"},
+    {"StaCode": "PHX","Name": "Sky Harbor International Airport", "CityCode": "PHX", "CityName": "Phoenix"},
+    {"StaCode": "PIA","Name": "General Downing International Airport", "CityCode": "PIA", "CityName": "Peoria"},
+    {"StaCode": "PIB","Name": "Hattiesburg-Laurel Regional Airport", "CityCode": "LUL", "CityName": "Hattiesburg/Laurel"},
+    {"StaCode": "PIO","Name": "Renan Elias Olivera Airport", "CityCode": "PIO", "CityName": "Pisco"},
+    {"StaCode": "PIT","Name": "Pittsburgh International Airport", "CityCode": "PIT", "CityName": "Pittsburgh"},
+    {"StaCode": "PIU","Name": "G. Concha Iberico Intl Airport", "CityCode": "PIU", "CityName": "Piura"},
+    {"StaCode": "PKC","Name": "Yelizovo Airport", "CityCode": "PKC", "CityName": "Petropavlovsk"},
+    {"StaCode": "PLO","Name": "Port Lincoln Airport", "CityCode": "PLO", "CityName": "Port Lincoln"},
+    {"StaCode": "PLS","Name": "Providenciales International Airport", "CityCode": "PLS", "CityName": "Providenciales"},
+    {"StaCode": "PLZ","Name": "Port Elizabeth Airport", "CityCode": "PLZ", "CityName": "Port Elizabeth"},
+    {"StaCode": "PMC","Name": "El Tepual Airport", "CityCode": "PMC", "CityName": "Puerto Montt"},
+    {"StaCode": "PMI","Name": "Palma Mallorca Airport", "CityCode": "PMI", "CityName": "Palma De Mallorca"},
+    {"StaCode": "PMO","Name": "Punta Raisi Airport", "CityCode": "PMO", "CityName": "Palermo"},
+    {"StaCode": "PMW","Name": "Lysias Rodrigues Airport", "CityCode": "PMW", "CityName": "Palmas"},
+    {"StaCode": "PNA","Name": "Pamplona Airport", "CityCode": "PNA", "CityName": "Pamplona"},
+    {"StaCode": "PNH","Name": "Phnom Penh International Airport", "CityCode": "PNH", "CityName": "Phnom Penh"},
+    {"StaCode": "PNS","Name": "Pensacola International Airport", "CityCode": "PNS", "CityName": "Pensacola"},
+    {"StaCode": "PNT","Name": "Teniente J. Gallardo Airport", "CityCode": "PNT", "CityName": "Puerto Natales"},
+    {"StaCode": "POA","Name": "Salgado Filho Intl Airport", "CityCode": "POA", "CityName": "Porto Alegre"},
+    {"StaCode": "POM","Name": "Jackson International Airport", "CityCode": "POM", "CityName": "Port Moresby"},
+    {"StaCode": "POP","Name": "Gregorio Luperon Intl Airport", "CityCode": "POP", "CityName": "Puerto Plata"},
+    {"StaCode": "POS","Name": "Piarco Intl Airport", "CityCode": "POS", "CityName": "Port of Spain"},
+    {"StaCode": "PPT","Name": "Faaa Airport", "CityCode": "PPT", "CityName": "Tahiti"},
+    {"StaCode": "PQQ","Name": "Port Macquarie Airport", "CityCode": "PQQ", "CityName": "Port Macquarie"},
+    {"StaCode": "PRG","Name": "Ruzyne International Airport", "CityCode": "PRG", "CityName": "Prague"},
+    {"StaCode": "PSA","Name": "Galileo Galilei Airport", "CityCode": "PSA", "CityName": "Pisa"},
+    {"StaCode": "PSP","Name": "Palm Springs International Airport", "CityCode": "PSP", "CityName": "Palm Springs"},
+    {"StaCode": "PTP","Name": "Le Raizet Airport", "CityCode": "PTP", "CityName": "Pointe A Pitre"},
+    {"StaCode": "PTY","Name": "Tocumen International Airport", "CityCode": "PTY", "CityName": "Panama City"},
+    {"StaCode": "PUJ","Name": "Punta Cana Intl Airport", "CityCode": "PUJ", "CityName": "Punta Cana"},
+    {"StaCode": "PUQ","Name": "C. Ibanez del Campo Airport", "CityCode": "PUQ", "CityName": "Punta Arenas"},
+    {"StaCode": "PUS","Name": "Gimhae International Airport", "CityCode": "PUS", "CityName": "Busan"},
+    {"StaCode": "PUY","Name": "Pula Airport", "CityCode": "PUY", "CityName": "Pula"},
+    {"StaCode": "PVD","Name": "T.F. Green State Airport", "CityCode": "PVD", "CityName": "Providence"},
+    {"StaCode": "PVG","Name": "Pudong International Airport", "CityCode": "SHA", "CityName": "Shanghai"},
+    {"StaCode": "PVH","Name": "J.T. de Oliveira Intl Airport", "CityCode": "PVH", "CityName": "Porto Velho"},
+    {"StaCode": "PVK","Name": "Aktion Airport", "CityCode": "PVK", "CityName": "Preveza/Lefkada"},
+    {"StaCode": "PVR","Name": "G. Diaz Ordaz Intl Airport", "CityCode": "PVR", "CityName": "Puerto Vallarta"},
+    {"StaCode": "PWM","Name": "Portland International Jetport", "CityCode": "PWM", "CityName": "Portland"},
+    {"StaCode": "PWQ","Name": "Pavlodar Airport", "CityCode": "PWQ", "CityName": "Pavlodar"},
+    {"StaCode": "QRO","Name": "Queretaro Intl Airport", "CityCode": "QRO", "CityName": "Queretaro"},
+    {"StaCode": "RAK","Name": "Menara Airport", "CityCode": "RAK", "CityName": "Marrakech"},
+    {"StaCode": "RAO","Name": "Leite Lopes Airport", "CityCode": "RAO", "CityName": "Ribeirao Preto"},
+    {"StaCode": "RAP","Name": "Rapid City Regional Airport", "CityCode": "RAP", "CityName": "Rapid City"},
+    {"StaCode": "RBR","Name": "Placido de Castro Intl Airport", "CityCode": "RBR", "CityName": "Rio Branco"},
+    {"StaCode": "RDM","Name": "Roberts Field", "CityCode": "RDM", "CityName": "Redmond/Bend"},
+    {"StaCode": "RDU","Name": "Raleigh/Durham International Airport", "CityCode": "RDU", "CityName": "Raleigh/Durham"},
+    {"StaCode": "REC","Name": "Guararapes International Airport", "CityCode": "REC", "CityName": "Recife"},
+    {"StaCode": "REP","Name": "Angkor International Airport", "CityCode": "REP", "CityName": "Siem Reap"},
+    {"StaCode": "RGK","Name": "Gorno-Altaysk Airport", "CityCode": "RGK", "CityName": "Gorno-Altaysk"},
+    {"StaCode": "RGL","Name": "Piloto N. Fernandez Airport", "CityCode": "RGL", "CityName": "Rio Gallegos"},
+    {"StaCode": "RGN","Name": "Yangon International Airport", "CityCode": "RGN", "CityName": "Yangon"},
+    {"StaCode": "RGS","Name": "Villafria Airport", "CityCode": "RGS", "CityName": "Burgos"},
+    {"StaCode": "RHO","Name": "Diagoras Airport", "CityCode": "RHO", "CityName": "Rhodes"},
+    {"StaCode": "RIC","Name": "Richmond International Airport", "CityCode": "RIC", "CityName": "Richmond"},
+    {"StaCode": "RIS","Name": "Rishiri Airport", "CityCode": "RIS", "CityName": "Rishiri"},
+    {"StaCode": "RIX","Name": "Riga International Airport", "CityCode": "RIX", "CityName": "Riga"},
+    {"StaCode": "RJL","Name": "Agoncillo Airport", "CityCode": "RJL", "CityName": "Logrono"},
+    {"StaCode": "RMA","Name": "Roma Airport", "CityCode": "RMA", "CityName": "Roma"},
+    {"StaCode": "RMI","Name": "Miramare Airport", "CityCode": "RMI", "CityName": "Rimini"},
+    {"StaCode": "RMQ","Name": "Cingcyuangang Airport", "CityCode": "RMQ", "CityName": "Taichung"},
+    {"StaCode": "RNJ","Name": "Yoron Airport", "CityCode": "RNJ", "CityName": "Yoron"},
+    {"StaCode": "RNO","Name": "Reno/Tahoe International Airport", "CityCode": "RNO", "CityName": "Reno"},
+    {"StaCode": "ROA","Name": "Roanoke Regional Airport (Woodrum Field)", "CityCode": "ROA", "CityName": "Roanoke"},
+    {"StaCode": "ROC","Name": "Greater Rochester International Airport", "CityCode": "ROC", "CityName": "Rochester"},
+    {"StaCode": "ROK","Name": "Rockhampton Airport", "CityCode": "ROK", "CityName": "Rockhampton"},
+    {"StaCode": "ROR","Name": "Palau International Airport", "CityCode": "ROR", "CityName": "Koror"},
+    {"StaCode": "ROS","Name": "Islas Malvinas Airport", "CityCode": "ROS", "CityName": "Rosario"},
+    {"StaCode": "ROV","Name": "Rostov Airport", "CityCode": "ROV", "CityName": "Rostov"},
+    {"StaCode": "ROW","Name": "International Air Center", "CityCode": "ROW", "CityName": "Roswell"},
+    {"StaCode": "RST","Name": "Rochester International Airport", "CityCode": "RST", "CityName": "Rochester"},
+    {"StaCode": "RSW","Name": "Southwest Florida Intl Airport", "CityCode": "FMY", "CityName": "Fort Myers"},
+    {"StaCode": "RTB","Name": "Juan Manuel Galvez Airport", "CityCode": "RTB", "CityName": "Roatan"},
+    {"StaCode": "RTM","Name": "Rotterdam Airport", "CityCode": "RTM", "CityName": "Rotterdam"},
+    {"StaCode": "RTW","Name": "Tsentralny Airport", "CityCode": "RTW", "CityName": "Saratov"},
+    {"StaCode": "RUH","Name": "King Kalid International Airport", "CityCode": "RUH", "CityName": "Riyadh"},
+    {"StaCode": "RVN","Name": "Rovaniemi Airport", "CityCode": "RVN", "CityName": "Rovaniemi"},
+    {"StaCode": "SAF","Name": "Santa Fe Municipal Airport", "CityCode": "SAF", "CityName": "Santa Fe"},
+    {"StaCode": "SAL","Name": "El Salvador Intl Airport", "CityCode": "SAL", "CityName": "San Salvador"},
+    {"StaCode": "SAN","Name": "San Diego International Airport", "CityCode": "SAN", "CityName": "San Diego"},
+    {"StaCode": "SAP","Name": "Ramon V. Morales Intl Airport", "CityCode": "SAP", "CityName": "San Pedro Sula"},
+    {"StaCode": "SAT","Name": "San Antonio International Airport", "CityCode": "SAT", "CityName": "San Antonio"},
+    {"StaCode": "SAV","Name": "Hilton Head International Airport", "CityCode": "SAV", "CityName": "Savannah"},
+    {"StaCode": "SAW","Name": "Sabiha Gokcen Airport", "CityCode": "IST", "CityName": "Istanbul"},
+    {"StaCode": "SBA","Name": "Santa Barbara Municipal Airport", "CityCode": "SBA", "CityName": "Santa Barbara"},
+    {"StaCode": "SBN","Name": "South Bend International Airport", "CityCode": "SBN", "CityName": "South Bend"},
+    {"StaCode": "SBP","Name": "San Luis County Regional Airport", "CityCode": "SBP", "CityName": "San Luis Obispo"},
+    {"StaCode": "SBW","Name": "Sibu Airport", "CityCode": "SBW", "CityName": "Sibu"},
+    {"StaCode": "SBY","Name": "Wicomico County Airport", "CityCode": "SBY", "CityName": "Salisbury/Ocean City"},
+    {"StaCode": "SCE","Name": "University Park Airport", "CityCode": "SCE", "CityName": "State College"},
+    {"StaCode": "SCL","Name": "Arturo Merino Benitez Airport", "CityCode": "SCL", "CityName": "Santiago"},
+    {"StaCode": "SCQ","Name": "Santiago de Compostela Airport", "CityCode": "SCQ", "CityName": "Santiago De Compostela"},
+    {"StaCode": "SCY","Name": "San Cristobal Airport", "CityCode": "SCY", "CityName": "San Cristobal Island"},
+    {"StaCode": "SDF","Name": "Louisville International Airport-Standiford Field", "CityCode": "SDF", "CityName": "Louisville"},
+    {"StaCode": "SDJ","Name": "Sendai Airport", "CityCode": "SDJ", "CityName": "Sendai"},
+    {"StaCode": "SDK","Name": "Sandakan Airport", "CityCode": "SDK", "CityName": "Sandakan"},
+    {"StaCode": "SDQ","Name": "Las Americas Intl Airport", "CityCode": "SDQ", "CityName": "Santo Domingo"},
+    {"StaCode": "SDR","Name": "Santander Airport", "CityCode": "SDR", "CityName": "Santander"},
+    {"StaCode": "SDU","Name": "Santos Dumont Airport", "CityCode": "RIO", "CityName": "Rio de Janeiro"},
+    {"StaCode": "SEA","Name": "Seattle-Tacoma International Airport", "CityCode": "SEA", "CityName": "Seattle"},
+    {"StaCode": "SEZ","Name": "Seychelles International Airport", "CityCode": "SEZ", "CityName": "Mahe Island"},
+    {"StaCode": "SFO","Name": "San Francisco International Airport", "CityCode": "SFO", "CityName": "San Francisco"},
+    {"StaCode": "SGC","Name": "Surgut Airport", "CityCode": "SGC", "CityName": "Surgut"},
+    {"StaCode": "SGF","Name": "Springfield-Branson National Airport", "CityCode": "SGF", "CityName": "Springfield"},
+    {"StaCode": "SGN","Name": "Tan Son Nhat International Airport", "CityCode": "SGN", "CityName": "Ho Chi Minh City"},
+    {"StaCode": "SGU","Name": "St George Municipal Airport", "CityCode": "SGU", "CityName": "St George"},
+    {"StaCode": "SHA","Name": "Hongqiao International Airport", "CityCode": "SHA", "CityName": "Shanghai"},
+    {"StaCode": "SHM","Name": "Nanki-Shirahama", "CityCode": "SHM", "CityName": "Shirahama"},
+    {"StaCode": "SHV","Name": "Shreveport Regional Airport", "CityCode": "SHV", "CityName": "Shreveport"},
+    {"StaCode": "SIN","Name": "Changi Airport", "CityCode": "SIN", "CityName": "Singapore"},
+    {"StaCode": "SIP","Name": "Simferopol International Airport", "CityCode": "SIP", "CityName": "Simferopol"},
+    {"StaCode": "SJC","Name": "Norman Y. Mineta International", "CityCode": "SJC", "CityName": "San Jose"},
+    {"StaCode": "SJD","Name": "Los Cabos International Airport", "CityCode": "SJD", "CityName": "San Jose del Cabo"},
+    {"StaCode": "SJJ","Name": "Sarajevo International Airport", "CityCode": "SJJ", "CityName": "Sarajevo"},
+    {"StaCode": "SJO","Name": "Juan Santamaria International Airport", "CityCode": "SJO", "CityName": "San Jose"},
+    {"StaCode": "SJP","Name": "Eribelto Manoel Reino Airport", "CityCode": "SJP", "CityName": "Sao Jose do Rio Prieto"},
+    {"StaCode": "SJT","Name": "Regional (Mathis Field) Airport", "CityCode": "SJT", "CityName": "San Angelo"},
+    {"StaCode": "SJU","Name": "Luis Munoz Marin International Airport", "CityCode": "SJU", "CityName": "San Juan"},
+    {"StaCode": "SKB","Name": "Robert L. Bradshaw Intl Airport", "CityCode": "SKB", "CityName": "St Kitts"},
+    {"StaCode": "SKD","Name": "Samarkand International Airport", "CityCode": "SKD", "CityName": "Samarkand"},
+    {"StaCode": "SKG","Name": "Makedonia Airport", "CityCode": "SKG", "CityName": "Thessaloniki"},
+    {"StaCode": "SKP","Name": "Skopje Airport", "CityCode": "SKP", "CityName": "Skopje"},
+    {"StaCode": "SKT","Name": "Sialkot International Airport", "CityCode": "SKT", "CityName": "Sialkot"},
+    {"StaCode": "SKX","Name": "Saransk Airport", "CityCode": "SKX", "CityName": "Saransk"},
+    {"StaCode": "SLA","Name": "Martin M. de Guemes Airport", "CityCode": "SLA", "CityName": "Salta"},
+    {"StaCode": "SLC","Name": "Salt Lake City International Airport", "CityCode": "SLC", "CityName": "Salt Lake City"},
+    {"StaCode": "SLL","Name": "Salalah Airport", "CityCode": "SLL", "CityName": "Salalah"},
+    {"StaCode": "SLM","Name": "Salamanca Airport", "CityCode": "SLM", "CityName": "Salamanca"},
+    {"StaCode": "SLP","Name": "Ponciano Arriaga Intl Airport", "CityCode": "SLP", "CityName": "San Luis Potosi"},
+    {"StaCode": "SLZ","Name": "Cunha Machado Intl Airport", "CityCode": "SLZ", "CityName": "Sao Luis"},
+    {"StaCode": "SMF","Name": "Sacramento International Airport", "CityCode": "SAC", "CityName": "Sacramento"},
+    {"StaCode": "SMR","Name": "Simon Bolivar International Airport", "CityCode": "SMR", "CityName": "Santa Marta"},
+    {"StaCode": "SNA","Name": "John Wayne Airport", "CityCode": "SNA", "CityName": "Santa Ana"},
+    {"StaCode": "SNN","Name": "Shannon International Airport", "CityCode": "SNN", "CityName": "Shannon"},
+    {"StaCode": "SNU","Name": "Abel Santamaria Airport", "CityCode": "SNU", "CityName": "Santa Clara"},
+    {"StaCode": "SOF","Name": "Sofia Airport", "CityCode": "SOF", "CityName": "Sofia"},
+    {"StaCode": "SPI","Name": "A. Lincoln Capital Airport", "CityCode": "SPI", "CityName": "Springfield"},
+    {"StaCode": "SPS","Name": "Wichita Falls Municipal Airport/Sheppard AFB", "CityCode": "SPS", "CityName": "Wichita Falls"},
+    {"StaCode": "SPU","Name": "Split Airport", "CityCode": "SPU", "CityName": "Split"},
+    {"StaCode": "SRQ","Name": "Bradenton International Airport", "CityCode": "SRQ", "CityName": "Sarasota/Bradenton"},
+    {"StaCode": "SSA","Name": "Luis E. Magalhaes Airport", "CityCode": "SSA", "CityName": "Salvador"},
+    {"StaCode": "STI","Name": "Cibao Intl Airport", "CityCode": "STI", "CityName": "Santiago"},
+    {"StaCode": "STL","Name": "Lambert-St Louis International Airport", "CityCode": "STL", "CityName": "St Louis"},
+    {"StaCode": "STM","Name": "Maestro Wilson Fonseca Airport", "CityCode": "STM", "CityName": "Santarem"},
+    {"StaCode": "STN","Name": "Stansted Airport", "CityCode": "LON", "CityName": "London"},
+    {"StaCode": "STR","Name": "Stuttgart Airport", "CityCode": "STR", "CityName": "Stuttgart"},
+    {"StaCode": "STS","Name": "Charles M. Schulz Airport", "CityCode": "STS", "CityName": "Santa Rosa"},
+    {"StaCode": "STT","Name": "Cyril E. King Airport", "CityCode": "STT", "CityName": "St Thomas Island"},
+    {"StaCode": "STW","Name": "Shpakovskoye Airport", "CityCode": "STW", "CityName": "Stavropol"},
+    {"StaCode": "STX","Name": "Henry E. Rohlsen Airport", "CityCode": "STX", "CityName": "St Croix Island"},
+    {"StaCode": "SUB","Name": "Juanda Airport", "CityCode": "SUB", "CityName": "Surabaya"},
+    {"StaCode": "SUX","Name": "Sioux Gateway Airport", "CityCode": "SUX", "CityName": "Sioux City"},
+    {"StaCode": "SVD","Name": "Argyle International Airport", "CityCode": "SVD", "CityName": "St Vincent"},
+    {"StaCode": "SVO","Name": "Sheremetyevo Airport", "CityCode": "MOW", "CityName": "Moscow"},
+    {"StaCode": "SVQ","Name": "Sevilla Airport", "CityCode": "SVQ", "CityName": "Sevilla"},
+    {"StaCode": "SVX","Name": "Koltsovo Airport", "CityCode": "SVX", "CityName": "Yekaterinburg"},
+    {"StaCode": "SWF","Name": "Stewart International Airport", "CityCode": "NYC", "CityName": "New York"},
+    {"StaCode": "SWO","Name": "Stillwater Regional Airport", "CityCode": "SWO", "CityName": "Stillwater"},
+    {"StaCode": "SXB","Name": "Entzheim Airport", "CityCode": "SXB", "CityName": "Strasbourg"},
+    {"StaCode": "SXM","Name": "Princess Juliana Intl Airport", "CityCode": "SXM", "CityName": "St Maarten"},
+    {"StaCode": "SYD","Name": "Kingsford Smith Airport", "CityCode": "SYD", "CityName": "Sydney"},
+    {"StaCode": "SYR","Name": "Hancock International Airport", "CityCode": "SYR", "CityName": "Syracuse"},
+    {"StaCode": "SYX","Name": "Phoenix International Airport", "CityCode": "SYX", "CityName": "Sanya"},
+    {"StaCode": "SYZ","Name": "Shahid Dastghaib International", "CityCode": "SYZ", "CityName": "Shiraz"},
+    {"StaCode": "SZG","Name": "W. A. Mozart Airport", "CityCode": "SZG", "CityName": "Salzburg"},
+    {"StaCode": "TAB","Name": "A.N.R. Robinson Intl Airport", "CityCode": "TAB", "CityName": "Tobago"},
+    {"StaCode": "TAK","Name": "Takamatsu Airport", "CityCode": "TAK", "CityName": "Takamatsu"},
+    {"StaCode": "TAO","Name": "Liuting International Airport", "CityCode": "TAO", "CityName": "Qingdao"},
+    {"StaCode": "TAS","Name": "Tashkent International Airport", "CityCode": "TAS", "CityName": "Tashkent"},
+    {"StaCode": "TAY","Name": "Ulenurme Airport", "CityCode": "TAY", "CityName": "Tartu"},
+    {"StaCode": "TBP","Name": "Pedro Canga Rodriguez Airport", "CityCode": "TBP", "CityName": "Tumbes"},
+    {"StaCode": "TBS","Name": "Tbilisi International Airport", "CityCode": "TBS", "CityName": "Tbilisi"},
+    {"StaCode": "TCQ","Name": "C. Ciriani Santa Rosa Airport", "CityCode": "TCQ", "CityName": "Tacna"},
+    {"StaCode": "TFN","Name": "Tenerife-Norte", "CityCode": "TCI", "CityName": "Tenerife"},
+    {"StaCode": "TFS","Name": "Tenerife-Sur", "CityCode": "TCI", "CityName": "Tenerife"},
+    {"StaCode": "TGC","Name": "Tanjung Manis Airport", "CityCode": "TGC", "CityName": "Tanjung Manis"},
+    {"StaCode": "TGG","Name": "Sultan Mahmud Airport", "CityCode": "TGG", "CityName": "Kuala Terengganu"},
+    {"StaCode": "TGU","Name": "Toncontin Intl Airport", "CityCode": "TGU", "CityName": "Tegucigalpa"},
+    {"StaCode": "THE","Name": "Petronio Portella Airport", "CityCode": "THE", "CityName": "Teresina"},
+    {"StaCode": "TIA","Name": "Rinas Airport", "CityCode": "TIA", "CityName": "Tirana"},
+    {"StaCode": "TIV","Name": "Tivat Airport", "CityCode": "TIV", "CityName": "Tivat"},
+    {"StaCode": "TJM","Name": "Roshchino Airport", "CityCode": "TJM", "CityName": "Tyumen"},
+    {"StaCode": "TKN","Name": "Tokunoshima Airport", "CityCode": "TKN", "CityName": "Tokunoshima"},
+    {"StaCode": "TKS","Name": "Tokushima Airport", "CityCode": "TKS", "CityName": "Tokushima"},
+    {"StaCode": "TKU","Name": "Turku Airport", "CityCode": "TKU", "CityName": "Turku"},
+    {"StaCode": "TLH","Name": "Tallahassee International Airport", "CityCode": "TLH", "CityName": "Tallahassee"},
+    {"StaCode": "TLK","Name": "Talakan Airport", "CityCode": "TLK", "CityName": "Talakan"},
+    {"StaCode": "TLL","Name": "Lennart Meri Airport", "CityCode": "TLL", "CityName": "Tallinn"},
+    {"StaCode": "TLS","Name": "Blagnac Airport", "CityCode": "TLS", "CityName": "Toulouse"},
+    {"StaCode": "TLV","Name": "Ben Gurion International Airport", "CityCode": "TLV", "CityName": "Tel Aviv-Yafo"},
+    {"StaCode": "TMP","Name": "Tampere-Pirkkala Airport", "CityCode": "TMP", "CityName": "Tampere"},
+    {"StaCode": "TMW","Name": "Tamworth Airport", "CityCode": "TMW", "CityName": "Tamworth"},
+    {"StaCode": "TNA","Name": "Yaoqiang Intl Airport", "CityCode": "TNA", "CityName": "Jinan"},
+    {"StaCode": "TNE","Name": "Tanegashima Airport", "CityCode": "TNE", "CityName": "Tanegashima"},
+    {"StaCode": "TNG","Name": "Ibn Batouta Airport", "CityCode": "TNG", "CityName": "Tangier"},
+    {"StaCode": "TOF","Name": "Bogashevo Airport", "CityCode": "TOF", "CityName": "Tomsk"},
+    {"StaCode": "TOL","Name": "Express Airport", "CityCode": "TOL", "CityName": "Toledo"},
+    {"StaCode": "TOS","Name": "Tromso/Langnes Airport", "CityCode": "TOS", "CityName": "Tromso"},
+    {"StaCode": "TPA","Name": "Tampa International Airport", "CityCode": "TPA", "CityName": "Tampa"},
+    {"StaCode": "TPE","Name": "Taiwan Taoyuan International Airport", "CityCode": "TPE", "CityName": "Taipei"},
+    {"StaCode": "TPP","Name": "G. del Castillo Paredes Airport", "CityCode": "TPP", "CityName": "Tarapoto"},
+    {"StaCode": "TRA","Name": "Tarama Airport", "CityCode": "TRA", "CityName": "Tarama"},
+    {"StaCode": "TRC","Name": "Francisco Sarabia Intl Airport", "CityCode": "TRC", "CityName": "Torreon"},
+    {"StaCode": "TRI","Name": "Tri-Cities Regional TN/VA Airport", "CityCode": "TRI", "CityName": "Bristol/Johnson City/Kingsport"},
+    {"StaCode": "TRK","Name": "Juwata Airport", "CityCode": "TRK", "CityName": "Tarakan"},
+    {"StaCode": "TRN","Name": "Caselle Airport", "CityCode": "TRN", "CityName": "Turin"},
+    {"StaCode": "TRR","Name": "China Bay Airport", "CityCode": "TRR", "CityName": "Trincomalee"},
+    {"StaCode": "TRU","Name": "C. Martinez de Pinillos Airport", "CityCode": "TRU", "CityName": "Trujillo"},
+    {"StaCode": "TRV","Name": "Trivandrum International Airport", "CityCode": "TRV", "CityName": "Thiruvananthapuram"},
+    {"StaCode": "TRZ","Name": "Tiruchchirappalli Airport", "CityCode": "TRZ", "CityName": "Tiruchchirappalli"},
+    {"StaCode": "TSA","Name": "Songshan Airport", "CityCode": "TPE", "CityName": "Taipei"},
+    {"StaCode": "TSE","Name": "Astana International Airport", "CityCode": "TSE", "CityName": "Astana"},
+    {"StaCode": "TSN","Name": "Binhai International Airport", "CityCode": "TSN", "CityName": "Tianjin"},
+    {"StaCode": "TSV","Name": "Townsville International Airport", "CityCode": "TSV", "CityName": "Townsville"},
+    {"StaCode": "TUC","Name": "Benjamin Matienzo Airport", "CityCode": "TUC", "CityName": "Tucuman"},
+    {"StaCode": "TUL","Name": "Tulsa International Airport", "CityCode": "TUL", "CityName": "Tulsa"},
+    {"StaCode": "TUN","Name": "Carthage Airport", "CityCode": "TUN", "CityName": "Tunis"},
+    {"StaCode": "TUS","Name": "Tucson International Airport", "CityCode": "TUS", "CityName": "Tucson"},
+    {"StaCode": "TVC","Name": "Cherry Capital Airport", "CityCode": "TVC", "CityName": "Traverse City"},
+    {"StaCode": "TWU","Name": "Tawau Airport", "CityCode": "TWU", "CityName": "Tawau"},
+    {"StaCode": "TXK","Name": "Texarkana Regional Airport - Webb Field", "CityCode": "TXK", "CityName": "Texarkana"},
+    {"StaCode": "TXL","Name": "Tegel Airport", "CityCode": "BER", "CityName": "Berlin"},
+    {"StaCode": "TYL","Name": "Victor Monteas Arias Airport", "CityCode": "TYL", "CityName": "Talara"},
+    {"StaCode": "TYR","Name": "Pounds Regional Airport", "CityCode": "TYR", "CityName": "Tyler"},
+    {"StaCode": "TYS","Name": "McGhee Tyson Airport", "CityCode": "TYS", "CityName": "Knoxville"},
+    {"StaCode": "UBJ","Name": "Yamaguchi-Ube Airport", "CityCode": "UBJ", "CityName": "Ube"},
+    {"StaCode": "UDI","Name": "Cesar Bombonato Airport", "CityCode": "UDI", "CityName": "Uberlandia"},
+    {"StaCode": "UEO","Name": "Kume-jima Airport", "CityCode": "UEO", "CityName": "Kume-jima"},
+    {"StaCode": "UFA","Name": "Ufa Airport", "CityCode": "UFA", "CityName": "Ufa"},
+    {"StaCode": "UGC","Name": "Urgench International Airport", "CityCode": "UGC", "CityName": "Urgench"},
+    {"StaCode": "UIO","Name": "Mariscal Sucre Intl Airport", "CityCode": "UIO", "CityName": "Quito"},
+    {"StaCode": "UIP","Name": "Pluguffan Airport", "CityCode": "UIP", "CityName": "Quimper"},
+    {"StaCode": "UKK","Name": "Ust-Kamenogorsk Airport", "CityCode": "UKK", "CityName": "Ust-Kamenogorsk"},
+    {"StaCode": "UME","Name": "Umea Airport", "CityCode": "UME", "CityName": "Umea"},
+    {"StaCode": "URA","Name": "Ak Zhol Airport", "CityCode": "URA", "CityName": "Uralsk"},
+    {"StaCode": "URC","Name": "Diwopu International Airport", "CityCode": "URC", "CityName": "Urumqi"},
+    {"StaCode": "USH","Name": "Malvinas Argentinas Airport", "CityCode": "USH", "CityName": "Ushuaia"},
+    {"StaCode": "UTP","Name": "Rayong-Pattaya International Airport", "CityCode": "UTP", "CityName": "U-Tapao"},
+    {"StaCode": "UUD","Name": "Mukhino Airport", "CityCode": "UUD", "CityName": "Ulan-Ude"},
+    {"StaCode": "UUS","Name": "Khomutovo Airport", "CityCode": "UUS", "CityName": "Yuzhno-Sakhalinsk"},
+    {"StaCode": "UVF","Name": "Hewnorra Intl Airport", "CityCode": "SLU", "CityName": "St Lucia"},
+    {"StaCode": "VAA","Name": "Vaasa Airport", "CityCode": "VAA", "CityName": "Vaasa"},
+    {"StaCode": "VAR","Name": "Varna Airport", "CityCode": "VAR", "CityName": "Varna"},
+    {"StaCode": "VBY","Name": "Visby Airport", "CityCode": "VBY", "CityName": "Visby"},
+    {"StaCode": "VCE","Name": "Marco Polo Airport", "CityCode": "VCE", "CityName": "Venice"},
+    {"StaCode": "VCP","Name": "Viracopos-Campinas IntL Airport", "CityCode": "SAO", "CityName": "Sao Paulo"},
+    {"StaCode": "VDA","Name": "Ovda Airport", "CityCode": "VDA", "CityName": "Ovda"},
+    {"StaCode": "VFA","Name": "Victoria Falls International Airport", "CityCode": "VFA", "CityName": "Victoria Falls"},
+    {"StaCode": "VGO","Name": "Vigo Airport", "CityCode": "VGO", "CityName": "Vigo"},
+    {"StaCode": "VIE","Name": "Vienna International Airport", "CityCode": "VIE", "CityName": "Vienna"},
+    {"StaCode": "VIX","Name": "E. de Aguiar Salles Airport", "CityCode": "VIX", "CityName": "Vitoria"},
+    {"StaCode": "VLC","Name": "Valencia Airport", "CityCode": "VLC", "CityName": "Valencia"},
+    {"StaCode": "VLL","Name": "Valladolid Airport", "CityCode": "VLL", "CityName": "Valladolid"},
+    {"StaCode": "VNO","Name": "Vilnius International Airport", "CityCode": "VNO", "CityName": "Vilnius"},
+    {"StaCode": "VNS","Name": "Lal Bahadur Shastri Airport", "CityCode": "VNS", "CityName": "Varanasi"},
+    {"StaCode": "VOG","Name": "Gumrak Airport", "CityCode": "VOG", "CityName": "Volgograd"},
+    {"StaCode": "VOZ","Name": "Chertovitskoye Airport", "CityCode": "VOZ", "CityName": "Voronezh"},
+    {"StaCode": "VPS","Name": "Destin-Ft. Walton Beach Airport", "CityCode": "VPS", "CityName": "Fort Walton Beach"},
+    {"StaCode": "VRA","Name": "Juan G. Gomez Intl Airport", "CityCode": "VRA", "CityName": "Varadero"},
+    {"StaCode": "VRN","Name": "Villafranca Airport", "CityCode": "VRN", "CityName": "Verona"},
+    {"StaCode": "VTZ","Name": "Vishakhapatnam Airport", "CityCode": "VTZ", "CityName": "Vishakhapatnam"},
+    {"StaCode": "VUP","Name": "Alfonso Lopez Pumarejo Airport", "CityCode": "VUP", "CityName": "Valledupar"},
+    {"StaCode": "VVI","Name": "Viru Viru International Airport", "CityCode": "SRZ", "CityName": "Santa Cruz"},
+    {"StaCode": "VVO","Name": "Knevichi Airport", "CityCode": "VVO", "CityName": "Vladivostok"},
+    {"StaCode": "WAW","Name": "Frederic Chopin Airport", "CityCode": "WAW", "CityName": "Warsaw"},
+    {"StaCode": "WDH","Name": "Hosea Kutako International Airport", "CityCode": "WDH", "CityName": "Windhoek"},
+    {"StaCode": "WEI","Name": "Weipa Airport", "CityCode": "WEI", "CityName": "Weipa"},
+    {"StaCode": "WGA","Name": "Wagga Wagga Airport", "CityCode": "WGA", "CityName": "Wagga Wagga"},
+    {"StaCode": "WLG","Name": "Wellington International Airport", "CityCode": "WLG", "CityName": "Wellington"},
+    {"StaCode": "WNZ","Name": "Yongqiang Intl Airport", "CityCode": "WNZ", "CityName": "Wenzhou"},
+    {"StaCode": "WRZ","Name": "Weerawila Airport", "CityCode": "WRZ", "CityName": "Weerawila"},
+    {"StaCode": "WTB","Name": "Brisbane West Wellcamp Airport", "CityCode": "TWB", "CityName": "Toowoomba"},
+    {"StaCode": "WUH","Name": "Tianhe Intl Airport", "CityCode": "WUH", "CityName": "Wuhan"},
+    {"StaCode": "WYA","Name": "Whyalla Airport", "CityCode": "WYA", "CityName": "Whyalla"},
+    {"StaCode": "XIY","Name": "Xianyang Intl Airport", "CityCode": "SIA", "CityName": "Xi'an"},
+    {"StaCode": "XMN","Name": "Gaoqi Intl Airport", "CityCode": "XMN", "CityName": "Xiamen"},
+    {"StaCode": "XNA","Name": "Northwest Arkansas Regional Airport", "CityCode": "FYV", "CityName": "Fayetteville/Springdale"},
+    {"StaCode": "XRY","Name": "Jerez Airport", "CityCode": "XRY", "CityName": "Jerez"},
+    {"StaCode": "YEG","Name": "Edmonton International Airport", "CityCode": "YEA", "CityName": "Edmonton"},
+    {"StaCode": "YKS","Name": "Yakutsk Airport", "CityCode": "YKS", "CityName": "Yakutsk"},
+    {"StaCode": "YOW","Name": "Macdonald-Cartier Intl Airport", "CityCode": "YOW", "CityName": "Ottawa"},
+    {"StaCode": "YQB","Name": "Jean Lesage International Airport", "CityCode": "YQB", "CityName": "Quebec"},
+    {"StaCode": "YUL","Name": "Pierre Elliott Trudeau International Airport", "CityCode": "YMQ", "CityName": "Montreal"},
+    {"StaCode": "YUM","Name": "Yuma International Airport", "CityCode": "YUM", "CityName": "Yuma"},
+    {"StaCode": "YVR","Name": "Vancouver International Airport", "CityCode": "YVR", "CityName": "Vancouver"},
+    {"StaCode": "YYC","Name": "Calgary International Airport", "CityCode": "YYC", "CityName": "Calgary"},
+    {"StaCode": "YYZ","Name": "Lester B. Pearson Intl Airport", "CityCode": "YTO", "CityName": "Toronto"},
+    {"StaCode": "ZAG","Name": "Pleso Airport", "CityCode": "ZAG", "CityName": "Zagreb"},
+    {"StaCode": "ZAL","Name": "Pichoy Airport", "CityCode": "ZAL", "CityName": "Valdivia"},
+    {"StaCode": "ZCL","Name": "Leobardo C. Ruiz Intl Airport", "CityCode": "ZCL", "CityName": "Zacatecas"},
+    {"StaCode": "ZCO","Name": "La Araucania Airport", "CityCode": "ZCO", "CityName": "Temuco"},
+    {"StaCode": "ZIH","Name": "Ixtapa/Zihuatanejo Intl Airport", "CityCode": "ZIH", "CityName": "Ixtapa/Zihuatanejo"},
+    {"StaCode": "ZLO","Name": "Playa de Oro Intl Airport", "CityCode": "ZLO", "CityName": "Manzanillo"},
+    {"StaCode": "ZNE","Name": "Newman Airport", "CityCode": "ZNE", "CityName": "Newman"},
+    {"StaCode": "ZNZ","Name": "Zanzibar International Airport", "CityCode": "ZNZ", "CityName": "Zanzibar"},
+    {"StaCode": "ZOS","Name": "Canal Bajo Airport", "CityCode": "ZOS", "CityName": "Osorno"},
+    {"StaCode": "ZQN","Name": "Queenstown Airport", "CityCode": "ZQN", "CityName": "Queenstown"},
+    {"StaCode": "ZRH","Name": "Zurich Airport", "CityCode": "ZRH", "CityName": "Zurich"},
+    {"StaCode": "ZSA","Name": "Cockburn Town Airport", "CityCode": "ZSA", "CityName": "San Salvador"},
+    {"StaCode": "ZTH","Name": "Dionsios Salomos Airport", "CityCode": "ZTH", "CityName": "Zakinthos Island"},
+    {"StaCode": "AAL", "Name": "Aalborg","CityCode": "AAL", "CityName": "Aalborg"},
+
+
+{"StaCode": "AAQ", "Name": "Anapa","CityCode": "AAQ", "CityName": "Anapa"},
+
+{"StaCode": "AAR", "Name": "Aarhus","CityCode": "AAR", "CityName": "Aarhus"},
+
+{"StaCode": "ABA", "Name": "Abakan","CityCode": "ABA", "CityName": "Abakan"},
+
+{"StaCode": "ABE", "Name": "Allentown","CityCode": "ABE", "CityName": "Allentown"},
+
+{"StaCode": "ABI", "Name": "Abilene","CityCode": "ABI", "CityName": "Abilene"},
+
+{"StaCode": "ABQ", "Name": "Albuquerque","CityCode": "ABQ", "CityName": "Albuquerque"},
+
+{"StaCode": "ABV", "Name": "Abuja","CityCode": "ABV", "CityName": "Abuja"},
+
+{"StaCode": "ABX", "Name": "Albury","CityCode": "ABX", "CityName": "Albury"},
+
+{"StaCode": "ABZ", "Name": "Aberdeen","CityCode": "ABZ", "CityName": "Aberdeen"},
+
+{"StaCode": "ACC", "Name": "Accra","CityCode": "ACC", "CityName": "Accra"},
+
+{"StaCode": "ACE", "Name": "Lanzarote","CityCode": "ACE", "CityName": "Lanzarote"},
+
+{"StaCode": "ACK", "Name": "Nantucket","CityCode": "ACK", "CityName": "Nantucket"},
+
+{"StaCode": "ACT", "Name": "Waco","CityCode": "ACT", "CityName": "Waco"},
+
+{"StaCode": "ADA", "Name": "Adana","CityCode": "ADA", "CityName": "Adana"},
+
+{"StaCode": "ADD", "Name": "Addis Ababa","CityCode": "ADD", "CityName": "Addis Ababa"},
+
+{"StaCode": "ADL", "Name": "Adelaide","CityCode": "ADL", "CityName": "Adelaide"},
+
+{"StaCode": "ADZ", "Name": "San Andres Island","CityCode": "ADZ", "CityName": "San Andres Island"},
+
+{"StaCode": "AER", "Name": "Sochi","CityCode": "AER", "CityName": "Sochi"},
+
+{"StaCode": "AEX", "Name": "Alexandria","CityCode": "AEX", "CityName": "Alexandria"},
+
+{"StaCode": "AGP", "Name": "Malaga","CityCode": "AGP", "CityName": "Malaga"},
+
+{"StaCode": "AGS", "Name": "Augusta","CityCode": "AGS", "CityName": "Augusta"},
+
+{"StaCode": "AGU", "Name": "Aguascalientes","CityCode": "AGU", "CityName": "Aguascalientes"},
+
+{"StaCode": "AJU", "Name": "Aracaju","CityCode": "AJU", "CityName": "Aracaju"},
+
+{"StaCode": "AKJ", "Name": "Asahikawa","CityCode": "AKJ", "CityName": "Asahikawa"},
+
+{"StaCode": "AKL", "Name": "Auckland","CityCode": "AKL", "CityName": "Auckland"},
+
+{"StaCode": "ALA", "Name": "Almaty","CityCode": "ALA", "CityName": "Almaty"},
+
+{"StaCode": "ALB", "Name": "Albany","CityCode": "ALB", "CityName": "Albany"},
+
+{"StaCode": "ALC", "Name": "Alicante","CityCode": "ALC", "CityName": "Alicante"},
+
+{"StaCode": "ALG", "Name": "Algiers","CityCode": "ALG", "CityName": "Algiers"},
+
+{"StaCode": "ALO", "Name": "Waterloo","CityCode": "ALO", "CityName": "Waterloo"},
+
+{"StaCode": "AMA", "Name": "Amarillo","CityCode": "AMA", "CityName": "Amarillo"},
+
+{"StaCode": "AMD", "Name": "Ahmedabad","CityCode": "AMD", "CityName": "Ahmedabad"},
+
+{"StaCode": "AMM", "Name": "Amman","CityCode": "AMM", "CityName": "Amman"},
+
+{"StaCode": "AMS", "Name": "Amsterdam","CityCode": "AMS", "CityName": "Amsterdam"},
+
+{"StaCode": "ANC", "Name": "Anchorage","CityCode": "ANC", "CityName": "Anchorage"},
+
+{"StaCode": "ANF", "Name": "Antofagasta","CityCode": "ANF", "CityName": "Antofagasta"},
+
+{"StaCode": "ANK", "Name": "Ankara","CityCode": "ANK", "CityName": "Ankara"},
+
+{"StaCode": "ANU", "Name": "Antigua","CityCode": "ANU", "CityName": "Antigua"},
+
+{"StaCode": "AOJ", "Name": "Aomori","CityCode": "AOJ", "CityName": "Aomori"},
+
+{"StaCode": "AOR", "Name": "Alor Setar","CityCode": "AOR", "CityName": "Alor Setar"},
+
+{"StaCode": "AQJ", "Name": "Aqaba","CityCode": "AQJ", "CityName": "Aqaba"},
+
+{"StaCode": "AQP", "Name": "Arequipa","CityCode": "AQP", "CityName": "Arequipa"},
+
+{"StaCode": "ARI", "Name": "Arica","CityCode": "ARI", "CityName": "Arica"},
+
+{"StaCode": "ARM", "Name": "Armidale","CityCode": "ARM", "CityName": "Armidale"},
+
+{"StaCode": "ART", "Name": "Watertown","CityCode": "ART", "CityName": "Watertown"},
+
+{"StaCode": "ASB", "Name": "Ashgabat","CityCode": "ASB", "CityName": "Ashgabat"},
+
+{"StaCode": "ASE", "Name": "Aspen","CityCode": "ASE", "CityName": "Aspen"},
+
+{"StaCode": "ASF", "Name": "Astrakhan","CityCode": "ASF", "CityName": "Astrakhan"},
+
+{"StaCode": "ASJ", "Name": "Amami","CityCode": "ASJ", "CityName": "Amami"},
+
+{"StaCode": "ASP", "Name": "Alice Springs","CityCode": "ASP", "CityName": "Alice Springs"},
+
+{"StaCode": "ASU", "Name": "Asuncion","CityCode": "ASU", "CityName": "Asuncion"},
+
+{"StaCode": "ATH", "Name": "Athens","CityCode": "ATH", "CityName": "Athens"},
+
+{"StaCode": "ATL", "Name": "Atlanta","CityCode": "ATL", "CityName": "Atlanta"},
+
+{"StaCode": "ATQ", "Name": "Amritsar","CityCode": "ATQ", "CityName": "Amritsar"},
+
+{"StaCode": "ATW", "Name": "Appleton","CityCode": "ATW", "CityName": "Appleton"},
+
+{"StaCode": "AUA", "Name": "Aruba","CityCode": "AUA", "CityName": "Aruba"},
+
+{"StaCode": "AUH", "Name": "Abu Dhabi","CityCode": "AUH", "CityName": "Abu Dhabi"},
+
+{"StaCode": "AUS", "Name": "Austin","CityCode": "AUS", "CityName": "Austin"},
+
+{"StaCode": "AUW", "Name": "Wausau","CityCode": "AUW", "CityName": "Wausau"},
+
+{"StaCode": "AVL", "Name": "Asheville/Hendersonville","CityCode": "AVL", "CityName": "Asheville/Hendersonville"},
+
+{"StaCode": "AVP", "Name": "Wilkes-Barre/Scranton","CityCode": "AVP", "CityName": "Wilkes-Barre/Scranton"},
+
+{"StaCode": "AXT", "Name": "Akita","CityCode": "AXT", "CityName": "Akita"},
+
+{"StaCode": "AYP", "Name": "Ayacucho","CityCode": "AYP", "CityName": "Ayacucho"},
+
+{"StaCode": "AYQ", "Name": "Ayers Rock","CityCode": "AYQ", "CityName": "Ayers Rock"},
+
+{"StaCode": "AYT", "Name": "Antalya","CityCode": "AYT", "CityName": "Antalya"},
+
+{"StaCode": "AZO", "Name": "Kalamazoo/Battle Creek","CityCode": "AZO", "CityName": "Kalamazoo/Battle Creek"},
+
+{"StaCode": "BAH", "Name": "Bahrain","CityCode": "BAH", "CityName": "Bahrain"},
+
+{"StaCode": "BAK", "Name": "Baku","CityCode": "BAK", "CityName": "Baku"},
+
+{"StaCode": "BAQ", "Name": "Barranquilla","CityCode": "BAQ", "CityName": "Barranquilla"},
+
+{"StaCode": "BAX", "Name": "Barnaul","CityCode": "BAX", "CityName": "Barnaul"},
+
+{"StaCode": "BBA", "Name": "Balmaceda","CityCode": "BBA", "CityName": "Balmaceda"},
+
+{"StaCode": "BBN", "Name": "Bario","CityCode": "BBN", "CityName": "Bario"},
+
+{"StaCode": "BCI", "Name": "Barcaldine","CityCode": "BCI", "CityName": "Barcaldine"},
+
+{"StaCode": "BCN", "Name": "Barcelona","CityCode": "BCN", "CityName": "Barcelona"},
+
+{"StaCode": "BDA", "Name": "Bermuda","CityCode": "BDA", "CityName": "Bermuda"},
+
+{"StaCode": "BDB", "Name": "Bundaberg","CityCode": "BDB", "CityName": "Bundaberg"},
+
+{"StaCode": "BDS", "Name": "Brindisi","CityCode": "BDS", "CityName": "Brindisi"},
+
+{"StaCode": "BEG", "Name": "Belgrade","CityCode": "BEG", "CityName": "Belgrade"},
+
+{"StaCode": "BEL", "Name": "Belem","CityCode": "BEL", "CityName": "Belem"},
+
+{"StaCode": "BER", "Name": "Berlin","CityCode": "BER", "CityName": "Berlin"},
+
+{"StaCode": "BEY", "Name": "Beirut","CityCode": "BEY", "CityName": "Beirut"},
+
+{"StaCode": "BFL", "Name": "Bakersfield","CityCode": "BFL", "CityName": "Bakersfield"},
+
+{"StaCode": "BFS", "Name": "Belfast","CityCode": "BFS", "CityName": "Belfast"},
+
+{"StaCode": "BGA", "Name": "Bucaramanga","CityCode": "BGA", "CityName": "Bucaramanga"},
+
+{"StaCode": "BGI", "Name": "Bridgetown","CityCode": "BGI", "CityName": "Bridgetown"},
+
+{"StaCode": "BGO", "Name": "Bergen","CityCode": "BGO", "CityName": "Bergen"},
+
+{"StaCode": "BGR", "Name": "Bangor","CityCode": "BGR", "CityName": "Bangor"},
+
+{"StaCode": "BGW", "Name": "Baghdad","CityCode": "BGW", "CityName": "Baghdad"},
+
+{"StaCode": "BHK", "Name": "Bukhara","CityCode": "BHK", "CityName": "Bukhara"},
+
+{"StaCode": "BHM", "Name": "Birmingham","CityCode": "BHM", "CityName": "Birmingham"},
+
+{"StaCode": "BHX", "Name": "Birmingham","CityCode": "BHX", "CityName": "Birmingham"},
+
+{"StaCode": "BHZ", "Name": "Belo Horizonte","CityCode": "BHZ", "CityName": "Belo Horizonte"},
+
+{"StaCode": "BIA", "Name": "Bastia","CityCode": "BIA", "CityName": "Bastia"},
+
+{"StaCode": "BIL", "Name": "Billings","CityCode": "BIL", "CityName": "Billings"},
+
+{"StaCode": "BIO", "Name": "Bilbao","CityCode": "BIO", "CityName": "Bilbao"},
+
+{"StaCode": "BIQ", "Name": "Biarritz","CityCode": "BIQ", "CityName": "Biarritz"},
+
+{"StaCode": "BIS", "Name": "Bismarck","CityCode": "BIS", "CityName": "Bismarck"},
+
+{"StaCode": "BJS", "Name": "Beijing","CityCode": "BJS", "CityName": "Beijing"},
+
+{"StaCode": "BJV", "Name": "Bodrum","CityCode": "BJV", "CityName": "Bodrum"},
+
+{"StaCode": "BJX", "Name": "Leon/Guanajuato","CityCode": "BJX", "CityName": "Leon/Guanajuato"},
+
+{"StaCode": "BJZ", "Name": "Badajoz","CityCode": "BJZ", "CityName": "Badajoz"},
+
+{"StaCode": "BKI", "Name": "Kota Kinabalu","CityCode": "BKI", "CityName": "Kota Kinabalu"},
+
+{"StaCode": "BKK", "Name": "Bangkok","CityCode": "BKK", "CityName": "Bangkok"},
+
+{"StaCode": "BKM", "Name": "Bakelalan","CityCode": "BKM", "CityName": "Bakelalan"},
+
+{"StaCode": "BKQ", "Name": "Blackall","CityCode": "BKQ", "CityName": "Blackall"},
+
+{"StaCode": "BLL", "Name": "Billund","CityCode": "BLL", "CityName": "Billund"},
+
+{"StaCode": "BLQ", "Name": "Bologna","CityCode": "BLQ", "CityName": "Bologna"},
+
+{"StaCode": "BLR", "Name": "Bengaluru","CityCode": "BLR", "CityName": "Bengaluru"},
+
+{"StaCode": "BME", "Name": "Broome","CityCode": "BME", "CityName": "Broome"},
+
+{"StaCode": "BMI", "Name": "Bloomington-Normal","CityCode": "BMI", "CityName": "Bloomington-Normal"},
+
+{"StaCode": "BNA", "Name": "Nashville","CityCode": "BNA", "CityName": "Nashville"},
+
+{"StaCode": "BNE", "Name": "Brisbane","CityCode": "BNE", "CityName": "Brisbane"},
+
+{"StaCode": "BOD", "Name": "Bordeaux","CityCode": "BOD", "CityName": "Bordeaux"},
+
+{"StaCode": "BOG", "Name": "Bogota","CityCode": "BOG", "CityName": "Bogota"},
+
+{"StaCode": "BOI", "Name": "Boise","CityCode": "BOI", "CityName": "Boise"},
+
+{"StaCode": "BOJ", "Name": "Burgas","CityCode": "BOJ", "CityName": "Burgas"},
+
+{"StaCode": "BOM", "Name": "Mumbai","CityCode": "BOM", "CityName": "Mumbai"},
+
+{"StaCode": "BON", "Name": "Bonaire","CityCode": "BON", "CityName": "Bonaire"},
+
+{"StaCode": "BOS", "Name": "Boston","CityCode": "BOS", "CityName": "Boston"},
+
+{"StaCode": "BPS", "Name": "Porto Seguro","CityCode": "BPS", "CityName": "Porto Seguro"},
+
+{"StaCode": "BPT", "Name": "Beaumont/Port Arthur","CityCode": "BPT", "CityName": "Beaumont/Port Arthur"},
+
+{"StaCode": "BQS", "Name": "Blagoveschensk","CityCode": "BQS", "CityName": "Blagoveschensk"},
+
+{"StaCode": "BRC", "Name": "San Carlos Bariloche","CityCode": "BRC", "CityName": "San Carlos Bariloche"},
+
+{"StaCode": "BRI", "Name": "Bari","CityCode": "BRI", "CityName": "Bari"},
+
+{"StaCode": "BRO", "Name": "Brownsville","CityCode": "BRO", "CityName": "Brownsville"},
+
+{"StaCode": "BRU", "Name": "Brussels","CityCode": "BRU", "CityName": "Brussels"},
+
+{"StaCode": "BSB", "Name": "Brasilia","CityCode": "BSB", "CityName": "Brasilia"},
+
+{"StaCode": "BSR", "Name": "Basrah","CityCode": "BSR", "CityName": "Basrah"},
+
+{"StaCode": "BTC", "Name": "Batticaloa","CityCode": "BTC", "CityName": "Batticaloa"},
+
+{"StaCode": "BTK", "Name": "Bratsk","CityCode": "BTK", "CityName": "Bratsk"},
+
+{"StaCode": "BTR", "Name": "Baton Rouge","CityCode": "BTR", "CityName": "Baton Rouge"},
+
+{"StaCode": "BTU", "Name": "Bintulu","CityCode": "BTU", "CityName": "Bintulu"},
+
+{"StaCode": "BTV", "Name": "Burlington","CityCode": "BTV", "CityName": "Burlington"},
+
+{"StaCode": "BUD", "Name": "Budapest","CityCode": "BUD", "CityName": "Budapest"},
+
+{"StaCode": "BUE", "Name": "Buenos Aires","CityCode": "BUE", "CityName": "Buenos Aires"},
+
+{"StaCode": "BUF", "Name": "Buffalo","CityCode": "BUF", "CityName": "Buffalo"},
+
+{"StaCode": "BUH", "Name": "Bucharest","CityCode": "BUH", "CityName": "Bucharest"},
+
+{"StaCode": "BUR", "Name": "Burbank","CityCode": "BUR", "CityName": "Burbank"},
+
+{"StaCode": "BUS", "Name": "Batumi","CityCode": "BUS", "CityName": "Batumi"},
+
+{"StaCode": "BVB", "Name": "Boa Vista","CityCode": "BVB", "CityName": "Boa Vista"},
+
+{"StaCode": "BWI", "Name": "Baltimore","CityCode": "BWI", "CityName": "Baltimore"},
+
+{"StaCode": "BWN", "Name": "Bandar Seri Begawan","CityCode": "BWN", "CityName": "Bandar Seri Begawan"},
+
+{"StaCode": "BZE", "Name": "Belize City","CityCode": "BZE", "CityName": "Belize City"},
+
+{"StaCode": "BZK", "Name": "Bryansk","CityCode": "BZK", "CityName": "Bryansk"},
+
+{"StaCode": "BZN", "Name": "Bozeman","CityCode": "BZN", "CityName": "Bozeman"},
+
+{"StaCode": "CAE", "Name": "Columbia","CityCode": "CAE", "CityName": "Columbia"},
+
+{"StaCode": "CAG", "Name": "Cagliari","CityCode": "CAG", "CityName": "Cagliari"},
+
+{"StaCode": "CAI", "Name": "Cairo","CityCode": "CAI", "CityName": "Cairo"},
+
+{"StaCode": "CAK", "Name": "Akron/Canton","CityCode": "CAK", "CityName": "Akron/Canton"},
+
+{"StaCode": "CAN", "Name": "Guangzhou","CityCode": "CAN", "CityName": "Guangzhou"},
+
+{"StaCode": "CAP", "Name": "Cap-Haitien","CityCode": "CAP", "CityName": "Cap-Haitien"},
+
+{"StaCode": "CAS", "Name": "Casablanca","CityCode": "CAS", "CityName": "Casablanca"},
+
+{"StaCode": "CBG", "Name": "Cambridge","CityCode": "CBG", "CityName": "Cambridge"},
+
+{"StaCode": "CBR", "Name": "Canberra","CityCode": "CBR", "CityName": "Canberra"},
+
+{"StaCode": "CCJ", "Name": "Kozhikode","CityCode": "CCJ", "CityName": "Kozhikode"},
+
+{"StaCode": "CCP", "Name": "Concepcion","CityCode": "CCP", "CityName": "Concepcion"},
+
+{"StaCode": "CCS", "Name": "Caracas","CityCode": "CCS", "CityName": "Caracas"},
+
+{"StaCode": "CCU", "Name": "Kolkata","CityCode": "CCU", "CityName": "Kolkata"},
+
+{"StaCode": "CEB", "Name": "Cebu","CityCode": "CEB", "CityName": "Cebu"},
+
+{"StaCode": "CEK", "Name": "Chelyabinsk","CityCode": "CEK", "CityName": "Chelyabinsk"},
+
+{"StaCode": "CFS", "Name": "Coffs Harbour","CityCode": "CFS", "CityName": "Coffs Harbour"},
+
+{"StaCode": "CFU", "Name": "Kerkyra","CityCode": "CFU", "CityName": "Kerkyra"},
+
+{"StaCode": "CGB", "Name": "Cuiaba","CityCode": "CGB", "CityName": "Cuiaba"},
+
+{"StaCode": "CGN", "Name": "Cologne/Bonn","CityCode": "CGN", "CityName": "Cologne/Bonn"},
+
+{"StaCode": "CGO", "Name": "Zhengzhou","CityCode": "CGO", "CityName": "Zhengzhou"},
+
+{"StaCode": "CGR", "Name": "Campo Grande","CityCode": "CGR", "CityName": "Campo Grande"},
+
+{"StaCode": "CHA", "Name": "Chattanooga","CityCode": "CHA", "CityName": "Chattanooga"},
+
+{"StaCode": "CHC", "Name": "Christchurch","CityCode": "CHC", "CityName": "Christchurch"},
+
+{"StaCode": "CHI", "Name": "Chicago","CityCode": "CHI", "CityName": "Chicago"},
+
+{"StaCode": "CHO", "Name": "Charlottesville","CityCode": "CHO", "CityName": "Charlottesville"},
+
+{"StaCode": "CHQ", "Name": "Chania","CityCode": "CHQ", "CityName": "Chania"},
+
+{"StaCode": "CHS", "Name": "Charleston","CityCode": "CHS", "CityName": "Charleston"},
+
+{"StaCode": "CID", "Name": "Cedar Rapids","CityCode": "CID", "CityName": "Cedar Rapids"},
+
+{"StaCode": "CIT", "Name": "Shymkent","CityCode": "CIT", "CityName": "Shymkent"},
+
+{"StaCode": "CIX", "Name": "Chiclayo","CityCode": "CIX", "CityName": "Chiclayo"},
+
+{"StaCode": "CJA", "Name": "Cajamarca","CityCode": "CJA", "CityName": "Cajamarca"},
+
+{"StaCode": "CJB", "Name": "Coimbatore","CityCode": "CJB", "CityName": "Coimbatore"},
+
+{"StaCode": "CJC", "Name": "Calama","CityCode": "CJC", "CityName": "Calama"},
+
+{"StaCode": "CJU", "Name": "Jeju","CityCode": "CJU", "CityName": "Jeju"},
+
+{"StaCode": "CKG", "Name": "Chongqing","CityCode": "CKG", "CityName": "Chongqing"},
+
+{"StaCode": "CLE", "Name": "Cleveland","CityCode": "CLE", "CityName": "Cleveland"},
+
+{"StaCode": "CLL", "Name": "College Station","CityCode": "CLL", "CityName": "College Station"},
+
+{"StaCode": "CLO", "Name": "Cali","CityCode": "CLO", "CityName": "Cali"},
+
+{"StaCode": "CLT", "Name": "Charlotte","CityCode": "CLT", "CityName": "Charlotte"},
+
+{"StaCode": "CMB", "Name": "Colombo","CityCode": "CMB", "CityName": "Colombo"},
+
+{"StaCode": "CMF", "Name": "Chambery","CityCode": "CMF", "CityName": "Chambery"},
+
+{"StaCode": "CMH", "Name": "Columbus","CityCode": "CMH", "CityName": "Columbus"},
+
+{"StaCode": "CMI", "Name": "Champaign/Urbana","CityCode": "CMI", "CityName": "Champaign/Urbana"},
+
+{"StaCode": "CMW", "Name": "Camaguey","CityCode": "CMW", "CityName": "Camaguey"},
+
+{"StaCode": "CNJ", "Name": "Cloncurry","CityCode": "CNJ", "CityName": "Cloncurry"},
+
+{"StaCode": "CNS", "Name": "Cairns","CityCode": "CNS", "CityName": "Cairns"},
+
+{"StaCode": "CNX", "Name": "Chiang Mai","CityCode": "CNX", "CityName": "Chiang Mai"},
+
+{"StaCode": "COK", "Name": "Kochi","CityCode": "COK", "CityName": "Kochi"},
+
+{"StaCode": "COR", "Name": "Cordoba","CityCode": "COR", "CityName": "Cordoba"},
+
+{"StaCode": "COS", "Name": "Colorado Springs","CityCode": "COS", "CityName": "Colorado Springs"},
+
+{"StaCode": "COU", "Name": "Columbia","CityCode": "COU", "CityName": "Columbia"},
+
+{"StaCode": "CPH", "Name": "Copenhagen","CityCode": "CPH", "CityName": "Copenhagen"},
+
+{"StaCode": "CPO", "Name": "Copiapo","CityCode": "CPO", "CityName": "Copiapo"},
+
+{"StaCode": "CPT", "Name": "Cape Town","CityCode": "CPT", "CityName": "Cape Town"},
+
+{"StaCode": "CRD", "Name": "Comodoro Rivadavia","CityCode": "CRD", "CityName": "Comodoro Rivadavia"},
+
+{"StaCode": "CRK", "Name": "Angeles/Mabalacat","CityCode": "CRK", "CityName": "Angeles/Mabalacat"},
+
+{"StaCode": "CRP", "Name": "Corpus Christi","CityCode": "CRP", "CityName": "Corpus Christi"},
+
+{"StaCode": "CRW", "Name": "Charleston","CityCode": "CRW", "CityName": "Charleston"},
+
+{"StaCode": "CSX", "Name": "Changsha","CityCode": "CSX", "CityName": "Changsha"},
+
+{"StaCode": "CTA", "Name": "Catania","CityCode": "CTA", "CityName": "Catania"},
+
+{"StaCode": "CTG", "Name": "Cartagena","CityCode": "CTG", "CityName": "Cartagena"},
+
+{"StaCode": "CTL", "Name": "Charleville","CityCode": "CTL", "CityName": "Charleville"},
+
+{"StaCode": "CTU", "Name": "Chengdu","CityCode": "CTU", "CityName": "Chengdu"},
+
+{"StaCode": "CUC", "Name": "Cucuta","CityCode": "CUC", "CityName": "Cucuta"},
+
+{"StaCode": "CUE", "Name": "Cuenca","CityCode": "CUE", "CityName": "Cuenca"},
+
+{"StaCode": "CUN", "Name": "Cancun","CityCode": "CUN", "CityName": "Cancun"},
+
+{"StaCode": "CUR", "Name": "Curacao","CityCode": "CUR", "CityName": "Curacao"},
+
+{"StaCode": "CUU", "Name": "Chihuahua","CityCode": "CUU", "CityName": "Chihuahua"},
+
+{"StaCode": "CUZ", "Name": "Cusco","CityCode": "CUZ", "CityName": "Cusco"},
+
+{"StaCode": "CVG", "Name": "Cincinnati","CityCode": "CVG", "CityName": "Cincinnati"},
+
+{"StaCode": "CWB", "Name": "Curitiba","CityCode": "CWB", "CityName": "Curitiba"},
+
+{"StaCode": "CWL", "Name": "Cardiff","CityCode": "CWL", "CityName": "Cardiff"},
+
+{"StaCode": "CYS", "Name": "Cheyenne","CityCode": "CYS", "CityName": "Cheyenne"},
+
+{"StaCode": "CZM", "Name": "Cozumel","CityCode": "CZM", "CityName": "Cozumel"},
+
+{"StaCode": "DAB", "Name": "Daytona Beach","CityCode": "DAB", "CityName": "Daytona Beach"},
+
+{"StaCode": "DAC", "Name": "Dhaka","CityCode": "DAC", "CityName": "Dhaka"},
+
+{"StaCode": "DAD", "Name": "Da Nang","CityCode": "DAD", "CityName": "Da Nang"},
+
+{"StaCode": "DAR", "Name": "Dar Es Salaam","CityCode": "DAR", "CityName": "Dar Es Salaam"},
+
+{"StaCode": "DAY", "Name": "Dayton","CityCode": "DAY", "CityName": "Dayton"},
+
+{"StaCode": "DBO", "Name": "Dubbo","CityCode": "DBO", "CityName": "Dubbo"},
+
+{"StaCode": "DBQ", "Name": "Dubuque","CityCode": "DBQ", "CityName": "Dubuque"},
+
+{"StaCode": "DBV", "Name": "Dubrovnik","CityCode": "DBV", "CityName": "Dubrovnik"},
+
+{"StaCode": "DEL", "Name": "Delhi","CityCode": "DEL", "CityName": "Delhi"},
+
+{"StaCode": "DEN", "Name": "Denver","CityCode": "DEN", "CityName": "Denver"},
+
+{"StaCode": "DFW", "Name": "Dallas","CityCode": "DFW", "CityName": "Dallas"},
+
+{"StaCode": "DGO", "Name": "Durango","CityCode": "DGO", "CityName": "Durango"},
+
+{"StaCode": "DIW", "Name": "Dikwella","CityCode": "DIW", "CityName": "Dikwella"},
+
+{"StaCode": "DLC", "Name": "Dalian","CityCode": "DLC", "CityName": "Dalian"},
+
+{"StaCode": "DLM", "Name": "Dalaman","CityCode": "DLM", "CityName": "Dalaman"},
+
+{"StaCode": "DMB", "Name": "Taraz","CityCode": "DMB", "CityName": "Taraz"},
+
+{"StaCode": "DMM", "Name": "Dammam","CityCode": "DMM", "CityName": "Dammam"},
+
+{"StaCode": "DOH", "Name": "Doha","CityCode": "DOH", "CityName": "Doha"},
+
+{"StaCode": "DPO", "Name": "Devonport","CityCode": "DPO", "CityName": "Devonport"},
+
+{"StaCode": "DPS", "Name": "Denpasar-Bali","CityCode": "DPS", "CityName": "Denpasar-Bali"},
+
+{"StaCode": "DRO", "Name": "Durango","CityCode": "DRO", "CityName": "Durango"},
+
+{"StaCode": "DRT", "Name": "Del Rio","CityCode": "DRT", "CityName": "Del Rio"},
+
+{"StaCode": "DRW", "Name": "Darwin","CityCode": "DRW", "CityName": "Darwin"},
+
+{"StaCode": "DSM", "Name": "Des Moines","CityCode": "DSM", "CityName": "Des Moines"},
+
+{"StaCode": "DSS", "Name": "Thies","CityCode": "DSS", "CityName": "Thies"},
+
+{"StaCode": "DTT", "Name": "Detroit","CityCode": "DTT", "CityName": "Detroit"},
+
+{"StaCode": "DUB", "Name": "Dublin","CityCode": "DUB", "CityName": "Dublin"},
+
+{"StaCode": "DUR", "Name": "Durban","CityCode": "DUR", "CityName": "Durban"},
+
+{"StaCode": "DUS", "Name": "Duesseldorf","CityCode": "DUS", "CityName": "Duesseldorf"},
+
+{"StaCode": "DVO", "Name": "Davao","CityCode": "DVO", "CityName": "Davao"},
+
+{"StaCode": "DWO", "Name": "Kotte","CityCode": "DWO", "CityName": "Kotte"},
+
+{"StaCode": "DXB", "Name": "Dubai","CityCode": "DXB", "CityName": "Dubai"},
+
+{"StaCode": "DYU", "Name": "Dushanbe","CityCode": "DYU", "CityName": "Dushanbe"},
+
+{"StaCode": "EAP", "Name": "Basel/Mulhouse","CityCode": "EAP", "CityName": "Basel/Mulhouse"},
+
+{"StaCode": "EAS", "Name": "San Sebastian","CityCode": "EAS", "CityName": "San Sebastian"},
+
+{"StaCode": "EBB", "Name": "Entebbe","CityCode": "EBB", "CityName": "Entebbe"},
+
+{"StaCode": "EBL", "Name": "Erbil","CityCode": "EBL", "CityName": "Erbil"},
+
+{"StaCode": "ECP", "Name": "Panama City","CityCode": "ECP", "CityName": "Panama City"},
+
+{"StaCode": "EDI", "Name": "Edinburgh","CityCode": "EDI", "CityName": "Edinburgh"},
+
+{"StaCode": "EFL", "Name": "Kefallinia","CityCode": "EFL", "CityName": "Kefallinia"},
+
+{"StaCode": "EGC", "Name": "Bergerac","CityCode": "EGC", "CityName": "Bergerac"},
+
+{"StaCode": "EGE", "Name": "Vail/Eagle","CityCode": "EGE", "CityName": "Vail/Eagle"},
+
+{"StaCode": "EGO", "Name": "Belgorod","CityCode": "EGO", "CityName": "Belgorod"},
+
+{"StaCode": "ELH", "Name": "North Eleuthera","CityCode": "ELH", "CityName": "North Eleuthera"},
+
+{"StaCode": "ELP", "Name": "El Paso","CityCode": "ELP", "CityName": "El Paso"},
+
+{"StaCode": "EMD", "Name": "Emerald","CityCode": "EMD", "CityName": "Emerald"},
+
+{"StaCode": "ERI", "Name": "Erie","CityCode": "ERI", "CityName": "Erie"},
+
+{"StaCode": "EUG", "Name": "Eugene","CityCode": "EUG", "CityName": "Eugene"},
+
+{"StaCode": "EVN", "Name": "Yerevan","CityCode": "EVN", "CityName": "Yerevan"},
+
+{"StaCode": "EVV", "Name": "Evansville","CityCode": "EVV", "CityName": "Evansville"},
+
+{"StaCode": "EWN", "Name": "New Bern","CityCode": "EWN", "CityName": "New Bern"},
+
+{"StaCode": "EYP", "Name": "Yopal","CityCode": "EYP", "CityName": "Yopal"},
+
+{"StaCode": "EYW", "Name": "Key West","CityCode": "EYW", "CityName": "Key West"},
+
+{"StaCode": "FAO", "Name": "Faro","CityCode": "FAO", "CityName": "Faro"},
+
+{"StaCode": "FAR", "Name": "Fargo","CityCode": "FAR", "CityName": "Fargo"},
+
+{"StaCode": "FAT", "Name": "Fresno","CityCode": "FAT", "CityName": "Fresno"},
+
+{"StaCode": "FAY", "Name": "Fayetteville","CityCode": "FAY", "CityName": "Fayetteville"},
+
+{"StaCode": "FDF", "Name": "Fort-de-France","CityCode": "FDF", "CityName": "Fort-de-France"},
+
+{"StaCode": "FDH", "Name": "Friedrichshafen","CityCode": "FDH", "CityName": "Friedrichshafen"},
+
+{"StaCode": "FEG", "Name": "Fergana","CityCode": "FEG", "CityName": "Fergana"},
+
+{"StaCode": "FLL", "Name": "Fort Lauderdale","CityCode": "FLL", "CityName": "Fort Lauderdale"},
+
+{"StaCode": "FLN", "Name": "Florianopolis","CityCode": "FLN", "CityName": "Florianopolis"},
+
+{"StaCode": "FLO", "Name": "Florence","CityCode": "FLO", "CityName": "Florence"},
+
+{"StaCode": "FLR", "Name": "Florence","CityCode": "FLR", "CityName": "Florence"},
+
+{"StaCode": "FMY", "Name": "Fort Myers","CityCode": "FMY", "CityName": "Fort Myers"},
+
+{"StaCode": "FNC", "Name": "Madeira","CityCode": "FNC", "CityName": "Madeira"},
+
+{"StaCode": "FNT", "Name": "Flint","CityCode": "FNT", "CityName": "Flint"},
+
+{"StaCode": "FOC", "Name": "Fuzhou","CityCode": "FOC", "CityName": "Fuzhou"},
+
+{"StaCode": "FOR", "Name": "Fortaleza","CityCode": "FOR", "CityName": "Fortaleza"},
+
+{"StaCode": "FPO", "Name": "Freeport","CityCode": "FPO", "CityName": "Freeport"},
+
+{"StaCode": "FRA", "Name": "Frankfurt","CityCode": "FRA", "CityName": "Frankfurt"},
+
+{"StaCode": "FRU", "Name": "Bishkek","CityCode": "FRU", "CityName": "Bishkek"},
+
+{"StaCode": "FSC", "Name": "Figari","CityCode": "FSC", "CityName": "Figari"},
+
+{"StaCode": "FSD", "Name": "Sioux Falls","CityCode": "FSD", "CityName": "Sioux Falls"},
+
+{"StaCode": "FSM", "Name": "Fort Smith","CityCode": "FSM", "CityName": "Fort Smith"},
+
+{"StaCode": "FTE", "Name": "El Calafate","CityCode": "FTE", "CityName": "El Calafate"},
+
+{"StaCode": "FUE", "Name": "Fuerteventura","CityCode": "FUE", "CityName": "Fuerteventura"},
+
+{"StaCode": "FUK", "Name": "Fukuoka","CityCode": "FUK", "CityName": "Fukuoka"},
+
+{"StaCode": "FWA", "Name": "Fort Wayne","CityCode": "FWA", "CityName": "Fort Wayne"},
+
+{"StaCode": "FYV", "Name": "Fayetteville/Springdale","CityCode": "FYV", "CityName": "Fayetteville/Springdale"},
+
+{"StaCode": "GAJ", "Name": "Yamagata","CityCode": "GAJ", "CityName": "Yamagata"},
+
+{"StaCode": "GAN", "Name": "Gan Island","CityCode": "GAN", "CityName": "Gan Island"},
+
+{"StaCode": "GCK", "Name": "Garden City","CityCode": "GCK", "CityName": "Garden City"},
+
+{"StaCode": "GCM", "Name": "Grand Cayman","CityCode": "GCM", "CityName": "Grand Cayman"},
+
+{"StaCode": "GCN", "Name": "Grand Canyon","CityCode": "GCN", "CityName": "Grand Canyon"},
+
+{"StaCode": "GDL", "Name": "Guadalajara","CityCode": "GDL", "CityName": "Guadalajara"},
+
+{"StaCode": "GDN", "Name": "Gdansk","CityCode": "GDN", "CityName": "Gdansk"},
+
+{"StaCode": "GDX", "Name": "Magadan","CityCode": "GDX", "CityName": "Magadan"},
+
+{"StaCode": "GEG", "Name": "Spokane","CityCode": "GEG", "CityName": "Spokane"},
+
+{"StaCode": "GEO", "Name": "Georgetown","CityCode": "GEO", "CityName": "Georgetown"},
+
+{"StaCode": "GET", "Name": "Geraldton","CityCode": "GET", "CityName": "Geraldton"},
+
+{"StaCode": "GGG", "Name": "Longview","CityCode": "GGG", "CityName": "Longview"},
+
+{"StaCode": "GGT", "Name": "George Town","CityCode": "GGT", "CityName": "George Town"},
+
+{"StaCode": "GIB", "Name": "Gibraltar","CityCode": "GIB", "CityName": "Gibraltar"},
+
+{"StaCode": "GIU", "Name": "Sigiriya","CityCode": "GIU", "CityName": "Sigiriya"},
+
+{"StaCode": "GJT", "Name": "Grand Junction","CityCode": "GJT", "CityName": "Grand Junction"},
+
+{"StaCode": "GLA", "Name": "Glasgow","CityCode": "GLA", "CityName": "Glasgow"},
+
+{"StaCode": "GLT", "Name": "Gladstone","CityCode": "GLT", "CityName": "Gladstone"},
+
+{"StaCode": "GND", "Name": "Grenada","CityCode": "GND", "CityName": "Grenada"},
+
+{"StaCode": "GNV", "Name": "Gainesville","CityCode": "GNV", "CityName": "Gainesville"},
+
+{"StaCode": "GOA", "Name": "Genoa","CityCode": "GOA", "CityName": "Genoa"},
+
+{"StaCode": "GOI", "Name": "Goa","CityCode": "GOI", "CityName": "Goa"},
+
+{"StaCode": "GOJ", "Name": "Nizhny Novgorod","CityCode": "GOJ", "CityName": "Nizhny Novgorod"},
+
+{"StaCode": "GOT", "Name": "Gothenburg","CityCode": "GOT", "CityName": "Gothenburg"},
+
+{"StaCode": "GPS", "Name": "Baltra Island","CityCode": "GPS", "CityName": "Baltra Island"},
+
+{"StaCode": "GPT", "Name": "Gulfport/Biloxi","CityCode": "GPT", "CityName": "Gulfport/Biloxi"},
+
+{"StaCode": "GRB", "Name": "Green Bay","CityCode": "GRB", "CityName": "Green Bay"},
+
+{"StaCode": "GRI", "Name": "Grand Island","CityCode": "GRI", "CityName": "Grand Island"},
+
+{"StaCode": "GRR", "Name": "Grand Rapids","CityCode": "GRR", "CityName": "Grand Rapids"},
+
+{"StaCode": "GRX", "Name": "Granada","CityCode": "GRX", "CityName": "Granada"},
+
+{"StaCode": "GSO", "Name": "Greensboro/High Point","CityCode": "GSO", "CityName": "Greensboro/High Point"},
+
+{"StaCode": "GSP", "Name": "Greenville/Spartanburg","CityCode": "GSP", "CityName": "Greenville/Spartanburg"},
+
+{"StaCode": "GUA", "Name": "Guatemala City","CityCode": "GUA", "CityName": "Guatemala City"},
+
+{"StaCode": "GUC", "Name": "Gunnison","CityCode": "GUC", "CityName": "Gunnison"},
+
+{"StaCode": "GUM", "Name": "Guam","CityCode": "GUM", "CityName": "Guam"},
+
+{"StaCode": "GVA", "Name": "Geneva","CityCode": "GVA", "CityName": "Geneva"},
+
+{"StaCode": "GYE", "Name": "Guayaquil","CityCode": "GYE", "CityName": "Guayaquil"},
+
+{"StaCode": "GYN", "Name": "Goiania","CityCode": "GYN", "CityName": "Goiania"},
+
+{"StaCode": "GZP", "Name": "Gazipasa","CityCode": "GZP", "CityName": "Gazipasa"},
+
+{"StaCode": "HAJ", "Name": "Hannover","CityCode": "HAJ", "CityName": "Hannover"},
+
+{"StaCode": "HAK", "Name": "Haikou","CityCode": "HAK", "CityName": "Haikou"},
+
+{"StaCode": "HAM", "Name": "Hamburg","CityCode": "HAM", "CityName": "Hamburg"},
+
+{"StaCode": "HAN", "Name": "Hanoi","CityCode": "HAN", "CityName": "Hanoi"},
+
+{"StaCode": "HAR", "Name": "Harrisburg","CityCode": "HAR", "CityName": "Harrisburg"},
+
+{"StaCode": "HAV", "Name": "Havana","CityCode": "HAV", "CityName": "Havana"},
+
+{"StaCode": "HBA", "Name": "Hobart","CityCode": "HBA", "CityName": "Hobart"},
+
+{"StaCode": "HDN", "Name": "Hayden","CityCode": "HDN", "CityName": "Hayden"},
+
+{"StaCode": "HEL", "Name": "Helsinki","CityCode": "HEL", "CityName": "Helsinki"},
+
+{"StaCode": "HER", "Name": "Irakleion","CityCode": "HER", "CityName": "Irakleion"},
+
+{"StaCode": "HFD", "Name": "Hartford","CityCode": "HFD", "CityName": "Hartford"},
+
+{"StaCode": "HGH", "Name": "Hangzhou","CityCode": "HGH", "CityName": "Hangzhou"},
+
+{"StaCode": "HHH", "Name": "Hilton Head Island","CityCode": "HHH", "CityName": "Hilton Head Island"},
+
+{"StaCode": "HID", "Name": "Horn Island","CityCode": "HID", "CityName": "Horn Island"},
+
+{"StaCode": "HIJ", "Name": "Hiroshima","CityCode": "HIJ", "CityName": "Hiroshima"},
+
+{"StaCode": "HKD", "Name": "Hakodate","CityCode": "HKD", "CityName": "Hakodate"},
+
+{"StaCode": "HKG", "Name": "Hong Kong","CityCode": "HKG", "CityName": "Hong Kong"},
+
+{"StaCode": "HKT", "Name": "Phuket","CityCode": "HKT", "CityName": "Phuket"},
+
+{"StaCode": "HMO", "Name": "Hermosillo","CityCode": "HMO", "CityName": "Hermosillo"},
+
+{"StaCode": "HNA", "Name": "Hanamaki","CityCode": "HNA", "CityName": "Hanamaki"},
+
+{"StaCode": "HNL", "Name": "Honolulu","CityCode": "HNL", "CityName": "Honolulu"},
+
+{"StaCode": "HOG", "Name": "Holguin","CityCode": "HOG", "CityName": "Holguin"},
+
+{"StaCode": "HOU", "Name": "Houston","CityCode": "HOU", "CityName": "Houston"},
+
+{"StaCode": "HPN", "Name": "White Plains","CityCode": "HPN", "CityName": "White Plains"},
+
+{"StaCode": "HRE", "Name": "Harare","CityCode": "HRE", "CityName": "Harare"},
+
+{"StaCode": "HRI", "Name": "Hambantota","CityCode": "HRI", "CityName": "Hambantota"},
+
+{"StaCode": "HRL", "Name": "Harlingen","CityCode": "HRL", "CityName": "Harlingen"},
+
+{"StaCode": "HSV", "Name": "Huntsville","CityCode": "HSV", "CityName": "Huntsville"},
+
+{"StaCode": "HTA", "Name": "Chita","CityCode": "HTA", "CityName": "Chita"},
+
+{"StaCode": "HTI", "Name": "Hamilton Island","CityCode": "HTI", "CityName": "Hamilton Island"},
+
+{"StaCode": "HTS", "Name": "Huntington/Ashland KY","CityCode": "HTS", "CityName": "Huntington/Ashland KY"},
+
+{"StaCode": "HTY", "Name": "Hatay","CityCode": "HTY", "CityName": "Hatay"},
+
+{"StaCode": "HVB", "Name": "Hervey Bay","CityCode": "HVB", "CityName": "Hervey Bay"},
+
+{"StaCode": "HVN", "Name": "New Haven","CityCode": "HVN", "CityName": "New Haven"},
+
+{"StaCode": "HYD", "Name": "Hyderabad","CityCode": "HYD", "CityName": "Hyderabad"},
+
+{"StaCode": "IAR", "Name": "Yaroslavl","CityCode": "IAR", "CityName": "Yaroslavl"},
+
+{"StaCode": "IBZ", "Name": "Ibiza","CityCode": "IBZ", "CityName": "Ibiza"},
+
+{"StaCode": "ICT", "Name": "Wichita","CityCode": "ICT", "CityName": "Wichita"},
+
+{"StaCode": "IEV", "Name": "Kiev","CityCode": "IEV", "CityName": "Kiev"},
+
+{"StaCode": "IGR", "Name": "Iguazu","CityCode": "IGR", "CityName": "Iguazu"},
+
+{"StaCode": "IGU", "Name": "Foz do Iguacu","CityCode": "IGU", "CityName": "Foz do Iguacu"},
+
+{"StaCode": "IKT", "Name": "Irkutsk","CityCode": "IKT", "CityName": "Irkutsk"},
+
+{"StaCode": "IKU", "Name": "Tamchy","CityCode": "IKU", "CityName": "Tamchy"},
+
+{"StaCode": "ILD", "Name": "Lleida","CityCode": "ILD", "CityName": "Lleida"},
+
+{"StaCode": "ILE", "Name": "Killeen/Fort Hood","CityCode": "ILE", "CityName": "Killeen/Fort Hood"},
+
+{"StaCode": "ILM", "Name": "Wilmington","CityCode": "ILM", "CityName": "Wilmington"},
+
+{"StaCode": "IMP", "Name": "Imperatriz","CityCode": "IMP", "CityName": "Imperatriz"},
+
+{"StaCode": "IND", "Name": "Indianapolis","CityCode": "IND", "CityName": "Indianapolis"},
+
+{"StaCode": "INN", "Name": "Innsbruck","CityCode": "INN", "CityName": "Innsbruck"},
+
+{"StaCode": "INV", "Name": "Inverness","CityCode": "INV", "CityName": "Inverness"},
+
+{"StaCode": "IOM", "Name": "Isle Of Man","CityCode": "IOM", "CityName": "Isle Of Man"},
+
+{"StaCode": "IOS", "Name": "Ilheus","CityCode": "IOS", "CityName": "Ilheus"},
+
+{"StaCode": "IPC", "Name": "Easter Island","CityCode": "IPC", "CityName": "Easter Island"},
+
+{"StaCode": "IPT", "Name": "Williamsport","CityCode": "IPT", "CityName": "Williamsport"},
+
+{"StaCode": "IQQ", "Name": "Iquique","CityCode": "IQQ", "CityName": "Iquique"},
+
+{"StaCode": "IQT", "Name": "Iquitos","CityCode": "IQT", "CityName": "Iquitos"},
+
+{"StaCode": "ISA", "Name": "Mount Isa","CityCode": "ISA", "CityName": "Mount Isa"},
+
+{"StaCode": "ISB", "Name": "Islamabad","CityCode": "ISB", "CityName": "Islamabad"},
+
+{"StaCode": "ISG", "Name": "Ishigaki","CityCode": "ISG", "CityName": "Ishigaki"},
+
+{"StaCode": "ISP", "Name": "Islip","CityCode": "ISP", "CityName": "Islip"},
+
+{"StaCode": "IST", "Name": "Istanbul","CityCode": "IST", "CityName": "Istanbul"},
+
+{"StaCode": "ISU", "Name": "Sulaymaniyah","CityCode": "ISU", "CityName": "Sulaymaniyah"},
+
+{"StaCode": "ITH", "Name": "Ithaca","CityCode": "ITH", "CityName": "Ithaca"},
+
+{"StaCode": "IVL", "Name": "Ivalo","CityCode": "IVL", "CityName": "Ivalo"},
+
+{"StaCode": "IXM", "Name": "Madurai","CityCode": "IXM", "CityName": "Madurai"},
+
+{"StaCode": "IZO", "Name": "Izumo","CityCode": "IZO", "CityName": "Izumo"},
+
+{"StaCode": "JAC", "Name": "Jackson","CityCode": "JAC", "CityName": "Jackson"},
+
+{"StaCode": "JAE", "Name": "Jaen","CityCode": "JAE", "CityName": "Jaen"},
+
+{"StaCode": "JAN", "Name": "Jackson","CityCode": "JAN", "CityName": "Jackson"},
+
+{"StaCode": "JAU", "Name": "Jauja","CityCode": "JAU", "CityName": "Jauja"},
+
+{"StaCode": "JAX", "Name": "Jacksonville","CityCode": "JAX", "CityName": "Jacksonville"},
+
+{"StaCode": "JED", "Name": "Jeddah","CityCode": "JED", "CityName": "Jeddah"},
+
+{"StaCode": "JER", "Name": "Jersey","CityCode": "JER", "CityName": "Jersey"},
+
+{"StaCode": "JHB", "Name": "Johor Bahru","CityCode": "JHB", "CityName": "Johor Bahru"},
+
+{"StaCode": "JIB", "Name": "Djibouti","CityCode": "JIB", "CityName": "Djibouti"},
+
+{"StaCode": "JJG", "Name": "Jaguaruna","CityCode": "JJG", "CityName": "Jaguaruna"},
+
+{"StaCode": "JKT", "Name": "Jakarta","CityCode": "JKT", "CityName": "Jakarta"},
+
+{"StaCode": "JLN", "Name": "Joplin","CityCode": "JLN", "CityName": "Joplin"},
+
+{"StaCode": "JMK", "Name": "Mykonos","CityCode": "JMK", "CityName": "Mykonos"},
+
+{"StaCode": "JNB", "Name": "Johannesburg","CityCode": "JNB", "CityName": "Johannesburg"},
+
+{"StaCode": "JOE", "Name": "Joensuu","CityCode": "JOE", "CityName": "Joensuu"},
+
+{"StaCode": "JOI", "Name": "Joinville","CityCode": "JOI", "CityName": "Joinville"},
+
+{"StaCode": "JOK", "Name": "Yoshkar-Ola","CityCode": "JOK", "CityName": "Yoshkar-Ola"},
+
+{"StaCode": "JPA", "Name": "Joao Pessoa","CityCode": "JPA", "CityName": "Joao Pessoa"},
+
+{"StaCode": "JRO", "Name": "Kilimanjaro","CityCode": "JRO", "CityName": "Kilimanjaro"},
+
+{"StaCode": "JSI", "Name": "Skiathos","CityCode": "JSI", "CityName": "Skiathos"},
+
+{"StaCode": "JTC", "Name": "Bauru","CityCode": "JTC", "CityName": "Bauru"},
+
+{"StaCode": "JTR", "Name": "Thira","CityCode": "JTR", "CityName": "Thira"},
+
+{"StaCode": "JUL", "Name": "Juliaca","CityCode": "JUL", "CityName": "Juliaca"},
+
+{"StaCode": "JYV", "Name": "Jyvaskyla","CityCode": "JYV", "CityName": "Jyvaskyla"},
+
+{"StaCode": "KAJ", "Name": "Kajaani","CityCode": "KAJ", "CityName": "Kajaani"},
+
+{"StaCode": "KAO", "Name": "Kuusamo","CityCode": "KAO", "CityName": "Kuusamo"},
+
+{"StaCode": "KBR", "Name": "Kota Bharu","CityCode": "KBR", "CityName": "Kota Bharu"},
+
+{"StaCode": "KBV", "Name": "Krabi","CityCode": "KBV", "CityName": "Krabi"},
+
+{"StaCode": "KCH", "Name": "Kuching","CityCode": "KCH", "CityName": "Kuching"},
+
+{"StaCode": "KCT", "Name": "Koggala","CityCode": "KCT", "CityName": "Koggala"},
+
+{"StaCode": "KCZ", "Name": "Kochi","CityCode": "KCZ", "CityName": "Kochi"},
+
+{"StaCode": "KDW", "Name": "Kandy","CityCode": "KDW", "CityName": "Kandy"},
+
+{"StaCode": "KEJ", "Name": "Kemerovo","CityCode": "KEJ", "CityName": "Kemerovo"},
+
+{"StaCode": "KEM", "Name": "Kemi/Tornio","CityCode": "KEM", "CityName": "Kemi/Tornio"},
+
+{"StaCode": "KGC", "Name": "Kingscote","CityCode": "KGC", "CityName": "Kingscote"},
+
+{"StaCode": "KGD", "Name": "Kaliningrad","CityCode": "KGD", "CityName": "Kaliningrad"},
+
+{"StaCode": "KGF", "Name": "Karaganda","CityCode": "KGF", "CityName": "Karaganda"},
+
+{"StaCode": "KGI", "Name": "Kalgoorlie-Boulder","CityCode": "KGI", "CityName": "Kalgoorlie-Boulder"},
+
+{"StaCode": "KGL", "Name": "Kigali","CityCode": "KGL", "CityName": "Kigali"},
+
+{"StaCode": "KGP", "Name": "Kogalym","CityCode": "KGP", "CityName": "Kogalym"},
+
+{"StaCode": "KGS", "Name": "Kos","CityCode": "KGS", "CityName": "Kos"},
+
+{"StaCode": "KHH", "Name": "Kaohsiung","CityCode": "KHH", "CityName": "Kaohsiung"},
+
+{"StaCode": "KHI", "Name": "Karachi","CityCode": "KHI", "CityName": "Karachi"},
+
+{"StaCode": "KHV", "Name": "Khabarovsk","CityCode": "KHV", "CityName": "Khabarovsk"},
+
+{"StaCode": "KIJ", "Name": "Niigata","CityCode": "KIJ", "CityName": "Niigata"},
+
+{"StaCode": "KIN", "Name": "Kingston","CityCode": "KIN", "CityName": "Kingston"},
+
+{"StaCode": "KJA", "Name": "Krasnoyarsk","CityCode": "KJA", "CityName": "Krasnoyarsk"},
+
+{"StaCode": "KKJ", "Name": "Kitakyushu","CityCode": "KKJ", "CityName": "Kitakyushu"},
+
+{"StaCode": "KLF", "Name": "Kaluga","CityCode": "KLF", "CityName": "Kaluga"},
+
+{"StaCode": "KLX", "Name": "Kalamata","CityCode": "KLX", "CityName": "Kalamata"},
+
+{"StaCode": "KMG", "Name": "Kunming","CityCode": "KMG", "CityName": "Kunming"},
+
+{"StaCode": "KMI", "Name": "Miyazaki","CityCode": "KMI", "CityName": "Miyazaki"},
+
+{"StaCode": "KMJ", "Name": "Kumamoto","CityCode": "KMJ", "CityName": "Kumamoto"},
+
+{"StaCode": "KMQ", "Name": "Komatsu","CityCode": "KMQ", "CityName": "Komatsu"},
+
+{"StaCode": "KOA", "Name": "Kona","CityCode": "KOA", "CityName": "Kona"},
+
+{"StaCode": "KOJ", "Name": "Kagoshima","CityCode": "KOJ", "CityName": "Kagoshima"},
+
+{"StaCode": "KOK", "Name": "Kokkola/Pietarsaari","CityCode": "KOK", "CityName": "Kokkola/Pietarsaari"},
+
+{"StaCode": "KRK", "Name": "Krakow","CityCode": "KRK", "CityName": "Krakow"},
+
+{"StaCode": "KRR", "Name": "Krasnodar","CityCode": "KRR", "CityName": "Krasnodar"},
+
+{"StaCode": "KRT", "Name": "Khartoum","CityCode": "KRT", "CityName": "Khartoum"},
+
+{"StaCode": "KTA", "Name": "Karratha","CityCode": "KTA", "CityName": "Karratha"},
+
+{"StaCode": "KTD", "Name": "Kitadaito","CityCode": "KTD", "CityName": "Kitadaito"},
+
+{"StaCode": "KTM", "Name": "Kathmandu","CityCode": "KTM", "CityName": "Kathmandu"},
+
+{"StaCode": "KTT", "Name": "Kittila","CityCode": "KTT", "CityName": "Kittila"},
+
+{"StaCode": "KUA", "Name": "Kuantan","CityCode": "KUA", "CityName": "Kuantan"},
+
+{"StaCode": "KUD", "Name": "Kudat","CityCode": "KUD", "CityName": "Kudat"},
+
+{"StaCode": "KUF", "Name": "Samara","CityCode": "KUF", "CityName": "Samara"},
+
+{"StaCode": "KUH", "Name": "Kushiro","CityCode": "KUH", "CityName": "Kushiro"},
+
+{"StaCode": "KUL", "Name": "Kuala Lumpur","CityCode": "KUL", "CityName": "Kuala Lumpur"},
+
+{"StaCode": "KUO", "Name": "Kuopio","CityCode": "KUO", "CityName": "Kuopio"},
+
+{"StaCode": "KWI", "Name": "Kuwait","CityCode": "KWI", "CityName": "Kuwait"},
+
+{"StaCode": "KWL", "Name": "Guilin","CityCode": "KWL", "CityName": "Guilin"},
+
+{"StaCode": "KZN", "Name": "Kazan","CityCode": "KZN", "CityName": "Kazan"},
+
+{"StaCode": "LAN", "Name": "Lansing","CityCode": "LAN", "CityName": "Lansing"},
+
+{"StaCode": "LAS", "Name": "Las Vegas","CityCode": "LAS", "CityName": "Las Vegas"},
+
+{"StaCode": "LAW", "Name": "Lawton/Fort Sill","CityCode": "LAW", "CityName": "Lawton/Fort Sill"},
+
+{"StaCode": "LAX", "Name": "Los Angeles","CityCode": "LAX", "CityName": "Los Angeles"},
+
+{"StaCode": "LBA", "Name": "Leeds/Bradford","CityCode": "LBA", "CityName": "Leeds/Bradford"},
+
+{"StaCode": "LBB", "Name": "Lubbock","CityCode": "LBB", "CityName": "Lubbock"},
+
+{"StaCode": "LBD", "Name": "Khujand","CityCode": "LBD", "CityName": "Khujand"},
+
+{"StaCode": "LBP", "Name": "Long Banga","CityCode": "LBP", "CityName": "Long Banga"},
+
+{"StaCode": "LBU", "Name": "Labuan","CityCode": "LBU", "CityName": "Labuan"},
+
+{"StaCode": "LCA", "Name": "Larnaca","CityCode": "LCA", "CityName": "Larnaca"},
+
+{"StaCode": "LCG", "Name": "A Coruna","CityCode": "LCG", "CityName": "A Coruna"},
+
+{"StaCode": "LCH", "Name": "Lake Charles","CityCode": "LCH", "CityName": "Lake Charles"},
+
+{"StaCode": "LDB", "Name": "Londrina","CityCode": "LDB", "CityName": "Londrina"},
+
+{"StaCode": "LDH", "Name": "Lord Howe Island","CityCode": "LDH", "CityName": "Lord Howe Island"},
+
+{"StaCode": "LDU", "Name": "Lahad Datu","CityCode": "LDU", "CityName": "Lahad Datu"},
+
+{"StaCode": "LEA", "Name": "Learmonth","CityCode": "LEA", "CityName": "Learmonth"},
+
+{"StaCode": "LED", "Name": "St Petersburg","CityCode": "LED", "CityName": "St Petersburg"},
+
+{"StaCode": "LEI", "Name": "Almeria","CityCode": "LEI", "CityName": "Almeria"},
+
+{"StaCode": "LEN", "Name": "Leon","CityCode": "LEN", "CityName": "Leon"},
+
+{"StaCode": "LET", "Name": "Leticia","CityCode": "LET", "CityName": "Leticia"},
+
+{"StaCode": "LEX", "Name": "Lexington","CityCode": "LEX", "CityName": "Lexington"},
+
+{"StaCode": "LFT", "Name": "Lafayette","CityCode": "LFT", "CityName": "Lafayette"},
+
+{"StaCode": "LGB", "Name": "Long Beach","CityCode": "LGB", "CityName": "Long Beach"},
+
+{"StaCode": "LGK", "Name": "Langkawi","CityCode": "LGK", "CityName": "Langkawi"},
+
+{"StaCode": "LGL", "Name": "Long Lellang","CityCode": "LGL", "CityName": "Long Lellang"},
+
+{"StaCode": "LHE", "Name": "Lahore","CityCode": "LHE", "CityName": "Lahore"},
+
+{"StaCode": "LIG", "Name": "Limoges","CityCode": "LIG", "CityName": "Limoges"},
+
+{"StaCode": "LIH", "Name": "Lihue","CityCode": "LIH", "CityName": "Lihue"},
+
+{"StaCode": "LIM", "Name": "Lima","CityCode": "LIM", "CityName": "Lima"},
+
+{"StaCode": "LIR", "Name": "Liberia","CityCode": "LIR", "CityName": "Liberia"},
+
+{"StaCode": "LIS", "Name": "Lisbon","CityCode": "LIS", "CityName": "Lisbon"},
+
+{"StaCode": "LIT", "Name": "Little Rock","CityCode": "LIT", "CityName": "Little Rock"},
+
+{"StaCode": "LJU", "Name": "Ljubljana","CityCode": "LJU", "CityName": "Ljubljana"},
+
+{"StaCode": "LKH", "Name": "Long Akah","CityCode": "LKH", "CityName": "Long Akah"},
+
+{"StaCode": "LMN", "Name": "Limbang","CityCode": "LMN", "CityName": "Limbang"},
+
+{"StaCode": "LON", "Name": "London","CityCode": "LON", "CityName": "London"},
+
+{"StaCode": "LOS", "Name": "Lagos","CityCode": "LOS", "CityName": "Lagos"},
+
+{"StaCode": "LPA", "Name": "Gran Canaria","CityCode": "LPA", "CityName": "Gran Canaria"},
+
+{"StaCode": "LPB", "Name": "La Paz","CityCode": "LPB", "CityName": "La Paz"},
+
+{"StaCode": "LPK", "Name": "Lipetsk","CityCode": "LPK", "CityName": "Lipetsk"},
+
+{"StaCode": "LRD", "Name": "Laredo","CityCode": "LRD", "CityName": "Laredo"},
+
+{"StaCode": "LRE", "Name": "Longreach","CityCode": "LRE", "CityName": "Longreach"},
+
+{"StaCode": "LSC", "Name": "La Serena","CityCode": "LSC", "CityName": "La Serena"},
+
+{"StaCode": "LSE", "Name": "La Crosse","CityCode": "LSE", "CityName": "La Crosse"},
+
+{"StaCode": "LST", "Name": "Launceston","CityCode": "LST", "CityName": "Launceston"},
+
+{"StaCode": "LUL", "Name": "Hattiesburg/Laurel","CityCode": "LUL", "CityName": "Hattiesburg/Laurel"},
+
+{"StaCode": "LUX", "Name": "Luxembourg","CityCode": "LUX", "CityName": "Luxembourg"},
+
+{"StaCode": "LVI", "Name": "Livingstone","CityCode": "LVI", "CityName": "Livingstone"},
+
+{"StaCode": "LWY", "Name": "Lawas","CityCode": "LWY", "CityName": "Lawas"},
+
+{"StaCode": "LYH", "Name": "Lynchburg","CityCode": "LYH", "CityName": "Lynchburg"},
+
+{"StaCode": "LYP", "Name": "Faisalabad","CityCode": "LYP", "CityName": "Faisalabad"},
+
+{"StaCode": "LYS", "Name": "Lyon","CityCode": "LYS", "CityName": "Lyon"},
+
+{"StaCode": "MAA", "Name": "Chennai","CityCode": "MAA", "CityName": "Chennai"},
+
+{"StaCode": "MAB", "Name": "Maraba","CityCode": "MAB", "CityName": "Maraba"},
+
+{"StaCode": "MAD", "Name": "Madrid","CityCode": "MAD", "CityName": "Madrid"},
+
+{"StaCode": "MAF", "Name": "Midland","CityCode": "MAF", "CityName": "Midland"},
+
+{"StaCode": "MAH", "Name": "Menorca","CityCode": "MAH", "CityName": "Menorca"},
+
+{"StaCode": "MAN", "Name": "Manchester","CityCode": "MAN", "CityName": "Manchester"},
+
+{"StaCode": "MAO", "Name": "Manaus","CityCode": "MAO", "CityName": "Manaus"},
+
+{"StaCode": "MAR", "Name": "Maracaibo","CityCode": "MAR", "CityName": "Maracaibo"},
+
+{"StaCode": "MBA", "Name": "Mombasa","CityCode": "MBA", "CityName": "Mombasa"},
+
+{"StaCode": "MBJ", "Name": "Montego Bay","CityCode": "MBJ", "CityName": "Montego Bay"},
+
+{"StaCode": "MCP", "Name": "Macapa","CityCode": "MCP", "CityName": "Macapa"},
+
+{"StaCode": "MCT", "Name": "Muscat","CityCode": "MCT", "CityName": "Muscat"},
+
+{"StaCode": "MCY", "Name": "Sunshine Coast","CityCode": "MCY", "CityName": "Sunshine Coast"},
+
+{"StaCode": "MCZ", "Name": "Maceio","CityCode": "MCZ", "CityName": "Maceio"},
+
+{"StaCode": "MDE", "Name": "Medellin","CityCode": "MDE", "CityName": "Medellin"},
+
+{"StaCode": "MDZ", "Name": "Mendoza","CityCode": "MDZ", "CityName": "Mendoza"},
+
+{"StaCode": "MED", "Name": "Madinah","CityCode": "MED", "CityName": "Madinah"},
+
+{"StaCode": "MEI", "Name": "Meridian","CityCode": "MEI", "CityName": "Meridian"},
+
+{"StaCode": "MEL", "Name": "Melbourne","CityCode": "MEL", "CityName": "Melbourne"},
+
+{"StaCode": "MEM", "Name": "Memphis","CityCode": "MEM", "CityName": "Memphis"},
+
+{"StaCode": "MES", "Name": "Medan","CityCode": "MES", "CityName": "Medan"},
+
+{"StaCode": "MEX", "Name": "Mexico City","CityCode": "MEX", "CityName": "Mexico City"},
+
+{"StaCode": "MFE", "Name": "McAllen/Mission","CityCode": "MFE", "CityName": "McAllen/Mission"},
+
+{"StaCode": "MFR", "Name": "Medford","CityCode": "MFR", "CityName": "Medford"},
+
+{"StaCode": "MGA", "Name": "Managua","CityCode": "MGA", "CityName": "Managua"},
+
+{"StaCode": "MGM", "Name": "Montgomery","CityCode": "MGM", "CityName": "Montgomery"},
+
+{"StaCode": "MHD", "Name": "Mashhad","CityCode": "MHD", "CityName": "Mashhad"},
+
+{"StaCode": "MHH", "Name": "Marsh Harbour","CityCode": "MHH", "CityName": "Marsh Harbour"},
+
+{"StaCode": "MHK", "Name": "Manhattan","CityCode": "MHK", "CityName": "Manhattan"},
+
+{"StaCode": "MHQ", "Name": "Mariehamn","CityCode": "MHQ", "CityName": "Mariehamn"},
+
+{"StaCode": "MHT", "Name": "Manchester","CityCode": "MHT", "CityName": "Manchester"},
+
+{"StaCode": "MIA", "Name": "Miami","CityCode": "MIA", "CityName": "Miami"},
+
+{"StaCode": "MID", "Name": "Merida","CityCode": "MID", "CityName": "Merida"},
+
+{"StaCode": "MIL", "Name": "Milan","CityCode": "MIL", "CityName": "Milan"},
+
+{"StaCode": "MJZ", "Name": "Mirny","CityCode": "MJZ", "CityName": "Mirny"},
+
+{"StaCode": "MKC", "Name": "Kansas City","CityCode": "MKC", "CityName": "Kansas City"},
+
+{"StaCode": "MKE", "Name": "Milwaukee","CityCode": "MKE", "CityName": "Milwaukee"},
+
+{"StaCode": "MKM", "Name": "Mukah","CityCode": "MKM", "CityName": "Mukah"},
+
+{"StaCode": "MKY", "Name": "Mackay","CityCode": "MKY", "CityName": "Mackay"},
+
+{"StaCode": "MLA", "Name": "Malta","CityCode": "MLA", "CityName": "Malta"},
+
+{"StaCode": "MLB", "Name": "Melbourne","CityCode": "MLB", "CityName": "Melbourne"},
+
+{"StaCode": "MLE", "Name": "Male","CityCode": "MLE", "CityName": "Male"},
+
+{"StaCode": "MLI", "Name": "Moline","CityCode": "MLI", "CityName": "Moline"},
+
+{"StaCode": "MLM", "Name": "Morelia","CityCode": "MLM", "CityName": "Morelia"},
+
+{"StaCode": "MLN", "Name": "Melilla","CityCode": "MLN", "CityName": "Melilla"},
+
+{"StaCode": "MLU", "Name": "Monroe","CityCode": "MLU", "CityName": "Monroe"},
+
+{"StaCode": "MMB", "Name": "Memanbetsu","CityCode": "MMB", "CityName": "Memanbetsu"},
+
+{"StaCode": "MMD", "Name": "Minamidaito","CityCode": "MMD", "CityName": "Minamidaito"},
+
+{"StaCode": "MMK", "Name": "Murmansk","CityCode": "MMK", "CityName": "Murmansk"},
+
+{"StaCode": "MMY", "Name": "Miyako","CityCode": "MMY", "CityName": "Miyako"},
+
+{"StaCode": "MNL", "Name": "Manila","CityCode": "MNL", "CityName": "Manila"},
+
+{"StaCode": "MOB", "Name": "Mobile","CityCode": "MOB", "CityName": "Mobile"},
+
+{"StaCode": "MOV", "Name": "Moranbah","CityCode": "MOV", "CityName": "Moranbah"},
+
+{"StaCode": "MOW", "Name": "Moscow","CityCode": "MOW", "CityName": "Moscow"},
+
+{"StaCode": "MPM", "Name": "Maputo","CityCode": "MPM", "CityName": "Maputo"},
+
+{"StaCode": "MPN", "Name": "Mount Pleasant","CityCode": "MPN", "CityName": "Mount Pleasant"},
+
+{"StaCode": "MQL", "Name": "Mildura","CityCode": "MQL", "CityName": "Mildura"},
+
+{"StaCode": "MQT", "Name": "Marquette","CityCode": "MQT", "CityName": "Marquette"},
+
+{"StaCode": "MRS", "Name": "Marseille","CityCode": "MRS", "CityName": "Marseille"},
+
+{"StaCode": "MRU", "Name": "Mauritius","CityCode": "MRU", "CityName": "Mauritius"},
+
+{"StaCode": "MRV", "Name": "Mineralnye Vody","CityCode": "MRV", "CityName": "Mineralnye Vody"},
+
+{"StaCode": "MRY", "Name": "Monterey/Carmel","CityCode": "MRY", "CityName": "Monterey/Carmel"},
+
+{"StaCode": "MRZ", "Name": "Moree","CityCode": "MRZ", "CityName": "Moree"},
+
+{"StaCode": "MSJ", "Name": "Misawa","CityCode": "MSJ", "CityName": "Misawa"},
+
+{"StaCode": "MSN", "Name": "Madison","CityCode": "MSN", "CityName": "Madison"},
+
+{"StaCode": "MSO", "Name": "Missoula","CityCode": "MSO", "CityName": "Missoula"},
+
+{"StaCode": "MSP", "Name": "Minneapolis/Saint Paul","CityCode": "MSP", "CityName": "Minneapolis/Saint Paul"},
+
+{"StaCode": "MSQ", "Name": "Minsk","CityCode": "MSQ", "CityName": "Minsk"},
+
+{"StaCode": "MSY", "Name": "New Orleans","CityCode": "MSY", "CityName": "New Orleans"},
+
+{"StaCode": "MTJ", "Name": "Montrose","CityCode": "MTJ", "CityName": "Montrose"},
+
+{"StaCode": "MTR", "Name": "Monteria","CityCode": "MTR", "CityName": "Monteria"},
+
+{"StaCode": "MTY", "Name": "Monterrey","CityCode": "MTY", "CityName": "Monterrey"},
+
+{"StaCode": "MUC", "Name": "Munich","CityCode": "MUC", "CityName": "Munich"},
+
+{"StaCode": "MUR", "Name": "Marudi","CityCode": "MUR", "CityName": "Marudi"},
+
+{"StaCode": "MUX", "Name": "Multan","CityCode": "MUX", "CityName": "Multan"},
+
+{"StaCode": "MVD", "Name": "Montevideo","CityCode": "MVD", "CityName": "Montevideo"},
+
+{"StaCode": "MVY", "Name": "Martha's Vineyard","CityCode": "MVY", "CityName": "Martha's Vineyard"},
+
+{"StaCode": "MYJ", "Name": "Matsuyama","CityCode": "MYJ", "CityName": "Matsuyama"},
+
+{"StaCode": "MYR", "Name": "Myrtle Beach","CityCode": "MYR", "CityName": "Myrtle Beach"},
+
+{"StaCode": "MYY", "Name": "Miri","CityCode": "MYY", "CityName": "Miri"},
+
+{"StaCode": "MZT", "Name": "Mazatlan","CityCode": "MZT", "CityName": "Mazatlan"},
+
+{"StaCode": "MZV", "Name": "Mulu","CityCode": "MZV", "CityName": "Mulu"},
+
+{"StaCode": "NAG", "Name": "Nagpur","CityCode": "NAG", "CityName": "Nagpur"},
+
+{"StaCode": "NAP", "Name": "Naples","CityCode": "NAP", "CityName": "Naples"},
+
+{"StaCode": "NAS", "Name": "Nassau","CityCode": "NAS", "CityName": "Nassau"},
+
+{"StaCode": "NAT", "Name": "Natal","CityCode": "NAT", "CityName": "Natal"},
+
+{"StaCode": "NBC", "Name": "Nizhnekamsk","CityCode": "NBC", "CityName": "Nizhnekamsk"},
+
+{"StaCode": "NBO", "Name": "Nairobi","CityCode": "NBO", "CityName": "Nairobi"},
+
+{"StaCode": "NCE", "Name": "Nice","CityCode": "NCE", "CityName": "Nice"},
+
+{"StaCode": "NCL", "Name": "Newcastle","CityCode": "NCL", "CityName": "Newcastle"},
+
+{"StaCode": "NER", "Name": "Neryungri","CityCode": "NER", "CityName": "Neryungri"},
+
+{"StaCode": "NGB", "Name": "Ningbo","CityCode": "NGB", "CityName": "Ningbo"},
+
+{"StaCode": "NGO", "Name": "Nagoya","CityCode": "NGO", "CityName": "Nagoya"},
+
+{"StaCode": "NGS", "Name": "Nagasaki","CityCode": "NGS", "CityName": "Nagasaki"},
+
+{"StaCode": "NHA", "Name": "Nha Trang","CityCode": "NHA", "CityName": "Nha Trang"},
+
+{"StaCode": "NJC", "Name": "Nizhnevartovsk","CityCode": "NJC", "CityName": "Nizhnevartovsk"},
+
+{"StaCode": "NJF", "Name": "Al Najaf","CityCode": "NJF", "CityName": "Al Najaf"},
+
+{"StaCode": "NKG", "Name": "Nanjing","CityCode": "NKG", "CityName": "Nanjing"},
+
+{"StaCode": "NMA", "Name": "Namangan","CityCode": "NMA", "CityName": "Namangan"},
+
+{"StaCode": "NNG", "Name": "Nanning","CityCode": "NNG", "CityName": "Nanning"},
+
+{"StaCode": "NOJ", "Name": "Noyabrsk","CityCode": "NOJ", "CityName": "Noyabrsk"},
+
+{"StaCode": "NOU", "Name": "Noumea","CityCode": "NOU", "CityName": "Noumea"},
+
+{"StaCode": "NOZ", "Name": "Novokuznetsk","CityCode": "NOZ", "CityName": "Novokuznetsk"},
+
+{"StaCode": "NQN", "Name": "Neuquen","CityCode": "NQN", "CityName": "Neuquen"},
+
+{"StaCode": "NSK", "Name": "Norilsk","CityCode": "NSK", "CityName": "Norilsk"},
+
+{"StaCode": "NTE", "Name": "Nantes","CityCode": "NTE", "CityName": "Nantes"},
+
+{"StaCode": "NTL", "Name": "Newcastle","CityCode": "NTL", "CityName": "Newcastle"},
+
+{"StaCode": "NUE", "Name": "Nuremberg","CityCode": "NUE", "CityName": "Nuremberg"},
+
+{"StaCode": "NUF", "Name": "Hatton","CityCode": "NUF", "CityName": "Hatton"},
+
+{"StaCode": "NUX", "Name": "Novyj Urengoj","CityCode": "NUX", "CityName": "Novyj Urengoj"},
+
+{"StaCode": "NVT", "Name": "Navegantes","CityCode": "NVT", "CityName": "Navegantes"},
+
+{"StaCode": "NYC", "Name": "New York","CityCode": "NYC", "CityName": "New York"},
+
+{"StaCode": "NYM", "Name": "Nadym","CityCode": "NYM", "CityName": "Nadym"},
+
+{"StaCode": "OAJ", "Name": "Jacksonville","CityCode": "OAJ", "CityName": "Jacksonville"},
+
+{"StaCode": "OAK", "Name": "Oakland","CityCode": "OAK", "CityName": "Oakland"},
+
+{"StaCode": "OAX", "Name": "Oaxaca","CityCode": "OAX", "CityName": "Oaxaca"},
+
+{"StaCode": "OBO", "Name": "Obihiro","CityCode": "OBO", "CityName": "Obihiro"},
+
+{"StaCode": "ODN", "Name": "Long Seridan","CityCode": "ODN", "CityName": "Long Seridan"},
+
+{"StaCode": "OGG", "Name": "Kahului","CityCode": "OGG", "CityName": "Kahului"},
+
+{"StaCode": "OGN", "Name": "Yonaguni","CityCode": "OGN", "CityName": "Yonaguni"},
+
+{"StaCode": "OGZ", "Name": "Vladikavkaz","CityCode": "OGZ", "CityName": "Vladikavkaz"},
+
+{"StaCode": "OHH", "Name": "Okha","CityCode": "OHH", "CityName": "Okha"},
+
+{"StaCode": "OHS", "Name": "Sohar","CityCode": "OHS", "CityName": "Sohar"},
+
+{"StaCode": "OIR", "Name": "Okushiri","CityCode": "OIR", "CityName": "Okushiri"},
+
+{"StaCode": "OIT", "Name": "Oita","CityCode": "OIT", "CityName": "Oita"},
+
+{"StaCode": "OKA", "Name": "Okinawa","CityCode": "OKA", "CityName": "Okinawa"},
+
+{"StaCode": "OKC", "Name": "Oklahoma City","CityCode": "OKC", "CityName": "Oklahoma City"},
+
+{"StaCode": "OKI", "Name": "Oki","CityCode": "OKI", "CityName": "Oki"},
+
+{"StaCode": "OKJ", "Name": "Okayama","CityCode": "OKJ", "CityName": "Okayama"},
+
+{"StaCode": "OLB", "Name": "Olbia","CityCode": "OLB", "CityName": "Olbia"},
+
+{"StaCode": "OMA", "Name": "Omaha","CityCode": "OMA", "CityName": "Omaha"},
+
+{"StaCode": "OMS", "Name": "Omsk","CityCode": "OMS", "CityName": "Omsk"},
+
+{"StaCode": "ONT", "Name": "Ontario","CityCode": "ONT", "CityName": "Ontario"},
+
+{"StaCode": "OOL", "Name": "Gold Coast","CityCode": "OOL", "CityName": "Gold Coast"},
+
+{"StaCode": "OPO", "Name": "Porto","CityCode": "OPO", "CityName": "Porto"},
+
+{"StaCode": "ORF", "Name": "Norfolk","CityCode": "ORF", "CityName": "Norfolk"},
+
+{"StaCode": "ORH", "Name": "Worcester","CityCode": "ORH", "CityName": "Worcester"},
+
+{"StaCode": "ORL", "Name": "Orlando","CityCode": "ORL", "CityName": "Orlando"},
+
+{"StaCode": "ORN", "Name": "Oran","CityCode": "ORN", "CityName": "Oran"},
+
+{"StaCode": "OSA", "Name": "Osaka","CityCode": "OSA", "CityName": "Osaka"},
+
+{"StaCode": "OSL", "Name": "Oslo","CityCode": "OSL", "CityName": "Oslo"},
+
+{"StaCode": "OSS", "Name": "Osh","CityCode": "OSS", "CityName": "Osh"},
+
+{"StaCode": "OUL", "Name": "Oulu","CityCode": "OUL", "CityName": "Oulu"},
+
+{"StaCode": "OVB", "Name": "Novosibirsk","CityCode": "OVB", "CityName": "Novosibirsk"},
+
+{"StaCode": "OVD", "Name": "Asturias","CityCode": "OVD", "CityName": "Asturias"},
+
+{"StaCode": "PAP", "Name": "Port-au-Prince","CityCode": "PAP", "CityName": "Port-au-Prince"},
+
+{"StaCode": "PAR", "Name": "Paris","CityCode": "PAR", "CityName": "Paris"},
+
+{"StaCode": "PBC", "Name": "Puebla","CityCode": "PBC", "CityName": "Puebla"},
+
+{"StaCode": "PBI", "Name": "West Palm Beach","CityCode": "PBI", "CityName": "West Palm Beach"},
+
+{"StaCode": "PBO", "Name": "Paraburdoo","CityCode": "PBO", "CityName": "Paraburdoo"},
+
+{"StaCode": "PCL", "Name": "Pucallpa","CityCode": "PCL", "CityName": "Pucallpa"},
+
+{"StaCode": "PDP", "Name": "Punta Del Este","CityCode": "PDP", "CityName": "Punta Del Este"},
+
+{"StaCode": "PDV", "Name": "Plovdiv","CityCode": "PDV", "CityName": "Plovdiv"},
+
+{"StaCode": "PDX", "Name": "Portland","CityCode": "PDX", "CityName": "Portland"},
+
+{"StaCode": "PEE", "Name": "Perm","CityCode": "PEE", "CityName": "Perm"},
+
+{"StaCode": "PEI", "Name": "Pereira","CityCode": "PEI", "CityName": "Pereira"},
+
+{"StaCode": "PEM", "Name": "Puerto Maldonado","CityCode": "PEM", "CityName": "Puerto Maldonado"},
+
+{"StaCode": "PEN", "Name": "Penang","CityCode": "PEN", "CityName": "Penang"},
+
+{"StaCode": "PER", "Name": "Perth","CityCode": "PER", "CityName": "Perth"},
+
+{"StaCode": "PES", "Name": "Petrozavodsk","CityCode": "PES", "CityName": "Petrozavodsk"},
+
+{"StaCode": "PEW", "Name": "Peshawar","CityCode": "PEW", "CityName": "Peshawar"},
+
+{"StaCode": "PEZ", "Name": "Penza","CityCode": "PEZ", "CityName": "Penza"},
+
+{"StaCode": "PFO", "Name": "Paphos","CityCode": "PFO", "CityName": "Paphos"},
+
+{"StaCode": "PGV", "Name": "Greenville","CityCode": "PGV", "CityName": "Greenville"},
+
+{"StaCode": "PHE", "Name": "Port Hedland","CityCode": "PHE", "CityName": "Port Hedland"},
+
+{"StaCode": "PHF", "Name": "Newport News/Williamsburg","CityCode": "PHF", "CityName": "Newport News/Williamsburg"},
+
+{"StaCode": "PHL", "Name": "Philadelphia","CityCode": "PHL", "CityName": "Philadelphia"},
+
+{"StaCode": "PHX", "Name": "Phoenix","CityCode": "PHX", "CityName": "Phoenix"},
+
+{"StaCode": "PIA", "Name": "Peoria","CityCode": "PIA", "CityName": "Peoria"},
+
+{"StaCode": "PIO", "Name": "Pisco","CityCode": "PIO", "CityName": "Pisco"},
+
+{"StaCode": "PIT", "Name": "Pittsburgh","CityCode": "PIT", "CityName": "Pittsburgh"},
+
+{"StaCode": "PIU", "Name": "Piura","CityCode": "PIU", "CityName": "Piura"},
+
+{"StaCode": "PKC", "Name": "Petropavlovsk","CityCode": "PKC", "CityName": "Petropavlovsk"},
+
+{"StaCode": "PLO", "Name": "Port Lincoln","CityCode": "PLO", "CityName": "Port Lincoln"},
+
+{"StaCode": "PLS", "Name": "Providenciales","CityCode": "PLS", "CityName": "Providenciales"},
+
+{"StaCode": "PLZ", "Name": "Port Elizabeth","CityCode": "PLZ", "CityName": "Port Elizabeth"},
+
+{"StaCode": "PMC", "Name": "Puerto Montt","CityCode": "PMC", "CityName": "Puerto Montt"},
+
+{"StaCode": "PMI", "Name": "Palma De Mallorca","CityCode": "PMI", "CityName": "Palma De Mallorca"},
+
+{"StaCode": "PMO", "Name": "Palermo","CityCode": "PMO", "CityName": "Palermo"},
+
+{"StaCode": "PMW", "Name": "Palmas","CityCode": "PMW", "CityName": "Palmas"},
+
+{"StaCode": "PNA", "Name": "Pamplona","CityCode": "PNA", "CityName": "Pamplona"},
+
+{"StaCode": "PNH", "Name": "Phnom Penh","CityCode": "PNH", "CityName": "Phnom Penh"},
+
+{"StaCode": "PNS", "Name": "Pensacola","CityCode": "PNS", "CityName": "Pensacola"},
+
+{"StaCode": "PNT", "Name": "Puerto Natales","CityCode": "PNT", "CityName": "Puerto Natales"},
+
+{"StaCode": "POA", "Name": "Porto Alegre","CityCode": "POA", "CityName": "Porto Alegre"},
+
+{"StaCode": "POM", "Name": "Port Moresby","CityCode": "POM", "CityName": "Port Moresby"},
+
+{"StaCode": "POP", "Name": "Puerto Plata","CityCode": "POP", "CityName": "Puerto Plata"},
+
+{"StaCode": "POS", "Name": "Port of Spain","CityCode": "POS", "CityName": "Port of Spain"},
+
+{"StaCode": "PPT", "Name": "Tahiti","CityCode": "PPT", "CityName": "Tahiti"},
+
+{"StaCode": "PQQ", "Name": "Port Macquarie","CityCode": "PQQ", "CityName": "Port Macquarie"},
+
+{"StaCode": "PRG", "Name": "Prague","CityCode": "PRG", "CityName": "Prague"},
+
+{"StaCode": "PSA", "Name": "Pisa","CityCode": "PSA", "CityName": "Pisa"},
+
+{"StaCode": "PSP", "Name": "Palm Springs","CityCode": "PSP", "CityName": "Palm Springs"},
+
+{"StaCode": "PTP", "Name": "Pointe A Pitre","CityCode": "PTP", "CityName": "Pointe A Pitre"},
+
+{"StaCode": "PTY", "Name": "Panama City","CityCode": "PTY", "CityName": "Panama City"},
+
+{"StaCode": "PUJ", "Name": "Punta Cana","CityCode": "PUJ", "CityName": "Punta Cana"},
+
+{"StaCode": "PUQ", "Name": "Punta Arenas","CityCode": "PUQ", "CityName": "Punta Arenas"},
+
+{"StaCode": "PUS", "Name": "Busan","CityCode": "PUS", "CityName": "Busan"},
+
+{"StaCode": "PUY", "Name": "Pula","CityCode": "PUY", "CityName": "Pula"},
+
+{"StaCode": "PVD", "Name": "Providence","CityCode": "PVD", "CityName": "Providence"},
+
+{"StaCode": "PVH", "Name": "Porto Velho","CityCode": "PVH", "CityName": "Porto Velho"},
+
+{"StaCode": "PVK", "Name": "Preveza/Lefkada","CityCode": "PVK", "CityName": "Preveza/Lefkada"},
+
+{"StaCode": "PVR", "Name": "Puerto Vallarta","CityCode": "PVR", "CityName": "Puerto Vallarta"},
+
+{"StaCode": "PWM", "Name": "Portland","CityCode": "PWM", "CityName": "Portland"},
+
+{"StaCode": "PWQ", "Name": "Pavlodar","CityCode": "PWQ", "CityName": "Pavlodar"},
+
+{"StaCode": "QRC", "Name": "Rancagua","CityCode": "QRC", "CityName": "Rancagua"},
+
+{"StaCode": "QRO", "Name": "Queretaro","CityCode": "QRO", "CityName": "Queretaro"},
+
+{"StaCode": "RAK", "Name": "Marrakech","CityCode": "RAK", "CityName": "Marrakech"},
+
+{"StaCode": "RAO", "Name": "Ribeirao Preto","CityCode": "RAO", "CityName": "Ribeirao Preto"},
+
+{"StaCode": "RAP", "Name": "Rapid City","CityCode": "RAP", "CityName": "Rapid City"},
+
+{"StaCode": "RBR", "Name": "Rio Branco","CityCode": "RBR", "CityName": "Rio Branco"},
+
+{"StaCode": "RDM", "Name": "Redmond/Bend","CityCode": "RDM", "CityName": "Redmond/Bend"},
+
+{"StaCode": "RDU", "Name": "Raleigh/Durham","CityCode": "RDU", "CityName": "Raleigh/Durham"},
+
+{"StaCode": "REC", "Name": "Recife","CityCode": "REC", "CityName": "Recife"},
+
+{"StaCode": "REK", "Name": "Reykjavik","CityCode": "REK", "CityName": "Reykjavik"},
+
+{"StaCode": "REP", "Name": "Siem Reap","CityCode": "REP", "CityName": "Siem Reap"},
+
+{"StaCode": "REU", "Name": "Reus","CityCode": "REU", "CityName": "Reus"},
+
+{"StaCode": "RGK", "Name": "Gorno-Altaysk","CityCode": "RGK", "CityName": "Gorno-Altaysk"},
+
+{"StaCode": "RGL", "Name": "Rio Gallegos","CityCode": "RGL", "CityName": "Rio Gallegos"},
+
+{"StaCode": "RGN", "Name": "Yangon","CityCode": "RGN", "CityName": "Yangon"},
+
+{"StaCode": "RGS", "Name": "Burgos","CityCode": "RGS", "CityName": "Burgos"},
+
+{"StaCode": "RHO", "Name": "Rhodes","CityCode": "RHO", "CityName": "Rhodes"},
+
+{"StaCode": "RIC", "Name": "Richmond","CityCode": "RIC", "CityName": "Richmond"},
+
+{"StaCode": "RIO", "Name": "Rio de Janeiro","CityCode": "RIO", "CityName": "Rio de Janeiro"},
+
+{"StaCode": "RIS", "Name": "Rishiri","CityCode": "RIS", "CityName": "Rishiri"},
+
+{"StaCode": "RIX", "Name": "Riga","CityCode": "RIX", "CityName": "Riga"},
+
+{"StaCode": "RJL", "Name": "Logrono","CityCode": "RJL", "CityName": "Logrono"},
+
+{"StaCode": "RMA", "Name": "Roma","CityCode": "RMA", "CityName": "Roma"},
+
+{"StaCode": "RMQ", "Name": "Taichung","CityCode": "RMQ", "CityName": "Taichung"},
+
+{"StaCode": "RMU", "Name": "Corvera","CityCode": "RMU", "CityName": "Corvera"},
+
+{"StaCode": "RNJ", "Name": "Yoron","CityCode": "RNJ", "CityName": "Yoron"},
+
+{"StaCode": "RNO", "Name": "Reno","CityCode": "RNO", "CityName": "Reno"},
+
+{"StaCode": "ROA", "Name": "Roanoke","CityCode": "ROA", "CityName": "Roanoke"},
+
+{"StaCode": "ROC", "Name": "Rochester","CityCode": "ROC", "CityName": "Rochester"},
+
+{"StaCode": "ROK", "Name": "Rockhampton","CityCode": "ROK", "CityName": "Rockhampton"},
+
+{"StaCode": "ROM", "Name": "Rome","CityCode": "ROM", "CityName": "Rome"},
+
+{"StaCode": "ROR", "Name": "Koror","CityCode": "ROR", "CityName": "Koror"},
+
+{"StaCode": "ROS", "Name": "Rosario","CityCode": "ROS", "CityName": "Rosario"},
+
+{"StaCode": "ROV", "Name": "Rostov","CityCode": "ROV", "CityName": "Rostov"},
+
+{"StaCode": "ROW", "Name": "Roswell","CityCode": "ROW", "CityName": "Roswell"},
+
+{"StaCode": "RST", "Name": "Rochester","CityCode": "RST", "CityName": "Rochester"},
+
+{"StaCode": "RTB", "Name": "Roatan","CityCode": "RTB", "CityName": "Roatan"},
+
+{"StaCode": "RTM", "Name": "Rotterdam","CityCode": "RTM", "CityName": "Rotterdam"},
+
+{"StaCode": "RTW", "Name": "Saratov","CityCode": "RTW", "CityName": "Saratov"},
+
+{"StaCode": "RUH", "Name": "Riyadh","CityCode": "RUH", "CityName": "Riyadh"},
+
+{"StaCode": "RVN", "Name": "Rovaniemi","CityCode": "RVN", "CityName": "Rovaniemi"},
+
+{"StaCode": "SAC", "Name": "Sacramento","CityCode": "SAC", "CityName": "Sacramento"},
+
+{"StaCode": "SAF", "Name": "Santa Fe","CityCode": "SAF", "CityName": "Santa Fe"},
+
+{"StaCode": "SAL", "Name": "San Salvador","CityCode": "SAL", "CityName": "San Salvador"},
+
+{"StaCode": "SAN", "Name": "San Diego","CityCode": "SAN", "CityName": "San Diego"},
+
+{"StaCode": "SAO", "Name": "Sao Paulo","CityCode": "SAO", "CityName": "Sao Paulo"},
+
+{"StaCode": "SAP", "Name": "San Pedro Sula","CityCode": "SAP", "CityName": "San Pedro Sula"},
+
+{"StaCode": "SAT", "Name": "San Antonio","CityCode": "SAT", "CityName": "San Antonio"},
+
+{"StaCode": "SAV", "Name": "Savannah","CityCode": "SAV", "CityName": "Savannah"},
+
+{"StaCode": "SBA", "Name": "Santa Barbara","CityCode": "SBA", "CityName": "Santa Barbara"},
+
+{"StaCode": "SBN", "Name": "South Bend","CityCode": "SBN", "CityName": "South Bend"},
+
+{"StaCode": "SBP", "Name": "San Luis Obispo","CityCode": "SBP", "CityName": "San Luis Obispo"},
+
+{"StaCode": "SBW", "Name": "Sibu","CityCode": "SBW", "CityName": "Sibu"},
+
+{"StaCode": "SBY", "Name": "Salisbury/Ocean City","CityCode": "SBY", "CityName": "Salisbury/Ocean City"},
+
+{"StaCode": "SCE", "Name": "State College","CityCode": "SCE", "CityName": "State College"},
+
+{"StaCode": "SCL", "Name": "Santiago","CityCode": "SCL", "CityName": "Santiago"},
+
+{"StaCode": "SCQ", "Name": "Santiago De Compostela","CityCode": "SCQ", "CityName": "Santiago De Compostela"},
+
+{"StaCode": "SCU", "Name": "Santiago de Cuba","CityCode": "SCU", "CityName": "Santiago de Cuba"},
+
+{"StaCode": "SCY", "Name": "San Cristobal Island","CityCode": "SCY", "CityName": "San Cristobal Island"},
+
+{"StaCode": "SDF", "Name": "Louisville","CityCode": "SDF", "CityName": "Louisville"},
+
+{"StaCode": "SDJ", "Name": "Sendai","CityCode": "SDJ", "CityName": "Sendai"},
+
+{"StaCode": "SDK", "Name": "Sandakan","CityCode": "SDK", "CityName": "Sandakan"},
+
+{"StaCode": "SDQ", "Name": "Santo Domingo","CityCode": "SDQ", "CityName": "Santo Domingo"},
+
+{"StaCode": "SDR", "Name": "Santander","CityCode": "SDR", "CityName": "Santander"},
+
+{"StaCode": "SEA", "Name": "Seattle","CityCode": "SEA", "CityName": "Seattle"},
+
+{"StaCode": "SEL", "Name": "Seoul","CityCode": "SEL", "CityName": "Seoul"},
+
+{"StaCode": "SEZ", "Name": "Mahe Island","CityCode": "SEZ", "CityName": "Mahe Island"},
+
+{"StaCode": "SFO", "Name": "San Francisco","CityCode": "SFO", "CityName": "San Francisco"},
+
+{"StaCode": "SGC", "Name": "Surgut","CityCode": "SGC", "CityName": "Surgut"},
+
+{"StaCode": "SGF", "Name": "Springfield","CityCode": "SGF", "CityName": "Springfield"},
+
+{"StaCode": "SGN", "Name": "Ho Chi Minh City","CityCode": "SGN", "CityName": "Ho Chi Minh City"},
+
+{"StaCode": "SGU", "Name": "St George","CityCode": "SGU", "CityName": "St George"},
+
+{"StaCode": "SHA", "Name": "Shanghai","CityCode": "SHA", "CityName": "Shanghai"},
+
+{"StaCode": "SHM", "Name": "Shirahama","CityCode": "SHM", "CityName": "Shirahama"},
+
+{"StaCode": "SHV", "Name": "Shreveport","CityCode": "SHV", "CityName": "Shreveport"},
+
+{"StaCode": "SIA", "Name": "Xi'an","CityCode": "SIA", "CityName": "Xi'an"},
+
+{"StaCode": "SIN", "Name": "Singapore","CityCode": "SIN", "CityName": "Singapore"},
+
+{"StaCode": "SIP", "Name": "Simferopol","CityCode": "SIP", "CityName": "Simferopol"},
+
+{"StaCode": "SJC", "Name": "San Jose","CityCode": "SJC", "CityName": "San Jose"},
+
+{"StaCode": "SJD", "Name": "San Jose del Cabo","CityCode": "SJD", "CityName": "San Jose del Cabo"},
+
+{"StaCode": "SJJ", "Name": "Sarajevo","CityCode": "SJJ", "CityName": "Sarajevo"},
+
+{"StaCode": "SJO", "Name": "San Jose","CityCode": "SJO", "CityName": "San Jose"},
+
+{"StaCode": "SJP", "Name": "Sao Jose do Rio Prieto","CityCode": "SJP", "CityName": "Sao Jose do Rio Prieto"},
+
+{"StaCode": "SJT", "Name": "San Angelo","CityCode": "SJT", "CityName": "San Angelo"},
+
+{"StaCode": "SJU", "Name": "San Juan","CityCode": "SJU", "CityName": "San Juan"},
+
+{"StaCode": "SKB", "Name": "St Kitts","CityCode": "SKB", "CityName": "St Kitts"},
+
+{"StaCode": "SKD", "Name": "Samarkand","CityCode": "SKD", "CityName": "Samarkand"},
+
+{"StaCode": "SKG", "Name": "Thessaloniki","CityCode": "SKG", "CityName": "Thessaloniki"},
+
+{"StaCode": "SKP", "Name": "Skopje","CityCode": "SKP", "CityName": "Skopje"},
+
+{"StaCode": "SKT", "Name": "Sialkot","CityCode": "SKT", "CityName": "Sialkot"},
+
+{"StaCode": "SKX", "Name": "Saransk","CityCode": "SKX", "CityName": "Saransk"},
+
+{"StaCode": "SLA", "Name": "Salta","CityCode": "SLA", "CityName": "Salta"},
+
+{"StaCode": "SLC", "Name": "Salt Lake City","CityCode": "SLC", "CityName": "Salt Lake City"},
+
+{"StaCode": "SLL", "Name": "Salalah","CityCode": "SLL", "CityName": "Salalah"},
+
+{"StaCode": "SLP", "Name": "San Luis Potosi","CityCode": "SLP", "CityName": "San Luis Potosi"},
+
+{"StaCode": "SLU", "Name": "St Lucia","CityCode": "SLU", "CityName": "St Lucia"},
+
+{"StaCode": "SLZ", "Name": "Sao Luis","CityCode": "SLZ", "CityName": "Sao Luis"},
+
+{"StaCode": "SMR", "Name": "Santa Marta","CityCode": "SMR", "CityName": "Santa Marta"},
+
+{"StaCode": "SNA", "Name": "Santa Ana","CityCode": "SNA", "CityName": "Santa Ana"},
+
+{"StaCode": "SNN", "Name": "Shannon","CityCode": "SNN", "CityName": "Shannon"},
+
+{"StaCode": "SNU", "Name": "Santa Clara","CityCode": "SNU", "CityName": "Santa Clara"},
+
+{"StaCode": "SOF", "Name": "Sofia","CityCode": "SOF", "CityName": "Sofia"},
+
+{"StaCode": "SPI", "Name": "Springfield","CityCode": "SPI", "CityName": "Springfield"},
+
+{"StaCode": "SPK", "Name": "Sapporo","CityCode": "SPK", "CityName": "Sapporo"},
+
+{"StaCode": "SPS", "Name": "Wichita Falls","CityCode": "SPS", "CityName": "Wichita Falls"},
+
+{"StaCode": "SPU", "Name": "Split","CityCode": "SPU", "CityName": "Split"},
+
+{"StaCode": "SRQ", "Name": "Sarasota/Bradenton","CityCode": "SRQ", "CityName": "Sarasota/Bradenton"},
+
+{"StaCode": "SRZ", "Name": "Santa Cruz","CityCode": "SRZ", "CityName": "Santa Cruz"},
+
+{"StaCode": "SSA", "Name": "Salvador","CityCode": "SSA", "CityName": "Salvador"},
+
+{"StaCode": "STI", "Name": "Santiago","CityCode": "STI", "CityName": "Santiago"},
+
+{"StaCode": "STL", "Name": "St Louis","CityCode": "STL", "CityName": "St Louis"},
+
+{"StaCode": "STM", "Name": "Santarem","CityCode": "STM", "CityName": "Santarem"},
+
+{"StaCode": "STO", "Name": "Stockholm","CityCode": "STO", "CityName": "Stockholm"},
+
+{"StaCode": "STR", "Name": "Stuttgart","CityCode": "STR", "CityName": "Stuttgart"},
+
+{"StaCode": "STS", "Name": "Santa Rosa","CityCode": "STS", "CityName": "Santa Rosa"},
+
+{"StaCode": "STT", "Name": "St Thomas Island","CityCode": "STT", "CityName": "St Thomas Island"},
+
+{"StaCode": "STW", "Name": "Stavropol","CityCode": "STW", "CityName": "Stavropol"},
+
+{"StaCode": "STX", "Name": "St Croix Island","CityCode": "STX", "CityName": "St Croix Island"},
+
+{"StaCode": "SUB", "Name": "Surabaya","CityCode": "SUB", "CityName": "Surabaya"},
+
+{"StaCode": "SUX", "Name": "Sioux City","CityCode": "SUX", "CityName": "Sioux City"},
+
+{"StaCode": "SVD", "Name": "St Vincent","CityCode": "SVD", "CityName": "St Vincent"},
+
+{"StaCode": "SVQ", "Name": "Sevilla","CityCode": "SVQ", "CityName": "Sevilla"},
+
+{"StaCode": "SVX", "Name": "Yekaterinburg","CityCode": "SVX", "CityName": "Yekaterinburg"},
+
+{"StaCode": "SWO", "Name": "Stillwater","CityCode": "SWO", "CityName": "Stillwater"},
+
+{"StaCode": "SXB", "Name": "Strasbourg","CityCode": "SXB", "CityName": "Strasbourg"},
+
+{"StaCode": "SXM", "Name": "St Maarten","CityCode": "SXM", "CityName": "St Maarten"},
+
+{"StaCode": "SYD", "Name": "Sydney","CityCode": "SYD", "CityName": "Sydney"},
+
+{"StaCode": "SYR", "Name": "Syracuse","CityCode": "SYR", "CityName": "Syracuse"},
+
+{"StaCode": "SYX", "Name": "Sanya","CityCode": "SYX", "CityName": "Sanya"},
+
+{"StaCode": "SYZ", "Name": "Shiraz","CityCode": "SYZ", "CityName": "Shiraz"},
+
+{"StaCode": "SZG", "Name": "Salzburg","CityCode": "SZG", "CityName": "Salzburg"},
+
+{"StaCode": "TAB", "Name": "Tobago","CityCode": "TAB", "CityName": "Tobago"},
+
+{"StaCode": "TAK", "Name": "Takamatsu","CityCode": "TAK", "CityName": "Takamatsu"},
+
+{"StaCode": "TAO", "Name": "Qingdao","CityCode": "TAO", "CityName": "Qingdao"},
+
+{"StaCode": "TAS", "Name": "Tashkent","CityCode": "TAS", "CityName": "Tashkent"},
+
+{"StaCode": "TAY", "Name": "Tartu","CityCode": "TAY", "CityName": "Tartu"},
+
+{"StaCode": "TBP", "Name": "Tumbes","CityCode": "TBP", "CityName": "Tumbes"},
+
+{"StaCode": "TBS", "Name": "Tbilisi","CityCode": "TBS", "CityName": "Tbilisi"},
+
+{"StaCode": "TCI", "Name": "Tenerife","CityCode": "TCI", "CityName": "Tenerife"},
+
+{"StaCode": "TCQ", "Name": "Tacna","CityCode": "TCQ", "CityName": "Tacna"},
+
+{"StaCode": "TGC", "Name": "Tanjung Manis","CityCode": "TGC", "CityName": "Tanjung Manis"},
+
+{"StaCode": "TGG", "Name": "Kuala Terengganu","CityCode": "TGG", "CityName": "Kuala Terengganu"},
+
+{"StaCode": "TGU", "Name": "Tegucigalpa","CityCode": "TGU", "CityName": "Tegucigalpa"},
+
+{"StaCode": "THE", "Name": "Teresina","CityCode": "THE", "CityName": "Teresina"},
+
+{"StaCode": "THR", "Name": "Tehran","CityCode": "THR", "CityName": "Tehran"},
+
+{"StaCode": "TIA", "Name": "Tirana","CityCode": "TIA", "CityName": "Tirana"},
+
+{"StaCode": "TIV", "Name": "Tivat","CityCode": "TIV", "CityName": "Tivat"},
+
+{"StaCode": "TJM", "Name": "Tyumen","CityCode": "TJM", "CityName": "Tyumen"},
+
+{"StaCode": "TKN", "Name": "Tokunoshima","CityCode": "TKN", "CityName": "Tokunoshima"},
+
+{"StaCode": "TKS", "Name": "Tokushima","CityCode": "TKS", "CityName": "Tokushima"},
+
+{"StaCode": "TKU", "Name": "Turku","CityCode": "TKU", "CityName": "Turku"},
+
+{"StaCode": "TLH", "Name": "Tallahassee","CityCode": "TLH", "CityName": "Tallahassee"},
+
+{"StaCode": "TLK", "Name": "Talakan","CityCode": "TLK", "CityName": "Talakan"},
+
+{"StaCode": "TLL", "Name": "Tallinn","CityCode": "TLL", "CityName": "Tallinn"},
+
+{"StaCode": "TLS", "Name": "Toulouse","CityCode": "TLS", "CityName": "Toulouse"},
+
+{"StaCode": "TLV", "Name": "Tel Aviv-Yafo","CityCode": "TLV", "CityName": "Tel Aviv-Yafo"},
+
+{"StaCode": "TMP", "Name": "Tampere","CityCode": "TMP", "CityName": "Tampere"},
+
+{"StaCode": "TMW", "Name": "Tamworth","CityCode": "TMW", "CityName": "Tamworth"},
+
+{"StaCode": "TNA", "Name": "Jinan","CityCode": "TNA", "CityName": "Jinan"},
+
+{"StaCode": "TNE", "Name": "Tanegashima","CityCode": "TNE", "CityName": "Tanegashima"},
+
+{"StaCode": "TNG", "Name": "Tangier","CityCode": "TNG", "CityName": "Tangier"},
+
+{"StaCode": "TOF", "Name": "Tomsk","CityCode": "TOF", "CityName": "Tomsk"},
+
+{"StaCode": "TOL", "Name": "Toledo","CityCode": "TOL", "CityName": "Toledo"},
+
+{"StaCode": "TOS", "Name": "Tromso","CityCode": "TOS", "CityName": "Tromso"},
+
+{"StaCode": "TPA", "Name": "Tampa","CityCode": "TPA", "CityName": "Tampa"},
+
+{"StaCode": "TPE", "Name": "Taipei","CityCode": "TPE", "CityName": "Taipei"},
+
+{"StaCode": "TPP", "Name": "Tarapoto","CityCode": "TPP", "CityName": "Tarapoto"},
+
+{"StaCode": "TRA", "Name": "Tarama","CityCode": "TRA", "CityName": "Tarama"},
+
+{"StaCode": "TRC", "Name": "Torreon","CityCode": "TRC", "CityName": "Torreon"},
+
+{"StaCode": "TRI", "Name": "Bristol/Johnson City/Kingsport","CityCode": "TRI", "CityName": "Bristol/Johnson City/Kingsport"},
+
+{"StaCode": "TRK", "Name": "Tarakan","CityCode": "TRK", "CityName": "Tarakan"},
+
+{"StaCode": "TRN", "Name": "Turin","CityCode": "TRN", "CityName": "Turin"},
+
+{"StaCode": "TRR", "Name": "Trincomalee","CityCode": "TRR", "CityName": "Trincomalee"},
+
+{"StaCode": "TRU", "Name": "Trujillo","CityCode": "TRU", "CityName": "Trujillo"},
+
+{"StaCode": "TRV", "Name": "Thiruvananthapuram","CityCode": "TRV", "CityName": "Thiruvananthapuram"},
+
+{"StaCode": "TRZ", "Name": "Tiruchchirappalli","CityCode": "TRZ", "CityName": "Tiruchchirappalli"},
+
+{"StaCode": "TSN", "Name": "Tianjin","CityCode": "TSN", "CityName": "Tianjin"},
+
+{"StaCode": "TSV", "Name": "Townsville","CityCode": "TSV", "CityName": "Townsville"},
+
+{"StaCode": "TUC", "Name": "Tucuman","CityCode": "TUC", "CityName": "Tucuman"},
+
+{"StaCode": "TUL", "Name": "Tulsa","CityCode": "TUL", "CityName": "Tulsa"},
+
+{"StaCode": "TUN", "Name": "Tunis","CityCode": "TUN", "CityName": "Tunis"},
+
+{"StaCode": "TUS", "Name": "Tucson","CityCode": "TUS", "CityName": "Tucson"},
+
+{"StaCode": "TVC", "Name": "Traverse City","CityCode": "TVC", "CityName": "Traverse City"},
+
+{"StaCode": "TWB", "Name": "Toowoomba","CityCode": "TWB", "CityName": "Toowoomba"},
+
+{"StaCode": "TWU", "Name": "Tawau","CityCode": "TWU", "CityName": "Tawau"},
+
+{"StaCode": "TXK", "Name": "Texarkana","CityCode": "TXK", "CityName": "Texarkana"},
+
+{"StaCode": "TYL", "Name": "Talara","CityCode": "TYL", "CityName": "Talara"},
+
+{"StaCode": "TYO", "Name": "Tokyo","CityCode": "TYO", "CityName": "Tokyo"},
+
+{"StaCode": "TYR", "Name": "Tyler","CityCode": "TYR", "CityName": "Tyler"},
+
+{"StaCode": "TYS", "Name": "Knoxville","CityCode": "TYS", "CityName": "Knoxville"},
+
+{"StaCode": "UBJ", "Name": "Ube","CityCode": "UBJ", "CityName": "Ube"},
+
+{"StaCode": "UDI", "Name": "Uberlandia","CityCode": "UDI", "CityName": "Uberlandia"},
+
+{"StaCode": "UEO", "Name": "Kume-jima","CityCode": "UEO", "CityName": "Kume-jima"},
+
+{"StaCode": "UFA", "Name": "Ufa","CityCode": "UFA", "CityName": "Ufa"},
+
+{"StaCode": "UGC", "Name": "Urgench","CityCode": "UGC", "CityName": "Urgench"},
+
+{"StaCode": "UIO", "Name": "Quito","CityCode": "UIO", "CityName": "Quito"},
+
+{"StaCode": "UIP", "Name": "Quimper","CityCode": "UIP", "CityName": "Quimper"},
+
+{"StaCode": "UKK", "Name": "Ust-Kamenogorsk","CityCode": "UKK", "CityName": "Ust-Kamenogorsk"},
+
+{"StaCode": "UME", "Name": "Umea","CityCode": "UME", "CityName": "Umea"},
+
+{"StaCode": "URA", "Name": "Uralsk","CityCode": "URA", "CityName": "Uralsk"},
+
+{"StaCode": "URC", "Name": "Urumqi","CityCode": "URC", "CityName": "Urumqi"},
+
+{"StaCode": "USH", "Name": "Ushuaia","CityCode": "USH", "CityName": "Ushuaia"},
+
+{"StaCode": "UUD", "Name": "Ulan-Ude","CityCode": "UUD", "CityName": "Ulan-Ude"},
+
+{"StaCode": "UUS", "Name": "Yuzhno-Sakhalinsk","CityCode": "UUS", "CityName": "Yuzhno-Sakhalinsk"},
+
+{"StaCode": "VAA", "Name": "Vaasa","CityCode": "VAA", "CityName": "Vaasa"},
+
+{"StaCode": "VAR", "Name": "Varna","CityCode": "VAR", "CityName": "Varna"},
+
+{"StaCode": "VBY", "Name": "Visby","CityCode": "VBY", "CityName": "Visby"},
+
+{"StaCode": "VCE", "Name": "Venice","CityCode": "VCE", "CityName": "Venice"},
+
+{"StaCode": "VDA", "Name": "Ovda","CityCode": "VDA", "CityName": "Ovda"},
+
+{"StaCode": "VFA", "Name": "Victoria Falls","CityCode": "VFA", "CityName": "Victoria Falls"},
+
+{"StaCode": "VGO", "Name": "Vigo","CityCode": "VGO", "CityName": "Vigo"},
+
+{"StaCode": "VIE", "Name": "Vienna","CityCode": "VIE", "CityName": "Vienna"},
+
+{"StaCode": "VIT", "Name": "Vitoria","CityCode": "VIT", "CityName": "Vitoria"},
+
+{"StaCode": "VIX", "Name": "Vitoria","CityCode": "VIX", "CityName": "Vitoria"},
+
+{"StaCode": "VLC", "Name": "Valencia","CityCode": "VLC", "CityName": "Valencia"},
+
+{"StaCode": "VLL", "Name": "Valladolid","CityCode": "VLL", "CityName": "Valladolid"},
+
+{"StaCode": "VNO", "Name": "Vilnius","CityCode": "VNO", "CityName": "Vilnius"},
+
+{"StaCode": "VNS", "Name": "Varanasi","CityCode": "VNS", "CityName": "Varanasi"},
+
+{"StaCode": "VOG", "Name": "Volgograd","CityCode": "VOG", "CityName": "Volgograd"},
+
+{"StaCode": "VOZ", "Name": "Voronezh","CityCode": "VOZ", "CityName": "Voronezh"},
+
+{"StaCode": "VPS", "Name": "Fort Walton Beach","CityCode": "VPS", "CityName": "Fort Walton Beach"},
+
+{"StaCode": "VRA", "Name": "Varadero","CityCode": "VRA", "CityName": "Varadero"},
+
+{"StaCode": "VRN", "Name": "Verona","CityCode": "VRN", "CityName": "Verona"},
+
+{"StaCode": "VUP", "Name": "Valledupar","CityCode": "VUP", "CityName": "Valledupar"},
+
+{"StaCode": "VVO", "Name": "Vladivostok","CityCode": "VVO", "CityName": "Vladivostok"},
+
+{"StaCode": "WAS", "Name": "Washington","CityCode": "WAS", "CityName": "Washington"},
+
+{"StaCode": "WAW", "Name": "Warsaw","CityCode": "WAW", "CityName": "Warsaw"},
+
+{"StaCode": "WCA", "Name": "Castro","CityCode": "WCA", "CityName": "Castro"},
+
+{"StaCode": "WDH", "Name": "Windhoek","CityCode": "WDH", "CityName": "Windhoek"},
+
+{"StaCode": "WEI", "Name": "Weipa","CityCode": "WEI", "CityName": "Weipa"},
+
+{"StaCode": "WGA", "Name": "Wagga Wagga","CityCode": "WGA", "CityName": "Wagga Wagga"},
+
+{"StaCode": "WLG", "Name": "Wellington","CityCode": "WLG", "CityName": "Wellington"},
+
+{"StaCode": "WNZ", "Name": "Wenzhou","CityCode": "WNZ", "CityName": "Wenzhou"},
+
+{"StaCode": "WUH", "Name": "Wuhan","CityCode": "WUH", "CityName": "Wuhan"},
+
+{"StaCode": "WYA", "Name": "Whyalla","CityCode": "WYA", "CityName": "Whyalla"},
+
+{"StaCode": "XMN", "Name": "Xiamen","CityCode": "XMN", "CityName": "Xiamen"},
+
+{"StaCode": "XRY", "Name": "Jerez","CityCode": "XRY", "CityName": "Jerez"},
+
+{"StaCode": "YEA", "Name": "Edmonton","CityCode": "YEA", "CityName": "Edmonton"},
+
+{"StaCode": "YKS", "Name": "Yakutsk","CityCode": "YKS", "CityName": "Yakutsk"},
+
+{"StaCode": "YMQ", "Name": "Montreal","CityCode": "YMQ", "CityName": "Montreal"},
+
+{"StaCode": "YOW", "Name": "Ottawa","CityCode": "YOW", "CityName": "Ottawa"},
+
+{"StaCode": "YQB", "Name": "Quebec","CityCode": "YQB", "CityName": "Quebec"},
+
+{"StaCode": "YTO", "Name": "Toronto","CityCode": "YTO", "CityName": "Toronto"},
+
+{"StaCode": "YUM", "Name": "Yuma","CityCode": "YUM", "CityName": "Yuma"},
+
+{"StaCode": "YVR", "Name": "Vancouver","CityCode": "YVR", "CityName": "Vancouver"},
+
+{"StaCode": "YYC", "Name": "Calgary","CityCode": "YYC", "CityName": "Calgary"},
+
+{"StaCode": "ZAG", "Name": "Zagreb","CityCode": "ZAG", "CityName": "Zagreb"},
+
+{"StaCode": "ZAL", "Name": "Valdivia","CityCode": "ZAL", "CityName": "Valdivia"},
+
+{"StaCode": "ZAZ", "Name": "Zaragoza","CityCode": "ZAZ", "CityName": "Zaragoza"},
+
+{"StaCode": "ZCL", "Name": "Zacatecas","CityCode": "ZCL", "CityName": "Zacatecas"},
+
+{"StaCode": "ZCO", "Name": "Temuco","CityCode": "ZCO", "CityName": "Temuco"},
+
+{"StaCode": "ZIH", "Name": "Ixtapa/Zihuatanejo","CityCode": "ZIH", "CityName": "Ixtapa/Zihuatanejo"},
+
+{"StaCode": "ZLO", "Name": "Manzanillo","CityCode": "ZLO", "CityName": "Manzanillo"},
+
+{"StaCode": "ZNE", "Name": "Newman","CityCode": "ZNE", "CityName": "Newman"},
+
+{"StaCode": "ZNZ", "Name": "Zanzibar","CityCode": "ZNZ", "CityName": "Zanzibar"},
+
+{"StaCode": "ZOS", "Name": "Osorno","CityCode": "ZOS", "CityName": "Osorno"},
+
+{"StaCode": "ZQN", "Name": "Queenstown","CityCode": "ZQN", "CityName": "Queenstown"},
+
+{"StaCode": "ZRH", "Name": "Zurich","CityCode": "ZRH", "CityName": "Zurich"},
+
+{"StaCode": "ZTH", "Name": "Zakinthos Island","CityCode": "ZTH", "CityName": "Zakinthos Island"}]
+    

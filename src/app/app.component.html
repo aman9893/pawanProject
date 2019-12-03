@@ -1,0 +1,15 @@
+<app-loader></app-loader>
+  <div id="mainwrap" >
+    <div class="container">
+      <div class="language_selection pull-right">Language:
+        <select (change)="setLang($event)">
+          <option value="en">EN</option>
+          <option value="ja">JA</option>
+          <option value="pt">PT</option>
+          <option value="es">ES</option>
+        </select>
+      </div>
+    </div>
+  <div class="clearfix"></div>
+</div>
+<router-outlet></router-outlet>

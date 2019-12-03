@@ -1,0 +1,41 @@
+.loadWrapper {  
+    background: rgba(255, 255, 255, 0.6);
+    width: 100%;  
+    height: 100%;  
+    position: fixed;  
+    top:0px;  
+    left:0px;  
+    z-index: 99999;  
+}  
+.loader {
+    width: 100px;
+    margin: auto;
+}
+.loader img, .loader_mini img{
+    position: absolute;
+    top: 30%;
+}
+
+.loader_mini {
+    width: 100px;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width:767px){
+    .loader_mini[_ngcontent-c4] {
+        left: 47% !important;
+        top: 35% !important;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .loader_mini[_ngcontent-c4] {
+        left: 49% !important;
+        top: 17% !important;
+    }
+}

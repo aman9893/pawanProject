@@ -1,0 +1,40 @@
+<app-nav></app-nav>
+<!-- theme_itinerary_page  start here -->
+<div class="selected_theme_category_page" >
+    <div class="container">
+        <div class="d-flex  justify-content-center">
+            <div>
+                <h2>{{selected_theme_category_info.catName}}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container selected_theme_category">
+    <div class="section_1">
+        <h2>{{selected_theme_category_info.catName}}</h2>
+        <p>{{selected_theme_category_info.catDescription}}</p>
+    </div>
+    <div class="section_2">
+        <div class="theme_category">
+            <ul>
+                <li *ngFor="let selected_theme of selected_theme_category;let i= index">
+                    <div class="theme_type">
+                        <a  (click)="selected_theme_itinerary_details(selected_theme.itinId)">
+                            <img src="{{selected_theme.itinImage}}">
+                            <p class="category_name">{{selected_theme.itinName}}</p> 
+                        </a>
+                    </div>
+                    <span class="themeHoverText">
+                        <span class="title">Global Network</span><br>
+                        <hr />
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div> 
+</div>
+<app-footer></app-footer>
+
+
+   

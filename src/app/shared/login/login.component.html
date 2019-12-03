@@ -1,0 +1,85 @@
+<!-- login start here -->
+<div class="login_page" *ngIf="!showLogin && !showForgotPassword  ">
+  <div class="container">
+    <div class="row">
+      <div class="login">
+        <div>
+          <div class="header_text">
+            <p>Welcome to oneworld Round the world</p>
+          </div>
+          <div class="header_caption">
+            <p>For your convenience we would like to invite you to join or login to save your itineraries.</p>
+          </div>
+          <div class="social_login_button text-center mt-2">
+            <label class="">Login with</label>
+          </div>
+          <div class="social-icons mt-2">
+            <div class="card-block">
+              <button class="btn-google" (click)="signInWithGoogle()"><i class="fa fa-google-plus"></i></button>
+              <button class="btn-facebook" (click)="signInWithFB()"><i class="fa fa-facebook-f"></i></button>
+              <button class="btn-linkedin" (click)="signInWithLinkedIn()"><i class="fa fa-linkedin"></i></button>
+            </div>
+          </div>
+          <div class="mt-3">
+            <form class="login-form" name="form" [formGroup]="loginForm" (ngSubmit)="login_user()">
+              <div class="emailField">
+                <div class="form-label-group email_field">
+                  <input type="text" class="form-control" placeholder="Email" formControlName="Email" name="Email"
+                    id="Email" [ngClass]="{'is-invalid' :  submitted && login_form.Email.errors}" autocomplete="off">
+                  <label class="label">Email</label>
+                  <div *ngIf="submitted && login_form.Email.errors" class="invalid-feedback">
+                    <div *ngIf="login_form.Email.errors.required">{{"AUTHENTICATION_ERROR_1" | translate}}</div>
+                    <div *ngIf="login_form.Email.errors.email">{{"AUTHENTICATION_ERROR_9" | translate}}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="emailField">
+                <div class="form-label-group email_field">
+                  <input [type]="password_field_type"  id="password-field" class="form-control" placeholder="password" formControlName="Password" name="Password" 
+                    [ngClass]="{'is-invalid' :  submitted && login_form.Password.errors}" autocomplete="off">
+                  <span toggle="#password-field" [ngClass]="toggle_eye_and_eyeslash===true?'fa fa-fw fa-eye':'fa fa-fw fa-eye-slash'" class="field-icon toggle-password" (click)="showHidePassword()"></span>
+                  <label class="label">Password</label>
+                  <div *ngIf="submitted && login_form.Password.errors" class="invalid-feedback">
+                    <div *ngIf="login_form.Password.errors.required">{{"AUTHENTICATION_ERROR_1" | translate}}</div>
+                  </div>
+                </div>
+              </div>
+              <div class="forgot_password_link">
+                <label for="forgot_password" class="forgot_password_modal_btn pull-right">
+                  <u data-toggle="modal" data-toggle="modal" data-target="#forgot_password" (click)="changeModal()">Forgot password?</u>
+                </label>
+              </div>
+              <div class="clearfix"></div>
+              <div class="btn-group text-center d-block">
+                <button type="submit" class="btn btn-teritiary">Login</button>
+              </div>
+            </form>
+          </div>
+          <div class="signup_link mt-2">
+            <a href="#" (click)="changeLayout()" data-toggle="modal" data-target="#signup_modal" class="text-center">Create New Account</a>
+          </div>
+          <div class="horizontal_line">
+            <span class="or_separator">OR</span>
+            <hr/>
+          </div>
+          <div class="btn-group text-center d-block pt-2 mb-4">
+            <button type="submit" class="btn btn-teritiary" data-dismiss="modal">Continue as guest</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- login end here -->
+
+<!-- sign up dialog modal-->
+<div *ngIf="showLogin">
+  <app-sign-up (changeLoginForm)="changeLoginForm($event)"></app-sign-up>
+</div>
+<!-- Forgot pasword modal -->
+<div *ngIf="showForgotPassword">
+  <app-forgot-password (changeForgotPassowrdForm)="changeForgotPassowrdForm($event)"></app-forgot-password>
+</div>
+
+

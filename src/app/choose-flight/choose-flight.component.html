@@ -1,0 +1,784 @@
+
+
+ <app-nav></app-nav>
+
+ <!-- header start here -->
+<div class="passenger_info_page d-none d-md-block">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div>
+                    <h2>Please choose your flight</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end here -->
+
+<div class="clearfix"></div>
+
+ <div id="chooseFlightsPages">
+
+    <div class="container" id="selectedFlights_section">
+        <div id="selectedFlights" class="flight-result d-block d-sm-none"> 
+            <div *ngIf="(selectedFlightsList.length > 0) && (state == 'show')" class="mb_flights_section" >
+                
+                <div class="main-container-bg mt-5">
+                        <h4>Selected Flights</h4>
+                    <div class="main-container">
+    
+                        <div *ngFor="let singleFlight of selectedFlightsList; let FIndex = index" class="accordian-card">
+    
+                            <div class="flight-card-header row col-lg-12 col-12">
+    
+                                <div class="col-lg-4 col-md-4 col-6">
+    
+                                    <!-- <span [ngClass]="selectedFlightIndex == FIndex ? 'stop-status active' : 'stop-status'"></span> -->
+    
+                                    <div class="airline_image">
+                                        <div [ngClass]="{
+                                                            'airline-AA':getairlineLogo(singleFlight.legs.leg) === 'AA',
+                                                            'airline-BA':getairlineLogo(singleFlight.legs.leg) === 'BA',
+                                                            'airline-CX':getairlineLogo(singleFlight.legs.leg) === 'CX',
+                                                            'airline-AY':getairlineLogo(singleFlight.legs.leg) === 'AY',
+                                                            'airline-IB':getairlineLogo(singleFlight.legs.leg) === 'IB',
+                                                            'airline-JL':getairlineLogo(singleFlight.legs.leg) === 'JL',
+                                                            'airline-MH':getairlineLogo(singleFlight.legs.leg) === 'MH',
+                                                            'airline-RJ':getairlineLogo(singleFlight.legs.leg) === 'RJ',
+                                                            'airline-S7':getairlineLogo(singleFlight.legs.leg) === 'S7',
+                                                            'airline-UL':getairlineLogo(singleFlight.legs.leg) === 'UL',
+                                                            'airline-QF':getairlineLogo(singleFlight.legs.leg) === 'QF',
+                                                            'airline-QR':getairlineLogo(singleFlight.legs.leg) === 'QR',
+                                                            'airline-XL':getairlineLogo(singleFlight.legs.leg) === 'XL',
+                                                            'airline-OW':getairlineLogo(singleFlight.legs.leg) === 'OW'
+                                                            }">
+                                        </div>
+                                    </div>
+    
+                                </div>
+
+
+                                <div class="col-6 text-right p-0">
+                                        <p class="text-flight-class-type">
+                                                {{ singleFlight.classAndAvailability.class[0].userClassType }}</p>
+                                </div>
+
+                            </div>
+    
+                            <!-- Details here -->
+                            <div class="flight-card-summary row col-lg-12 col-md-12 col-12 p-0">
+                                <div class="col-lg-2 col-md-2 col-2 flight-departure-date text-center"
+                                    style="position: relative;right: 5px;">
+                                    <p class="flight_date">
+                                        {{formatDepartureDate(singleFlight.flightDates.scheduledDate[0])}}
+                                    </p>
+                                    <p class="flight_date_label">Departure</p>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-7 flight-trip ml-2">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12 text-center">
+                                            <div class="row flight-duration ">
+                                                <div class="flight-duration-info">
+                                                    <p class="flight_date">
+                                                        {{singleFlight.elapsedTime}}</p>
+                                                    <p class="flight_date_label"> <span class="direction-angle">
+                                                            <i class="far fa-circle"></i>- - -</span> Stops:
+                                                        {{singleFlight.numLegs}}<span class="direction-angle">- - -<i
+                                                                class="fas fa-angle-right"></i></span></p>
+                                                    <span>{{singleFlight.carFlight}}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-lg-2 col-md-2 col-2 flight-arrival-date text-center p-0">
+                                    <p class="flight_date">{{formatDepartureDate(singleFlight.flightArriveDate)}}
+                                    </p>
+                                    <p class="flight_date_label pull-right">Arrival</p>
+                                </div>
+                            </div>
+    
+    
+                            <div class="second_section">
+                                <div class="flight-card-summary row col-lg-12 col-md-12 col-12 p-0">
+                                    <div class="col-lg-2 col-md-2 col-5 flight-departure-date">
+                                        <p class="flight_date">
+                                            {{singleFlight.dpt.cityCode}}</p>
+                                        <p class="flight_date_label">
+                                            {{getTimeInHours(singleFlight.dptTimeLocal)}} </p>
+                                        <p class="flight_date_label">
+                                            {{'(Terminal: ' +singleFlight.dpt.terminal+')'}}</p>
+    
+                                    </div>
+                                    <div class="col-lg-7 col-md-7 col-2 flight-trip" style="margin:auto;">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-12 text-center">
+                                                <span class="row set-one panel-heading collapsed" data-toggle="collapse"
+                                                    (click)="current = FIndex" [attr.data-parent]="'#accordion_' + FIndex"
+                                                    [attr.href]="'#collapseOne_' + FIndex"
+                                                    [attr.target]="'#collapseOne_' + FIndex" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <mdb-icon fas icon="chevron-down" size="2x"
+                                                        [ngClass]="showselectedDetail == FIndex ? 't-blue rotate down': 't-blue rotate'">
+                                                    </mdb-icon>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-2 col-md-2 col-5 flight-arrival-date p-0"
+                                        style="text-align: right;position: relative;left: 15px;">
+                                        <p class="flight_date">
+                                            {{singleFlight.arv.cityCode}}</p>
+                                        <p class="flight_date_label">
+                                            {{getTimeInHours(singleFlight.arvTimeLocal)}} </p>
+                                        <p class="flight_date_label">
+                                            {{'(Terminal: ' + singleFlight.arv.terminal+')'}}</p>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!-- <div class="eocnomy_section">
+                                    <div class="col-4 pull-left p-0">
+                                        <p class="text-flight-type">
+                                            {{ singleFlight.classAndAvailability.class[0].userClassType }}</p>
+                                    </div>
+    
+                                    <div *ngIf="singleFlight.classAndAvailability.class[0].userClassType == 'ECONOMY'"
+                                        class="col-8 text-flight-type pull-right p-0">
+                                        <mdb-checkbox [default]="true" class="check-upgrade-premium">Upgrade to premium
+                                        </mdb-checkbox>
+                                    </div>
+                                </div> -->
+    
+                            </div>
+    
+                            <!-- legs details here -->
+    
+                            <div class="flight-card-detail panel-collapse collapse" [class.collapse]='current != FIndex'
+                                [attr.id]="'collapseOne_' + FIndex" [attr.data-parent]="'collapseOne_' + FIndex">
+    
+                                <!-- <div class="flight-card-detail" *ngIf="showselectedDetail == FIndex"> -->
+                                <div class="flight-legs"
+                                    *ngFor="let legFlight of singleFlight.legs.leg; let legIndex = index">
+                                    <div class="flight-leg">
+                                        <div class="flight-leg__solid-border"></div>
+                                        <div class="row">
+                                            <span
+                                                class="col-lg-2 col-md-2 text-flight-detail">{{formatDepartureDate(legFlight.legDepartureDate)}}</span>
+                                            <span class="col-lg-6 text-flight-detail">
+                                                {{getAirportName(legFlight.dpt.cityCode) }}</span>
+                                            <!-- '( Airport: ' + (legFlight.dpt.aptCode) + ')' -->
+                                            <span class="col-lg-4 col-lg-4 text-flight-detail">
+                                                {{getTimeInHours(legFlight.dptTime)}}
+                                            </span>
+                                        </div>
+                                        <div class="flight-leg__duration row">
+                                            <span class="col-lg-9 col-md-9 text-flight-detail">
+                                                {{legFlight.carCode}} {{legFlight.flightNumber}}<br>
+                                            </span>
+                                        </div>
+    
+                                        <div class="row">
+                                            <span class="col-lg-2 col-md-2 text-flight-detail">
+                                                {{formatDepartureDate(legFlight.legArriveDate)}}</span>
+                                            <span class="col-lg-6 col-md-6 text-flight-detail">
+                                                {{getAirportName(legFlight.arv.cityCode)}}</span>
+                                            <!-- + '( Airport: ' + legFlight.arv.aptCode + ')' -->
+                                            <span class="col-lg-4 col-md-4 text-flight-detail">
+                                                {{getTimeInHours(legFlight.arvTime)}}
+                                            </span>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <!-- legs details end here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+           <div>  
+                <div id="choose-flight-page">
+                        <div class="container">
+                                <div class="breadcrumbs_section">
+                                    <div class="wrapper">
+                                        <ul class="breadcrumbs">
+                                            <li class="first" [routerLink]="'/home'" (click)="clearSessionStorage()"><a><i class="fa fa-home"></i> Flight search</a></li>
+                                            <li [ngClass]="{'active' : newIndex == 0}" (click)="flightNavigation(0)"><a>Flight 1</a></li>
+                                            <li [ngClass]="{'active' : newIndex == 1}" (click)="flightNavigation(1)"><a>Flight 2</a></li>
+                                            <li [ngClass]="{'active' : newIndex == 2}" (click)="flightNavigation(2)"><a>Flight 3</a></li>
+                                            <li *ngIf="allFlightResponse.length > 3" [ngClass]="{'active' : newIndex == 3}" (click)="flightNavigation(3)"><a>Flight 4</a></li>
+                                            <li *ngIf="allFlightResponse.length > 4" [ngClass]="{'active' : newIndex == 4}" (click)="flightNavigation(4)"><a>Flight 5</a></li>
+                                            <li *ngIf="allFlightResponse.length > 5" [ngClass]="{'active' : newIndex == 5}" (click)="flightNavigation(5)"><a>Flight 6</a></li>
+                                            <li *ngIf="allFlightResponse.length > 6" [ngClass]="{'active' : newIndex == 6}" (click)="flightNavigation(6)"><a>Flight 7</a></li>
+                                            <li *ngIf="allFlightResponse.length > 7" [ngClass]="{'active' : newIndex == 7}" (click)="flightNavigation(7)"><a>Flight 8</a></li>
+                                            <li *ngIf="allFlightResponse.length > 8" [ngClass]="{'active' : newIndex == 8}" (click)="flightNavigation(8)"><a>Flight 9</a></li>
+                                            <li *ngIf="allFlightResponse.length > 9" [ngClass]="{'active' : newIndex == 9}" (click)="flightNavigation(9)"><a>Flight 10</a></li>
+                                            <li *ngIf="allFlightResponse.length > 10" [ngClass]="{'active' : newIndex == 10}" (click)="flightNavigation(10)"><a>Flight 11</a></li>
+                                            <li *ngIf="allFlightResponse.length > 11" [ngClass]="{'active' : newIndex == 11}" (click)="flightNavigation(11)"><a>Flight 12</a></li>
+                                            <li *ngIf="allFlightResponse.length > 12" [ngClass]="{'active' : newIndex == 12}" (click)="flightNavigation(12)"><a>Flight 13</a></li>
+                                            <li *ngIf="allFlightResponse.length > 13" [ngClass]="{'active' : newIndex == 13}" (click)="flightNavigation(13)"><a>Flight 14</a></li>
+                                            <li *ngIf="allFlightResponse.length > 14" [ngClass]="{'active' : newIndex == 14}" (click)="flightNavigation(14)"><a>Flight 15</a></li>
+                                            <li *ngIf="allFlightResponse.length > 15" [ngClass]="{'active' : newIndex == 15}" (click)="flightNavigation(15)"><a>Flight 16</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            
+                            <div class="container flight-tab">
+                                <div class="mt-4">
+                                    <!--  ========Start of Desktop view======   -->
+                                    <div class="flight-result d-none d-md-block">
+                                        <!-- <h4 class="flight-heading">{{ 'Flight ' + (newIndex + 1)}}</h4> -->
+                                        <div class="row station-heading">
+                                            <!-- <div class="col-lg-4 date-change">
+                                                <span class="float-right">
+                                                    <span
+                                                        class="text-change-date">{{allFlightResponse[newIndex].flights.flightDateFoundDD + '/'+ allFlightResponse[newIndex].flights.flightDateFoundMM + '/'+ allFlightResponse[newIndex].flights.flightDateFoundYYYY }}</span>
+                                                    <button type="button" mdbBtn class="btn-change-date" data-toggle="modal" data-target="#myModal" (click)="changeDate()" mdbWavesEffect>Change Date</button>
+                                                    <button type="button" mdbBtn class="btn-change-date" (click)="basicModal.show()"
+                                                        mdbWavesEffect>Change Date</button>
+                                                </span>
+                                            </div> -->
+                                                
+                                            <div class="col-lg-12 change-passengers">
+                                                    <div class="table-responsive">
+                                                            <table class="table m-0">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Date</th>
+                                                                            <th>Cabin class</th>
+                                                                            <th>Adults</th>
+                                                                            <th>Children</th>
+                                                                            <th></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td><span class="text-change-date">{{allFlightResponse[newIndex].flights.flightDateFoundDD + '/'+ allFlightResponse[newIndex].flights.flightDateFoundMM + '/'+ allFlightResponse[newIndex].flights.flightDateFoundYYYY }}</span> <button type="button" mdbBtn class="btn btn-primary m-0" (click)="basicModal.show()"
+                                                                                mdbWavesEffect>Change Date</button></td>
+                                                                            <td>{{allFlightResponse[newIndex].flights.flight[0].classAndAvailability.class[0].userClassType}}</td>
+                                                                            <td>{{passengers.numAdults}} Adult(s)</td>
+                                                                            <td>{{passengers.numChildren}} Children(s)</td>
+                                                                            <td><button class="btn btn-primary pull-right" data-toggle="modal" data-target="#passengerCabin">Change</button></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-lg-12 flight-name mb-2 mt-2">
+                                                            <span class="route-heading"> <span
+                                                                    class="departure-heading">{{ getAirportName(allFlightResponse[newIndex].flights.flight[newIndex].dpt.cityCode) }}</span>
+                                                                    <i class="far fa-circle" style="font-size: 0.8em;"></i>- - - -<i class="fas fa-angle-right"></i>
+                                                            <span class="arrival-heading">{{ getAirportName(allFlightResponse[newIndex].flights.flight[newIndex].arv.cityCode) }}</span></span>
+                            
+                            
+                                                            <!-- <div>
+                                                                <span *ngIf="itineraryErrMessages[newIndex].journeySegWarnings != 'undefined' && itineraryErrMessages[newIndex].journeySegWarnings != null">
+                                                                    <div *ngIf="itineraryErrMessages[newIndex].journeySegWarnings.journeySegWarning">
+                                                                        <div *ngFor="let segwarnings of itineraryErrMessages[newIndex].journeySegWarnings.journeySegWarning">
+                                                                            <div class="errror-message">{{getsegwarningMessage(segwarnings.code)}}</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                            </div> -->
+                                                        </div>
+                                            </div>
+                                    
+                                            <div class="main-container-bg">
+                                                <div class="main-container">
+                                    
+                                                    <div *ngFor="let singleFlight of allFlightResponse[newIndex].flights.flight; let flightIndex = index"
+                                                        [ngClass]="(selectedSegment == newIndex) && (selectedFlightIndex == flightIndex) ? 'accordian-card active z-depth-3' : 'accordian-card'"
+                                                        (click)="selectFlightSegment(flightIndex, newIndex)">
+                                    
+                                                        <div class="flight-card-header row col-lg-12">
+                                    
+                                                            <div class="col-lg-4 col-md-5">
+                                                                <div class="row col-lg-12 col-md-12">
+                                                                        <div class="col-lg-2 col-md-2">
+                                                                                <span [ngClass]="selectedFlightIndex == flightIndex ? 'stop-status active' : 'stop-status'"></span>
+                                                                        </div>
+                                        
+                                                                        <div class="col-lg-10 col-md-10">
+                                                                                <div [ngClass]="{
+                                                                                    'airline-AA':getairlineLogo(singleFlight.legs.leg) === 'AA',
+                                                                                    'airline-BA':getairlineLogo(singleFlight.legs.leg) === 'BA',
+                                                                                    'airline-CX':getairlineLogo(singleFlight.legs.leg) === 'CX',
+                                                                                    'airline-AY':getairlineLogo(singleFlight.legs.leg) === 'AY',
+                                                                                    'airline-IB':getairlineLogo(singleFlight.legs.leg) === 'IB',
+                                                                                    'airline-JL':getairlineLogo(singleFlight.legs.leg) === 'JL',
+                                                                                    'airline-MH':getairlineLogo(singleFlight.legs.leg) === 'MH',
+                                                                                    'airline-RJ':getairlineLogo(singleFlight.legs.leg) === 'RJ',
+                                                                                    'airline-S7':getairlineLogo(singleFlight.legs.leg) === 'S7',
+                                                                                    'airline-UL':getairlineLogo(singleFlight.legs.leg) === 'UL',
+                                                                                    'airline-QF':getairlineLogo(singleFlight.legs.leg) === 'QF',
+                                                                                    'airline-QR':getairlineLogo(singleFlight.legs.leg) === 'QR',
+                                                                                    'airline-XL':getairlineLogo(singleFlight.legs.leg) === 'XL',
+                                                                                    'airline-OW':getairlineLogo(singleFlight.legs.leg) === 'OW'
+                                                                                    }">
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                    
+                                                            <div class="col-lg-4 col-md-3">
+                                                                <p class="text-center text-flight-type">
+                                                                    {{ singleFlight.classAndAvailability.class[0].userClassType }}</p>
+                                                            </div>
+                                    
+                                                            <div *ngIf="singleFlight.classAndAvailability.class[0].userClassType == 'ECONOMY'" class="col-lg-4 col-md-4 text-flight-type ">
+                                                                <mdb-checkbox [default]="true" class="check-upgrade-premium">Upgrade to premium
+                                                                </mdb-checkbox>
+                                                            </div>
+                                                        </div>
+                                    
+                                                        <!-- Details here -->
+                                                        <div class="flight-card-summary row col-lg-12 col-md-12">
+                                                            <div class="col-lg-2 col-md-2 flight-departure-date text-center">
+                                                                <p class="flight_date">
+                                                                    {{ formatDepartureDate(singleFlight.flightDates.scheduledDate[0]) }}
+                                                                </p>
+                                                                <p class="flight_date_label">Departure</p>
+                                                            </div>
+                                                            <div class="col-lg-7 col-md-7 flight-trip">
+                                                                <div class="row">
+                                                                    <div class="col-lg-3 col-md-3 flight-departure-airport text-center">
+                                                                        <p class="flight_date">
+                                                                            {{getAirportName(singleFlight.dpt.cityCode)}}</p>
+                                                                        <p class="flight_date_label">
+                                                                            {{getTimeInHours(singleFlight.dptTimeLocal)}} </p>
+                                                                        <p class="flight_date_label">
+                                                                            {{'(Terminal: ' + singleFlight.dpt.terminal+')'}}</p>
+                                                                    </div>
+                                                                    <div class="col-lg-6 col-md-6 text-center">
+                                                                        <div class="row flight-duration ">
+                                                                            <div class="flight-duration-info">
+                                                                                <p class="flight_date">
+                                                                                    {{singleFlight.elapsedTime | minuteSeconds}}</p>
+                                                                                <p class="flight_date_label"> <span class="direction-angle">
+                                                                                        <i class="far fa-circle"></i>- - - -
+                                                                                        -&nbsp;&nbsp;&nbsp;&nbsp; </span> Stops:
+                                                                                    {{singleFlight.numLegs}} <span class="direction-angle">
+                                                                                        &nbsp;&nbsp;&nbsp;&nbsp;- - - - -<i
+                                                                                            class="fas fa-angle-right"></i></span></p>
+                                                                                <span>{{singleFlight.carFlight}}</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 flight-arrival-airport text-center">
+                                                                        <p class="flight_date">
+                                                                            {{getAirportName(singleFlight.arv.cityCode)}}</p>
+                                                                        <p class="flight_date_label">
+                                                                            {{getTimeInHours(singleFlight.arvTimeLocal)}} </p>
+                                                                        <p class="flight_date_label">
+                                                                            {{'(Terminal: ' + singleFlight.arv.terminal+')'}}</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2 col-md-2 flight-arrival-date text-center">
+                                                                <p class="flight_date">{{formatDepartureDate(singleFlight.flightArriveDate)}}
+                                                                </p>
+                                                                <p class="flight_date_label">Arrival</p>
+                                                            </div>
+                                                            <div class="col-lg-1 col-md-1 flight-detail-trigger mt-3">
+                                                                <a (click)="clickShowDetail()">
+                                                                    <mdb-icon fas icon="chevron-down" size="2x"
+                                                                        [ngClass]="showDetail && selectedFlightIndex == flightIndex ? 't-blue float-right rotate down': 't-blue float-right rotate'">
+                                                                    </mdb-icon>
+                                                                </a>
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <!-- legs details here -->
+                                
+                                                        <div class="flight-card-detail" *ngIf="showDetail && (selectedSegment == newIndex) && (selectedFlightIndex == flightIndex)">
+                                                            <div class="flight-legs"
+                                                                *ngFor="let legFlight of singleFlight.legs.leg; let legIndex = index">
+                                                                <div class="flight-leg">
+                                                                    <div class="flight-leg__solid-border"></div>
+                                                                    <div class="row">
+                                                                        <span
+                                                                            class="col-lg-2 col-md-2 text-flight-detail">{{formatDepartureDate(legFlight.legDepartureDate)}}</span>
+                                                                        <span class="col-lg-6 text-flight-detail">
+                                                                            {{getAirportName(legFlight.dpt.cityCode) }}</span>
+                                                                        <!-- '( Airport: ' + (legFlight.dpt.aptCode) + ')' -->
+                                                                        <span class="col-lg-4 col-lg-4 text-flight-detail">
+                                                                            {{getTimeInHours(legFlight.dptTime)}}
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="flight-leg__duration row">
+                                                                        <span class="col-lg-9 col-md-9 text-flight-detail">
+                                                                            {{legFlight.carCode}} {{legFlight.flightNumber}}<br>
+                                                                        </span>
+                                                                    </div>
+                                    
+                                                                    <div class="row">
+                                                                        <span class="col-lg-2 col-md-2 text-flight-detail">
+                                                                            {{formatDepartureDate(legFlight.legArriveDate)}}</span>
+                                                                        <span class="col-lg-6 col-md-6 text-flight-detail">
+                                                                            {{getAirportName(legFlight.arv.cityCode)}}</span>
+                                                                        <!-- + '( Airport: ' + legFlight.arv.aptCode + ')' -->
+                                                                        <span class="col-lg-4 col-md-4 text-flight-detail">
+                                                                            {{getTimeInHours(legFlight.arvTime)}}
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                    
+                                                            </div>
+                                                        </div>
+                                                        <!-- legs details end here -->
+                                                    </div>
+                                                    <div *ngIf="showMoreLable">
+                                                        <a class="showmore-link" (click)="showAllFlight()">{{showMoreLable}}</a>
+                                                    </div>
+                                                </div>
+                                    
+                                            </div>
+                                        </div>
+                                        <!--  ========End of Desktop view======   -->
+                                    
+                                        <!--    ======Start of Mobile view======    -->
+                                        <div class="mb_flights_section d-block d-md-none">
+                                            <div class="flight-result">
+                                                <div class="flight_info">
+                                                    <div class="flight_seg_info">
+                                                        <span class="pull_left flight-heading">
+                                                            {{ 'Flight ' + (newIndex + 1)}}
+                                                        </span>
+                                                        <button type="button" mdbBtn class="pull-right btn btn-primary" (click)="basicModal.show()" mdbWavesEffect>Change
+                                                            Date</button>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                    
+                                                    <div class="route_define">
+                                                        <div class="row">
+                                                            <div class="col-12 p-0">
+                                                                <div class="col-8 route">
+                                                                    <span
+                                                                        class="departure-heading">{{getAirportName(allFlightResponse[newIndex].flights.flight[newIndex].dpt.cityCode) }}</span><i
+                                                                        class="fas fa-plane"></i>
+                                                                    <span
+                                                                        class="arrival-heading">{{getAirportName(allFlightResponse[newIndex].flights.flight[newIndex].arv.cityCode) }}</span>
+                                                                </div>
+                                    
+                                                                <div class="col-4 date">
+                                                                    <span>{{allFlightResponse[newIndex].flights.flightDateFoundDD + '/'+ allFlightResponse[newIndex].flights.flightDateFoundMM + '/'+ allFlightResponse[newIndex].flights.flightDateFoundYYYY }}</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    
+                                                <div class="main-container-bg">
+                                                    <div class="main-container">
+                                    
+                                                        <div *ngFor="let singleFlight of allFlightResponse[newIndex].flights.flight; let flightIndex = index"
+                                                            [ngClass]="selectedFlightIndex == flightIndex ? 'accordian-card active z-depth-3' : 'accordian-card'"
+                                                            (click)="selectFlightSegment(flightIndex, newIndex)">
+                                    
+                                                            <div class="flight-card-header row col-lg-12 col-12">
+                                    
+                                                                <div class="col-lg-4 col-md-4 col-12">
+                                                                    
+                                                                    <span [ngClass]="selectedFlightIndex == flightIndex ? 'stop-status active' : 'stop-status'"></span>
+                                                                    
+                                                                    <div class="airline_image">
+                                                                            <div [ngClass]="{
+                                                                                'airline-AA':getairlineLogo(singleFlight.legs.leg) === 'AA',
+                                                                                'airline-BA':getairlineLogo(singleFlight.legs.leg) === 'BA',
+                                                                                'airline-CX':getairlineLogo(singleFlight.legs.leg) === 'CX',
+                                                                                'airline-AY':getairlineLogo(singleFlight.legs.leg) === 'AY',
+                                                                                'airline-IB':getairlineLogo(singleFlight.legs.leg) === 'IB',
+                                                                                'airline-JL':getairlineLogo(singleFlight.legs.leg) === 'JL',
+                                                                                'airline-MH':getairlineLogo(singleFlight.legs.leg) === 'MH',
+                                                                                'airline-RJ':getairlineLogo(singleFlight.legs.leg) === 'RJ',
+                                                                                'airline-S7':getairlineLogo(singleFlight.legs.leg) === 'S7',
+                                                                                'airline-UL':getairlineLogo(singleFlight.legs.leg) === 'UL',
+                                                                                'airline-QF':getairlineLogo(singleFlight.legs.leg) === 'QF',
+                                                                                'airline-QR':getairlineLogo(singleFlight.legs.leg) === 'QR',
+                                                                                'airline-XL':getairlineLogo(singleFlight.legs.leg) === 'XL',
+                                                                                'airline-OW':getairlineLogo(singleFlight.legs.leg) === 'OW'
+                                                                                }">
+                                                                            </div>
+                                                                        </div>      
+                                    
+                                                                </div>
+                                                            </div>
+                                    
+                                                            <!-- Details here -->
+                                                            <div class="flight-card-summary row col-lg-12 col-md-12 col-12 p-0">
+                                                                <div class="col-lg-2 col-md-2 col-2 flight-departure-date text-center p-0">
+                                                                    <p class="flight_date">
+                                                                        {{formatDepartureDate(singleFlight.flightDates.scheduledDate[0])}}
+                                                                    </p>
+                                                                    <p class="flight_date_label">Departure</p>
+                                                                </div>
+                                                                <div class="col-lg-7 col-md-7 col-7 flight-trip ml-2">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-6 col-md-6 col-12 text-center">
+                                                                            <div class="row flight-duration ">
+                                                                                <div class="flight-duration-info">
+                                                                                    <p class="flight_date">
+                                                                                        {{singleFlight.elapsedTime}}</p>
+                                                                                    <p class="flight_date_label"> <span class="direction-angle">
+                                                                                            <i class="far fa-circle"></i>- - -</span> Stops:
+                                                                                        {{singleFlight.numLegs}}<span class="direction-angle">- - -<i
+                                                                                                class="fas fa-angle-right"></i></span></p>
+                                                                                    <span>{{singleFlight.carFlight}}</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                    
+                                                                <div class="col-lg-2 col-md-2 col-2 flight-arrival-date text-center p-0">
+                                                                    <p class="flight_date">{{formatDepartureDate(singleFlight.flightArriveDate)}}
+                                                                    </p>
+                                                                    <p class="flight_date_label pull-right">Arrival</p>
+                                                                </div>
+                                                            </div>
+                                    
+                                    
+                                                            <div class="second_section">
+                                                                <div class="flight-card-summary row col-lg-12 col-md-12 col-12 p-0">
+                                                                    <div class="col-lg-2 col-md-2 col-6 flight-departure-date p-0">
+                                                                        <p class="flight_date">
+                                                                                {{singleFlight.dpt.cityCode}}</p>
+                                                                        <p class="flight_date_label">
+                                                                            {{getTimeInHours(singleFlight.dptTimeLocal)}} </p>
+                                                                        <p class="flight_date_label">
+                                                                            {{'(Terminal: ' +singleFlight.dpt.terminal+')'}}</p>
+                                    
+                                                                    </div>
+                                                                    <div class="col-lg-7 col-md-7 col-4 flight-trip">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-6 col-md-6 col-12 text-center">
+                                                                                <a (click)="clickShowDetail()">
+                                                                                    <mdb-icon fas icon="chevron-down" size="2x"
+                                                                                        [ngClass]="showDetail && selectedFlightIndex == flightIndex ? 't-blue rotate down': 't-blue rotate'">
+                                                                                    </mdb-icon>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                    
+                                                                    <div class="col-lg-2 col-md-2 col-6 flight-arrival-date p-0" style="position:relative;left: 28px;">
+                                                                        <p class="flight_date">
+                                                                            {{singleFlight.arv.cityCode}}</p>
+                                                                        <p class="flight_date_label">
+                                                                            {{getTimeInHours(singleFlight.arvTimeLocal)}} </p>
+                                                                        <p class="flight_date_label">
+                                                                            {{'(Terminal: ' + singleFlight.arv.terminal+')'}}</p>
+                                                                    </div>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="eocnomy_section">
+                                                                    <div class="col-4 pull-left p-0">
+                                                                        <p class="text-flight-type">
+                                                                            {{ singleFlight.classAndAvailability.class[0].userClassType }}</p>
+                                                                    </div>
+                                    
+                                                                    <div *ngIf="singleFlight.classAndAvailability.class[0].userClassType == 'ECONOMY'" class="col-8 text-flight-type pull-right p-0">
+                                                                        <mdb-checkbox [default]="true" class="check-upgrade-premium">Upgrade to premium
+                                                                        </mdb-checkbox>
+                                                                    </div>
+                                                                </div>
+                                    
+                                                            </div>
+                                    
+                                                            <!-- legs details here -->
+                                    
+                                                            <div class="flight-card-detail" *ngIf="showDetail && selectedFlightIndex == flightIndex">
+                                                                <div class="flight-legs"
+                                                                    *ngFor="let legFlight of singleFlight.legs.leg; let legIndex = index">
+                                                                    <div class="flight-leg">
+                                                                        <div class="flight-leg__solid-border"></div>
+                                                                        <div class="row">
+                                                                            <span
+                                                                                class="col-lg-2 col-md-2 text-flight-detail">{{formatDepartureDate(legFlight.legDepartureDate)}}</span>
+                                                                            <span class="col-lg-6 text-flight-detail">
+                                                                                {{getAirportName(legFlight.dpt.cityCode) }}</span>
+                                                                            <!-- '( Airport: ' + (legFlight.dpt.aptCode) + ')' -->
+                                                                            <span class="col-lg-4 col-lg-4 text-flight-detail">
+                                                                                {{getTimeInHours(legFlight.dptTime)}}
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="flight-leg__duration row">
+                                                                            <span class="col-lg-9 col-md-9 text-flight-detail">
+                                                                                {{legFlight.carCode}} {{legFlight.flightNumber}}<br>
+                                                                            </span>
+                                                                        </div>
+                                    
+                                                                        <div class="row">
+                                                                            <span class="col-lg-2 col-md-2 text-flight-detail">
+                                                                                {{formatDepartureDate(legFlight.legArriveDate)}}</span>
+                                                                            <span class="col-lg-6 col-md-6 text-flight-detail">
+                                                                                {{getAirportName(legFlight.arv.cityCode)}}</span>
+                                                                            <!-- + '( Airport: ' + legFlight.arv.aptCode + ')' -->
+                                                                            <span class="col-lg-4 col-md-4 text-flight-detail">
+                                                                                {{getTimeInHours(legFlight.arvTime)}}
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                    
+                                                                </div>
+                                                            </div>
+                                                            <!-- legs details end here -->
+                                                        </div>
+                                                        <div>
+                                                            <a class="showmore-link" (click)="showAllFlight()">{{showMoreLable}}</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        <!--    ======End of Mobile view======    -->
+                                    </div>
+                                
+                                    <div class="container-fluid show-price-heaading">
+                                        <!-- pricing here -->
+                                        <div class="container jumbo_header m-4">
+                                            <div class="eniter_price_from" *ngIf="FlightPrice">
+                                                <div class="row d-none d-md-block">
+                                                    <div class="col-md-12 col-lg-12">
+                                                        <label>Total price for all flights selected:
+                                                        </label>
+                                                        <span class="ml-5 text-bold">{{FlightPrice.total}} {{FlightPrice.currencyType}}</span>
+                                                        <div class="col-md-2 col-lg-2 pull-right flight_indexer p-0">
+                                                            <button type="button" class="btn btn-primary pull-right" [disabled]="disableReview"
+                                                                (click)="goToNextFlight()">{{buttonLabel}}</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                
+                                                <div class="row d-block d-md-none mb_pricing">
+                                                    <div class="price pl-2">
+                                                        {{FlightPrice.total}} {{FlightPrice.currencyType}}
+                                                        <button type="button" class="btn btn-primary float-right mr-2" (click)="goToNextFlight()">{{buttonLabel}}</button>
+                                                    </div>
+                                                    <div class="price_text pl-2">
+                                                        <label>Total price for all flights selected:
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                
+                                        </div>
+                                    </div>
+                                
+                                    <div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog"
+                                        aria-labelledby="myBasicModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <ngb-datepicker #dp name="changeDate" [(ngModel)]="changeDate" [maxDate]="maxDate"
+                                                        [minDate]="minDate" [displayMonths]="displayMonths" [outsideDays]="outsideDays"
+                                                        (dateSelect)="onchangeDateSelection($event)" (navigate)="navigateDate($event.next)">
+                                                    </ngb-datepicker>
+                                                    <button type="button" mdbBtn class="btn-change-date float-right" aria-label="Close"
+                                                        (click)="basicModal.hide()" mdbWavesEffect>Select</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                </div>
+             </div>  
+    
+
+    
+    
+    
+
+
+
+
+<!-- Modal for passengers and cabin  -->
+<div id="passengerCabin" class="col-12 p-0 modal" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+    
+              <div class="row">
+                <div class="col-12 cabin-label-button">
+                  <h5>Cabin Type</h5>
+                </div>
+                <div class="col-12 cabin-button">
+                    <div class="wrapper">
+                      <div class="toggle_radio mb-2">
+                        <input type="radio" [checked]="cabinClass == 'ECONOMY'" class="toggle_option" id="first_toggle" name="toggle_option" (click)="cabinChangedMobile('ECONOMY')">
+                        <input type="radio" [checked]="cabinClass == 'BUSINESS'" class="toggle_option" id="second_toggle" name="toggle_option" (click)="cabinChangedMobile('BUSINESS')">
+                        <input type="radio" [checked]="cabinClass == 'FIRST'" class="toggle_option" id="third_toggle" name="toggle_option" (click)="cabinChangedMobile('FIRST')">
+                        <label for="first_toggle"><p>Economy</p></label>
+                        <label for="second_toggle"><p>Business</p></label>
+                        <label for="third_toggle"><p>First</p></label>
+                        <div class="toggle_option_slider">
+                        </div>
+                      </div>
+                    </div>
+    
+                <div class="col-12">
+                  <p>Premium economy upgrades will show where available.</p>
+                </div>
+  
+                <div class="col-12">
+                  <h5 class="traveler-heading">Travellers</h5>
+                <hr>
+                </div>
+                <div class="col-12">
+                  <span>Adult (11+yrs)</span>
+                  <span class="pull-right">
+                      <i class="fas fa-minus-circle fa-2x" style="margin-right: 25px;" (click)="minusAdult(numAdults)"></i>
+                      <label style="margin-right: 25px;">{{numAdults}}</label><i class="fas fa-plus-circle fa-2x" (click)="addAdult(numAdults)"></i>
+                  </span>
+                  <hr>
+                </div>
+  
+                <div class="col-12">
+                    <span>Children (2-11yrs)</span>
+                    <span class="pull-right">
+                        <i class="fas fa-minus-circle fa-2x" style="margin-right: 25px;" (click)="minusChildren(numChildren)"></i>
+                        <label style="margin-right: 25px;">{{numChildren}}</label><i class="fas fa-plus-circle fa-2x" (click)="addChildren(numChildren)"></i>
+                    </span>
+                    <hr>
+                  </div>
+  
+                  <div class="col-12">
+                      <h5 class="traveler-heading">Preferrred Airline</h5>
+                      <p>No Preference</p>
+                    </div>
+               
+                    <div class="col-12" style="text-align: center;">
+                        <button type="button" class="btn btn-primary pull-right" data-dismiss="modal" (click)="updatePassengerCabin()">Proceed</button>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- modal end -->
+    </div>
+ </div>
+
+
+
+
+
+
+
+      
+
+
+      

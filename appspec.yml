@@ -1,0 +1,14 @@
+version: 0.0
+os: windows
+files:
+  - source: /rtw2.zip
+    destination: C:\codedeploy\
+    
+hooks:
+  BeforeInstall:
+    - location: .\deploy-before.bat 
+      timeout: 900
+  AfterInstall:
+    - location: .\deploy-after.bat
+      timeout: 300
+      

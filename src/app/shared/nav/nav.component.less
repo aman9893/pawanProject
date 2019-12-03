@@ -1,0 +1,70 @@
+@import './../../less/globalvar.less';
+.navbar {
+	position: relative;
+	background-color: #fff !important;
+	/* box-shadow: 5px 0px 15px #c3c3c3 !important; */
+	height: 5em;
+	.navbar-brand {
+		position: relative;
+		top: 1em;
+		img{
+			width: 100px;
+			border: 1px solid #fff;
+			border-radius: 100px;
+			padding: 5px;
+			background: #fff;
+		}
+		.logo_header{
+			margin-left: 0.2em;
+			color: @text-primary-color;
+		}
+	}
+	.navbar-nav {
+		.nav-link{
+			color: #120C80;
+		}
+		.nav-link.active{
+			font-weight: 700;
+			text-decoration: underline;
+			text-underline-position: below !important;
+		}
+		.logged_user{
+			background: #f1f1f1;
+			.dropdown-toggle{
+				b{
+					position: relative;
+					bottom: 0.3em;
+				}
+			}
+			.dropdown-toggle::after{
+				margin-bottom: 0.3em;
+			}
+		}
+	}
+	.navbar-collapse{
+		text-align: center;
+		background: #fff;
+	}
+}
+
+@media @large-below{
+	.navbar{
+		height: 6em !important;
+		padding: 0;
+		.navbar-brand{
+			position: relative;
+			left: 1em;
+		}
+		.navbar-toggler{
+			position: relative;
+			right: 1em;
+		}
+		.navbar-collapse{
+			position: relative;
+			bottom: 0.79em;
+		}
+	}
+	.container{
+		max-width: 1000px !important;
+	}
+}

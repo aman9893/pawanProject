@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../src/app/less/globalvar.less';
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+  * { 
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  }
+  .errror-message{
+    color: tomato;
+  }
+@media @large-above{
+  .container{
+    max-width: 1300px !important;
+  }
+}
+
+.btn-teritiary, .btn-primary, .btn-info {
+  text-transform: capitalize !important;
+  padding: 0.3rem 0 !important;
+  font-size: 16px !important;
+  min-width: 150px !important;
+  background: @blue-text-color !important;
+  color: @white !important;
+  border-radius: 100px !important;
+  border: none !important;
+}
+
+.modal-body{
+  .modal-header{
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+
+.modal-open .modal{
+  overflow: scroll !important;
+}
+
+.modal-dialog .modal-content {
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+  border: 0;
+  border-radius: .125rem;
+}
+
+.btn{
+  margin: .375rem;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-action {
+  border: 1px solid @blue-text-color !important;
+  border-radius: 100px !important;
+  background-color: transparent!important;
+  color: @blue-text-color !important;
+  padding: 0.5em 2em !important;
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: @blue-text-color;
+}
+
+@media @medium-below{
+  .btn{
+    padding: 5px 15px !important;
+    font-size: 14px !important;
+  }
+}
+
+@media @medium-above{
+
+}

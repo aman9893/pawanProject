@@ -1,0 +1,150 @@
+@import '../../less/globalvar.less';
+
+// .date-picker{
+//   .input-group-text{
+//     border: none;
+//     background: #fff;
+//     border-radius: 0;
+//   }
+//   input{
+//     border-radius: 0 100px 100px 0;
+//   }
+// }
+
+// .form-control{
+//   height: 3.5em;
+//   border: none;
+//   border-radius: 0;
+// }
+
+.calendar-wrapper {
+  background-color: @calender-bg;
+  top: 60px;
+  position: absolute;
+  z-index: 5;
+  width: 628px;
+  box-shadow: 0 0 8px @shadow;
+  right: 0;
+  border-radius: 5px;
+}
+
+.dtp-body {
+  width: 294px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin: 0px 10px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+
+.dtp-body .days span, .dtp-body .weeks span {
+  font: 14px 'Roboto'; 
+  font-weight:400; 
+  text-align:center; 
+  width:42px; 
+  height:42px; 
+  display:inline-block; 
+  overflow:hidden; 
+  line-height:40px;
+  margin: -3px 0;
+}
+
+.dtp-body .weeks span {
+  height:35px; 
+}
+.calendar-wrapper {
+  .dtp-body span.enable-day {
+    background-color: white;
+    cursor: pointer;
+  }
+  .dtp-body span.enable-day:hover {
+    background-color: @day-hover-bg;
+    color: white;
+  }
+  .dtp-body span.disable-day {
+    background-color: @x-day-bg;
+    border-left: 1px solid white;
+    cursor: not-allowed;
+  }
+  .dtp-body span.disable-day:active {
+    pointer-events: none;
+  }
+  .dtp-body .weeks {
+    margin: 7px 0;
+    border-bottom: 1px solid lightgray;
+  }
+  .year-month-row {
+    display:block; 
+    margin: 18px 0 0 0; 
+    text-align: center; 
+    position: relative;
+    .year-month-text {
+      font:18px 'Roboto'; 
+      font-weight: 600;
+      letter-spacing: 1px;  }
+    .prev-month {
+      position: absolute;
+      left: 5px;
+      top: 3px;
+      cursor: pointer;
+    }
+    .next-month {
+      position: absolute;
+      right: 5px;
+      top: 3px;
+      cursor: pointer;
+    }
+    .prev-month.none:hover, .next-month.none:hover {
+      cursor: not-allowed !important;
+    }
+  }
+}
+
+// Mobile Style
+.mobile-calendar-wrapper {
+  width: 324px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  .dtp-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px 10px 15px;
+    border-bottom: 2px solid lightgray;
+  }
+  .dtp-body span.enable-day {
+    color: black;
+    cursor: pointer;
+  }
+  .dtp-body span.enable-day.active {
+    background-color: @day-hover-bg;
+    border-radius: 3px;
+    color: white;
+  }
+  .dtp-body span.disable-day {
+    color: @x-day;
+    pointer-events: none;
+  }
+  .year-month-row {
+    display:block; 
+    text-align: left;
+    margin: 5px 5px;
+    position: relative;
+    .year-month-text {
+      font-size:18px; 
+      font-weight: 400;}
+  }
+  .dtp-body .weeks {
+    color: @week-txt;
+  }
+}
+
+button.modal_close:focus {
+  outline:0 !important;
+}
+
+ngb-modal-window.modal.fade.show.d-block.mobile-datepicker-modal {
+  width: 360px;
+  height: 500px;
+}

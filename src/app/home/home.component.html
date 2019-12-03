@@ -1,0 +1,429 @@
+<app-nav></app-nav>
+<app-progress-mask-component [showProgress]="showMask"></app-progress-mask-component>
+<div class="homepage">
+  <div class="container-fluid">
+    <!-- nav start -->
+    <div class="site_background_header"></div>
+    <div class="site_background">
+      <div class="container">
+        <div class="site_brands d-none d-sm-none d-md-block">
+          <div class="col-md-8 col-lg-8 site_caption">
+            <p class="header-title">Round the world with <span style="font-weight: bold;">one</span>world<br>
+              Explore the world. Book your adventure.</p>
+          </div>
+          <div class="col-sm-4 col-lg-4 site_img">
+            <img src="./../../assets/images/2018_Record_Player_Still-min.png" class="title-mark">
+          </div>
+        </div>
+        <div class="site_brands d-sm-block d-md-none mt-2">
+          <div class="col-12 site_caption">
+            <p class="header-title">Round the world with <span style="font-weight: bold;">one</span>world<br>
+              Explore the world. Book your adventure.</p>
+          </div>
+          <div class="col-12 site_img text-center">
+            <img src="./../../assets/images/2018_Record_Player_Still-min.png" class="title-mark">
+          </div>
+        </div>
+        <!-- end here -->
+
+        <div class="search_section">
+          <div class="main-container">
+            <!-- search start here -->
+            <div class="flight-list">
+              <div>
+                <a href="#" class="a-round-the-world"><b>Round-the-world</b></a>
+                <a class="text-map d-none d-md-block" href="https://omc-rtw-uat.zen3.co.uk/rtw/default.aspx?parallel=enabled"
+                  target="_blank" (click)="goToMap()"><span class="map_icon"><i class='fas fa-map-marked-alt'></i>Map
+                    view</span></a>
+              </div>
+              <div *ngIf="showInfo" style="color: tomato">{{showitinararyError}}</div>
+              <form>
+                <div class="independent_fields mt-3 mb-3 row ">
+
+                  <div class="col-12 p-0 d-xs-block d-sm-none">
+                    <div class="passenger_mobile_filed">
+                      <!-- <label class="form-control mobile-passenger" data-toggle="modal" data-target="#passengerCabin">{{updatePassengerCabin()}}</label> -->
+                      <input type="text" class="form-control" data-toggle="modal" data-target="#passengerCabin" [placeholder]="updatePassengerCabin()">
+                    </div>
+                    <div style="color: tomato">{{passengerErrormessage}}</div>
+                  </div>
+
+                  <div class="col-4 d-none d-sm-block dd_fields">
+                    <input class="browser-default custom-select passengers form-control" (click)="toggle()" [placeholder]="updatePassenger()"
+                      (ngModelChange)="passengerChanged()" name="passenger">
+                    <span><img src="./../../assets/images/passengers.png" width="25px"></span>
+
+
+                    <ng-container *ngIf="show">
+                      <div class="passengers_selection mt-2">
+                        <div class="content">
+
+                          <div class="form-group">
+                            <label class="control-label">
+                              <strong>Adult</strong>
+                              (11+ yrs)
+                            </label>
+                            <div class="input-group number-spinner">
+                              <span class="input-group-btn">
+                                <a class="btn btn-action adult_traveller" data-dir="dwn">
+                                  <span class="fa fa-minus"></span>
+                                </a>
+                              </span>
+                              <input type="text" name="adult" id="adult" [(ngModel)]="numAdults" class="text-center"
+                                value="1" max=9 min=1>
+                              <span class="input-group-btn">
+                                <a class="btn btn-action" data-dir="up">
+                                  <span class="fa fa-plus"></span>
+                                </a>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label">
+                              <strong>Child</strong>
+                              (2 - 11 yrs)
+                            </label>
+                            <div class="input-group number-spinner">
+                              <span class="input-group-btn">
+                                <a class="btn btn-action" data-dir="dwn">
+                                  <span class="fa fa-minus"></span>
+                                </a>
+                              </span>
+                              <input type="text" name="child" id="child" [(ngModel)]="numChildren" class="text-center"
+                                value="0" max=9 min=0>
+                              <span class="input-group-btn">
+                                <a class="btn btn-action" data-dir="up">
+                                  <span class="fa fa-plus"></span>
+                                </a>
+                              </span>
+                            </div>
+                            <br />
+                          </div>
+                          <div class="pull-right" style="color:#d01818;">{{passengerErrormessageDP}}</div>
+                          <div id="travellerwarnings"></div>
+                          <div class="clearfix"></div>
+                            <div class="modal-footer pull-right mt-2">
+                              <button type="button" class="btn btn-info" (click)="dismiss_passengers()">cancel</button>
+                              <button type="button" class="btn btn-info" (click)="submit_travellers()"
+                                data-dismiss="modal">Done</button>
+                            </div>
+                    
+                        </div>
+                      </div>
+                    </ng-container>
+                  </div>
+
+                  <div class="col-4 d-none d-sm-block dd_fields">
+                    <select class="browser-default custom-select cabinClass form-control" [(ngModel)]="cabinClass"
+                      (ngModelChange)="cabinChanged()" name="cabin">
+                      <option value="" selected hidden>Travel class</option>
+                      <option *ngFor="let obj of cabinClassList" [value]="obj.value">{{ obj.label }}</option>
+                    </select>
+                    <span><img src="./../../assets/images/cabinClass.png" width="25px"></span>
+                  </div>
+                  <div class="col-4 d-none d-sm-block dd_fields">
+                    <select class="browser-default custom-select airlinePreference form-control ml-2"
+                      [(ngModel)]="flightPreference" (ngModelChange)="airlinePreferenceChanged()"
+                      name="flightPreference">
+                      <option value="" selected hidden>Airline preference</option>
+                      <option *ngFor="let obj of airlinePreferenceList" [value]="obj.value">{{ obj.label }}</option>
+                    </select>
+                    <span><img src="./../../assets/images/flights.png" width="25px"></span>
+                  </div>
+                </div>
+
+                <div class="add-flight row" *ngFor="let flight of searchFlight; let i = index">
+
+                  <div class="col-4 departAirport_field">
+                    <div class="input-group">
+                      <div class="input-group-prepend departAirport_icon">
+                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-plane-departure"></i></span>
+                      </div>
+                      <input type="text" class="form-control" #departVal (keyup.enter)="updateDepart(departVal)" (blur)="updateDepart(departVal)" id="{{getSegmentName(i, 'departAirport')}}"
+                        name="{{getFieldName(i, 'departAirport')}}" [(ngModel)]="flight.departAirport"
+                        placeholder="From" [ngbTypeahead]="search" (selectItem)="selectedFromAirport($event, input,i)" (blur)="autoUpdateDepartValue(flight.departAirport, i)"
+                        [resultFormatter]="formatter" [resultTemplate]="rt" [inputFormatter]="formatter" />
+                        
+                        <!-- <div class="error-layout"></div> -->
+                        <ng-template #rt let-r="result" let-t="term">
+                            {{ r.name}}
+                        </ng-template>
+                    </div>
+                  </div>
+
+                  <div class="col-4 arrivalAirport_field">
+                    <div class="input-group">
+                      <div class="input-group-prepend arrivalAirport_icon">
+                        <span class="input-group-text" id="basic-addon"><i class="fas fa-plane-arrival"></i></span>
+                      </div>
+                      <input type="text" class="form-control"
+                        name="{{getFieldName(i, 'destinationAirport')}}" [(ngModel)]="flight.destinationAirport" #inputVal (keyup.enter)="updateDesti(inputVal)" (blur)="updateDesti(inputVal)" id="{{getSegmentName(i, 'destinationAirport')}}"
+                        placeholder="To" [ngbTypeahead]="search" (selectItem)="selectedToAirport($event, i)" (blur)="autoUpdateDestinationValue(flight.destinationAirport, i)"
+                        [resultFormatter]="formatter" [resultTemplate]="rt" [inputFormatter]="formatter" />
+                        <!-- <div class="error-layout"></div> -->
+                        <ng-template #rt let-r="result" let-t="term">
+                            {{ r.name}}
+                        </ng-template>
+                    </div>
+                  </div>
+
+                  <div class="col-4 departDate_field">
+                      <div class="input-group">
+                        <div class="input-group-prepend departDateIcon">
+                          <span class="input-group-text" id="basic-addon1"> <i class="fas fa-calendar-alt"></i></span>
+                        </div>
+                        <input class="form-control" name="{{getFieldName(i, 'departureDate')}}"
+                          [(ngModel)]="flight.departureDate" placeholder="Date" autocomplete="off" readonly
+                          (click)="getCalenderValue(flight.departAirport, flight.destinationAirport, flight.departureDate, i, $event)">
+                        <!-- <input class="form-control" name="{{getFieldName(i, 'departureDate')}}"
+                          [(ngModel)]="flight.departureDate" placeholder="Date" autocomplete="off"
+                          [displayMonths]=2
+                          (dateSelect)="onDateSelection($event, flight.departAirport, flight.destinationAirport, i, flight.departureDate)"
+                          (click)="getCalenderValue(flight.departAirport, flight.destinationAirport, flight.departureDate, i, $event)"
+                          (navigate)="onNavigate($event.next)" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()"> -->
+                      </div>
+                      <oneworld-datepicker
+                        *ngIf="showCalendarId==i"
+                        (onClickDate)="onDateSelection($event, flight.departAirport, flight.destinationAirport, i, flight.departureDate)"
+                        [departureDate]="flight.departureDate"
+                        [loading]="loadingCalendar">
+                      </oneworld-datepicker>
+                    </div>
+
+                    <a *ngIf="i>0" (click)="removeFlight(flight.id)">
+                        <mdb-icon fas icon="times-circle" class="delete-icon"></mdb-icon>
+                      </a>
+                      <select-airport
+                        *ngIf="showDepartAirportId==i">
+                      </select-airport>
+                      <div *ngIf="showBadge && (sequenceNumber == i+1 )" class="error-layout">
+                          <div *ngFor="let msg of displayMSG">
+                            <p> {{msg}}</p>
+                          </div>
+                        </div>
+                    <!-- <div *ngIf="showError && (calenderErrorIndex == i)" class="error-layout">Please enter valid departure and destination to know available date. </div> -->
+                    <div *ngIf="showError && (calenderErrorIndex == i) && (!flight.destinationAirport || !flight.departAirport )" class="error-layout">Please enter valid departure and destination to know available date. </div>
+                    <input type="hidden" name="{{getSegmentName(i, 'FlightSegment')}}" [value]="(flight.destinationAirport && flight.departAirport && flight.departureDate) ? true : false" >
+                  </div>
+
+                <div class="row controls mt-0">
+                  <div class="col-md-8 col-sm-12 p-0 mb-3">
+                    <span fas icon="plus" class="icon-flight-list"></span>&nbsp;&nbsp;<a class="a-round-the-world"
+                      (click)="addFlight()">+ Add Flight</a>
+                    <span fas icon="trash" class="icon-flight-list" style="margin-left: 30px;"></span>&nbsp;&nbsp;<a
+                      class="a-round-the-world" (click)="removeAllFlight()">Clear all</a>
+                    <span fas icon="trash" class="icon-flight-list finishItinerary_link" style="margin-left: 30px;">&nbsp;&nbsp;<a
+                      class="a-round-the-world" (click)="finishItinerary()">Finish Itinerary</a></span>
+                  </div>
+
+                  <div class="col-md-4 col-sm-12 p-0">
+                    <button mdbBtn type="button" class="float-right button-flight-list pull-right btn-primary"
+                      (click)="searchFlightDetails()" mdbWavesEffect>
+                      {{"HEADER_STEP_2" | translate}}
+                    </button><!-- [disabled]="isDisableSearch && isTravellersValid" -->
+                    <div *ngIf="isEnableItinerarysearch" class="error-layout">
+                      <p>Please enter all valid fields</p>
+                    </div>
+                  </div>
+
+                  <div *ngIf="itineraryErrMsgLists" class="error-layout p-0">
+                    <div *ngFor="let itineraryErrMsgList of itineraryErrMsgLists">
+                          <p>{{itineraryErrMsgList}}</p>
+                      </div>
+                    </div>
+                    
+                </div>
+
+              </form>
+            </div>
+            <!-- search end here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- all itineraries start here -->
+
+  <div class="container">
+    <div class="theme_Itineraries_section">
+      <div class="itinerary_headers mb-2">
+        <p class="text-center sub-header">Need some inspiration?</p>
+        <p class="text-center sub-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="itinerary_lists mt-4 d-sm-block d-none">
+        <owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+          <div class="item" *ngFor="let image of images;let i= index">
+            <img class="slide-image" src="{{image.itinImage}}">
+            <div class="slide-text">
+              <span>{{image.itinCategory}}</span>
+            </div>
+          </div>
+        </owl-carousel>
+      </div>
+  
+
+      <div class="itineraries mb_itineraries d-xs-block d-sm-none">
+        <div class="themes_carousel">
+          <div class="item mb-4" *ngFor="let image of images;let i= index">
+            <img class="slide-image" src="{{image.itinImage}}" width="100%">
+            <div class="slide-text">
+              <span>{{image.itinCategory}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="benefits_section mt-3">
+      <div class="benefits_headers">
+        <p class="text-center sub-header">Travel around the world with <strong
+            style="font-weight: 900">one</strong>world</p>
+        <p class="text-center sub-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="benefits_lists mt-4">
+        <div class="benefits">
+          <ul>
+            <li class="benefit" *ngFor="let img of imageList">
+              <div class="benefit_desc">
+                <img src="{{img.src}}">
+                <span class="benefit_name">Name </span>
+              </div>
+  
+              <span class="benefitsHoverText">
+                <span class="title">Global Network</span><br>
+                <hr />
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+              </span>
+  
+            </li>
+  
+            <li class="benefit" *ngFor="let img of imageList">
+              <div class="benefit_desc">
+                <img src="{{img.src}}">
+                <span class="benefit_name">Name </span>
+              </div>
+  
+              <span class="benefitsHoverText">
+                <span class="title">Global Network</span><br>
+                <hr />
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+              </span>
+  
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="container">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"  aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document" style="max-width: 576px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="padding: 1rem 1rem 0 1rem;">
+            <div>
+              <app-login></app-login>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-action" data-dismiss="modal">Skip</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- end here -->
+
+  <!-- Modal for passengers and cabin  -->
+  <div class="container">
+    <div id="passengerCabin" class="col-12 p-0 d-xs-block d-sm-none modal fade" role="dialog">
+      <div class="modal-dialog">
+  
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+  
+            <div class="row">
+              <div class="col-12 cabin-label-button">
+                <h5>Cabin Type</h5>
+              </div>
+              <div class="col-12 cabin-button">
+                  <div class="wrapper">
+                    <div class="toggle_radio mb-2">
+                      <input type="radio" checked class="toggle_option" id="first_toggle" name="toggle_option" (click)="cabinChangedMobile('ECONOMY')">
+                      <input type="radio" class="toggle_option" id="second_toggle" name="toggle_option" (click)="cabinChangedMobile('BUSINESS')">
+                      <input type="radio" class="toggle_option" id="third_toggle" name="toggle_option" (click)="cabinChangedMobile('FIRST')">
+                      <label for="first_toggle"><p>Economy</p></label>
+                      <label for="second_toggle"><p>Business</p></label>
+                      <label for="third_toggle"><p>First</p></label>
+                      <div class="toggle_option_slider">
+                      </div>
+                    </div>
+                  </div>
+  
+              <div class="col-12">
+                <p>Premium economy upgrades will show where available.</p>
+              </div>
+
+              <div class="col-12">
+                <h5 class="traveler-heading">Travellers</h5>
+              <hr>
+              </div>
+              <div class="col-12">
+                <span>Adult (11+yrs)</span>
+                <span class="pull-right">
+                    <i class="fas fa-minus-circle fa-2x" style="margin-right: 25px;" (click)="minusAdult(numAdults)"></i>
+                    <label style="margin-right: 25px;">{{numAdults}}</label><i class="fas fa-plus-circle fa-2x" (click)="addAdult(numAdults)"></i>
+                </span>
+                <hr>
+              </div>
+
+              <div class="col-12">
+                  <span>Children (2-11yrs)</span>
+                  <span class="pull-right">
+                      <i class="fas fa-minus-circle fa-2x" style="margin-right: 25px;" (click)="minusChildren(numChildren)"></i>
+                      <label style="margin-right: 25px;">{{numChildren}}</label><i class="fas fa-plus-circle fa-2x" (click)="addChildren(numChildren)"></i>
+                  </span>
+                  <hr>
+                </div>
+
+                <div id="travellerwarnings_mb"></div>
+
+                <div class="col-12 mt-2">
+                    <h5 class="traveler-heading">Preferrred Airline</h5>
+                    <p>No Preference</p>
+                  </div>
+             
+                  <div class="col-12" style="text-align: center;">
+                      <button type="button" class="btn btn-info pull-right" data-dismiss="modal" (click)="updatePassengerCabin()">Proceed</button>
+                  </div>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Proceed</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  
+    <!-- modal end -->
+  </div>
+  </div>
+
+<!-- main div end here -->
+
+<app-footer></app-footer>

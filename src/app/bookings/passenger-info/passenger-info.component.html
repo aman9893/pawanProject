@@ -1,0 +1,275 @@
+<app-nav></app-nav>
+<!-- passenger info start here -->
+<div class="passenger_info_page">
+    <div class="container">
+        <div class="d-flex  justify-content-center">
+            <div>
+                <h2>Your Details</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="passenger_info">
+    <div class="container">
+      <div class="personal_details">
+            <form  name="contact_form" #contactForm="ngForm" novalidate>
+                <div>
+                    <h4 class="jumbo_header">Contact Details</h4>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-label-group">
+                            <input type="text" class="form-control" [(ngModel)]="contactDetails.email" name="email" id="email" #email="ngModel" placeholder="Email" autocomplete="off"
+                                required email>
+                            <label class="label">Email *</label>
+                            <div *ngIf="email.invalid && (email.dirty || email.touched)"class="error_msg">
+                                <div *ngIf="email.errors.required">Please Enter Email address</div>
+                                <div *ngIf="email.errors.email">Email Id should be in a valid Mail Id format</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-label-group">
+                            <input type="text" class="form-control" [(ngModel)]="contactDetails.confirmed_email"  name="confirmed_email" id="confirmed_email"  #confirmed_email="ngModel" placeholder="Confirm email" autocomplete="off"
+                                required email mustMatch (blur)="checkConfirmEmail()">
+                            <label class="label">Confirm email *</label>
+                            <div *ngIf="confirmed_email.invalid && (confirmed_email.dirty || confirmed_email.touched)"class="error_msg">
+                                <div *ngIf="confirmed_email.errors.required">Please Enter Email address</div>
+                                <div *ngIf="confirmed_email.errors.email">Email Id should be in a valid Mail Id format</div>
+                            </div>
+                            <div *ngIf="cnf_email_flag" class="error_msg">Confirm Email should be the same as Email field Value</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-label-group">
+                            <input type="text" class="form-control" [(ngModel)]="contactDetails.lastName"  #lastName="ngModel" name="lastName" id="lastName" placeholder="Last name/Surname" autocomplete="off"
+                            required minlength="3" maxlength="44"  pattern="^[A-Za-z!#$%&'()*+,-./:;=?@[\\\\\]^_`{|<>}~&quot;]+(\s*[A-Za-z!#$%&'()*+,-./:;=?@[\\\\\]^_`{|<>}~&quot;]+)*$">
+                            <label class="label">Last name/Surname *</label>
+                            <div *ngIf="lastName.invalid && (lastName.dirty || confirmed_email.touched)"class="error_msg">
+                                <div *ngIf="lastName.errors.required">Please enter your Last name/Surname</div>
+                                <div *ngIf="lastName.errors.minlength">Last name/Surname must be minimum of 3 characters</div>
+                                <div *ngIf="lastName.errors.maxlength">Last name/Surname must be maximum of 44 characters</div>
+                                <div *ngIf="lastName.errors.pattern">Only letters and spaces are allowed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-label-group">
+                            <input type="text" class="form-control" [(ngModel)]="contactDetails.phone"  #phone="ngModel" name="phone" id="phone" placeholder="Home phone" 
+                            autocomplete="off" minlength="6" maxlength="20" required pattern="^(\+\d{1,3}[- ]?)?\d{10}$">
+                            <label class="label">Home phone *</label>
+                            <div *ngIf="phone.invalid && (phone.dirty || phone.touched)"class="error_msg">
+                                <div *ngIf="phone.errors.required">Please enter Home Phone number</div>
+                                <div *ngIf="phone.errors.minlength">Home Phone number must be minimum of 3 digit number</div>
+                                <div *ngIf="phone.errors.maxlength">Home Phone number must be minimum of 20 digit number</div>
+                                <div *ngIf="phone.errors.pattern">Home Phone number should be only in number</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-label-group">
+                            <input type="text" class="form-control" [(ngModel)]="contactDetails.mobilephone"  #mobilephone="ngModel" name="mobilephone" id="mobilephone" placeholder="Mobile phone"
+                             autocomplete="off"  minlength="6" maxlength="20" pattern="^(\+\d{1,3}[- ]?)?\d{10}$">
+                            <label class="label">Mobile phone</label>
+                            <div *ngIf="mobilephone.invalid && (mobilephone.dirty || mobilephone.touched)"class="error_msg">
+                                <div *ngIf="mobilephone.errors.minlength">Mobile Phone number must be minimum of 3 digit number</div>
+                                <div *ngIf="mobilephone.errors.maxlength">Mobile Phone number must be minimum of 20 digit number</div>
+                                <div *ngIf="phone.errors.pattern">Mobile Phone number should be only in number</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-label-group">
+                            <input type="text" class="form-control" [(ngModel)]="contactDetails.dayphone"  #dayphone="ngModel" name="dayphone" id="dayphone" placeholder="New password" 
+                            autocomplete="off" minlength="6" maxlength="20" pattern="^(\+\d{1,3}[- ]?)?\d{10}$">
+                            <label class="label">Day phone</label>
+                            <div *ngIf="dayphone.invalid && (dayphone.dirty || dayphone.touched)"class="error_msg">
+                                <div *ngIf="dayphone.errors.minlength">Day Phone number must be minimum of 3 digit number</div>
+                                <div *ngIf="dayphone.errors.maxlength">Day Phone number must be maximum of 20 digit number</div>
+                                <div *ngIf="phone.errors.pattern">Day Phone number should be only in number</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-label-group">
+                            <input type="text" class="form-control" [(ngModel)]="contactDetails.eveningphone"  #eveningphone="ngModel" name="eveningphone" id="eveningphone" placeholder="Evening phone" 
+                            autocomplete="off" minlength="6" maxlength="20">  
+                            <label class="label">Evening phone</label>
+                            <div *ngIf="eveningphone.invalid && (eveningphone.dirty || eveningphone.touched)"class="error_msg">
+                                <div *ngIf="eveningphone.errors.minlength">Evening Phone number must be minimum of 3 digit number</div>
+                                <div *ngIf="eveningphone.errors.maxlength">Evening Phone number must be maximum of 20 digit number</div>
+                                <div *ngIf="phone.errors.pattern">Evening Phone number should be only in number</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form  name="passengerInfoForm"  (ngSubmit)="submit_payment_details()" #passengerInfo="ngForm" novalidate>
+                <div *ngFor="let passengersList of passengerDetails, let i = index ">
+                    <div>
+                        <h4 class="jumbo_header">Passenger {{ i + 1 }}</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <select class="form-control" [(ngModel)]="passengersList.passengerType" name="{{getIDByIndex(i, 'passengerType')}}"  #passengerType="ngModel" placeholder="Traveller type" autocomplete="off"
+                                 required readonly  [disabled]="editable">
+                                 <option value="">Please select</option>
+                                 <option value="ADT">Adult</option>
+                                 <option value="CHD">Children</option>
+                                </select>
+                                <label class="label">Traveller type *</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <select class="form-control select-option"  [(ngModel)]="passengersList.title" #title="ngModel" name="{{getIDByIndex(i,'title')}}" placeholder="Title"
+                                required>
+                                    <option value="">Please select</option>
+                                    <option value="Professor">Professor</option>
+                                    <option value="Miss">Miss</option>
+                                    <option value="Mrs">Mrs.</option>
+                                    <option value="Mr">Mr.</option>
+                                    <option value="Ms">Ms.</option>
+                                </select>
+                                <div  *ngIf="passengerInfo.submitted && title.invalid" class="invalid-feedback">
+                                    <div *ngIf="title.errors.required">Please select your Title</div>
+                                </div>
+                                <label class="label">Title *</label>
+                            </div>
+                        </div>
+                        </div>
+   
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <input type="text" class="form-control"  [(ngModel)]="passengersList.firstName" #firstName="ngModel" name="{{getIDByIndex(i,'firstName')}}" placeholder="First name" autocomplete="off"
+                                 required minlength="2" maxlength="30" pattern="^[A-Za-z!#$%&'()*+,-./:;=?@[\\\\\]^_`{|<>}~&quot;]+(\s*[A-Za-z!#$%&'()*+,-./:;=?@[\\\\\]^_`{|<>}~&quot;]+)*$">
+                                <label class="label">First name *</label>
+                                <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)"class="error_msg">
+                                    <div *ngIf="firstName.errors.required">Please enter your First Name</div>
+                                    <div *ngIf="firstName.errors.minlength">First name must be minimum of 2 digit number</div>
+                                    <div *ngIf="firstName.errors.maxlength">First name must be maximum of 30 digit number</div>
+                                    <div *ngIf="firstName.errors.pattern">Only letters and spaces are allowed</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <input type="text" class="form-control"  [(ngModel)]="passengersList.lastName" #lastName="ngModel"  name="{{getIDByIndex(i,'lastName')}}" placeholder="Last name/Surname" autocomplete="off"
+                                required minlength="2" maxlength="30" pattern="^[A-Za-z!#$%&'()*+,-./:;=?@[\\\\\]^_`{|<>}~&quot;]+(\s*[A-Za-z!#$%&'()*+,-./:;=?@[\\\\\]^_`{|<>}~&quot;]+)*$">
+                                <label class="label">Last name/Surname *</label>
+                                <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)"class="error_msg">
+                                    <div *ngIf="lastName.errors.required">Please enter your Last name</div>
+                                    <div *ngIf="lastName.errors.minlength">Last name must be minimum of 2 digit number</div>
+                                    <div *ngIf="lastName.errors.maxlength">Last name must be maximum of 30 digit number</div>
+                                    <div *ngIf="lastName.errors.pattern">Only letters and spaces are allowed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <select class="form-control"  [(ngModel)]="passengersList.gender" #gender="ngModel" name="{{getIDByIndex(i,'gender')}}" placeholder="Gender" autocomplete="off"
+                                required>
+                                    <option value="">Please select</option>
+                                    <option value="F">Female</option>
+                                    <option value="M">Male</option>
+                                </select>
+                                <div *ngIf="gender.invalid && (gender.dirty || gender.touched)"class="error_msg">
+                                    <div *ngIf="gender.errors.required">Please select Gender</div>
+                                </div>
+                                <label class="label">Gender *</label>
+                            </div>
+                        </div>
+                        <div *ngIf="passengersList.passengerType == 'ADT'" class="col-sm-6">
+                            <div class="form-label-group"> 
+                              <input type="text" class="form-control" name="{{getIDByIndex(i,'DOB')}}"  [(ngModel)]="passengersList.DOB" #DOB="ngModel" autocomplete="off"
+                              ngbDatepicker #ADT_dob="ngbDatepicker" (click)="ADT_dob.toggle()" [minDate]="minDate" [maxDate]="maxDate" (dateSelect)="validateAdultAge($event,i)" required>
+                              <span class="fas fa-calendar-alt calender-icon" (click)="ADT_dob.toggle()" ></span>
+                                <label class="label">Date of birth *</label>
+                                <div *ngIf="DOB.invalid && (DOB.dirty || DOB.touched)"class="error_msg">
+                                    <div *ngIf="DOB.errors.required">Please select DOB</div>
+                                </div>
+                               <!--  <div *ngIf="adult_age_flag || passenger_type_adult==='ADT'" class="error_msg">Adult passenger must be more than 12 years </div>
+                                <div *ngIf="child_age_flag || passenger_type_adult==='CHD'" class="error_msg">Adult passenger must be less than 12 years </div> -->
+                            </div>
+                        </div>
+
+                        <div *ngIf="passengersList.passengerType == 'CHD'" class="col-sm-6">
+                                <div class="form-label-group"> 
+                                  <input type="text" class="form-control" name="{{getIDByIndex(i,'DOB')}}"  [(ngModel)]="passengersList.DOB" #DOB="ngModel" autocomplete="off"
+                                  ngbDatepicker #CHD_dob="ngbDatepicker" (click)="CHD_dob.toggle()" [minDate]="CHD_minDate" [maxDate]="CHD_maxDate" (dateSelect)="validateAdultAge($event,i)" required>
+                                  <span class="fas fa-calendar-alt calender-icon" (click)="CHD_dob.toggle()" ></span>
+                                    <label class="label">Date of birth *</label>
+                                    <div *ngIf="DOB.invalid && (DOB.dirty || DOB.touched)"class="error_msg">
+                                        <div *ngIf="DOB.errors.required">Please select DOB</div>
+                                    </div>
+                                   <!--  <div *ngIf="adult_age_flag || passenger_type_adult==='ADT'" class="error_msg">Adult passenger must be more than 12 years </div>
+                                    <div *ngIf="child_age_flag || passenger_type_adult==='CHD'" class="error_msg">Adult passenger must be less than 12 years </div> -->
+                                </div>
+                            </div>
+                    <!--     <div class="col-sm-6" *ngIf="passenger_type_flag">
+                            <div class="form-label-group"> 
+                              <input class="form-control" name="{{getIDByIndex(i,'DOB')}}"  [(ngModel)]="passengersList.DOB" #DOB="ngModel" autocomplete="off"
+                              ngbDatepicker #dob="ngbDatepicker" (click)="dob.toggle()" [minDate]="minDate" [maxDate]="maxDate" (dateSelect)="validateChildAge($event,i)">
+                              <span class="fas fa-calendar-alt calender-icon" (click)="dob.toggle()" ></span>
+                                <label class="label">Date of birth</label>
+                                <div  *ngIf="passengerInfo.submitted && DOB.invalid" class="invalid-feedback">
+                                    <div *ngIf="DOB.errors.required">Traveller type is required</div>
+                                </div>
+                                <div *ngIf="child_age_flag || passenger_type_child==='CHD'">Child passenger must be less than 12 years</div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class=row>
+                        <div class="col-12">
+                            <h4>Frequent flyer information</h4>
+                            <hr/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <select class="form-control"  [(ngModel)]="passengersList.airline" #airline="ngModel"  name="{{getIDByIndex(i,'airline')}}" placeholder="Airline" autocomplete="off">
+                                    <option value="">Please select</option>
+                                    <option value="American Airlines">American Airlines</option>
+                                    <option value=" British Airways">British Airways</option>
+                                    <option value=" Cathay Pacific Airways">Cathay Pacific</option>
+                                    <option value="Finnair">Finnair</option>
+                                    <option value="Iberia">Iberia</option>
+                                    <option value="Japan Airlines">Japan Airlines</option>
+                                    <option value="LATAM Airlines Argentina">LATAM Airlines</option>
+                                    <option value=" Malaysia Airlines"> Malaysia Airlines</option>
+                                    <option value="Royal Jordanian">Royal Jordanian Airlines</option>
+                                    <option value="Finnair">S7 airlines</option>
+                                    <option value="SriLankan Airlines">SriLankan Airlines Airlines</option>
+                                    <option value="Qantas">Qantas Airways</option>
+                                    <option value="Qantas">Qantar Airways</option>
+                                </select>
+                                <label class="label">Airline</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-label-group">
+                                <input type="text" name="{{getIDByIndex(i,'frequentFlyerNumber')}}" [(ngModel)]="passengersList.frequentFlyerNumber" #frequent_flyer_number="ngModel" placeholder="Select Date" class="form-control">
+                                <label class="label">Frequent flyer number</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pull-right">
+                    <button type="submit"  [disabled]="!passengerInfo.form.valid || !contactForm.form.valid "  class="btn btn-teritiary ">Continue</button>
+                </div>
+                </form>
+           </div>
+    </div>
+</div>
+<app-footer></app-footer>

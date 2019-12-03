@@ -1,0 +1,75 @@
+@import "../../less/globalvar.less";
+@color_1: #fff;
+@color_2: #3500ffa6;
+@background_color_1: #120c80;
+
+.common-footer-section {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.container {
+	footer {
+		padding: 0 2em;
+		ul {
+			padding: 0;
+			list-style: none;
+			li {
+				display: inline-block;
+				margin: 0 10px 0 0;
+				a {
+					padding: 0.6rem;
+					background-color: @background_color_1;
+					border-radius: 50%;
+					text-align: center;
+					width: 35px;
+					height: 35px;
+					font-size: 16px;
+					display: inline-block;
+					line-height: 0px;
+					i {
+						color: @color_1;
+						-webkit-transition: 0.5s;
+						-moz-transition: 0.5s;
+						transition: 0.5s;
+					}
+					&:hover {
+						i {
+							-webkit-transform: rotateZ(360deg);
+							-moz-transform: rotateZ(360deg);
+							transform: rotateZ(360deg);
+						}
+					}
+				}
+			}
+		}
+		.footer_links {
+			a {
+                padding: 0 1em;
+                color: @background_color_1 !important;
+                font-weight: 500;
+			}
+		}
+	}
+}
+@media @extra-small{
+	.container {
+		footer {
+			.footer_links {
+				a {
+					position: relative;
+					right: -20px;
+					top: 12px;
+				}
+			}
+			padding: 0 1.2em;
+		}
+	}
+}
+@media @small {
+	.common-footer-section {
+		position: relative !important;
+	}
+}

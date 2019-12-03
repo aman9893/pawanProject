@@ -1,0 +1,47 @@
+<app-nav></app-nav>
+<!-- theme_itinerary_page  start here -->
+<div class="theme_category_page" >
+    <div class="container">
+        <div class="d-flex  justify-content-center">
+            <div>
+                <h2>Inspired itineraries</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container theme_category">
+    <div class="section_1">
+       <img src="../../assets/images/section1_img.png"/>
+    </div>
+    <div class="sub_section mt-3">
+        <!-- <p>Our team have researched a range of itineraries for your convenience,</p>
+        <p>Please choose an itinerary to start your</p>
+        <p>round the world journey</p> -->
+        <p>Our team have researched a range of itineraries for your convenience,<br>
+            Please choose an itinerary to start your round the world journey</p>
+    </div>
+    <div class="section_2">
+        <div class="theme_category">
+            <ul>
+                <li *ngFor="let theme_category_info of theme_category_details;let i= index">
+                    <div class="theme_type">
+                        <a  (click)="category_details(theme_category_info.catName,theme_category_info.catId)">
+                            
+                            <img src="{{theme_category_info.catImage}}">
+                            <p class="category_name">{{theme_category_info.catName}}</p> 
+                        </a>
+                    </div>
+                    <span class="themeHoverText">
+                        <span class="title">Global Network</span><br>
+                        <hr />
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div> 
+</div>
+<app-footer></app-footer>
+
+
+   

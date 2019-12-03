@@ -1,0 +1,675 @@
+@import '../less/globalvar.less';
+
+.homepage{
+  .site_background_header{
+    background-color: @header-bg-color;
+      height: 28em;
+      position: absolute;
+      width: 100%;
+      z-index: 9;
+      top: 5em;
+  }
+  .container-fluid{
+    padding: 0;
+    .site_background{
+      /* background-color: @header-bg-color;
+      min-height: 35em; */
+      position: relative;
+      z-index: 99;
+      margin-bottom: 1.8em;
+      .site_brands{
+        .site_caption{
+          display: inline-block;
+          position: relative;
+          bottom: 2em;
+          .header-title {
+            color: @blue-text-color;
+            font-size: 32px;
+            display: inline-block;
+          }
+        }
+        
+        .site_img{
+          display: inline-block;
+          .title-mark {
+            width: 300px;
+            height: 200px;
+            float: right;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .main-container {
+    /* width: calc(100% - 300px); */
+    align-items: center;
+    justify-content: center;
+    .flight-list {
+      background-color: @yellow-table-color;
+      padding: 25px 37px !important;
+      border-radius: 25px;
+      .a-round-the-world {
+        color: @blue-text-color;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: underline;
+        cursor: pointer;
+        position: relative;
+      }
+      .text-map {
+        color: @blue-text-color;
+        font-size: 16px;
+        float: right;
+        text-decoration: underline;
+        top:-0.2em;
+        position: relative;
+        font-weight: 600;
+        span i{
+          font-size: 26px;
+          margin-right: 0.5em;
+        }
+      }
+      .add-flight {
+        margin-bottom: 1em;
+        .delete-icon {
+          color: @blue-text-color;
+          font-size: 20px;
+          float: right;
+          margin-right: -22px;
+          margin-top: 20px;
+        }
+        .departAirport_field{
+          .input-group-text{
+            border: none;
+            background: #fff;
+            border-radius: 100px 0 0 100px !important;
+          }
+          input{
+            border-right:4px solid #F0C85A;
+          }
+        }
+        .arrivalAirport_field{
+          .input-group-text{
+            border: none;
+            background: #fff;
+            border-radius: 0;
+          }
+          input{
+            border-right:4px solid #F0C85A;
+          }
+        }
+        .departDate_field{
+          .input-group-text{
+            border: none;
+            background: #fff;
+            border-radius: 0;
+          }
+          input{
+            border-radius: 0 100px 100px 0;
+            background-color: white;
+          }
+        }
+      }
+      .icon-flight-list {
+        color: @blue-text-color
+      }
+      span.icon-flight-list.minus.float-right.fas {
+        margin-right: -30px;
+        margin-top: 15px;
+        font-size: 20px;
+      }
+      .button-flight-list{
+        background-color: #120d80!important;
+        color: #fff;
+        border-radius: 55px;
+        text-transform: capitalize;
+      }
+      .col-4{
+        padding: 0;
+      }
+      .form-control{
+        height: 3.5em;
+        border: none;
+        border-radius: 0;
+      }
+      .independent_fields{
+        .custom-select{
+          border-radius: 100px;
+          width: 97%;
+          padding-left: 3em;
+        }
+        .dd_fields{
+          span{
+            position: absolute;
+            left: 1em;
+            top: 0.7em;
+          }
+        }
+        .custom-select.cabinClass{
+          margin: 0 0.2em;
+        }
+      }
+    } // flight-list
+  
+   
+  }// main container
+  
+.fas{
+  color: #120d80;
+}
+
+.theme_Itineraries_section{
+  .itinerary_headers{
+    .sub-header{
+      color: #120d80;
+      font-size: 32px;
+      font-weight: 600;
+      margin: 0;
+  
+    }
+    .sub-description{
+      color: #120d80;
+      font-size: 22px;
+      font-weight: 400;
+      width: 70%;
+      margin: auto;
+    }
+  }
+  .itinerary_lists{
+    .itineraries{
+    .themes_carousel{
+      .col-md-4{
+        display: inline-block;
+        margin-left:-4px;
+        margin-bottom: 1em;
+      }
+      .col-md-4 img{
+        width:100%;
+        height:auto;
+      }
+      .carousel-indicators li{
+        background-color:#120d80;
+      }
+      .carousel-indicators{
+        bottom: 0;
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon{
+        background-color:#120c80;
+      }
+      .no-padding{
+        padding-left: 0;
+        padding-right: 0;
+         }
+      }
+    }
+  }
+}
+.slide-text{
+  span{
+    font-size: 22px !important;
+    margin-top: 1em;
+    color:  @blue-text-color;
+  }
+}
+.error-layout{
+  width: 100%;
+  padding: 0.5em 1em;
+  color: rgb(208, 24, 24);
+}
+
+#loginModal .modal-header .close{
+  padding: 1rem 1rem;
+  margin: -1rem -1rem -1rem auto;
+  position: absolute;
+  right: 1em;
+  z-index: 99;
+}
+
+
+.benefits_section{
+  .benefits_headers{
+    .sub-header{
+      color: #120d80;
+      font-size: 32px;
+      font-weight: 500;
+      margin: 0;
+  
+    }
+    .sub-description{
+      color: #120d80;
+      font-size: 22px;
+      font-weight: 400;
+      width: 70%;
+      margin: auto;
+    }
+  }
+  .benefits_lists{
+    .benefits{
+      ul{
+        list-style-type: none;
+        display: block;
+        li{
+          display: inline-block;
+          width: 31%;
+          margin: 1%;
+          position: relative;
+
+          .benefit_desc{
+            position: relative;
+            z-index: 99;
+            transition: 0.5s all ease-in-out;
+            img{
+              width: 100%;
+            }
+            .benefit_name{
+              position: absolute;
+              font-weight: 400;
+              z-index: 99;
+              bottom: 0.5em;
+              left: 1em;
+              color: #120c80;
+              font-size: 24px;
+            }
+            &:hover{
+              z-index: 0;
+              background: transparent;
+              opacity: 0;
+            }
+          }
+          .benefitsHoverText{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9;
+            background: #fff;
+            height: 100%;
+            padding: 2.5em;
+            color: #120c80;
+            box-shadow: 0 17px 27px rgba(0,0,0,.07);
+            line-height: 1.4em;
+            transition: 0.2s all ease-in-out;
+            .title{
+              font-size: 24px;
+              text-underline-position: below;
+              text-decoration: #120c80;
+            }
+            hr{
+              border: 1px solid #FF909B;
+              width: 25%;
+            }
+            &:hover{
+              opacity: 1;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
+.modal-header{
+  border: none !important;
+  height: 2em;
+}
+.btn-info{
+  background-color: #120c80 !important;
+    color: #fff !important;
+    border-radius: 5rem;
+    font-size: 16px !important;
+  }
+}
+
+@media @medium{
+  
+  .homepage{
+    /* margin-top: 3em; */
+    .container{
+      max-width: 1000px;
+    }
+    .site_brands{
+      .site_caption{
+        .header-title{
+          font-size: 24px !important;
+        }
+      }
+      .site_img{
+        .title-mark{
+          width: 240px !important;
+          height: 180px !important;
+          float: right;
+        }
+      }
+    }
+   .benefitsHoverText{
+     padding: 0.2em !important; 
+   }
+  }
+}
+
+
+@media @medium-below{
+  .text-map{
+    top:-0.4em !important;
+  }
+  .finishItinerary_link{
+    display: none !important;
+  }
+  .homepage{
+    /* margin-top: 3.3em; */
+    .container{
+      max-width: 1000px;
+    }
+    .site_brands{
+      .site_caption{
+        top: 2em !important;
+        text-align: center;
+        .header-title{
+          font-size: 24px !important;
+        }
+      }
+      .site_img{
+        .title-mark{
+          width: 240px !important;
+          height: 180px !important;
+          position: relative;
+          float: none !important;
+        }
+      }
+    }
+    .flight-list{
+      padding: 25px !important;
+    }
+  }
+  .modal{
+    padding: 0 !important;
+  }
+}
+
+
+@media @small{
+  .theme_Itineraries_section{
+    .itinerary_headers{
+      .sub-description{
+        width: 100% !important;
+      }
+    }
+    .itinerary_lists{
+      margin-top: 1em;
+      ul{
+        li{
+          width: 40% !important;
+          margin: 2% 10% 5% 0 !important;
+        }
+      }
+    }
+  }
+  .benefits_section{
+    .benefits_headers{
+      .sub-description{
+        width: 100% !important;
+      }
+    }
+    .benefits_lists{
+      margin-top: 1em;
+      ul{
+        li{
+          width: 48% !important;
+          /* margin: 2% 10% 5% 0 !important; */
+        }
+      }
+    }
+  }
+  .departAirport_icon, .arrivalAirport_icon, .departDateIcon{
+    display: none;
+  }
+  .departAirport_field{
+    input{
+      border-radius: 100px 0 0 100px !important;
+    }
+  }
+}
+@media @extra-small{
+  .container {
+    padding: 0 7px !important; 
+  }
+  .text-map{
+    top:-0.4em !important;
+  }
+  .search_section{
+    .independent_fields{
+      .passenger_mobile_filed{
+        input{
+        /* border-radius: 100px !important; */
+        text-align: center;
+        }
+      }
+    }
+  }
+  .theme_Itineraries_section{
+    .itinerary_headers{
+      .sub-description{
+        width: 100% !important;
+      }
+    }
+    .itinerary_lists{
+      margin-top: 1em;
+      ul{
+        li{
+          width: 90% !important;
+          margin: 2% 10% 10% 0 !important;
+        }
+      }
+      .mb_itineraries{
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .benefits_section{
+    .benefits_headers{
+      .sub-description{
+        width: 100% !important;
+      }
+    }
+    .benefits_lists{
+      ul{
+        li{
+          width: 100% !important;
+          margin: 2% !important;
+        }
+      }
+    }
+  }
+  .departAirport_icon, .arrivalAirport_icon, .departDateIcon{
+    display: none;
+  }
+  .departDate_field{
+    input{
+      border-radius: 0 !important;
+    }
+  }
+  .dropdown-menu{
+    left: auto !important;
+    right: 0px !important;
+  }
+}
+
+.modal-backdrop {
+  position: relative !important;
+}
+
+.passengers_selection{
+  position: absolute;
+  background: #fff;
+  z-index: 999;
+  padding: 1em;
+  box-shadow: 0 17px 27px rgba(0,0,0,.07);
+  border-radius:15px;
+  transition: 0.5s ease all;
+  .control-label{
+    width: 250px;
+  }
+  .number-spinner{
+    position: relative;
+    left: 30px;
+    bottom: 1em;
+    .input-group-btn{
+      position: relative !important;
+      .btn{
+        padding: 20px !important;
+        border-radius: 100px;
+      }
+      .fa{
+        padding: 14px 9px;
+      }
+    }
+  }
+  .form-group{
+    display: inline-flex;
+    input{
+      width: 50px;
+      border: none;
+      position: relative;
+      left: 0.7em;
+      top: 0.7em;
+    }
+  }
+  button{
+    padding: 6px 20px;
+  }
+  .modal-footer{
+    height: 4em;
+    padding: 0;
+    bottom: -1em !important;
+    display: block !important;
+  }
+}
+
+/* Theme itineraries carousel */ 
+
+.owl-carousel {
+	width: 100% !important;
+	margin: 10% auto !important;
+	.owl-nav {
+		overflow: hidden;
+		height: 0px;
+	}
+	.nav-btn {
+		height: 47px;
+		position: absolute;
+		width: 26px;
+		cursor: pointer;
+		top: 30% !important;
+	}
+	.owl-prev.disabled {
+		pointer-events: none;
+		opacity: 0.2;
+	}
+	.owl-next.disabled {
+		pointer-events: none;
+		opacity: 0.2;
+	}
+	.prev-slide {
+		&:hover {
+			background-position: 0px -53px;
+		}
+	}
+	.next-slide {
+		&:hover {
+			background-position: -24px -53px;
+		}
+	}
+}
+.prev-slide {
+	background: url(./../../assets/images/nav-icon.png) no-repeat scroll 0 0;
+	left: -33px;
+}
+.next-slide {
+	background: url(./../../assets/images/nav-icon.png) no-repeat scroll -24px 0px;
+	right: -33px;
+}
+.btn-cabin {
+	padding: 1em 1.5em;
+}
+
+ 
+
+/* cabin class buttons stylings */
+@color_1: rgba(255,255,255,.9);
+
+.toggle_radio {
+	position: relative;
+	background: #ACE8FF;
+	margin: 4px 0px 0 4px;
+	overflow: hidden;
+	padding: 0 !important;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+	height: 36px;
+	width: 318px;
+	>* {
+		float: left;
+	}
+	input[type=radio] {
+		display: none;
+	}
+	label {
+		color: @blue-text-color;
+		z-index: 0;
+		display: block;
+		width: 100px;
+		height: 20px;
+		margin: 6px 3px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 50px;
+		cursor: pointer;
+		z-index: 1;
+		text-align: center;
+	}
+}
+.toggle_option_slider {
+	width: 100px;
+	height: 32px;
+	position: absolute;
+	top: 2px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+}
+#first_toggle {
+	&:checked {
+		&~.toggle_option_slider {
+			background: rgba(255,255,255,.3);
+			left: 3px;
+		}
+	}
+}
+#second_toggle {
+	&:checked {
+		&~.toggle_option_slider {
+			background: rgba(255,255,255,.3);
+			left: 109px;
+		}
+	}
+}
+#third_toggle {
+	&:checked {
+		&~.toggle_option_slider {
+			background: rgba(255,255,255,.3);
+			left: 215px;
+		}
+	}
+}

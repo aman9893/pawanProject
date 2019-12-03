@@ -1,0 +1,398 @@
+<app-nav></app-nav>
+<!-- itinerary  details start here -->
+<div class="pnr_details_page">
+    <div class="container">
+        <div class="d-flex  justify-content-center">
+            <div class="page-title">
+                <h2>Your PNR Details</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pnrDetails">
+    <div class="container">
+        <div>
+            <div class="col-sm-12">
+                <div class="form-label-group">
+                    <div class="goods_line">
+                        <p class="goods_line_heading">Your Round the world flights are confirmed</p>
+                        <p class="pnr_no">Booking reservation number: <span style="color:#120d80;">{{this.pnr_no.recordLocator.reservation.controlNumber}}</span></p>
+                    </div>
+                    <div class="terms-conditions-content">
+                        <div>
+                            <p>
+                                This confirmation page is not a travel document. An e-ticket itinerary receipt will be issued by British
+                                Airways and will be sent to your email address once your payment is finalized and your ticket(s) are
+                                issued. You can make a note of your reservation number or print this page for future reference.
+                            </p>
+                            <p>
+                                If you identify any errors in this booking please
+                                contact British airways within 24h from this booking to avoid any fee(s) associated with changes or
+                                cancellation.
+                            </p>
+                            <p>
+                                We look forward to seeing you onboard.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="jumbo_header">Passenger</h4>
+                    </div>
+                    <div *ngFor="let passengerList of passengersList, let i = index">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>{{passengerList.firstName}}</td>
+                                    <td class="passenger_fields">{{passengerList.DOB.day + '/' + passengerList.DOB.month + '/' +passengerList.DOB.year }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h4 class="jumbo_header">Contact Information</h4>
+                    </div>
+                    <div>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="contact_field"><strong>Email:</strong></td>
+                                    <td>{{contactInfo.email}}</td>
+                                </tr>
+                                <tr>
+                                    <td class="contact_field"><strong>Phone number:</strong></td>
+                                    <td>{{contactInfo.phone}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- flight details here -->
+                    <div>
+                        <h4 class="jumbo_header">Flight Selection</h4>
+                    </div>
+                    <div class="container">
+                        <!--  ========Start of Desktop view======   -->
+                        <div class="flight-result-main d-none d-md-block">
+                    
+                            <div class="flight-result" *ngFor="let singleFlight of flightResponse; let flightIndex = index"
+                                (click)="selectFlightSegment(flightIndex)">
+                                <!-- heading here -->
+                                <div class="row">
+                                    <div class="col-lg-12 flight-name">
+                                        <span class="route-heading"> <span class="departure-heading">{{ getAirportName(singleFlight.dpt.cityCode) }}</span>
+                                                <!-- <i class="fas fa-plane"></i> -->to
+                                            <span class="arrival-heading">{{ getAirportName(singleFlight.arv.cityCode) }}</span></span>
+                                    </div>
+                                </div>
+                                <!-- end here -->
+                    
+                                <div class="card">
+                    
+                                    <div class="card-header">
+                                        <div class="row col-lg-12">
+                    
+                                            <div class="col-lg-6 col-md-6 airline-logos">
+                                                    <div [ngClass]="{
+                                                        'airline-AA':getairlineLogo(singleFlight.legs.leg) === 'AA',
+                                                        'airline-BA':getairlineLogo(singleFlight.legs.leg) === 'BA',
+                                                        'airline-CX':getairlineLogo(singleFlight.legs.leg) === 'CX',
+                                                        'airline-AY':getairlineLogo(singleFlight.legs.leg) === 'AY',
+                                                        'airline-IB':getairlineLogo(singleFlight.legs.leg) === 'IB',
+                                                        'airline-JL':getairlineLogo(singleFlight.legs.leg) === 'JL',
+                                                        'airline-MH':getairlineLogo(singleFlight.legs.leg) === 'MH',
+                                                        'airline-RJ':getairlineLogo(singleFlight.legs.leg) === 'RJ',
+                                                        'airline-S7':getairlineLogo(singleFlight.legs.leg) === 'S7',
+                                                        'airline-UL':getairlineLogo(singleFlight.legs.leg) === 'UL',
+                                                        'airline-QF':getairlineLogo(singleFlight.legs.leg) === 'QF',
+                                                        'airline-QR':getairlineLogo(singleFlight.legs.leg) === 'QR',
+                                                        'airline-XL':getairlineLogo(singleFlight.legs.leg) === 'XL',
+                                                        'airline-OW':getairlineLogo(singleFlight.legs.leg) === 'OW'
+                                                        }">
+                                                    </div>
+                                            </div>
+                    
+                                            <div class="col-lg-6 col-md-6">
+                                                <p class="pull-right text-flight-type">
+                                                    <b>{{ singleFlight.classAndAvailability.class[0].userClassType }}</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card-body">
+                    
+                                        <!-- Details here -->
+                                        <div class="flight-card-summary row col-lg-12">
+                    
+                                            <div class="col-lg-2 col-md-2 flight-departure-date text-center">
+                                                <p class="flight_date">
+                                                    {{ formatDepartureDate(singleFlight.flightDates.scheduledDate[0]) }}
+                                                </p>
+                                                <p class="flight_date_label">Departure</p>
+                                            </div>
+                    
+                                            <div class="col-lg-2 col-md-2 flight-departure-airport text-center">
+                                                <p class="flight_date">
+                                                    {{  getAirportName(singleFlight.dpt.cityCode) }}</p>
+                                                <p class="flight_date_label">
+                                                    {{ getTimeInHours(singleFlight.dptTimeLocal) }} {{ singleFlight.dpt.terminal }}</p>
+                                            </div>
+                    
+                                            <div class="col-lg-3 col-md-3 text-center">
+                                                <div class="row flight-duration ">
+                                                    <div class="flight-duration-info">
+                                                        <p class="flight_date">
+                                                            {{ singleFlight.elapsedTime | minuteSeconds}}</p>
+                                                        <p class="flight_date_label"> <span class="direction-angle">
+                                                                <i class="far fa-circle"></i>- - - - -&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            </span> Stops: {{ singleFlight.numLegs }} <span class="direction-angle">
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;- - - - -<i class="fas fa-angle-right"></i></span>
+                                                        </p>
+                                                        <span>{{singleFlight.carFlight}}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-lg-2 col-md-2 flight-arrival-airport text-center">
+                                                <p class="flight_date">
+                                                    {{ getAirportName(singleFlight.arv.cityCode) }}</p>
+                                                <p class="flight_date_label">
+                                                    {{ singleFlight.arvTimeLocal }} {{ singleFlight.arv.terminal }}</p>
+                                            </div>
+                    
+                                            <div class="col-lg-2 col-md-2 flight-arrival-date text-center">
+                                                <p class="flight_date">{{ formatDepartureDate(singleFlight.flightArriveDate) }}
+                                                </p>
+                                                <p class="flight_date_label">Arrival</p>
+                                            </div>
+                    
+                                            <div class="col-lg-1 col-md-1 flight-detail-trigger mt-3">
+                                                <a (click)="clickShowDetail()">
+                                                    <mdb-icon fas icon="chevron-down" size="2x"
+                                                        [ngClass]="showDetail && selectedFlightIndex == flightIndex ? 't-blue float-right rotate down': 't-blue float-right rotate'">
+                                                    </mdb-icon>
+                                                </a>
+                                            </div>
+                    
+                                        </div>
+                                        <!-- legs details here -->
+                                        <div class="flight-card-detail" *ngIf="showDetail && selectedFlightIndex == flightIndex">
+                                            <div class="flight-legs" *ngFor="let legFlight of singleFlight.legs.leg; let legIndex = index">
+                                                <div class="flight-leg">
+                                                    <div class="flight-leg__solid-border"></div>
+                                                    <div class="row">
+                                                        <span
+                                                            class="col-lg-2 text-flight-detail text-bold">{{ formatDepartureDate(legFlight.legDepartureDate)}}</span>
+                                                        <span class="col-lg-6 text-flight-detail text-bold">
+                                                            {{getAirportName(legFlight.dpt.cityCode) }}</span>
+                                                        <!-- '( Airport: ' + (legFlight.dpt.aptCode) + ')' -->
+                                                        <span class="col-lg-4 text-flight-detail">
+                                                            {{getTimeInHours(legFlight.dptTime)}}
+                                                        </span>
+                                                    </div>
+                                                    <div class="flight-leg__duration row">
+                                                        <span class="col-lg-9 text-flight-detail text-bold">
+                                                            {{legFlight.carCode}} {{legFlight.flightNumber}}<br>
+                                                        </span>
+                                                    </div>
+                    
+                                                    <div class="row">
+                                                        <span class="col-lg-2 text-flight-detail text-bold">
+                                                            {{ formatDepartureDate(legFlight.legArriveDate)}}</span>
+                                                        <span class="col-lg-6 text-flight-detail text-bold">
+                                                            {{getAirportName(legFlight.arv.cityCode) }}</span>
+                                                        <!-- + '( Airport: ' + legFlight.arv.aptCode + ')' -->
+                                                        <span class="col-lg-4 text-flight-detail">
+                                                            {{getTimeInHours(legFlight.arvTime)}}
+                                                        </span>
+                                                    </div>
+                                                </div>
+                    
+                                            </div>
+                                        </div>
+                                        <!-- legs details end here -->
+                                    </div>
+                    
+                                </div>
+                    
+                                <div>
+                    
+                                </div>
+                    
+                            </div>
+                    
+                        </div>
+                        <!--  ========end of Desktop view======   -->
+                    
+                        <!--    ======Start of Mobile view======    -->
+                        <div class="flight-result-main mb_flights_section d-block d-md-none">
+                    
+                    
+                            <div class="flight-result" *ngFor="let singleFlight of flightResponse; let flightIndex = index"
+                                (click)="selectFlightSegment(flightIndex)">
+                                <!-- heading here -->
+                                <!-- <div class="row">
+                                    <div class="col-12 flight-name">
+                                        <span class="route-heading"> <span
+                                                class="departure-heading">{{ getAirportName(singleFlight.dpt.cityCode) }}</span><i
+                                                class="fas fa-plane"></i>
+                                            <span class="arrival-heading">{{ getAirportName(singleFlight.arv.cityCode) }}</span></span>
+                                    </div>
+                                </div> -->
+                                <!-- end here -->
+                    
+                                <div class="card">
+                    
+                                    <div class="card-header">
+                                        <div class="row">
+                                    
+                                            <div class="col-3">
+                                                <p class="pull-left text-flight-type">
+                                                    <b>Flight {{flightIndex + 1}}</b></p>
+                                            </div>
+                                    
+                                            <div class="col-6 p-0 airline-logos">
+                                                    <div [ngClass]="{
+                                                        'airline-AA':getairlineLogo(singleFlight.legs.leg) === 'AA',
+                                                        'airline-BA':getairlineLogo(singleFlight.legs.leg) === 'BA',
+                                                        'airline-CX':getairlineLogo(singleFlight.legs.leg) === 'CX',
+                                                        'airline-AY':getairlineLogo(singleFlight.legs.leg) === 'AY',
+                                                        'airline-IB':getairlineLogo(singleFlight.legs.leg) === 'IB',
+                                                        'airline-JL':getairlineLogo(singleFlight.legs.leg) === 'JL',
+                                                        'airline-MH':getairlineLogo(singleFlight.legs.leg) === 'MH',
+                                                        'airline-RJ':getairlineLogo(singleFlight.legs.leg) === 'RJ',
+                                                        'airline-S7':getairlineLogo(singleFlight.legs.leg) === 'S7',
+                                                        'airline-UL':getairlineLogo(singleFlight.legs.leg) === 'UL',
+                                                        'airline-QF':getairlineLogo(singleFlight.legs.leg) === 'QF',
+                                                        'airline-QR':getairlineLogo(singleFlight.legs.leg) === 'QR',
+                                                        'airline-XL':getairlineLogo(singleFlight.legs.leg) === 'XL',
+                                                        'airline-OW':getairlineLogo(singleFlight.legs.leg) === 'OW'
+                                                        }">
+                                                    </div>
+                                            </div>
+                                    
+                                            <div class="col-3 p-0">
+                                                <p class="text-center text-flight-type">
+                                                    {{ singleFlight.classAndAvailability.class[0].userClassType }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card-body">
+                    
+                                        <!-- Details here -->
+                                        <div class="flight-card-summary row">
+                    
+                                            <div class="col-4 flight-departure-date">
+                                                <p class="flight_date">
+                                                    {{ formatDepartureDate(singleFlight.flightDates.scheduledDate[0]) }}
+                                                </p>
+                                                <p class="flight_date_label">Departure</p>
+                                            </div>
+                    
+                                            <div class="col-4 text-center p-0">
+                                                <div class="row flight-duration ">
+                                                    <div class="flight-duration-info">
+                                                        <p class="flight_date">
+                                                            {{ singleFlight.elapsedTime | minuteSeconds}}</p>
+                                                        <p class="flight_date_label"> <span class="direction-angle">
+                                                                <i class="far fa-circle"></i>- - -
+                                                            </span> Stops: {{ singleFlight.numLegs }} <span class="direction-angle">
+                                                                - - -<i class="fas fa-angle-right"></i></span></p>
+                                                        <span>{{singleFlight.carFlight}}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-4 flight-arrival-date">
+                                                <p class="flight_date">{{ formatDepartureDate(singleFlight.flightArriveDate) }}
+                                                </p>
+                                                <p class="flight_date_label">Arrival</p>
+                                            </div>
+                    
+                                        </div>
+                    
+                                        <div class="second_section">
+                                            <div class="flight-card-summary row">
+                    
+                                                <div class="col-4 flight-departure-airport">
+                                                    <p class="flight_date">
+                                                        {{singleFlight.dpt.cityCode}}</p>
+                                                    <p class="flight_date_label">
+                                                        {{ singleFlight.dptTimeLocal }} {{ singleFlight.dpt.terminal }}</p>
+                                                </div>
+                    
+                                                <div class="col-4 text-center p-0">
+                                                    <div class="mr-2 mt-2">
+                                                        <a (click)="clickShowDetail()">
+                                                            <mdb-icon fas icon="chevron-down" size="2x"
+                                                                [ngClass]="showDetail && selectedFlightIndex == flightIndex ? 't-blue rotate down': 't-blue rotate'">
+                                                            </mdb-icon>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                    
+                                                <div class="col-4 flight-arrival-airport">
+                                                    <p class="flight_date">
+                                                        {{singleFlight.arv.cityCode}}</p>
+                                                    <p class="flight_date_label">
+                                                        {{ singleFlight.arvTimeLocal }} {{ singleFlight.arv.terminal }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                    
+                                        <!-- legs details here -->
+                                        <div class="flight-card-detail" *ngIf="showDetail && selectedFlightIndex == flightIndex">
+                                            <div class="flight-legs" *ngFor="let legFlight of singleFlight.legs.leg; let legIndex = index">
+                                                <div class="flight-leg">
+                                                    <div class="flight-leg__solid-border"></div>
+                                                    <div class="row">
+                                                        <span class="col-12 text-flight-detail text-bold">{{ formatDepartureDate(legFlight.legDepartureDate)}}</span>
+                                                        <span class="col-12 text-flight-detail text-bold">
+                                                            {{getAirportName(legFlight.dpt.cityCode) }}</span>
+                                                        <!-- '( Airport: ' + (legFlight.dpt.aptCode) + ')' -->
+                                                        <span class="col-12 text-flight-detail">
+                                                            {{getTimeInHours(legFlight.dptTime)}}
+                                                        </span>
+                                                    </div>
+                                                    <div class="flight-leg__duration row">
+                                                        <span class="col-12 text-flight-detail text-bold">
+                                                            {{legFlight.carCode}} {{legFlight.flightNumber}}<br>
+                                                        </span>
+                                                    </div>
+                    
+                                                    <div class="row">
+                                                        <span class="col-12 text-flight-detail text-bold">
+                                                            {{ formatDepartureDate(legFlight.legArriveDate)}}</span>
+                                                        <span class="col-12 text-flight-detail text-bold">
+                                                            {{getAirportName(legFlight.arv.cityCode) }}</span>
+                                                        <!-- + '( Airport: ' + legFlight.arv.aptCode + ')' -->
+                                                        <span class="col-12 text-flight-detail">
+                                                            {{getTimeInHours(legFlight.arvTime)}}
+                                                        </span>
+                                                    </div>
+                                                </div>
+                    
+                                            </div>
+                                        </div>
+                                        <!-- legs details end here -->
+                                    </div>
+                    
+                                </div>
+                    
+                                <div>
+                    
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+                        <!--    ======End of Mobile view======    -->
+                    
+                    </div>
+                    <!-- flight details end here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
