@@ -40,7 +40,7 @@
     "jquery": "^3.4.1",
     "lite-server": "^2.5.4",
     "mdbootstrap": "^4.8.9",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "ngx-animating-datepicker": "^1.2.1",
     "ngx-bootstrap": "^5.1.2",
     "ngx-owl-carousel": "^2.0.7",
